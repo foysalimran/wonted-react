@@ -1,4 +1,5 @@
 import React from "react";
+import { FaPlay } from "react-icons/fa"
 
 const Ctav2 = () => {
   return (
@@ -46,7 +47,7 @@ const Ctav2 = () => {
                 href="https://youtu.be/dkxiTpwm0hs"
                 className="glightbox3 video-btn"
               >
-                <i className="icofont-play"></i>
+                <FaPlay />
               </a>
               <div className="promo-video">
                 <div className="waves-block">

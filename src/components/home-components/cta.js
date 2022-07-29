@@ -1,4 +1,5 @@
 import React from "react";
+import { FaStar } from "react-icons/fa";
 
 const Cta = () => {
   return (
@@ -21,35 +22,35 @@ const Cta = () => {
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
-                <i className="icofont-star"></i>
+                <FaStar />
               </li>
               <li
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="250"
               >
-                <i className="icofont-star"></i>
+                <FaStar />
               </li>
               <li
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="300"
               >
-                <i className="icofont-star"></i>
+                <FaStar />
               </li>
               <li
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="350"
               >
-                <i className="icofont-star"></i>
+                <FaStar />
               </li>
               <li
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="400"
               >
-                <i className="icofont-star"></i>
+                <FaStar />
               </li>
             </ul>
             <p
