@@ -8,6 +8,7 @@ import Chapter from "../home-components/chapter";
 import ChapterPreview from "../home-components/chapter-preview";
 import Cta from "../home-components/cta";
 import Ctav2 from "../home-components/ctav2";
+import FunFacts from "../home-components/fun-facts";
 import Hero from "../home-components/hero";
 import Pricing from "../home-components/pricing";
 import Testimonial from "../home-components/testimonial";
@@ -23,6 +24,7 @@ function Version01() {
       <Pricing />
       <Author />
       <Achievement />
+      <FunFacts />
       <Books />
       <Cta />
       <Testimonial />

@@ -1,4 +1,5 @@
 import React from "react";
+import CountUp, {enableScrollSpy} from 'react-countup';
 
 const FunFacts = () => {
   return (
@@ -45,7 +46,7 @@ const FunFacts = () => {
                     <i className="icofont-page"></i>
                   </div>
                   <div className="counters__stats-box__number">
-                    <span className="odometer" data-count="35"></span>
+                  <CountUp end={35} enableScrollSpy="true" />
                   </div>
                   <h5>Achievements</h5>
                 </div>
@@ -60,7 +61,7 @@ const FunFacts = () => {
                     <i className="icofont-read-book"></i>
                   </div>
                   <div className="counters__stats-box__number">
-                    <span className="odometer" data-count="9999"></span>+
+                    <CountUp end={9999} enableScrollSpy="true" />+
                   </div>
                   <h5>Active Readers</h5>
                 </div>
@@ -75,7 +76,7 @@ const FunFacts = () => {
                     <i className="icofont-hour-glass"></i>
                   </div>
                   <div className="counters__stats-box__number">
-                    <span className="odometer" data-count="41"></span>k
+                  <CountUp end={41} enableScrollSpy="true" />k
                   </div>
                   <h5>Writing Hours</h5>
                 </div>
@@ -90,7 +91,7 @@ const FunFacts = () => {
                     <i className="icofont-cart-alt"></i>
                   </div>
                   <div className="counters__stats-box__number">
-                    <span className="odometer" data-count="992"></span>k
+                  <CountUp end={992} enableScrollSpy="true" />k
                   </div>
                   <h5>Total Sells</h5>
                 </div>
@@ -105,7 +106,7 @@ const FunFacts = () => {
                     <i className="icofont-award"></i>
                   </div>
                   <div className="counters__stats-box__number">
-                    <span className="odometer" data-count="13"></span>
+                  <CountUp end={20} enableScrollSpy="true" />
                   </div>
                   <h5>Awards</h5>
                 </div>

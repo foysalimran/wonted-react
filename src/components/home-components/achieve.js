@@ -1,7 +1,9 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
-import {ImBook} from "react-icons/im"
-import achive2 from '../../assets/images/achive2.jpg'
+import { ImBook } from "react-icons/im";
+import achive2 from "../../assets/images/achive2.jpg";
+import { GiHappySkull } from "react-icons/gi";
+import { BiTargetLock } from "react-icons/bi";
 
 const Achieve = () => {
   return (
@@ -81,7 +83,7 @@ const Achieve = () => {
                 >
                   <div className="achieve__content__item h-100 translateEffect2">
                     <div className="achieve__icon m-20px-b">
-                      <i className="icofont-dice-multiple"></i>
+                      <GiHappySkull />
                     </div>
                     <h3 className="m-15px-b">Motivation</h3>
                     <p>
@@ -119,7 +121,7 @@ const Achieve = () => {
                 >
                   <div className="achieve__content__item h-100 translateEffect2">
                     <div className="achieve__icon m-20px-b">
-                      <i className="icofont-brand-target"></i>
+                      <BiTargetLock />
                     </div>
                     <h3 className="m-15px-b">Vision</h3>
                     <p>

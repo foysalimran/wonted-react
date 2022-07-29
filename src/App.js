@@ -11,7 +11,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="section-wrapper">
       <div id="preLoader"></div>
       <Header />
       <Version01 />
