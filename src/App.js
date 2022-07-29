@@ -1,9 +1,10 @@
-import './App.css';
+import "./assets/css/margins-paddings.css";
+import Version01 from "./components/pages/version-01";
 
 function App() {
   return (
     <div>
-      <h3>Hello world!</h3>
+      <Version01 />
     </div>
   );
 }
