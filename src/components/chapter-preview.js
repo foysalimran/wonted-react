@@ -1,4 +1,12 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import { Autoplay, Pagination } from "swiper";
+
+import image1 from '../assets/images/chapter-preview/1.jpg'
 
 const ChapterPreview = () => {
   return (
@@ -33,7 +41,118 @@ const ChapterPreview = () => {
           </div>
         </div>
         <div className="row testi-row">
-          <div className="col-12 p-80px-b">
+          <div className="col-12">
+          <Swiper
+              modules={[Pagination, Autoplay]}
+              pagination={{ clickable: true }}
+              autoplay
+              breakpoints={{
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                1024: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+              }}
+            >
+
+              <SwiperSlide >
+              <div
+              className="swiper-slide p-5px-lr translateEffect2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <a
+                href="assets/images/chapter-preview/1.jpg"
+                className=""
+              >
+                <img
+                  className="chapter-img img-fluid"
+                  src={image1}
+                />
+              </a>
+              </div>
+              </SwiperSlide>
+
+              <SwiperSlide >
+              <div
+              className="swiper-slide p-5px-lr translateEffect2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <a
+                href="assets/images/chapter-preview/1.jpg"
+                className=""
+              >
+                <img
+                  className="chapter-img img-fluid"
+                  src={image1}
+                />
+              </a>
+              </div>
+              </SwiperSlide>
+
+              <SwiperSlide >
+              <div
+              className="swiper-slide p-5px-lr translateEffect2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <a
+                href="assets/images/chapter-preview/1.jpg"
+                className=""
+              >
+                <img
+                  className="chapter-img img-fluid"
+                  src={image1}
+                />
+              </a>
+              </div>
+              </SwiperSlide>
+
+              <SwiperSlide >
+              <div
+              className="swiper-slide p-5px-lr translateEffect2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <a
+                href="assets/images/chapter-preview/1.jpg"
+                className=""
+              >
+                <img
+                  className="chapter-img img-fluid"
+                  src={image1}
+                />
+              </a>
+              </div>
+              </SwiperSlide>
+
+              <SwiperSlide >
+              <div
+              className="swiper-slide p-5px-lr translateEffect2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <a
+                href="assets/images/chapter-preview/1.jpg"
+                className=""
+              >
+                <img
+                  className="chapter-img img-fluid"
+                  src={image1}
+                />
+              </a>
+              </div>
+              </SwiperSlide>
+              </Swiper>
             {/* <div className="chapter-slider">
           <div className="swiper-wrapper">
             <div
