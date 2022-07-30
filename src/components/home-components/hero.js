@@ -1,10 +1,12 @@
 import React from "react";
 import heroImg from "../../assets/images/hero.png";
 import { AiOutlineCheckCircle, AiOutlineCloseCircle } from "react-icons/ai";
+import { Element } from "react-scroll";
 
 const Hero = () => {
   return (
     // <!-- ========== Hero section start ========== -->
+    <Element name="hero" className="element">
     <section
       id="hero"
       className="hero hero__padding overflow-hidden position-relative bg-one"
@@ -117,6 +119,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
+    </Element>
     // <!-- ========== Hero section start ========== -->
   );
 };
