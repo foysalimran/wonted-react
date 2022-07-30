@@ -1,6 +1,6 @@
 import React from "react";
-import Achieve from "../home-components/achieve";
-import Hero from "../home-components/hero";
+import Achieve from "../achieve";
+import Hero from "../hero";
 
 const Version02 = () => {
   return (

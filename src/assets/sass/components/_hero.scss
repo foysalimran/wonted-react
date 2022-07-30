@@ -146,7 +146,6 @@
     position: relative;
     width: 26vw;
     height: 32vw;
-    -webkit-transform: rotateY(5deg);
     transform: rotateY(5deg);
     margin-left: auto;
     border-radius: 5px;
@@ -184,14 +183,10 @@
       border: 1px solid $color-dark;
       &.frame-1 {
         opacity: 0.25;
-        -webkit-transform: translate(-1rem, 1rem);
-        -ms-transform: translate(-1rem, 1rem);
         transform: translate(-1rem, 1rem);
       }
       &.frame-2 {
         opacity: 0.15;
-        -webkit-transform: translate(-2rem, 2rem);
-        -ms-transform: translate(-2rem, 2rem);
         transform: translate(-2rem, 2rem);
       }
       img {
@@ -239,34 +234,22 @@
       }
       &.frame-1 {
         opacity: 0.25;
-        -webkit-transform: translate(2rem, 2rem);
-        -ms-transform: translate(2rem, 2rem);
         transform: translate(2rem, 2rem);
         @include respond(laptop) {
-          -webkit-transform: translate(1rem, 1rem);
-          -ms-transform: translate(1rem, 1rem);
           transform: translate(1rem, 1rem);
         }
       }
       &.frame-2 {
         opacity: 0.15;
-        -webkit-transform: translate(4rem, 4rem);
-        -ms-transform: translate(4rem, 4rem);
         transform: translate(4rem, 4rem);
         @include respond(laptop) {
-          -webkit-transform: translate(2rem, 2rem);
-          -ms-transform: translate(2rem, 2rem);
           transform: translate(2rem, 2rem);
         }
       }
       &.frame-3 {
         opacity: 0.05;
-        -webkit-transform: translate(6rem, 6rem);
-        -ms-transform: translate(6rem, 6rem);
         transform: translate(6rem, 6rem);
         @include respond(laptop) {
-          -webkit-transform: translate(3rem, 3rem);
-          -ms-transform: translate(3rem, 3rem);
           transform: translate(3rem, 3rem);
         }
       }
