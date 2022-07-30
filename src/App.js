@@ -8,6 +8,7 @@ import "./assets/css/aos.css"
 import { useEffect } from "react";
 import Header from "./components/global-components/header";
 import Footer from "./components/global-components/footer";
+import SingleBlog from "./components/pages/single-blog";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -24,6 +25,7 @@ function App() {
         <Route path="/" element={<Version01 />} />
         <Route path="home" element={<Version01 />} />
         <Route path="/version-02" element={<Version02 />} />
+        <Route path="/single-blog" element={<SingleBlog />} />
       </Routes>
     </BrowserRouter>
     <Footer />
