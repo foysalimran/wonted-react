@@ -44,7 +44,7 @@ const Contact = () => {
             data-aos-delay="200"
           >
             <div className="contact-form-box">
-              <form id="contact-form" method="post" action="php/sendmail.php">
+              <form id="contact-form" method="post" action="https://formspree.io/f/xeqdjekd">
                 <div className="message col">
                   <p className="email-loading alert alert-warning">
                     <img src="assets/images/loading.gif" alt="" />
@@ -97,7 +97,7 @@ const Contact = () => {
                     required=""
                   ></textarea>
                 </div>
-                <button className="button button__primary align-items-center">
+                <button type="submit" className="button button__primary align-items-center">
                   <span>Send Now</span>
                 </button>
               </form>

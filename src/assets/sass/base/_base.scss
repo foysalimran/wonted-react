@@ -174,7 +174,7 @@ body {
   color: $color-primary;
   transition: all 0.3s ease;
   cursor: pointer;
-  i {
+  svg {
     font-size: 20px;
     margin-right: 5px;
   }
@@ -220,20 +220,18 @@ body {
   font-weight: 500;
   position: relative;
   color: $color-primary;
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   display: flex;
   align-items: center;
-  & i {
+  & svg {
     position: relative;
     margin-left: 4px;
     font-size: 20px;
-    -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
   }
   &:hover {
     color: $color-secondary;
-    & i {
+    & svg {
       margin-left: 6px;
     }
   }
@@ -326,8 +324,6 @@ body {
 .x4 {
   left: 470px;
   bottom: 300px;
-  -webkit-transform: scale(0.75);
-  -moz-transform: scale(0.75);
   transform: scale(0.75);
   animation: movecircles 45s linear infinite;
 }

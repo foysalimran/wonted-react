@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube, FaHeart } from "react-icons/fa";
 import { IoLogoWhatsapp} from "react-icons/io";
 import logo from "../../assets/images/wonted-logo.png"
 
@@ -153,7 +153,7 @@ const Footer = () => {
             <div className="col-12">
               <p className="m-0 text-center">
                 &copy; 2022 All right reserved. Made with
-                <i className="icofont-heart"></i> by <a href="#">ThemeAtelier</a>
+                <FaHeart /> by <a href="#">ThemeAtelier</a>
               </p>
             </div>
           </div>

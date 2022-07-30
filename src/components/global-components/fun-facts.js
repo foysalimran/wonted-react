@@ -1,5 +1,9 @@
 import React from "react";
 import CountUp from 'react-countup';
+import { GiAchievement } from "react-icons/gi"
+import { BiBookReader } from "react-icons/bi"
+import { FaHourglassHalf, FaAward } from "react-icons/fa"
+import { AiOutlineShoppingCart } from "react-icons/ai"
 
 const FunFacts = () => {
   return (
@@ -43,7 +47,7 @@ const FunFacts = () => {
               >
                 <div className="counters__stats-box h-100 translateEffect1">
                   <div className="counters__stats-icon">
-                    <i className="icofont-page"></i>
+                    <GiAchievement />
                   </div>
                   <div className="counters__stats-box__number">
                   <CountUp end={35} enableScrollSpy="true" />
@@ -58,7 +62,7 @@ const FunFacts = () => {
               >
                 <div className="counters__stats-box h-100 translateEffect1">
                   <div className="counters__stats-icon">
-                    <i className="icofont-read-book"></i>
+                    <BiBookReader />
                   </div>
                   <div className="counters__stats-box__number">
                     <CountUp end={9999} enableScrollSpy="true" />+
@@ -73,7 +77,7 @@ const FunFacts = () => {
               >
                 <div className="counters__stats-box h-100 translateEffect1">
                   <div className="counters__stats-icon">
-                    <i className="icofont-hour-glass"></i>
+                    <FaHourglassHalf />
                   </div>
                   <div className="counters__stats-box__number">
                   <CountUp end={41} enableScrollSpy="true" />k
@@ -88,7 +92,7 @@ const FunFacts = () => {
               >
                 <div className="counters__stats-box h-100 translateEffect1">
                   <div className="counters__stats-icon">
-                    <i className="icofont-cart-alt"></i>
+                    <AiOutlineShoppingCart />
                   </div>
                   <div className="counters__stats-box__number">
                   <CountUp end={992} enableScrollSpy="true" />k
@@ -103,7 +107,7 @@ const FunFacts = () => {
               >
                 <div className="counters__stats-box h-100 translateEffect1">
                   <div className="counters__stats-icon">
-                    <i className="icofont-award"></i>
+                    <FaAward />
                   </div>
                   <div className="counters__stats-box__number">
                   <CountUp end={20} enableScrollSpy="true" />
