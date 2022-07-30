@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../global-components/footer";
 import Achieve from "../home-components/achieve";
 import Achievement from "../home-components/achievement";
 import Author from "../home-components/author";
