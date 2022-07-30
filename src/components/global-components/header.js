@@ -1,10 +1,22 @@
-import React from "react";
-import logo from '../../assets/images/wonted-logo.png'
+import { default as React, useState } from "react";
+import logo from '../../assets/images/wonted-logo.png';
 
 const Header = () => {
+
+  const [fix, setFix] = useState(false);
+
+  function setFixed() {
+    if (window.scrollY >= 60) {
+        setFix(true)
+    } else {
+      setFix(false)
+      }
+    }
+  window.addEventListener("scroll", setFixed)
+
   return (
     // <!-- ========== Header start ========== -->
-    <header className="header">
+    <header className={fix ? 'header navbar_fixed' : 'header'}>
       <div className="container">
         <div className="row">
           <nav className="navbar navbar-expand-lg">
