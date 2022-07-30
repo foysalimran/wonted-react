@@ -15,7 +15,6 @@ import Pricing from "../global-components/pricing";
 import Testimonial from "../global-components/testimonial";
 
 function Version01() {
-
   return (
     <>
       <Hero />
@@ -31,9 +30,8 @@ function Version01() {
       <Testimonial />
       <Ctav2 />
       <Contact />
-      <Footer />
     </>
   );
-};
+}
 
 export default Version01;

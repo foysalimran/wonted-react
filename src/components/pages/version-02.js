@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
+import Header from "../global-components/header";
+import Achieve from "../home-components/achieve";
+import Hero from "../home-components/hero";
 
 const Version02 = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+  return (
+    <>
+      <Hero />
+      <Achieve />
+    </>
+  );
 };
 
 export default Version02;

@@ -1,9 +1,13 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./assets/css/margins-paddings.css";
 import Version01 from "./components/pages/version-01";
+import Version02 from "./components/pages/version-02";
+
 import AOS from "aos";
 import "./assets/css/aos.css"
 import { useEffect } from "react";
 import Header from "./components/global-components/header";
+import Footer from "./components/global-components/footer";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -11,10 +15,18 @@ function App() {
   }, []);
 
   return (
+   
     <div className="section-wrapper">
       <div id="preLoader"></div>
       <Header />
-      <Version01 />
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Version01 />} />
+        <Route path="home" element={<Version01 />} />
+        <Route path="/version-02" element={<Version02 />} />
+      </Routes>
+    </BrowserRouter>
+    <Footer />
     </div>
   );
 }
