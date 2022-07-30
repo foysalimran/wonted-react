@@ -6,9 +6,12 @@ import Version02 from "./components/pages/version-02";
 import AOS from "aos";
 import "./assets/css/aos.css"
 import { useEffect } from "react";
-import Header from "./components/global-components/header";
-import Footer from "./components/global-components/footer";
+import Header from "./components/global/header";
+import Footer from "./components/global/footer";
 import SingleBlog from "./components/pages/single-blog";
+
+
+
 function App() {
   useEffect(() => {
     AOS.init();

@@ -1,7 +1,6 @@
 import React from "react";
-import heroImg from "../../assets/images/hero.png";
+import heroImg from "../assets/images/hero.png";
 import { AiOutlineCheckCircle, AiOutlineCloseCircle } from "react-icons/ai";
-import { Element } from "react-scroll";
 
 const Hero = () => {
   return (

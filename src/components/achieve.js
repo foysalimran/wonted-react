@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import { ImBook } from "react-icons/im";
-import achive2 from "../../assets/images/achive2.jpg";
+import achive2 from "../assets/images/achive2.jpg";
 import { GiHappySkull } from "react-icons/gi";
 import { BiTargetLock } from "react-icons/bi";
 

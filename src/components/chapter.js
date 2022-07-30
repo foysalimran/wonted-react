@@ -1,6 +1,6 @@
 import React from "react";
 import { Accordion } from "react-bootstrap";
-import chapter from "../../assets/images/hero-2.png";
+import chapter from "../assets/images/hero-2.png";
 
 const Chapter = () => {
   return (

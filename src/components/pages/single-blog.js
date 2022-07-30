@@ -1,5 +1,5 @@
 import React from 'react';
-import PagesHeader from '../global-components/pages-header';
+import PagesHeader from '../global/pages-header';
 import img1 from '../../assets/images/blog/single-blog.jpg';
 import img2 from '../../assets/images/blog/blog_01.jpg';
 import img3 from '../../assets/images/blog/blog_02.jpg';
