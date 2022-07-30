@@ -22,10 +22,10 @@ function App() {
       <Header />
       <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Version01 />} />
+        
         <Route path="home" element={<Version01 />} />
-        <Route path="/version-02" element={<Version02 />} />
-        <Route path="/single-blog" element={<SingleBlog />} />
+        <Route path="version-02" element={<Version02 />} />
+        <Route path="single-blog" element={<SingleBlog />} />
       </Routes>
     </BrowserRouter>
     <Footer />

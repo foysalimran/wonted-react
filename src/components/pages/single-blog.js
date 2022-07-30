@@ -5,6 +5,9 @@ import img2 from '../../assets/images/blog/blog_01.jpg';
 import img3 from '../../assets/images/blog/blog_02.jpg';
 import user1 from '../../assets/images/user-1.png';
 import user2 from '../../assets/images/user-2.png';
+import { FaFacebookF, FaLinkedinIn, FaTwitter, FaRegCalendarAlt, FaYoutube, FaRegCommentDots } from "react-icons/fa";
+import { IoLogoWhatsapp} from "react-icons/io";
+import { BiUser} from "react-icons/bi";
 
 const SingleBlog = () => {
     return (
@@ -65,12 +68,11 @@ const SingleBlog = () => {
                 alt=""
               />
               <ul class="single-blog__metainfo">
-                <li><i class="icofont-user-male"></i><a href="#">John</a></li>
+                <li><BiUser/><a href="#">John</a></li>
                 <li>
-                  <i class="icofont-ui-calendar"></i
-                  ><a href="#">12 May, 2022</a>
+                 <FaRegCalendarAlt/><a href="#">12 May, 2022</a>
                 </li>
-                <li><i class="icofont-ui-messaging"></i>3 Comments</li>
+                <li><FaRegCommentDots/> <a href="#">3 Comments</a></li>
               </ul>
               <h2 class="display-5 single-blog__title">
                 Books with sneaky sci-fi plots
@@ -191,19 +193,19 @@ const SingleBlog = () => {
               <strong>Share:</strong>
               <ul class="social-icon">
                 <li>
-                  <a href="#"><i class="icofont-facebook"></i></a>
+                  <a href="#"> <FaFacebookF /></a>
                 </li>
                 <li>
-                  <a href="#"><i class="icofont-twitter"></i></a>
+                  <a href="#"> <FaTwitter /></a>
                 </li>
                 <li>
-                  <a href="#"><i class="icofont-linkedin"></i></a>
+                  <a href="#"><FaLinkedinIn /></a>
                 </li>
                 <li>
-                  <a href="#"><i class="icofont-youtube-play"></i></a>
+                  <a href="#"> <FaYoutube /></a>
                 </li>
                 <li>
-                  <a href="#"><i class="icofont-whatsapp"></i></a>
+                  <a href="#"> <IoLogoWhatsapp /></a>
                 </li>
               </ul>
             </div>

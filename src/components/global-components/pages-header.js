@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/images/wonted-logo.png'
 
 const PagesHeader = () => {
@@ -27,22 +28,22 @@ const PagesHeader = () => {
                       ></a>
                       <ul className="dropdown-menu">
                         <li className="nav-item">
-                          <a href="index.html" className="nav-link">Home One</a>
+                          <Link to="/home" className="nav-link">Home One</Link>
                         </li>
                         <li className="nav-item">
-                          <a href="index-2.html" className="nav-link">Home Two</a>
+                          <Link to="/version-02" className="nav-link">Home Two</Link>
                         </li>
                         <li className="nav-item">
-                          <a href="index-3.html" className="nav-link">Home Three</a>
+                        <Link to="/version-03" className="nav-link">Home Three</Link>
                         </li>
                         <li className="nav-item">
-                          <a href="index-4.html" className="nav-link">Home Four</a>
+                        <Link to="/version-04" className="nav-link">Home Four</Link>
                         </li>
                         <li className="nav-item">
-                          <a href="index-5.html" className="nav-link">Home Five</a>
+                        <Link to="/version-05" className="nav-link">Home Five</Link>
                         </li>
                         <li className="nav-item">
-                          <a href="index-6.html" className="nav-link">Home Six</a>
+                        <Link to="/version-06" className="nav-link">Home Six</Link>
                         </li>
                       </ul>
                     </li>
@@ -59,12 +60,10 @@ const PagesHeader = () => {
                       ></a>
                       <ul className="dropdown-menu">
                         <li className="nav-item">
-                          <a href="all-events.html" className="nav-link">All Events</a>
+                        <Link to="/version-02" className="nav-link">All Events</Link>
                         </li>
                         <li className="nav-item">
-                          <a href="single-event.html" className="nav-link"
-                            >Single Event</a
-                          >
+                        <Link to="/version-02" className="nav-link">Single Event</Link>
                         </li>
                       </ul>
                     </li>
@@ -81,22 +80,16 @@ const PagesHeader = () => {
                       ></a>
                       <ul className="dropdown-menu">
                         <li className="nav-item">
-                          <a href="all-blogs.html" className="nav-link">All Blog</a>
+                        <Link to="/version-02" className="nav-link">All Blogs</Link>
                         </li>
                         <li className="nav-item">
-                          <a href="single-blog.html" className="nav-link"
-                            >Single Blog</a
-                          >
+                        <Link to="/single-blog" className="nav-link">Single Blog</Link>
                         </li>
                         <li className="nav-item">
-                          <a href="blog-right-sidebar.html" className="nav-link"
-                            >Blog right sidebar</a
-                          >
+                        <Link to="/version-02" className="nav-link">Blog Right Sidebar</Link>
                         </li>
                         <li className="nav-item">
-                          <a href="blog-left-sidebar.html" className="nav-link"
-                            >Blog left sidebar</a
-                          >
+                        <Link to="/version-02" className="nav-link">Blog Left Sidebar</Link>
                         </li>
                       </ul>
                     </li>
