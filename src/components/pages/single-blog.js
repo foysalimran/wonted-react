@@ -8,6 +8,7 @@ import user2 from '../../assets/images/user-2.png';
 import { FaFacebookF, FaLinkedinIn, FaTwitter, FaRegCalendarAlt, FaYoutube, FaRegCommentDots } from "react-icons/fa";
 import { IoLogoWhatsapp} from "react-icons/io";
 import { BiUser} from "react-icons/bi";
+import Footer from '../global-components/footer';
 
 const SingleBlog = () => {
     return (
@@ -388,7 +389,6 @@ const SingleBlog = () => {
         </div>
       </div>
     </div>
-    {/* <!-- ========== All Blog section end ========== --> */}
         </>
     );
 };

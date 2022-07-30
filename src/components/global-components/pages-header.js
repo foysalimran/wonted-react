@@ -28,22 +28,22 @@ const PagesHeader = () => {
                       ></a>
                       <ul className="dropdown-menu">
                         <li className="nav-item">
-                          <Link to="/home" className="nav-link">Home One</Link>
+                          <Link to="/v1" className="nav-link">Home One</Link>
                         </li>
                         <li className="nav-item">
-                          <Link to="/version-02" className="nav-link">Home Two</Link>
+                          <Link to="/v2" className="nav-link">Home Two</Link>
                         </li>
                         <li className="nav-item">
-                        <Link to="/version-03" className="nav-link">Home Three</Link>
+                        <Link to="/v3" className="nav-link">Home Three</Link>
                         </li>
                         <li className="nav-item">
-                        <Link to="/version-04" className="nav-link">Home Four</Link>
+                        <Link to="/v4" className="nav-link">Home Four</Link>
                         </li>
                         <li className="nav-item">
-                        <Link to="/version-05" className="nav-link">Home Five</Link>
+                        <Link to="/v5" className="nav-link">Home Five</Link>
                         </li>
                         <li className="nav-item">
-                        <Link to="/version-06" className="nav-link">Home Six</Link>
+                        <Link to="/v6" className="nav-link">Home Six</Link>
                         </li>
                       </ul>
                     </li>
@@ -80,7 +80,7 @@ const PagesHeader = () => {
                       ></a>
                       <ul className="dropdown-menu">
                         <li className="nav-item">
-                        <Link to="/version-02" className="nav-link">All Blogs</Link>
+                        <Link to="/all-blog" className="nav-link">All Blogs</Link>
                         </li>
                         <li className="nav-item">
                         <Link to="/single-blog" className="nav-link">Single Blog</Link>
