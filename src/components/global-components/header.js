@@ -1,18 +1,12 @@
 import { default as React, useState } from "react";
 import logo from "../../assets/images/wonted-logo.png";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-// import NavDropdown from "react-bootstrap/NavDropdown";
-
-import { Link } from 'react-scroll'
-
+import { Link } from "react-scroll";
 
 const Header = () => {
   const [fix, setFix] = useState(false);
 
   function setFixed() {
-    if (window.scrollY >= 60) {
+    if (window.scrollY >= 100) {
       setFix(true);
     } else {
       setFix(false);
@@ -20,24 +14,24 @@ const Header = () => {
   }
   window.addEventListener("scroll", setFixed);
 
-  // react scroll 
-  
-
   return (
-    <header className={fix ? 'header navbar_fixed' : 'header'}>
+    <header className={fix ? "header navbar_fixed" : "header"}>
       <div className="container">
         <div className="row">
           <nav className="navbar navbar-expand-lg">
-            <a className="navbar-brand" href="index.html">
+            <Link className="navbar-brand" href="/">
               {/* <!-- <h1 className="m-0">WONTED</h1> --> */}
               <img src={logo} alt="Wonted" />
-            </a>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            </Link>
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
               <ul id="onepage-nav" className="navbar-nav menu ms-lg-auto">
                 <li className="nav-item dropdown submenu">
-                <Link
+                  <Link
                     activeClass="active"
-                    className="hero nav-link scroll dropdown-toggle"
+                    className="hero nav-link dropdown-toggle"
                     to="hero"
                     spy={true}
                     smooth={true}
@@ -48,84 +42,131 @@ const Header = () => {
                   >
                     Home
                   </Link>
-                  {/* <a
-                    className="nav-link active scroll dropdown-toggle"
-                    href="#hero"
-                    
-                  >
-                    Home
-                    <span className="sub-menu-toggle">
-                      <i className="icofont-rounded-down"></i>{" "}
-                    </span>
-                  </a> */}
                   <ul className="dropdown-menu">
                     <li className="nav-item">
-                      <a href="index.html" className="nav-link">
+                      <Link to="index.html" className="nav-link">
                         Home One
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a href="index-2.html" className="nav-link">
+                      <Link to="index-2.html" className="nav-link">
                         Home Two
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a href="index-3.html" className="nav-link">
+                      <Link to="index-3.html" className="nav-link">
                         Home Three
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a href="index-4.html" className="nav-link">
+                      <Link to="index-4.html" className="nav-link">
                         Home Four
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a href="index-5.html" className="nav-link">
+                      <Link to="index-5.html" className="nav-link">
                         Home Five
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a href="index-6.html" className="nav-link">
+                      <Link to="index-6.html" className="nav-link">
                         Home Six
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link scroll" href="#benefits">
+                  <Link
+                    activeClass="active"
+                    className="benefits nav-link"
+                    to="benefits"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
                     Benefits
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link scroll" href="#chapters">
+                  <Link activeClass="active"
+                    className="chapters nav-link"
+                    to="chapters"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Chapters
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link scroll" href="#pricing">
-                    {" "}
+                  <Link activeClass="active"
+                    className="pricing nav-link"
+                    to="pricing"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Pricing
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link scroll" href="#author">
+                  <Link activeClass="active"
+                    className="author nav-link"
+                    to="author"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Author
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link scroll" href="#achivements">
+                  <Link activeClass="active"
+                    className="achivements nav-link"
+                    to="achivements"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Achievements
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link scroll" href="#reviews">
+                  <Link activeClass="active"
+                    className="reviews nav-link"
+                    to="reviews"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Reviews
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link scroll" href="#contact">
+                  <Link activeClass="active"
+                    className="contact nav-link"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
