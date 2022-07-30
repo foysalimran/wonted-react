@@ -9,9 +9,7 @@ import { useEffect } from "react";
 import Header from "./components/global/header";
 import Footer from "./components/global/footer";
 import SingleBlog from "./components/pages/single-blog";
-
-
-
+import AllBlog from "./components/pages/all-blog";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -25,10 +23,16 @@ function App() {
       <Header />
       <BrowserRouter>
       <Routes>
+        
         <Route path="/" element={<Version01 />} />
-        <Route path="home" element={<Version01 />} />
-        <Route path="/version-02" element={<Version02 />} />
-        <Route path="/single-blog" element={<SingleBlog />} />
+        <Route path="v1" element={<Version01 />} />
+        <Route path="v2" element={<Version02 />} />
+        <Route path="v3" element={<Version02 />} />
+        <Route path="v4" element={<Version02 />} />
+        <Route path="v5" element={<Version02 />} />
+        <Route path="v6" element={<Version02 />} />
+        <Route path="single-blog" element={<SingleBlog />} />
+        <Route path="all-blog" element={<AllBlog />} />
       </Routes>
     </BrowserRouter>
     <Footer />
