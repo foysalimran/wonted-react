@@ -1,5 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
+import { IoLogoWhatsapp} from "react-icons/io";
+import logo from "../../assets/images/wonted-logo.png"
 
 const Footer = () => {
   return (
@@ -16,7 +19,7 @@ const Footer = () => {
             >
               <a href="index.html">
                 {/* <!-- <h1 className="m-0">WONTED</h1> --> */}
-                <img src="assets/images/wonted-logo.png" alt="Wonted" />
+                <img src={logo} alt="Wonted" />
               </a>
             </div>
             <div className="col-lg-6 d-flex justify-content-center align-items-center mb-3 mb-lg-0">
@@ -101,7 +104,7 @@ const Footer = () => {
                   data-aos-delay="650"
                 >
                   <a href="#">
-                    <i className="icofont-facebook"></i>
+                    <FaFacebookF />
                   </a>
                 </li>
                 <li
@@ -110,7 +113,7 @@ const Footer = () => {
                   data-aos-delay="700"
                 >
                   <a href="#">
-                    <i className="icofont-twitter"></i>
+                    <FaTwitter />
                   </a>
                 </li>
                 <li
@@ -119,7 +122,7 @@ const Footer = () => {
                   data-aos-delay="750"
                 >
                   <a href="#">
-                    <i className="icofont-linkedin"></i>
+                    <FaLinkedinIn />
                   </a>
                 </li>
                 <li
@@ -128,7 +131,7 @@ const Footer = () => {
                   data-aos-delay="800"
                 >
                   <a href="#">
-                    <i className="icofont-youtube-play"></i>
+                    <FaYoutube />
                   </a>
                 </li>
                 <li
@@ -137,7 +140,7 @@ const Footer = () => {
                   data-aos-delay="850"
                 >
                   <a href="#">
-                    <i className="icofont-whatsapp"></i>
+                    <IoLogoWhatsapp />
                   </a>
                 </li>
               </ul>

@@ -1,4 +1,10 @@
 import React from "react";
+import awards01 from "../../assets/images/awards/1.jpg";
+import awards02 from "../../assets/images/awards/2.jpg";
+import awards03 from "../../assets/images/awards/3.jpg";
+import awards04 from "../../assets/images/awards/4.jpg";
+import awards05 from "../../assets/images/awards/5.jpg";
+import awards06 from "../../assets/images/awards/1.jpg";
 
 const Achievement = () => {
   return (
@@ -42,11 +48,7 @@ const Achievement = () => {
             <div className="achievement__item h-100 translateEffect1">
               <div className="row row-cols-2">
                 <div className="col mt-0">
-                  <img
-                    className="img-fluid"
-                    src="assets/images/awards/1.jpg"
-                    alt=""
-                  />
+                  <img className="img-fluid" src={awards01} alt="" />
                 </div>
                 <div className="col mt-0">
                   <div className="achievement__content">
@@ -72,11 +74,7 @@ const Achievement = () => {
             <div className="achievement__item h-100 translateEffect1">
               <div className="row row-cols-2">
                 <div className="col mt-0">
-                  <img
-                    className="img-fluid"
-                    src="assets/images/awards/2.jpg"
-                    alt=""
-                  />
+                  <img className="img-fluid" src={awards02} alt="" />
                 </div>
                 <div className="col mt-0">
                   <div className="achievement__content">
@@ -102,11 +100,7 @@ const Achievement = () => {
             <div className="achievement__item h-100 translateEffect1">
               <div className="row row-cols-2">
                 <div className="col mt-0">
-                  <img
-                    className="img-fluid"
-                    src="assets/images/awards/3.jpg"
-                    alt=""
-                  />
+                  <img className="img-fluid" src={awards03} alt="" />
                 </div>
                 <div className="col mt-0">
                   <div className="achievement__content">
@@ -132,11 +126,7 @@ const Achievement = () => {
             <div className="achievement__item h-100 translateEffect1">
               <div className="row row-cols-2">
                 <div className="col mt-0">
-                  <img
-                    className="img-fluid"
-                    src="assets/images/awards/4.jpg"
-                    alt=""
-                  />
+                  <img className="img-fluid" src={awards04} alt="" />
                 </div>
                 <div className="col mt-0">
                   <div className="achievement__content">
@@ -162,11 +152,7 @@ const Achievement = () => {
             <div className="achievement__item h-100 translateEffect1">
               <div className="row row-cols-2">
                 <div className="col mt-0">
-                  <img
-                    className="img-fluid"
-                    src="assets/images/awards/5.jpg"
-                    alt=""
-                  />
+                  <img className="img-fluid" src={awards05} alt="" />
                 </div>
                 <div className="col mt-0">
                   <div className="achievement__content">
@@ -192,11 +178,7 @@ const Achievement = () => {
             <div className="achievement__item h-100 translateEffect1">
               <div className="row row-cols-2">
                 <div className="col mt-0">
-                  <img
-                    className="img-fluid"
-                    src="assets/images/awards/1.jpg"
-                    alt=""
-                  />
+                  <img className="img-fluid" src={awards06} alt="" />
                 </div>
                 <div className="col mt-0">
                   <div className="achievement__content">

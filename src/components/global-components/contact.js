@@ -1,4 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
+import { IoLogoWhatsapp} from "react-icons/io";
 
 const Contact = () => {
   return (
@@ -127,27 +130,27 @@ const Contact = () => {
               <ul className="social-icon mt-3">
                 <li>
                   <a href="#">
-                    <i className="icofont-facebook"></i>
+                  <FaFacebookF />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i className="icofont-twitter"></i>
+                  <FaTwitter />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i className="icofont-linkedin"></i>
+                  <FaLinkedinIn />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i className="icofont-youtube-play"></i>
+                  <FaYoutube />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i className="icofont-whatsapp"></i>
+                  <IoLogoWhatsapp />
                   </a>
                 </li>
               </ul>
