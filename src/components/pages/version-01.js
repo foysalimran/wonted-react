@@ -6,8 +6,8 @@ import Books from "../books";
 import Chapter from "../chapter";
 import ChapterPreview from "../chapter-preview";
 import Contact from "../contact";
-import Cta from "../cta";
-import Ctav2 from "../ctav2";
+import Cta5 from "../cta5";
+import Ctav4 from "../ctav4";
 import FunFacts from "../fun-facts";
 import Hero from "../hero";
 import Pricing from "../pricing";
@@ -25,9 +25,9 @@ function Version01() {
       <Achievement />
       <FunFacts />
       <Books />
-      <Cta />
+      <Cta5 />
       <Testimonial />
-      <Ctav2 />
+      <Ctav4 />
       <Contact />
     </>
   );

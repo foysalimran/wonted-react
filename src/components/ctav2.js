@@ -1,67 +1,101 @@
 import React from "react";
-import { FaPlay } from "react-icons/fa"
 
 const Ctav2 = () => {
   return (
-    // <!-- ========== CTA v4 section start ========== -->
-    <section className="section-padding ctav4">
+    // <!-- ========== CTA v2 section start ========== -->
+    <section id="cta2" className="cta2 section-padding">
       <div className="container">
         <div className="row">
-          <div className="col-md-6 mb-4 mb-lg-0 ctav4__content">
-            <h3
-              className="display-3"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="150"
-            >
-              Watch the video
-            </h3>
-            <h3
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="200"
-            >
-              to see how our readers love it.
-            </h3>
-            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
-              Still have any doubts? Check the free chapter to get an idea.
-            </p>
-            <a
-              href="#preview"
-              className="smooth button button__primary"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="300"
-            >
-              <span>Free chapters</span>
-            </a>
-          </div>
-          <div
-            className="col-md-6"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="250"
-          >
-            <div className="ctav4__video-btn">
-              <a
-                href="https://youtu.be/dkxiTpwm0hs"
-                className="glightbox3 video-btn"
-              >
-                <FaPlay />
-              </a>
-              <div className="promo-video">
-                <div className="waves-block">
-                  <div className="waves wave-1"></div>
-                  <div className="waves wave-2"></div>
-                  <div className="waves wave-3"></div>
-                </div>
+          <div className="col-md-8 col-lg-7 col-xl-6">
+            <div className="cta2__wrapper">
+              <div className="section-title text-left">
+                <span
+                  className="badge-text"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="150"
+                >
+                  SUBSCRIBE NOW
+                </span>
+                <h2
+                  className="display-6 m-20px-b"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
+                  Get a free chapter of this book
+                </h2>
+              </div>
+              <div className="cta2__form">
+                {/* <!-- subscription form start --> */}
+                <form action="assets/subscribe/subscribe.php" id="subscribe">
+                  <div
+                    className="input-group"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
+                  >
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Email"
+                      id="subscriber-email"
+                    />
+                    <button
+                      className="button button__primary"
+                      id="subscribe-button"
+                    >
+                      <span>Subscribe</span>
+                    </button>
+                  </div>
+                  <div className="result">
+                    <p
+                      className="success-msg"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="350"
+                    >
+                      <i className="icofont-check"></i> Your email has been stored!
+                    </p>
+                    <p
+                      className="error-msg"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="400"
+                    >
+                      <i className="icofont-close"></i> Sorry! Something went wrong!
+                    </p>
+                  </div>
+                </form>
+                {/* <!-- Mailchimp subscription form --> */}
+                {/* <!-- <form action="#" id="subscribe-mailchimp" data-wow-duration="1.5s">
+                    <div className="input-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <input type="email" name="email" placeholder="Email" id="subscriber-email" />
+                    <button className="button button__primary" id="subscribe-button">
+                      <span>Subscribe</span>
+                    </button>
+                  </div>
+                    <div className="result">
+                      <p className="success-msg"><i className="icofont-check"></i> You email has been stored!</p>
+                      <p className="error-msg"><i className="icofont-close"></i> Sorry! Something went wrong!</p>
+                    </div>
+                </form> --> */}
+                {/* <!-- subscription form end --> */}
+                <p
+                  className="m-10px-t"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="450"
+                >
+                  <small>* eBook includes iBooks, PDF & ePub versions</small>
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    // <!-- ========== CTA v4 section end ========== -->
+    // <!-- ========== CTA v2 section end ========== -->
   );
 };
 
