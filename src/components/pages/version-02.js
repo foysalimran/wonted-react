@@ -1,12 +1,14 @@
 import React from "react";
-import Achieve from "../achieve";
+import Achievev2 from "../achievev2";
+import Chapterv2 from "../chapterv2";
 import Hero from "../hero";
 
 const Version02 = () => {
   return (
     <>
       <Hero />
-      <Achieve />
+      <Achievev2 />
+      <Chapterv2 />
     </>
   );
 };

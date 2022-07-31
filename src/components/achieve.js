@@ -2,7 +2,7 @@
 import React from "react";
 import { ImBook } from "react-icons/im";
 import achive2 from "../assets/images/achive2.jpg";
-import { GiHappySkull } from "react-icons/gi";
+import { GiHappySkull, GiStairsGoal } from "react-icons/gi";
 import { BiTargetLock } from "react-icons/bi";
 
 const Achieve = () => {
@@ -102,7 +102,7 @@ const Achieve = () => {
                 >
                   <div className="achieve__content__item h-100 translateEffect2">
                     <div className="achieve__icon m-20px-b">
-                      <i className="icofont-goal"></i>
+                      <GiStairsGoal />
                     </div>
                     <h3 className="m-15px-b">Goals</h3>
                     <p>

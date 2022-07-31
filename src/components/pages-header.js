@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/images/wonted-logo.png'
+import logo from '../assets/images/wonted-logo.png'
 
 const PagesHeader = () => {
     return (
