@@ -1,6 +1,6 @@
 import React from "react";
 
-const Ctav2 = () => {
+const CtaV2 = () => {
   return (
     // <!-- ========== CTA v2 section start ========== -->
     <section id="cta2" className="cta2 section-padding">
@@ -99,4 +99,4 @@ const Ctav2 = () => {
   );
 };
 
-export default Ctav2;
+export default CtaV2;

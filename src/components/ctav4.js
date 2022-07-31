@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { FaPlay } from "react-icons/fa";
 import ModalVideo from 'react-modal-video';
 
-const Ctav4 = () => {
+const CtaV4 = () => {
   const [isOpen, setOpen] = useState(false)
+
 
   return (
     // <!-- ========== CTA v4 section start ========== -->
@@ -68,4 +69,4 @@ const Ctav4 = () => {
   );
 };
 
-export default Ctav4;
+export default CtaV4;

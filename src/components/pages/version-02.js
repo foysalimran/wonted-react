@@ -1,20 +1,30 @@
 import React from "react";
-import Achievev2 from "../achievev2";
+import AchievementV2 from "../achievementV2";
+import AchieveV2 from "../achieveV2";
+import Author from "../author";
 import ChapterPreviewV2 from "../chapter-preview-v2";
-import Chapterv2 from "../chapterv2";
-import Ctav2 from "../ctav2";
-import Hero from "../hero";
+import ChapterV2 from "../chapterV2";
+import Contact from "../contact";
+import CtaV2 from "../ctaV2";
+import FunFacts from "../fun-facts";
+import HeroV2 from "../heroV2";
 import Pricing from "../pricing";
+import Testimonial from "../testimonial";
 
 const Version02 = () => {
   return (
     <>
-      <Hero />
-      <Achievev2 />
-      <Chapterv2 />
-      <Ctav2 />
+      <HeroV2 />
+      <AchieveV2 />
+      <ChapterV2 />
+      <CtaV2 />
       <ChapterPreviewV2 />
       <Pricing />
+      <Author />
+      <AchievementV2 />
+      <FunFacts />
+      <Testimonial />
+      <Contact />
     </>
   );
 };
