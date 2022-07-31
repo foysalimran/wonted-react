@@ -1,16 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import chapterData from "../data/chapterv2.json";
 
 const Chapterv2 = () => {
-  const [data, setData] = useState([]);
-  const { chapterv2 } = data;
+const {chapterv2} = chapterData;
 
-  useEffect(() => {
-    fetch("/chapterv2.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data);
-      });
-  }, []);
   return (
     // <!-- ========== Chapter section start ========== -->
     <section id="chapters" className="section-padding chapter bg-one">

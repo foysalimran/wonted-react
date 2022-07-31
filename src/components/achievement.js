@@ -1,15 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import achievementData from "../data/achievements.json"
 
 const Achievement = () => {
-  const [data, setData] = useState([]);
-  const { achievements } = data;
-  useEffect(() => {
-    fetch("/achievements.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data);
-      });
-  }, []);
+const { achievements } = achievementData;
+
   return (
     // <!-- ========== Achievement section start ========== -->
     <section id="achivements" className="section-padding achievement bg-one">
