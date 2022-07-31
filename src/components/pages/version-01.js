@@ -1,7 +1,7 @@
 import React from "react";
 import Achieve from "../achieve";
 import Achievement from "../achievement";
-import Author from "../author";
+import Authorv2 from "../authorv2";
 import Books from "../books";
 import Chapter from "../chapter";
 import ChapterPreview from "../chapter-preview";
@@ -21,7 +21,7 @@ function Version01() {
       <Chapter />
       <ChapterPreview />
       <Pricing />
-      <Author />
+      <Authorv2 />
       <Achievement />
       <FunFacts />
       <Books />
