@@ -60,10 +60,10 @@ const PagesHeader = () => {
                       ></a>
                       <ul className="dropdown-menu">
                         <li className="nav-item">
-                        <Link to="/version-02" className="nav-link">All Events</Link>
+                        <Link to="/all-event" className="nav-link">All Events</Link>
                         </li>
                         <li className="nav-item">
-                        <Link to="/version-02" className="nav-link">Single Event</Link>
+                        <Link to="/all-event" className="nav-link">Single Event</Link>
                         </li>
                       </ul>
                     </li>
