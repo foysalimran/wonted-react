@@ -14,13 +14,13 @@ const AllEvent = () => {
       <PagesHeader />
       <div
         id="all-events"
-        class="all-blogs hero__padding overflow-hidden position-relative bg-one"
+        className="all-blogs hero__padding overflow-hidden position-relative bg-one"
       >
-        <div class="container">
-          <div class="row">
-            <div class="blog-title">
+        <div className="container">
+          <div className="row">
+            <div className="blog-title">
               <h1
-                class="display-3"
+                className="display-3"
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="600"
@@ -40,7 +40,7 @@ const AllEvent = () => {
                   data-aos-duration="1000"
                   data-aos-delay="700"
                 >
-                  <i class="icofont-rounded-right"></i>
+                  <i className="icofont-rounded-right"></i>
                 </li>
                 <li
                   data-aos="fade-up"
@@ -55,269 +55,269 @@ const AllEvent = () => {
         </div>
       </div>
 
-      <div class="section-padding events">
-        <div class="container">
-          <div class="row">
+      <div className="section-padding events">
+        <div className="container">
+          <div className="row">
             <div
-              class="col-md-6 col-lg-4 mb-4"
+              className="col-md-6 col-lg-4 mb-4"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="200"
             >
-              <article class="events__single-event">
-                <div class="events__single-event__image">
+              <article className="events__single-event">
+                <div className="events__single-event__image">
                   <a href="single-event.html">
                     <img
-                      class="img-fluid"
+                      className="img-fluid"
                       src={eventImg1}
                       alt="events 01"
                     />
                   </a>
                 </div>
-                <div class="events__single-event__body">
-                  <div class="events__single-event__content">
-                    <h2 class="fs-4">
+                <div className="events__single-event__body">
+                  <div className="events__single-event__content">
+                    <h2 className="fs-4">
                       <a href="single-event.html">
                         Discussion On Horror Thriller
                       </a>
                     </h2>
-                    <p class="m-0">
+                    <p className="m-0">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Maxime provident, in tempore incidunt laudantium.
                     </p>
                   </div>
-                  <div class="events__single-event__meta">
+                  <div className="events__single-event__meta">
                     <div>
-                      <i class="icofont-calendar"></i> 3 June, 2021
+                      <i className="icofont-calendar"></i> 3 June, 2021
                     </div>
                     <div>
-                      <i class="icofont-location-pin"></i> Milan
+                      <i className="icofont-location-pin"></i> Milan
                     </div>
                   </div>
                 </div>
               </article>
             </div>
             <div
-              class="col-md-6 col-lg-4 mb-4"
+              className="col-md-6 col-lg-4 mb-4"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="300"
             >
-              <article class="events__single-event">
-                <div class="events__single-event__image">
+              <article className="events__single-event">
+                <div className="events__single-event__image">
                   <a href="single-event.html">
                     <img
-                      class="img-fluid"
+                      className="img-fluid"
                       src={eventImg2}
                       alt="events 01"
                     />
                   </a>
                 </div>
-                <div class="events__single-event__body">
-                  <div class="events__single-event__content">
-                    <h2 class="fs-4">
+                <div className="events__single-event__body">
+                  <div className="events__single-event__content">
+                    <h2 className="fs-4">
                       <a href="single-event.html">
                         Discussion On Horror Thriller
                       </a>
                     </h2>
-                    <p class="m-0">
+                    <p className="m-0">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Maxime provident, in tempore incidunt laudantium.
                     </p>
                   </div>
-                  <div class="events__single-event__meta">
+                  <div className="events__single-event__meta">
                     <div>
-                      <i class="icofont-calendar"></i> 3 June, 2021
+                      <i className="icofont-calendar"></i> 3 June, 2021
                     </div>
                     <div>
-                      <i class="icofont-location-pin"></i> Boston
+                      <i className="icofont-location-pin"></i> Boston
                     </div>
                   </div>
                 </div>
               </article>
             </div>
             <div
-              class="col-md-6 col-lg-4 mb-4"
+              className="col-md-6 col-lg-4 mb-4"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="400"
             >
-              <article class="events__single-event">
-                <div class="events__single-event__image">
+              <article className="events__single-event">
+                <div className="events__single-event__image">
                   <a href="single-event.html">
                     <img
-                      class="img-fluid"
+                      className="img-fluid"
                       src={eventImg3}
                       alt="events 02"
                     />
                   </a>
                 </div>
-                <div class="events__single-event__body">
-                  <div class="events__single-event__content">
-                    <h2 class="fs-4">
+                <div className="events__single-event__body">
+                  <div className="events__single-event__content">
+                    <h2 className="fs-4">
                       <a href="single-event.html">
                         Discussion On Horror Thriller
                       </a>
                     </h2>
-                    <p class="m-0">
+                    <p className="m-0">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Maxime provident, in tempore incidunt laudantium.
                     </p>
                   </div>
-                  <div class="events__single-event__meta">
+                  <div className="events__single-event__meta">
                     <div>
-                      <i class="icofont-calendar"></i> 3 June, 2021
+                      <i className="icofont-calendar"></i> 3 June, 2021
                     </div>
                     <div>
-                      <i class="icofont-location-pin"></i> Juventus
+                      <i className="icofont-location-pin"></i> Juventus
                     </div>
                   </div>
                 </div>
               </article>
             </div>
             <div
-              class="col-md-6 col-lg-4 mb-4"
+              className="col-md-6 col-lg-4 mb-4"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="500"
             >
-              <article class="events__single-event">
-                <div class="events__single-event__image">
+              <article className="events__single-event">
+                <div className="events__single-event__image">
                   <a href="single-event.html">
                     <img
-                      class="img-fluid"
+                      className="img-fluid"
                       src={eventImg4}
                       alt="events 02"
                     />
                   </a>
                 </div>
-                <div class="events__single-event__body">
-                  <div class="events__single-event__content">
-                    <h2 class="fs-4">
+                <div className="events__single-event__body">
+                  <div className="events__single-event__content">
+                    <h2 className="fs-4">
                       <a href="single-event.html">
                         Discussion On Horror Thriller
                       </a>
                     </h2>
-                    <p class="m-0">
+                    <p className="m-0">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Maxime provident, in tempore incidunt laudantium.
                     </p>
                   </div>
-                  <div class="events__single-event__meta">
+                  <div className="events__single-event__meta">
                     <div>
-                      <i class="icofont-calendar"></i> 3 June, 2021
+                      <i className="icofont-calendar"></i> 3 June, 2021
                     </div>
                     <div>
-                      <i class="icofont-location-pin"></i> Atalanta
+                      <i className="icofont-location-pin"></i> Atalanta
                     </div>
                   </div>
                 </div>
               </article>
             </div>
             <div
-              class="col-md-6 col-lg-4 mb-4"
+              className="col-md-6 col-lg-4 mb-4"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="600"
             >
-              <article class="events__single-event">
-                <div class="events__single-event__image">
+              <article className="events__single-event">
+                <div className="events__single-event__image">
                   <a href="single-event.html">
                     <img
-                      class="img-fluid"
+                      className="img-fluid"
                       src={eventImg5}
                       alt="events 03"
                     />
                   </a>
                 </div>
-                <div class="events__single-event__body">
-                  <div class="events__single-event__content">
-                    <h2 class="fs-4">
+                <div className="events__single-event__body">
+                  <div className="events__single-event__content">
+                    <h2 className="fs-4">
                       <a href="single-event.html">
                         Discussion On Horror Thriller
                       </a>
                     </h2>
-                    <p class="m-0">
+                    <p className="m-0">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Maxime provident, in tempore incidunt laudantium.
                     </p>
                   </div>
-                  <div class="events__single-event__meta">
+                  <div className="events__single-event__meta">
                     <div>
-                      <i class="icofont-calendar"></i> 3 June, 2021
+                      <i className="icofont-calendar"></i> 3 June, 2021
                     </div>
                     <div>
-                      <i class="icofont-location-pin"></i> Madrid
+                      <i className="icofont-location-pin"></i> Madrid
                     </div>
                   </div>
                 </div>
               </article>
             </div>
             <div
-              class="col-md-6 col-lg-4 mb-4"
+              className="col-md-6 col-lg-4 mb-4"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="700"
             >
-              <article class="events__single-event">
-                <div class="events__single-event__image">
+              <article className="events__single-event">
+                <div className="events__single-event__image">
                   <a href="single-event.html">
                     <img
-                      class="img-fluid"
+                      className="img-fluid"
                       src={eventImg6}
                       alt="events 03"
                     />
                   </a>
                 </div>
-                <div class="events__single-event__body">
-                  <div class="events__single-event__content">
-                    <h2 class="fs-4">
+                <div className="events__single-event__body">
+                  <div className="events__single-event__content">
+                    <h2 className="fs-4">
                       <a href="single-event.html">
                         Discussion On Horror Thriller
                       </a>
                     </h2>
-                    <p class="m-0">
+                    <p className="m-0">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Maxime provident, in tempore incidunt laudantium.
                     </p>
                   </div>
-                  <div class="events__single-event__meta">
+                  <div className="events__single-event__meta">
                     <div>
-                      <i class="icofont-calendar"></i> 3 June, 2021
+                      <i className="icofont-calendar"></i> 3 June, 2021
                     </div>
                     <div>
-                      <i class="icofont-location-pin"></i> North London
+                      <i className="icofont-location-pin"></i> North London
                     </div>
                   </div>
                 </div>
               </article>
             </div>
           </div>
-          <div class="blog__pagination">
+          <div className="blog__pagination">
             <nav aria-label="Page navigation example">
-              <ul class="pagination">
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Previous">
+              <ul className="pagination">
+                <li className="page-item">
+                  <a className="page-link" href="#" aria-label="Previous">
                     <span aria-hidden="true">&laquo;</span>
                   </a>
                 </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">
+                <li className="page-item">
+                  <a className="page-link" href="#">
                     1
                   </a>
                 </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">
+                <li className="page-item">
+                  <a className="page-link" href="#">
                     2
                   </a>
                 </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">
+                <li className="page-item">
+                  <a className="page-link" href="#">
                     3
                   </a>
                 </li>
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Next">
+                <li className="page-item">
+                  <a className="page-link" href="#" aria-label="Next">
                     <span aria-hidden="true">&raquo;</span>
                   </a>
                 </li>

@@ -1,21 +1,15 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import { Autoplay, Pagination } from "swiper";
+import testimonialData from "../data/testimonial.json"
 
 const Testimonial = () => {
-  const [data, setData] = useState([]);
-  const { testimonial } = data;
-  useEffect(() => {
-    fetch("/testimonial.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data);
-      });
-  }, []);
+  const { testimonial } = testimonialData;
+
   return (
     // <!-- ========== Testimonial section start ========== -->
     <section id="reviews" className="section-padding testimonial bg-one">
