@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/autoplay";
-import { Autoplay, Pagination } from "swiper";
 import Lightbox from "react-lightbox-component";
+import { Autoplay, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import image1 from "../assets/images/chapter-preview/1.jpg";
 import image2 from "../assets/images/chapter-preview/2.jpg";
@@ -14,9 +14,15 @@ import image4 from "../assets/images/chapter-preview/4.jpg";
 import image5 from "../assets/images/chapter-preview/5.jpg";
 
 const ChapterPreview = () => {
+
   return (
     // <!-- ========== Chapter preview section start ========== -->
     <section id="preview" className="section-padding chapter-preview">
+
+
+ 
+
+      
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
@@ -76,7 +82,6 @@ const ChapterPreview = () => {
                         src: image1,
                         title: "image title",
                         description: "image description",
-                       
                       },
                     ]}
                     thumbnailWidth= '100%'
