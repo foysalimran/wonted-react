@@ -1,7 +1,7 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 
-const Cta5 = () => {
+const CtaV5 = () => {
   return (
     // <!-- ========== CTA v5 section start ========== -->
     <section className="section-padding ctav5">
@@ -70,4 +70,4 @@ const Cta5 = () => {
   );
 };
 
-export default Cta5;
+export default CtaV5;

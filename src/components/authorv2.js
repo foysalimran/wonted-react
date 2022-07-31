@@ -5,7 +5,7 @@ import about from "../assets/images/achive.png";
 import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube, FaPlay } from "react-icons/fa";
 import { IoLogoWhatsapp} from "react-icons/io";
 
-const Authorv2 = () => {
+const AuthorV2 = () => {
   return (
     // <!-- ========== Author section start ========== -->
     <section id="author" className="section-padding authorv2">
@@ -142,4 +142,4 @@ const Authorv2 = () => {
   );
 };
 
-export default Authorv2;
+export default AuthorV2;
