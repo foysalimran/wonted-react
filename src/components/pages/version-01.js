@@ -5,13 +5,13 @@ import Author from "../author";
 import Books from "../books";
 import Chapter from "../chapter";
 import ChapterPreview from "../chapter-preview";
-import Contact from "../global/contact";
-import Cta from "../global/cta";
-import Ctav2 from "../global/ctav2";
-import FunFacts from "../global/fun-facts";
+import Contact from "../contact";
+import Cta from "../cta";
+import Ctav2 from "../ctav2";
+import FunFacts from "../fun-facts";
 import Hero from "../hero";
-import Pricing from "../global/pricing";
-import Testimonial from "../global/testimonial";
+import Pricing from "../pricing";
+import Testimonial from "../testimonial";
 
 function Version01() {
   return (

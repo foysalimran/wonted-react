@@ -1,5 +1,5 @@
 import React from "react";
-import PagesHeader from "../global/pages-header";
+import PagesHeader from "../pages-header";
 
 import eventImg1 from '../../assets/images/events/1.jpg'
 import eventImg2 from '../../assets/images/events/2.jpg'
