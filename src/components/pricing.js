@@ -4,7 +4,7 @@ import data from "../data/pricing.json";
 
 const Pricing = () => {
   const { pricing } = data;
-  
+
   return (
     // <!-- ========== Pricing section start ========== -->
     <section id="pricing" className="section-padding pricing bg-one">
@@ -39,14 +39,14 @@ const Pricing = () => {
         <div className="row align-items-center justify-content-center">
           {/* <!-- pricing table start --> */}
           {pricing.pricingItem?.map((data) => (
-            <div
+            <div key={data.id}
               className="col-md-6 col-lg-4 mb-4 mb-lg-0"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="300"
             >
               {data.card === "active" ? (
-                <div class="pricing__item translateEffect1 active">
+                <div className="pricing__item translateEffect1 active">
                   <h3 className="pricing__title">{data.title}</h3>
                   <h3 className="pricing__price">{data.price}</h3>
                   <ul className="pricing__list">
@@ -54,12 +54,12 @@ const Pricing = () => {
                       <li>{items.item}</li>
                     ))}
                   </ul>
-                  <a href="#" class="button button__primary">
+                  <a href="#" className="button button__primary">
                   <span>{data.btnText}</span>
                   </a>
                 </div>
               ) : (
-                <div class="pricing__item translateEffect1">
+                <div className="pricing__item translateEffect1">
                   <h3 className="pricing__title">{data.title}</h3>
                   <h3 className="pricing__price">{data.price}</h3>
                   <ul className="pricing__list">
@@ -67,7 +67,7 @@ const Pricing = () => {
                       <li>{items.item}</li>
                     ))}
                   </ul>
-                  <a href="#" class="btn__secondary">
+                  <a href="#" className="btn__secondary">
                     <span>{data.btnText}</span>
                   </a>
                 </div>
