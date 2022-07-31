@@ -2,7 +2,6 @@
 import React from "react";
 import data from "../data/achieve.json";
 
-
 const Achieve = () => {
   const {achieve} = data;
   return (
