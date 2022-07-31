@@ -1,7 +1,7 @@
 import React from "react";
 import { FaPlay } from "react-icons/fa"
 
-const Ctav4 = () => {
+const CtaV4 = () => {
   return (
     // <!-- ========== CTA v4 section start ========== -->
     <section className="section-padding ctav4">
@@ -65,4 +65,4 @@ const Ctav4 = () => {
   );
 };
 
-export default Ctav4;
+export default CtaV4;

@@ -11,6 +11,8 @@ import Footer from "./components/global/footer";
 import SingleBlog from "./components/pages/single-blog";
 import AllBlog from "./components/pages/all-blog";
 import AllEvent from "./components/pages/all-events";
+import Version03 from "./components/pages/version-03";
+import Version04 from "./components/pages/version-04";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -28,8 +30,8 @@ function App() {
         <Route path="/" element={<Version01 />} />
         <Route path="v1" element={<Version01 />} />
         <Route path="v2" element={<Version02 />} />
-        <Route path="v3" element={<Version02 />} />
-        <Route path="v4" element={<Version02 />} />
+        <Route path="v3" element={<Version03 />} />
+        <Route path="v4" element={<Version04 />} />
         <Route path="v5" element={<Version02 />} />
         <Route path="v6" element={<Version02 />} />
         <Route path="single-blog" element={<SingleBlog />} />

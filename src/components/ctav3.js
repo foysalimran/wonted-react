@@ -1,6 +1,6 @@
 import React from "react";
 
-const Ctav3 = () => {
+const CtaV3 = () => {
   return (
     // <!-- ========== CTA v3 section start ========== -->
     <section id="ctav3" className="ctav3 bg-one p-80px-t">
@@ -44,4 +44,4 @@ const Ctav3 = () => {
   );
 };
 
-export default Ctav3;
+export default CtaV3;

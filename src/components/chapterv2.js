@@ -1,7 +1,7 @@
 import React from "react";
 import chapterData from "../data/chapterv2.json";
 
-const Chapterv2 = () => {
+const ChapterV2 = () => {
 const {chapterv2} = chapterData;
 
   return (
@@ -58,4 +58,4 @@ const {chapterv2} = chapterData;
   );
 };
 
-export default Chapterv2;
+export default ChapterV2;

@@ -18,10 +18,12 @@ const Header = () => {
       <div className="container">
         <div className="row">
           <nav className="navbar navbar-expand-lg">
-            <Link className="navbar-brand" to="/">
+            <a className="navbar-brand" href='/'>
               {/* <!-- <h1 className="m-0">WONTED</h1> --> */}
+             
               <img src={logo} alt="Wonted" />
-            </Link>
+             
+            </a>
             <div
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
@@ -59,12 +61,12 @@ const Header = () => {
                       </a>
                     </li>
                     <li className="nav-item">
-                      <Link to="index-4.html" className="nav-link">
+                      <a href="v4" className="nav-link">
                         Home Four
-                      </Link>
+                      </a>
                     </li>
                     <li className="nav-item">
-                      <a href="index-5.html" className="nav-link">
+                      <a href="v5" className="nav-link">
                         Home Five
                       </a>
                     </li>
