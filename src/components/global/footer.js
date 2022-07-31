@@ -1,12 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube, FaHeart } from "react-icons/fa";
-import { IoLogoWhatsapp} from "react-icons/io";
-import logo from "../../assets/images/wonted-logo.png"
+import { FaFacebookF, FaHeart, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
+import logo from "../../assets/images/wonted-logo.png";
+import CtaV3 from "../ctav3";
 
 const Footer = () => {
   return (
-    // <!-- ========== Footer section Start ========== -->
+    <>
+   <CtaV3 />
     <footer className="footer bg-one overflow-hidden">
       <div className="container">
         <div className="footer__top m-50px-t m-50px-b">
@@ -160,6 +162,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </>
     // <!-- ========== Footer section End ========== -->
   );
 };

@@ -2,17 +2,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import about from "../assets/images/achive.png";
-import {
-  FaFacebookF,
-  FaLinkedinIn,
-  FaTwitter,
-  FaYoutube,
-  FaPlay,
-} from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io";
 import data from "../data/about.json";
 
-const Authorv2 = () => {
+const AuthorV2 = () => {
   const { aboutv2 } = data;
   return (
     // <!-- ========== Author section start ========== -->
@@ -97,8 +89,8 @@ const Authorv2 = () => {
                 </div>
               </div>
               <ul className="social-icon mt-3">
-                {aboutv2.social?.map((data) => (
-                  <li>
+                {aboutv2.social?.map((data, i) => (
+                  <li key={i}>
                     <a href="#">
                       <img
                         className="img-fluid"
@@ -121,4 +113,4 @@ const Authorv2 = () => {
   );
 };
 
-export default Authorv2;
+export default AuthorV2;

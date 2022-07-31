@@ -41,7 +41,7 @@
           list-style: none;
           display: flex;
           align-items: center;
-          justify-content: start;
+          justify-content: flex-start;
           svg {
             font-size: 30px;
             padding-right: 20px;
@@ -68,7 +68,8 @@
       margin-bottom: 30px;
       &::before {
         content: "";
-        background: url(../../images/blog/sidebar-icon.png) no-repeat #fff center;
+        background: url(../../images/blog/sidebar-icon.png) no-repeat #fff
+          center;
         width: 16px;
         height: 16px;
         position: absolute;

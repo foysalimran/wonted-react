@@ -1,7 +1,11 @@
-import React from "react";
-import { FaPlay } from "react-icons/fa"
+import React, { useState } from "react";
+import { FaPlay } from "react-icons/fa";
+import ModalVideo from 'react-modal-video';
 
-const Ctav4 = () => {
+const CtaV4 = () => {
+  const [isOpen, setOpen] = useState(false)
+
+
   return (
     // <!-- ========== CTA v4 section start ========== -->
     <section className="section-padding ctav4">
@@ -26,6 +30,7 @@ const Ctav4 = () => {
             <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
               Still have any doubts? Check the free chapter to get an idea.
             </p>
+            <ModalVideo  channel='youtube' autoplay isOpen={isOpen} videoId="dkxiTpwm0hs" onClose={() => setOpen(false)} />
             <a
               href="#preview"
               className="smooth button button__primary"
@@ -43,12 +48,11 @@ const Ctav4 = () => {
             data-aos-delay="250"
           >
             <div className="ctav4__video-btn">
-              <a
-                href="https://youtu.be/dkxiTpwm0hs"
-                className="glightbox3 video-btn"
+              <button onClick={()=> setOpen(true)}
+                className="video-btn"
               >
                 <FaPlay />
-              </a>
+              </button>
               <div className="promo-video">
                 <div className="waves-block">
                   <div className="waves wave-1"></div>
@@ -65,4 +69,4 @@ const Ctav4 = () => {
   );
 };
 
-export default Ctav4;
+export default CtaV4;

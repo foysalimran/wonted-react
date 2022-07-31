@@ -4,8 +4,7 @@ import { ImBook } from "react-icons/im";
 import { GiHappySkull, GiStairsGoal } from "react-icons/gi"
 // import data from "../data/achieve.json";
 
-const Achievev2 = () => {
-  // const {achieve} = data;
+const AchieveV2 = () => {
   return (
     // <!-- ========== Benefits section start ========== -->
     <section id="benefits" className="achivev2 section-padding">
@@ -106,4 +105,4 @@ const Achievev2 = () => {
   );
 };
 
-export default Achievev2;
+export default AchieveV2;

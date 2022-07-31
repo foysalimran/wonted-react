@@ -63,8 +63,8 @@ const Pricing = () => {
                   <h3 className="pricing__title">{data.title}</h3>
                   <h3 className="pricing__price">{data.price}</h3>
                   <ul className="pricing__list">
-                    {data.feature?.map((items) => (
-                      <li>{items.item}</li>
+                    {data.feature?.map((items, i) => (
+                      <li key={i}>{items.item}</li>
                     ))}
                   </ul>
                   <a href="#" className="btn__secondary">

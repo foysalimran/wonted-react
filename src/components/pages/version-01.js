@@ -1,13 +1,13 @@
 import React from "react";
 import Achieve from "../achieve";
 import Achievement from "../achievement";
-import Authorv2 from "../authorv2";
+import AuthorV2 from "../authorv2";
 import Books from "../books";
 import Chapter from "../chapter";
 import ChapterPreview from "../chapter-preview";
 import Contact from "../contact";
-import Cta5 from "../cta5";
-import Ctav4 from "../ctav4";
+import CtaV4 from "../ctav4";
+import CtaV5 from "../ctav5";
 import FunFacts from "../fun-facts";
 import Hero from "../hero";
 import Pricing from "../pricing";
@@ -21,13 +21,13 @@ function Version01() {
       <Chapter />
       <ChapterPreview />
       <Pricing />
-      <Authorv2 />
+      <AuthorV2 />
       <Achievement />
       <FunFacts />
       <Books />
-      <Cta5 />
+      <CtaV5 />
       <Testimonial />
-      <Ctav4 />
+      <CtaV4 />
       <Contact />
     </>
   );
