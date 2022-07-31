@@ -1,5 +1,5 @@
 import React from "react";
-import chapterData from "../data/chapterv2.json";
+import chapterData from "../data/chapter.json";
 
 const ChapterV2 = () => {
 const {chapterv2} = chapterData;

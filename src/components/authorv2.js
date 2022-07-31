@@ -2,10 +2,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import about from "../assets/images/achive.png";
-import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube, FaPlay } from "react-icons/fa";
-import { IoLogoWhatsapp} from "react-icons/io";
+import data from "../data/about.json";
 
 const AuthorV2 = () => {
+  const { aboutv2 } = data;
   return (
     // <!-- ========== Author section start ========== -->
     <section id="author" className="section-padding authorv2">
@@ -18,7 +18,7 @@ const AuthorV2 = () => {
                 data-aos-duration="1000"
                 data-aos-delay="150"
               >
-                About author
+                {aboutv2.subtitle}
               </span>
               <h2
                 className="display-6"
@@ -26,7 +26,7 @@ const AuthorV2 = () => {
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
-                Learn about the book writer
+                {aboutv2.title}
               </h2>
               <div
                 className="section-divider divider-traingle"
@@ -51,7 +51,13 @@ const AuthorV2 = () => {
                 href="https://youtu.be/qg0_FinB6EE"
                 className="glightbox3 video-btn"
               >
-                <FaPlay />
+                <img
+                  className="img-fluid"
+                  src={aboutv2.icon}
+                  alt="icon"
+                  width="25"
+                  height="25"
+                />
               </a>
               <div className="promo-video">
                 <div className="waves-block">
@@ -70,67 +76,32 @@ const AuthorV2 = () => {
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            <p>
-              Based on wikipedia, Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Optio aspernatur quam in nostrum aliquam
-              eligendi vel, modi cupiditate numquam officiis dicta minima
-              placeat nulla impedit voluptatum adipisci beatae. Rerum, impedit.
-            </p>
+            <p>{aboutv2.description}</p>
             <div className="authorv2__content">
               <div className="authorv2__list">
                 <div className="row">
-                  <div className="col-6 mb-3">
-                    <h4>Name:</h4>
-                    <p className="mb-0">Jacob Thomas</p>
-                  </div>
-                  <div className="col-6 mb-3">
-                    <h4>Born:</h4>
-                    <p className="mb-0">05. 16. 1992</p>
-                  </div>
-                  <div className="col-6 mb-3">
-                    <h4>Country:</h4>
-                    <p className="mb-0">US</p>
-                  </div>
-                  <div className="col-6 mb-3">
-                    <h4>Email ID:</h4>
-                    <p className="mb-0">info@wonted.com</p>
-                  </div>
-                  <div className="col-6 mb-3">
-                    <h4>Languages:</h4>
-                    <p className="mb-0">English, French</p>
-                  </div>
-                  <div className="col-6">
-                    <h4>Address:</h4>
-                    <p className="mb-0">Etowah, TN 37331 United States</p>
-                  </div>
+                  {aboutv2.userinfo?.map((data, i) => (
+                    <div key={i} className="col-6 mb-3">
+                      <h4>{data.title}</h4>
+                      <p className="mb-0">{data.subtitle}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
               <ul className="social-icon mt-3">
-                <li>
-                  <a href="#">
-                    <FaFacebookF />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <FaTwitter />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <FaLinkedinIn />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <FaYoutube />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <IoLogoWhatsapp />
-                  </a>
-                </li>
+                {aboutv2.social?.map((data, i) => (
+                  <li key={i}>
+                    <a href="#">
+                      <img
+                        className="img-fluid"
+                        src={data.icon}
+                        alt="icon"
+                        width="25"
+                        height="25"
+                      />
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

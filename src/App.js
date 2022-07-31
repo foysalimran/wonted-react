@@ -22,7 +22,7 @@ function App() {
     AOS.refresh();
   }, []);
   return (
-    <>
+    <div className="section-wrapper">
       <div id="preLoader"></div>
       <Header />
       <BrowserRouter>
@@ -41,7 +41,7 @@ function App() {
       </Routes>
     </BrowserRouter>
     <Footer />
-    </>
+    </div>
   );
 }
 
