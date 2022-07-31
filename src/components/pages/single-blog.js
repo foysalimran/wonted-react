@@ -15,13 +15,13 @@ const SingleBlog = () => {
         <PagesHeader />
              <section
       id="all-blogs"
-      class="all-blogs hero__padding overflow-hidden position-relative bg-one"
+      className="all-blogs hero__padding overflow-hidden position-relative bg-one"
     >
-      <div class="container">
-        <div class="row">
-          <div class="blog-title">
+      <div className="container">
+        <div className="row">
+          <div className="blog-title">
             <h1
-              class="display-3"
+              className="display-3"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="600"
@@ -41,7 +41,7 @@ const SingleBlog = () => {
                 data-aos-duration="1000"
                 data-aos-delay="700"
               >
-                <i class="icofont-rounded-right"></i>
+                <i className="icofont-rounded-right"></i>
               </li>
               <li
                 data-aos="fade-up"
@@ -57,27 +57,27 @@ const SingleBlog = () => {
     </section>
      {/* ========== All blogs hero end ==========  */}
      {/* ========== All Blog section start ==========  */}
-    <div id="single-blog" class="section-padding single-blog">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 offset-lg-1">
+    <div id="single-blog" className="section-padding single-blog">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-10 offset-lg-1">
             <article>
               <img
-                class="img-fluid"
+                className="img-fluid"
                 src={img1}
                 alt=""
               />
-              <ul class="single-blog__metainfo">
+              <ul className="single-blog__metainfo">
                 <li><BiUser/><a href="#">John</a></li>
                 <li>
                  <FaRegCalendarAlt/><a href="#">12 May, 2022</a>
                 </li>
                 <li><FaRegCommentDots/> <a href="#">3 Comments</a></li>
               </ul>
-              <h2 class="display-5 single-blog__title">
+              <h2 className="display-5 single-blog__title">
                 Books with sneaky sci-fi plots
               </h2>
-              <div class="single-blog__para">
+              <div className="single-blog__para">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
                   eiusmod tempor incididunt labore et dolore sitor magna aliqua.
@@ -91,11 +91,11 @@ const SingleBlog = () => {
                   dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                   eirmod tempor invidunt ut labore et.
                 </p>
-                <blockquote class="single-blog__para__quote">
-                  <span class="single-blog__para__quote__icon"
-                    ><i class="icofont-quote-right"></i
+                <blockquote className="single-blog__para__quote">
+                  <span className="single-blog__para__quote__icon"
+                    ><i className="icofont-quote-right"></i
                   ></span>
-                  <div class="single-blog__para__quote__text">
+                  <div className="single-blog__para__quote__text">
                     <p>
                       "Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Sed cum fuga ab, eum numquam ea dolores quae takimata
@@ -104,7 +104,7 @@ const SingleBlog = () => {
                     </p>
                   </div>
                 </blockquote>
-                <h2 class="display-6 single-blog__title">
+                <h2 className="display-6 single-blog__title">
                   Amazon Editors’ personal audiobook favorites
                 </h2>
                 <p>
@@ -114,27 +114,27 @@ const SingleBlog = () => {
                   similique sunt in culpa qui officia deserunt mollitia animi,
                   id est laborum et dolorum fuga. Et harum quidem rerum .
                 </p>
-                <div class="row mt-4">
-                  <div class="col-md-6 mb-4">
-                    <div class="post-img">
+                <div className="row mt-4">
+                  <div className="col-md-6 mb-4">
+                    <div className="post-img">
                       <img
-                        class="img-fluid"
+                        className="img-fluid"
                         src={img2}
                         alt=""
                       />
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="post-img">
+                  <div className="col-md-6">
+                    <div className="post-img">
                       <img
-                        class="img-fluid"
+                        className="img-fluid"
                         src={img3}
                         alt=""
                       />
                     </div>
                   </div>
                 </div>
-                <h2 class="display-6 single-blog__title">
+                <h2 className="display-6 single-blog__title">
                   Best mysteries and thrillers of 2022 so far
                 </h2>
                 <ol>
@@ -157,25 +157,25 @@ const SingleBlog = () => {
                   aliquyam erat, sed diam voluptua at vero amet dolor sit
                   consect.
                 </p>
-                <ul class="content-feature-list">
+                <ul className="content-feature-list">
                   <li>
-                    <i class="icofont-check-circled"></i> Lorem ipsum dolor, sit
+                    <i className="icofont-check-circled"></i> Lorem ipsum dolor, sit
                     amet.
                   </li>
                   <li>
-                    <i class="icofont-check-circled"></i> Amet consectetur
+                    <i className="icofont-check-circled"></i> Amet consectetur
                     adipisicing elit Officia.
                   </li>
                   <li>
-                    <i class="icofont-check-circled"></i> Aquaerat ipsa quis
+                    <i className="icofont-check-circled"></i> Aquaerat ipsa quis
                     possimus.
                   </li>
                   <li>
-                    <i class="icofont-check-circled"></i> Lorem aquaerat ipsa
+                    <i className="icofont-check-circled"></i> Lorem aquaerat ipsa
                     quis possimus.
                   </li>
                   <li>
-                    <i class="icofont-check-circled"></i> Consectetur Amet
+                    <i className="icofont-check-circled"></i> Consectetur Amet
                     adipisicing elit Officia.
                   </li>
                 </ul>
@@ -189,9 +189,9 @@ const SingleBlog = () => {
                 </p>
               </div>
             </article>
-            <div class="single-blog__share bg-one p-4">
+            <div className="single-blog__share bg-one p-4">
               <strong>Share:</strong>
-              <ul class="social-icon">
+              <ul className="social-icon">
                 <li>
                   <a href="#"> <FaFacebookF /></a>
                 </li>
@@ -209,35 +209,35 @@ const SingleBlog = () => {
                 </li>
               </ul>
             </div>
-            <div class="single-blog__comment">
-              <div class="single-blog__comment__title">
+            <div className="single-blog__comment">
+              <div className="single-blog__comment__title">
                 <h4><span>3</span> Comments</h4>
               </div>
-              <div class="single-blog__comment__wrap">
-                <div class="single-blog__comment__item bg-one">
-                  <div class="single-blog__comment__item__image">
+              <div className="single-blog__comment__wrap">
+                <div className="single-blog__comment__item bg-one">
+                  <div className="single-blog__comment__item__image">
                     <img
-                      class="img-fluid"
+                      className="img-fluid"
                       src={user1}
                       alt="mage"
                     />
                   </div>
-                  <div class="single-blog__comment__item__content">
-                    <div class="comment-author-info">
-                      <div class="row align-items-start">
-                        <div class="col-md-9 col-12 order-md-1 order-1">
+                  <div className="single-blog__comment__item__content">
+                    <div className="comment-author-info">
+                      <div className="row align-items-start">
+                        <div className="col-md-9 col-12 order-md-1 order-1">
                           <h5>Olivic Dsuza</h5>
-                          <p class="comment-date">Feb 15, 2022 | 10:21 am</p>
+                          <p className="comment-date">Feb 15, 2022 | 10:21 am</p>
                         </div>
                         <div
-                          class="col-md-3 col-sm-12 col-12 text-md-end order-md-2 order-sm-3 order-3"
+                          className="col-md-3 col-sm-12 col-12 text-md-end order-md-2 order-sm-3 order-3"
                         >
-                          <a href="#cmt-form" class="reply-btn">Reply</a>
+                          <a href="#cmt-form" className="reply-btn">Reply</a>
                         </div>
                         <div
-                          class="col-md-12 col-sm-12 col-12 order-md-3 order-sm-2 order-2"
+                          className="col-md-12 col-sm-12 col-12 order-md-3 order-sm-2 order-2"
                         >
-                          <div class="comment-text">
+                          <div className="comment-text">
                             <p>
                               Lorem ipsum dolor sit amet, consetetur sadipscing
                               elitr, sed diam nonumy eirmod tempor invidunt ut
@@ -250,31 +250,31 @@ const SingleBlog = () => {
                   </div>
                 </div>
                 <div
-                  class="single-blog__comment__item md-m-0px-l m-40px-l bg-one"
+                  className="single-blog__comment__item md-m-0px-l m-40px-l bg-one"
                 >
-                  <div class="single-blog__comment__item__image">
+                  <div className="single-blog__comment__item__image">
                     <img
-                      class="img-fluid"
+                      className="img-fluid"
                       src={user2}
                       alt="mage"
                     />
                   </div>
-                  <div class="single-blog__comment__item__content">
-                    <div class="comment-author-info">
-                      <div class="row align-items-start">
-                        <div class="col-md-9 col-12 order-md-1 order-1">
+                  <div className="single-blog__comment__item__content">
+                    <div className="comment-author-info">
+                      <div className="row align-items-start">
+                        <div className="col-md-9 col-12 order-md-1 order-1">
                           <h5>Everly Leah</h5>
-                          <p class="comment-date">Mar 30, 2022 | 12:33 am</p>
+                          <p className="comment-date">Mar 30, 2022 | 12:33 am</p>
                         </div>
                         <div
-                          class="col-md-3 col-sm-12 col-12 text-md-end order-md-2 order-sm-3 order-3"
+                          className="col-md-3 col-sm-12 col-12 text-md-end order-md-2 order-sm-3 order-3"
                         >
-                          <a href="#cmt-form" class="reply-btn">Reply</a>
+                          <a href="#cmt-form" className="reply-btn">Reply</a>
                         </div>
                         <div
-                          class="col-md-12 col-sm-12 col-12 order-md-3 order-sm-2 order-2"
+                          className="col-md-12 col-sm-12 col-12 order-md-3 order-sm-2 order-2"
                         >
-                          <div class="comment-text">
+                          <div className="comment-text">
                             <p>
                               Lorem ipsum dolor sit amet, consetetur sadipscing
                               elitr, sed diam nonumy eirmod tempor invidunt ut
@@ -286,30 +286,30 @@ const SingleBlog = () => {
                     </div>
                   </div>
                 </div>
-                <div class="single-blog__comment__item bg-one">
-                  <div class="single-blog__comment__item__image">
+                <div className="single-blog__comment__item bg-one">
+                  <div className="single-blog__comment__item__image">
                     <img
-                      class="img-fluid"
+                      className="img-fluid"
                       src={user1}
                       alt="mage"
                     />
                   </div>
-                  <div class="single-blog__comment__item__content">
-                    <div class="comment-author-info">
-                      <div class="row align-items-start">
-                        <div class="col-md-9 col-12 order-md-1 order-1">
+                  <div className="single-blog__comment__item__content">
+                    <div className="comment-author-info">
+                      <div className="row align-items-start">
+                        <div className="col-md-9 col-12 order-md-1 order-1">
                           <h5>Michel Jackson</h5>
-                          <p class="comment-date">Feb 15, 2022 | 10:21 am</p>
+                          <p className="comment-date">Feb 15, 2022 | 10:21 am</p>
                         </div>
                         <div
-                          class="col-md-3 col-sm-12 col-12 text-md-end order-md-2 order-sm-3 order-3"
+                          className="col-md-3 col-sm-12 col-12 text-md-end order-md-2 order-sm-3 order-3"
                         >
-                          <a href="#cmt-form" class="reply-btn">Reply</a>
+                          <a href="#cmt-form" className="reply-btn">Reply</a>
                         </div>
                         <div
-                          class="col-md-12 col-sm-12 col-12 order-md-3 order-sm-2 order-2"
+                          className="col-md-12 col-sm-12 col-12 order-md-3 order-sm-2 order-2"
                         >
-                          <div class="comment-text">
+                          <div className="comment-text">
                             <p>
                               Lorem ipsum dolor sit amet, consetetur sadipscing
                               elitr, sed diam nonumy eirmod tempor invidunt ut
@@ -322,18 +322,18 @@ const SingleBlog = () => {
                   </div>
                 </div>
               </div>
-              <div class="single-blog__comment__form bg-one">
-                <div class="m-25px-b">
+              <div className="single-blog__comment__form bg-one">
+                <div className="m-25px-b">
                   <h4>Leave A Comment</h4>
                   <p>
                     Your email address will not be published. Required fields
                     are marked.
                   </p>
                 </div>
-                <form action="#" class="comment-form">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <div class="form-group">
+                <form action="#" className="comment-form">
+                  <div className="row">
+                    <div className="col-lg-6">
+                      <div className="form-group">
                         <input
                           type="text"
                           name="name"
@@ -343,8 +343,8 @@ const SingleBlog = () => {
                         />
                       </div>
                     </div>
-                    <div class="col-lg-6">
-                      <div class="form-group">
+                    <div className="col-lg-6">
+                      <div className="form-group">
                         <input
                           type="email"
                           name="email"
@@ -354,8 +354,8 @@ const SingleBlog = () => {
                         />
                       </div>
                     </div>
-                    <div class="col-lg-12">
-                      <div class="form-group">
+                    <div className="col-lg-12">
+                      <div className="form-group">
                         <input
                           type="url"
                           name="website"
@@ -364,8 +364,8 @@ const SingleBlog = () => {
                         />
                       </div>
                     </div>
-                    <div class="col-lg-12">
-                      <div class="form-group">
+                    <div className="col-lg-12">
+                      <div className="form-group">
                         <textarea
                           name="messages"
                           id="messages"
@@ -376,8 +376,8 @@ const SingleBlog = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="m-20px-t">
-                    <a class="button button__primary">
+                  <div className="m-20px-t">
+                    <a className="button button__primary">
                       <span>POST A COMMENT</span>
                     </a>
                   </div>

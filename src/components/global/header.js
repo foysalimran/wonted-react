@@ -29,7 +29,7 @@ const Header = () => {
               <ul id="onepage-nav" className="navbar-nav menu ms-lg-auto">
                 <li className="nav-item dropdown submenu">
                   <Link
-                    activeClass="active"
+                    activeclassName="active"
                     className="hero nav-link dropdown-toggle"
                     to="hero"
                     spy={true}
@@ -77,7 +77,7 @@ const Header = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    activeClass="active"
+                    activeclassName="active"
                     className="benefits nav-link"
                     to="benefits"
                     spy={true}
@@ -92,7 +92,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link activeClass="active"
+                  <Link activeclassName="active"
                     className="chapters nav-link"
                     to="chapters"
                     spy={true}
@@ -106,7 +106,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link activeClass="active"
+                  <Link activeclassName="active"
                     className="pricing nav-link"
                     to="pricing"
                     spy={true}
@@ -120,7 +120,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link activeClass="active"
+                  <Link activeclassName="active"
                     className="author nav-link"
                     to="author"
                     spy={true}
@@ -134,7 +134,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link activeClass="active"
+                  <Link activeclassName="active"
                     className="achivements nav-link"
                     to="achivements"
                     spy={true}
@@ -148,7 +148,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link activeClass="active"
+                  <Link activeclassName="active"
                     className="reviews nav-link"
                     to="reviews"
                     spy={true}
@@ -162,7 +162,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link activeClass="active"
+                  <Link activeclassName="active"
                     className="contact nav-link"
                     to="contact"
                     spy={true}
