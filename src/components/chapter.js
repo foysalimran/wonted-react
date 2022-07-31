@@ -1,8 +1,11 @@
 import React from "react";
 import { Accordion } from "react-bootstrap";
-import chapter from "../assets/images/hero-2.png";
+// import chapter from "../assets/images/hero-2.png";
+import data from "../data/chapter.json";
 
 const Chapter = () => {
+  const { chapter } = data;
+
   return (
     // <!-- ========== Chapters section start ========== -->
     <section id="chapters" className="section-padding bg-one">
@@ -15,7 +18,7 @@ const Chapter = () => {
                 data-aos-duration="1000"
                 data-aos-delay="150"
               >
-                Chapters
+                {chapter.subtitle}
               </span>
               <h2
                 className="display-6"
@@ -23,7 +26,7 @@ const Chapter = () => {
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
-                Chapters we've covered
+                {chapter.title}
               </h2>
               <div
                 className="section-divider divider-traingle"
@@ -41,7 +44,7 @@ const Chapter = () => {
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            <img src={chapter} alt="" className="img-fluid d-block" />
+            <img src={chapter.image} alt="" className="img-fluid d-block" />
           </div>
           <div
             className="col-lg-6"
@@ -54,76 +57,16 @@ const Chapter = () => {
               defaultActiveKey="1"
             >
               {/* <!-- accordion start --> */}
-              <Accordion.Item eventKey="1">
-                <Accordion.Header>Chapter 01</Accordion.Header>
-                <Accordion.Body>
-                  <p className="accordion-body text-secondary">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Temporibus ea dolore amet laudantium quibusdam nobis labore
-                    molestiae odit voluptas velit!
-                  </p>
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="2">
-                <Accordion.Header>Chapter 02</Accordion.Header>
-                <Accordion.Body>
-                  <p className="accordion-body text-secondary">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Temporibus ea dolore amet laudantium quibusdam nobis labore
-                    molestiae odit voluptas velit!
-                  </p>
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="3">
-                <Accordion.Header>Chapter 03</Accordion.Header>
-                <Accordion.Body>
-                  <p className="accordion-body text-secondary">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Temporibus ea dolore amet laudantium quibusdam nobis labore
-                    molestiae odit voluptas velit!
-                  </p>
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="4">
-                <Accordion.Header>Chapter 04</Accordion.Header>
-                <Accordion.Body>
-                  <p className="accordion-body text-secondary">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Temporibus ea dolore amet laudantium quibusdam nobis labore
-                    molestiae odit voluptas velit!
-                  </p>
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="5">
-                <Accordion.Header>Chapter 05</Accordion.Header>
-                <Accordion.Body>
-                  <p className="accordion-body text-secondary">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Temporibus ea dolore amet laudantium quibusdam nobis labore
-                    molestiae odit voluptas velit!
-                  </p>
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="6">
-                <Accordion.Header>Chapter 05</Accordion.Header>
-                <Accordion.Body>
-                  <p className="accordion-body text-secondary">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Temporibus ea dolore amet laudantium quibusdam nobis labore
-                    molestiae odit voluptas velit!
-                  </p>
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="7">
-                <Accordion.Header>Chapter 05</Accordion.Header>
-                <Accordion.Body>
-                  <p className="accordion-body text-secondary">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Temporibus ea dolore amet laudantium quibusdam nobis labore
-                    molestiae odit voluptas velit!
-                  </p>
-                </Accordion.Body>
-              </Accordion.Item>
+              {chapter.chapterItem?.map((data) => (
+                <Accordion.Item eventKey={data.id.toString()} key={data.id}>
+                  <Accordion.Header>{data.title}</Accordion.Header>
+                  <Accordion.Body>
+                    <p className="accordion-body text-secondary">
+                      {data.description}
+                    </p>
+                  </Accordion.Body>
+                </Accordion.Item>
+              ))}
             </Accordion>
           </div>
         </div>

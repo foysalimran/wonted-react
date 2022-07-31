@@ -1,6 +1,5 @@
 import React from "react";
-import achievementData from "../data/achievements.json"
-
+import achievementData from "../data/achievements.json";
 const Achievement = () => {
 const { achievements } = achievementData;
 
@@ -17,6 +16,7 @@ const { achievements } = achievementData;
                 data-aos-delay="150"
               >
                 Achievements
+              
               </span>
               <h2
                 className="display-6"
