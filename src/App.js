@@ -4,29 +4,29 @@ import Version01 from "./components/pages/version-01";
 import Version02 from "./components/pages/version-02";
 
 import AOS from "aos";
-import "./assets/css/aos.css"
 import { useEffect } from "react";
-import Header from "./components/global/header";
+import "./assets/css/aos.css";
 import Footer from "./components/global/footer";
-import SingleBlog from "./components/pages/single-blog";
+import Header from "./components/global/header";
 import AllBlog from "./components/pages/all-blog";
 import AllEvent from "./components/pages/all-events";
+
+import SingleBlog from "./components/pages/single-blog";
+
 import Version03 from "./components/pages/version-03";
 import Version04 from "./components/pages/version-04";
+
 function App() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
-
   return (
-   
-    <div className="section-wrapper">
+    <>
       <div id="preLoader"></div>
       <Header />
       <BrowserRouter>
       <Routes>
-        
         <Route path="/" element={<Version01 />} />
         <Route path="v1" element={<Version01 />} />
         <Route path="v2" element={<Version02 />} />
@@ -41,7 +41,7 @@ function App() {
       </Routes>
     </BrowserRouter>
     <Footer />
-    </div>
+    </>
   );
 }
 
