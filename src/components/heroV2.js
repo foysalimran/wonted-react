@@ -1,8 +1,10 @@
 import React from 'react';
-
 import heroImg from '../assets/images/book2.png'
 
+import data from "../data/herov2.json"
+
 const HeroV2 = () => {
+  const {herov2} = data;
     return (
         <section
         id="hero"
@@ -23,7 +25,7 @@ const HeroV2 = () => {
                   data-aos-duration="1000"
                   data-aos-delay="800"
                 >
-                  Read more and make success the result of perfection.
+                  {herov2.title}
                 </h1>
                 <p
                   class="text-muted mb-5 fs-5"
@@ -31,8 +33,7 @@ const HeroV2 = () => {
                   data-aos-duration="1000"
                   data-aos-delay="850"
                 >
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
-                  harum quibusdam, assumenda quia explicabo.
+                 {herov2.description}
                 </p>
                 <div 
                 data-aos="fade-up"
@@ -43,12 +44,12 @@ const HeroV2 = () => {
                   href="#pricing"
                   class="smooth button button__primary me-3"
                 >
-                  <span>Buy now</span>
+                  <span>{herov2.buyBtn}</span>
                 </a>
                 <a
                   href="https://youtu.be/dkxiTpwm0hs"
                   class="glightbox3 btn__secondary"
-                  ><i class="icofont-play-alt-2"></i> About Book</a
+                  ><i class="icofont-play-alt-2"></i>{herov2.aboutBtn}</a
                 >
                 </div>
               </div>
@@ -63,7 +64,7 @@ const HeroV2 = () => {
                 <img
                   width="400"
                   class="img-fluid"
-                  src={heroImg}
+                  src={herov2.image}
                   alt=""
                 />
               </div>
