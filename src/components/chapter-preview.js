@@ -7,6 +7,10 @@ import "swiper/css/autoplay";
 import { Autoplay, Pagination } from "swiper";
 
 import image1 from '../assets/images/chapter-preview/1.jpg'
+import image2 from '../assets/images/chapter-preview/2.jpg'
+import image3 from '../assets/images/chapter-preview/3.jpg'
+import image4 from '../assets/images/chapter-preview/4.jpg'
+import image5 from '../assets/images/chapter-preview/5.jpg'
 
 const ChapterPreview = () => {
   return (
@@ -90,7 +94,7 @@ const ChapterPreview = () => {
               >
                 <img
                   className="chapter-img img-fluid"
-                  src={image1}
+                  src={image2}
                 />
               </a>
               </div>
@@ -109,7 +113,7 @@ const ChapterPreview = () => {
               >
                 <img
                   className="chapter-img img-fluid"
-                  src={image1}
+                  src={image3}
                 />
               </a>
               </div>
@@ -128,7 +132,7 @@ const ChapterPreview = () => {
               >
                 <img
                   className="chapter-img img-fluid"
-                  src={image1}
+                  src={image4}
                 />
               </a>
               </div>
@@ -147,7 +151,7 @@ const ChapterPreview = () => {
               >
                 <img
                   className="chapter-img img-fluid"
-                  src={image1}
+                  src={image5}
                 />
               </a>
               </div>
