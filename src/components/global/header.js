@@ -4,7 +4,6 @@ import { Link } from "react-scroll";
 
 const Header = () => {
   const [fix, setFix] = useState(false);
-
   function setFixed() {
     if (window.scrollY >= 100) {
       setFix(true);
@@ -39,24 +38,25 @@ const Header = () => {
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    offset={-60}
                   >
                     Home
                   </Link>
                   <ul className="dropdown-menu">
                     <li className="nav-item">
-                      <Link to="index.html" className="nav-link">
+                      <a href="/"className="nav-link">
                         Home One
-                      </Link>
+                      </a>
                     </li>
                     <li className="nav-item">
-                      <Link to="index-2.html" className="nav-link">
+                      <a href="/v2" className="nav-link">
                         Home Two
-                      </Link>
+                      </a>
                     </li>
                     <li className="nav-item">
-                      <Link to="index-3.html" className="nav-link">
+                      <a href="v3" className="nav-link">
                         Home Three
-                      </Link>
+                      </a>
                     </li>
                     <li className="nav-item">
                       <Link to="index-4.html" className="nav-link">
@@ -64,9 +64,9 @@ const Header = () => {
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="index-5.html" className="nav-link">
+                      <a href="index-5.html" className="nav-link">
                         Home Five
-                      </Link>
+                      </a>
                     </li>
                     <li className="nav-item">
                       <Link to="index-6.html" className="nav-link">
@@ -86,6 +86,7 @@ const Header = () => {
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    offset={-60}
                   >
                     Benefits
                   </Link>
@@ -97,6 +98,7 @@ const Header = () => {
                     spy={true}
                     smooth={true}
                     duration={500}
+                    offset={-60}
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false">
@@ -110,6 +112,7 @@ const Header = () => {
                     spy={true}
                     smooth={true}
                     duration={500}
+                    offset={-60}
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false">
@@ -123,6 +126,7 @@ const Header = () => {
                     spy={true}
                     smooth={true}
                     duration={500}
+                    offset={-60}
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false">
@@ -136,6 +140,7 @@ const Header = () => {
                     spy={true}
                     smooth={true}
                     duration={500}
+                    offset={-60}
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false">
@@ -149,6 +154,7 @@ const Header = () => {
                     spy={true}
                     smooth={true}
                     duration={500}
+                    offset={-60}
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false">
@@ -162,6 +168,7 @@ const Header = () => {
                     spy={true}
                     smooth={true}
                     duration={500}
+                    offset={-60}
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false">
