@@ -1,8 +1,9 @@
 import React from "react";
-import heroImg from "../assets/images/hero.png";
 import { AiOutlineCheckCircle, AiOutlineCloseCircle } from "react-icons/ai";
+import data from "../data/herov1.json";
 
 const Hero = () => {
+  const {herov1} = data;
   return (
     // <!-- ========== Hero section start ========== -->
     <section
@@ -24,7 +25,7 @@ const Hero = () => {
                 data-aos-duration="1000"
                 data-aos-delay="600"
               >
-                Let's make the best investment
+                {herov1.subtitle}
               </div>
               <h1
                 className="display-4 mb-4 text-capitalize"
@@ -32,7 +33,7 @@ const Hero = () => {
                 data-aos-duration="1000"
                 data-aos-delay="650"
               >
-                There is no friend as loyal as a book
+                {herov1.title}
               </h1>
               <p
                 className="text-muted mb-5 fs-5"
@@ -40,8 +41,7 @@ const Hero = () => {
                 data-aos-duration="1000"
                 data-aos-delay="700"
               >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
-                harum quibusdam, assumenda quia explicabo.
+                {herov1.description}
               </p>
               <form action="assets/subscribe/subscribe.php" id="subscribe">
                 <div
@@ -103,12 +103,12 @@ const Hero = () => {
             data-aos-delay="700"
           >
             <div className="hero__images text-center">
-              <img className="img-fluid" src={heroImg} alt="" />
+              <img className="img-fluid" src={herov1.image} alt="" />
               <div className="hero__images--badge">
                 <span>
-                  <span className="hero__images--badge--text1">NY</span>
+                  <span className="hero__images--badge--text1">{herov1.tagTitle}</span>
                   <span className="hero__images--badge--text2">
-                    best seller
+                    {herov1.tagText}
                   </span>
                 </span>
               </div>
