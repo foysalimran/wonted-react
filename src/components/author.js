@@ -99,20 +99,6 @@ const Author = () => {
                     {data.achieves}
                   </li>
                 ))}
-                {/* <li>
-                  <i className="icofont-check"></i>Achieved 10+ awarded
-                </li>
-                <li>
-                  <i className="icofont-check"></i>Very passionate about
-                  writting
-                </li>
-                <li>
-                  <i className="icofont-check"></i>Most Popular writter in the
-                  year
-                </li>
-                <li>
-                  <i className="icofont-check"></i>17+ Books written
-                </li> */}
               </ul>
               <ul className="social-icon mt-3">
                 {about.social?.map((data, i) => (

@@ -14,6 +14,15 @@
         "image": "assets/images/book2.png",
         "buyBtn": "Buy Now",
         "aboutBtn": "About Book"
+    },
+
+    "herov4": {
+        "name": "Sarah F.",
+        "title": "PROFESSIONAL BOOK WRITER",
+        "description": "I am a professional books writer based on New York. I've written over 12 books and 6 of them are new york times best seller.    ",
+        "image": "assets/images/writer.jpg",
+        "firstBtn": "Latest Books",
+        "secondBtn": "About Book"
     }
 
 }
