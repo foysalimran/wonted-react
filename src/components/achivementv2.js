@@ -1,13 +1,7 @@
 import React from "react";
 
-import img1 from '../assets/images/awards/1.jpg'
-import img2 from '../assets/images/awards/2.jpg'
-import img3 from '../assets/images/awards/3.jpg'
-import img4 from '../assets/images/awards/4.jpg'
-import img5 from '../assets/images/awards/5.jpg'
 
-import {GiTrophy} from "react-icons/gi"
-import data from "../data/achievements.json"
+import data from "../data/achievements.json";
 
 const AchievementV2 = () => {
   const {achievements} = data;
