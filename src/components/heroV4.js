@@ -1,6 +1,10 @@
 import React from 'react';
+import data from "../data/herov1.json"
+
+import {BiPlayCircle} from "react-icons/bi"
 
 const HeroV4 = () => {
+  const {herov4} = data;
     return (
         <section
         id="hero"
@@ -29,7 +33,7 @@ const HeroV4 = () => {
                   data-aos-duration="1000"
                   data-aos-delay="750"
                 >
-                  I am Sarah F.
+                  I am {herov4.name}
                 </h1>
                 <div
                   className="badge-text mb-4 fs-5 fw-bold"
@@ -37,7 +41,7 @@ const HeroV4 = () => {
                   data-aos-duration="1000"
                   data-aos-delay="800"
                 >
-                  Professional book writer
+                 {herov4.title}
                 </div>
                 <p
                   className="mb-5 fs-5"
@@ -45,9 +49,7 @@ const HeroV4 = () => {
                   data-aos-duration="1000"
                   data-aos-delay="850"
                 >
-                  I am a professional books writer based on New York. I've
-                  written over 12 books and 6 of them are new york times best
-                  seller.
+                  {herov4.description}
                 </p>
                 <div
                   data-aos="fade-up"
@@ -55,12 +57,12 @@ const HeroV4 = () => {
                   data-aos-delay="950"
                 >
                   <a href="#books" className="smooth button button__primary me-3">
-                    <span>Latest books</span>
+                    <span>{herov4.firstBtn}</span>
                   </a>
                   <a
                     href="https://youtu.be/qg0_FinB6EE"
                     className="glightbox3 btn__secondary"
-                    ><i className="icofont-play-alt-2"></i> About me</a
+                    ><BiPlayCircle />{herov4.secondBtn}</a
                   >
                 </div>
               </div>
@@ -75,7 +77,7 @@ const HeroV4 = () => {
                 <div className="hero__author--inner">
                   <div
                     className="hero__author--inner--pic d-flex align-items-end justify-content-center"
-                    style={{backgroundImage: "url(assets/images/writer.jpg)"}}
+                    style={{backgroundImage: `url(${herov4.image})`}}
                   ></div>
                   <div className="frame frame-1"></div>
                   <div className="frame frame-2"></div>

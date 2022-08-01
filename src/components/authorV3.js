@@ -1,8 +1,11 @@
 import React from 'react';
 
+import data from "../data/about.json"
+
 import authorImg from '../assets/images/authorv3.png'
 
 const AuthorV3 = () => {
+  const {aboutv3} = data; 
     return (
         <section id="author" className="section-padding authorv3 bg-one">
         <div className="container">
@@ -16,7 +19,7 @@ const AuthorV3 = () => {
               <div className="author-image">
                 <img
                   className="img-fluid"
-                  src={authorImg}
+                  src={aboutv3.image}
                   alt=""
                 />
               </div>
@@ -28,9 +31,9 @@ const AuthorV3 = () => {
               data-aos-delay="200"
             >
               <div className="authorv3__content">
-                <div className="authorv3__content--badge">The Author</div>
-                <h3 className="display-5 mb-0">Martin John</h3>
-                <p className="m-30px-b text-muted fs-5">Style: Art, Fiction</p>
+                <div className="authorv3__content--badge">{aboutv3.title}</div>
+                <h3 className="display-5 mb-0">{aboutv3.name}</h3>
+                <p className="m-30px-b text-muted fs-5">Style: {aboutv3.Style}</p>
                 <p className="m-30px-b">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. In
                   ducimus enim fuga vero cumque possimus ipsum, alias numquam
@@ -41,21 +44,19 @@ const AuthorV3 = () => {
                   laborum, ducimus tempore debitis nesciunt quasi! Deleniti.
                 </p>
                 <ul className="social-icon mt-0 mb-0">
-                  <li>
-                    <a href="#"><i className="icofont-facebook"></i></a>
+                {aboutv3.social?.map((data, i) => (
+                  <li key={i}>
+                    <a href="#">
+                      <img
+                        className="img-fluid"
+                        src={data.icon}
+                        alt="icon"
+                        width="25"
+                        height="25"
+                      />
+                    </a>
                   </li>
-                  <li>
-                    <a href="#"><i className="icofont-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i className="icofont-linkedin"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i className="icofont-youtube-play"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i className="icofont-whatsapp"></i></a>
-                  </li>
+                ))}
                 </ul>
               </div>
             </div>
