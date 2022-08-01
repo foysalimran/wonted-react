@@ -2,6 +2,7 @@
 import React from "react";
 import CtaV3 from "../ctav3";
 import data from "../../data/footer.json";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   const { footer } = data;
@@ -32,9 +33,21 @@ const Footer = () => {
                       data-aos-duration="1000"
                       data-aos-delay="200"
                     >
-                      <a href={`#${data.link}`} className="smooth">
+                      <Link
+                      activeClass="active"
+                      className="benefits"
+                      to={`${data.link}`}
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      offset={-60}
+                  
+                      >
                         {data.title}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>

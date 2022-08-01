@@ -61,7 +61,7 @@ const Testimonial = () => {
             {testimonial.testimonialItem?.map((data) => (
               <SwiperSlide key={data.id}>
                 <div
-                    class="swiper-slide p-5px-lr"
+                    className="swiper-slide p-5px-lr"
                     data-aos="fade-up"
                     data-aos-duration="1000"
                     data-aos-delay="300"

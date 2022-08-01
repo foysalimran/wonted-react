@@ -1,8 +1,10 @@
 import { default as React, useState } from "react";
 import logo from "../../assets/images/wonted-logo.png";
 import { Link } from "react-scroll";
+import data from "../../data/header.json"
 
 const Header = () => {
+  const {header } = data;
   const [fix, setFix] = useState(false);
   function setFixed() {
     if (window.scrollY >= 100) {
@@ -20,20 +22,19 @@ const Header = () => {
           <nav className="navbar navbar-expand-lg">
             <a className="navbar-brand" href='/'>
               {/* <!-- <h1 className="m-0">WONTED</h1> --> */}
-             
-              <img src={logo} alt="Wonted" />
-             
+              <img src={header.logo} alt="Wonted" />
             </a>
             <div
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
               <ul id="onepage-nav" className="navbar-nav menu ms-lg-auto">
-                <li className="nav-item dropdown submenu">
+                {header.menu?.map((data, i) => (
+                  <li className="nav-item dropdown submenu" key={i}>
                   <Link
                     activeClass="active"
-                    className="hero nav-link dropdown-toggle"
-                    to="hero"
+                    className="benefits nav-link"
+                    to={`${data.link}`}
                     spy={true}
                     smooth={true}
                     duration={500}
@@ -42,9 +43,11 @@ const Header = () => {
                     aria-expanded="false"
                     offset={-60}
                   >
-                    Home
+                    {data.title}
                   </Link>
-                  <ul className="dropdown-menu">
+                  {console.log(data.isDropdown)}
+                  {data?.isDropdown === true ? (
+                    <ul className="dropdown-menu">
                     <li className="nav-item">
                       <a href="/"className="nav-link">
                         Home One
@@ -71,112 +74,16 @@ const Header = () => {
                       </a>
                     </li>
                     <li className="nav-item">
-                      <Link to="index-6.html" className="nav-link">
+                      <a href="v6" className="nav-link">
                         Home Six
-                      </Link>
+                      </a>
                     </li>
                   </ul>
+                  ) : (
+                    ""
+                  )}
                 </li>
-                <li className="nav-item">
-                  <Link
-                    activeClass="active"
-                    className="benefits nav-link"
-                    to="benefits"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    offset={-60}
-                  >
-                    Benefits
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link activeClass="active"
-                    className="chapters nav-link"
-                    to="chapters"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    offset={-60}
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Chapters
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link activeClass="active"
-                    className="pricing nav-link"
-                    to="pricing"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    offset={-60}
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Pricing
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link activeClass="active"
-                    className="author nav-link"
-                    to="author"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    offset={-60}
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Author
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link activeClass="active"
-                    className="achivements nav-link"
-                    to="achivements"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    offset={-60}
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Achievements
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link activeClass="active"
-                    className="reviews nav-link"
-                    to="reviews"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    offset={-60}
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Reviews
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link activeClass="active"
-                    className="contact nav-link"
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    offset={-60}
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Contact
-                  </Link>
-                </li>
+                ))}
               </ul>
             </div>
             <button
