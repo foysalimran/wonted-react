@@ -1,14 +1,13 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import about from "../assets/images/achive.png";
-import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube, FaPlay } from "react-icons/fa";
-import { IoLogoWhatsapp} from "react-icons/io";
+import data from "../data/about.json";
 
 const Author = () => {
+  const { about } = data;
   return (
     // <!-- ========== Author section start ========== -->
-    <section id="author" className="section-padding authorv2">
+    <section id="author" className="section-padding author">
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
@@ -18,7 +17,7 @@ const Author = () => {
                 data-aos-duration="1000"
                 data-aos-delay="150"
               >
-                About author
+                {about.title}
               </span>
               <h2
                 className="display-6"
@@ -26,7 +25,7 @@ const Author = () => {
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
-                Learn about the book writer
+                {about.subtitle}
               </h2>
               <div
                 className="section-divider divider-traingle"
@@ -37,21 +36,30 @@ const Author = () => {
             </div>
           </div>
         </div>
-        <div className="row gx-5">
-          {/* <!-- author image area start --> */}
+        <div className="row">
+          {/* <!-- author image --> */}
           <div
-            className="col-lg-6 mb-4 mb-lg-0"
+            className="col-lg-6"
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            <div className="authorv2__image">
-              <img className="img-fluid" src={about} alt="Author Image" />
+            <div className="author__image">
+              <img
+                className="img-fluid"
+                src={about.image}
+                alt="Author Image"
+              />
               <a
                 href="https://youtu.be/qg0_FinB6EE"
                 className="glightbox3 video-btn"
               >
-                <FaPlay />
+                <img
+                        className="img-fluid"
+                        src="../assets/icons/ui-play.svg"
+                        alt="icon"
+                        width="25"
+                      />
               </a>
               <div className="promo-video">
                 <div className="waves-block">
@@ -62,79 +70,54 @@ const Author = () => {
               </div>
             </div>
           </div>
-          {/* <!-- author image area end --> */}
-          {/* <!-- author content area start --> */}
+          {/* <!-- author image end --> */}
+          {/* <!-- author content start --> */}
           <div
             className="col-lg-6"
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            <p>
-              Based on wikipedia, Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Optio aspernatur quam in nostrum aliquam
-              eligendi vel, modi cupiditate numquam officiis dicta minima
-              placeat nulla impedit voluptatum adipisci beatae. Rerum, impedit.
-            </p>
-            <div className="authorv2__content">
-              <div className="authorv2__list">
-                <div className="row">
-                  <div className="col-6 mb-3">
-                    <h4>Name:</h4>
-                    <p className="mb-0">Jacob Thomas</p>
-                  </div>
-                  <div className="col-6 mb-3">
-                    <h4>Born:</h4>
-                    <p className="mb-0">05. 16. 1992</p>
-                  </div>
-                  <div className="col-6 mb-3">
-                    <h4>Country:</h4>
-                    <p className="mb-0">US</p>
-                  </div>
-                  <div className="col-6 mb-3">
-                    <h4>Email ID:</h4>
-                    <p className="mb-0">info@wonted.com</p>
-                  </div>
-                  <div className="col-6 mb-3">
-                    <h4>Languages:</h4>
-                    <p className="mb-0">English, French</p>
-                  </div>
-                  <div className="col-6">
-                    <h4>Address:</h4>
-                    <p className="mb-0">Etowah, TN 37331 United States</p>
-                  </div>
-                </div>
-              </div>
+            <div className="author__content">
+              <h2 className="m-20px-b">Michale John</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                nam eveniet veritatis aliquid harum temporibus et pariatur.
+                Incidunt, labore voluptatum minima tenetur, consequatur odit
+                sapiente blanditiis perferendis corrupti non quisquam?
+              </p>
+              <ul className="author__content__desc m-30px-b">
+                {about.achievement?.map((data, i) => (
+                  <li key={i}>
+                    <img
+                      className="img-fluid"
+                      src={about.checkIcon}
+                      alt="icon"
+                      width="25"
+                      height="25"
+                    /> {" "}
+                    {data.achieves}
+                  </li>
+                ))}
+              </ul>
               <ul className="social-icon mt-3">
-                <li>
-                  <a href="#">
-                    <FaFacebookF />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <FaTwitter />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <FaLinkedinIn />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <FaYoutube />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <IoLogoWhatsapp />
-                  </a>
-                </li>
+                {about.social?.map((data, i) => (
+                  <li key={i}>
+                    <a href="#">
+                      <img
+                        className="img-fluid"
+                        src={data.icon}
+                        alt="icon"
+                        width="25"
+                        height="25"
+                      />
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
-          {/* <!-- author content area end --> */}
+          {/* <!-- author content start --> */}
         </div>
       </div>
     </section>

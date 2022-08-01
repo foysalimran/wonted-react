@@ -1,11 +1,10 @@
 import React from "react";
 import CountUp from 'react-countup';
-import { GiAchievement } from "react-icons/gi"
-import { BiBookReader } from "react-icons/bi"
-import { FaHourglassHalf, FaAward } from "react-icons/fa"
-import { AiOutlineShoppingCart } from "react-icons/ai"
+import data from "../data/fun-fact.json"
 
 const FunFacts = () => {
+  const {funFacts} = data;
+
   return (
     // <!-- ========== Fun facts section start ========== -->
     <section className="section-padding counters">
@@ -18,7 +17,7 @@ const FunFacts = () => {
                 data-aos-duration="1000"
                 data-aos-delay="150"
               >
-                AWESOME STATS
+                {funFacts.subtitle}
               </span>
               <h2
                 className="display-6"
@@ -26,7 +25,7 @@ const FunFacts = () => {
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
-                All Milestones Achieved
+                {funFacts.title}
               </h2>
               <div
                 className="section-divider divider-traingle"
@@ -40,22 +39,25 @@ const FunFacts = () => {
         <div className="row">
           <div className="col-md-12">
             <ul className="counters__stats m-0 p-0 d-flex flex-wrap align-items-center justify-content-center">
-              <li
+              {funFacts.funFactsItem.map((data, i) => (
+                <li key={i}
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
                 <div className="counters__stats-box h-100 translateEffect1">
                   <div className="counters__stats-icon">
-                    <GiAchievement />
+                    <img className="img-fluid" src={data.icon} alt="icon" width="100"
+                        height="100" />
                   </div>
                   <div className="counters__stats-box__number">
-                  <CountUp end={35} enableScrollSpy="true" />
+                  <CountUp end={data.countNumber} enableScrollSpy="true" />
                   </div>
-                  <h5>Achievements</h5>
+                  <h5>{data.title}</h5>
                 </div>
               </li>
-              <li
+              ))}
+              {/* <li
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="300"
@@ -114,7 +116,7 @@ const FunFacts = () => {
                   </div>
                   <h5>Awards</h5>
                 </div>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

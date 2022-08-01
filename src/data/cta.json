@@ -1,0 +1,23 @@
+{
+    "ctav3": {
+        "title1": "Do you have a question?",
+        "title2": "Feel free to contact me.",
+        "number": "+61 (0) 111 222 333",
+        "btnText": "Send me a message"
+    },
+    "ctav4": {
+        "backgroundImage": "assets/images/ctav4.jpg",
+        "title": "Watch the video",
+        "subtitle": "to see how our readers love it.",
+        "text": "Still have any doubts? Check the free chapter to get an idea.",
+        "btnText": "Free chapters",
+        "icon": "assets/icons/ui-play.svg"
+    },
+    "ctav5": {
+        "backgroundImage": "assets/images/ctav5.jpg",
+        "title": "The book has 90900+ readers",
+        "text1": "Readers reviews",
+        "text2": "is self explanatory – 5/5",
+        "icon": "assets/icons/star.svg"
+    }
+}

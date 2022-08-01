@@ -1,10 +1,13 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
+import data from "../data/cta.json"
 
-const Cta = () => {
+const CtaV5 = () => {
+  const {ctav5 } = data;
+
   return (
     // <!-- ========== CTA v5 section start ========== -->
-    <section className="section-padding ctav5">
+    <section className="section-padding ctav5" style={{backgroundImage: `url(${ctav5.backgroundImage})`}}>
       <div className="container">
         <div className="row">
           <div className="ctav5__content">
@@ -14,7 +17,7 @@ const Cta = () => {
               data-aos-duration="1000"
               data-aos-delay="150"
             >
-              The book has 90900+ readers
+              {ctav5.title}
             </h2>
             <ul>
               <li
@@ -22,35 +25,35 @@ const Cta = () => {
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
-                <FaStar />
+                <img className="img-fluid" src={ctav5.icon} alt="Star Icon" width="25" height="25" />
               </li>
               <li
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="250"
               >
-                <FaStar />
+                <img className="img-fluid" src={ctav5.icon} alt="Star Icon" width="25" height="25" />
               </li>
               <li
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="300"
               >
-                <FaStar />
+                <img className="img-fluid" src={ctav5.icon} alt="Star Icon" width="25" height="25" />
               </li>
               <li
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="350"
               >
-                <FaStar />
+                <img className="img-fluid" src={ctav5.icon} alt="Star Icon" width="25" height="25" />
               </li>
               <li
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="400"
               >
-                <FaStar />
+                <img className="img-fluid" src={ctav5.icon} alt="Star Icon" width="25" height="25" />
               </li>
             </ul>
             <p
@@ -59,8 +62,8 @@ const Cta = () => {
               data-aos-duration="1000"
               data-aos-delay="500"
             >
-              Readers reviews <br />
-              is self explanatory – 5/5
+              {ctav5.text1} <br />
+              {ctav5.text2}
             </p>
           </div>
         </div>
@@ -70,4 +73,4 @@ const Cta = () => {
   );
 };
 
-export default Cta;
+export default CtaV5;
