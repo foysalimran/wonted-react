@@ -148,7 +148,6 @@
 }
 // Cta v5
 .ctav5 {
-  background-image: url(../../images/ctav5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: $color-light;
@@ -188,9 +187,6 @@
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        svg {
-          color: $color-dark;
-        }
       }
     }
   }

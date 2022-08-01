@@ -2,11 +2,11 @@ import React from 'react';
 
 const Cta = () => {
     return (
-        <section class="cta section-padding" id="cta">
-        <div class="container">
-          <div class="row justify-content-center cta__inner bg-one">
-            <div class="col-lg-8">
-              <div class="section-title-center mb-0 text-center">
+        <section className="cta section-padding" id="cta">
+        <div className="container">
+          <div className="row justify-content-center cta__inner bg-one">
+            <div className="col-lg-8">
+              <div className="section-title-center mb-0 text-center">
                 <span
                   data-aos="fade-up"
                   data-aos-duration="1000"
@@ -14,7 +14,7 @@ const Cta = () => {
                   >SUBSCRIBE NOW</span
                 >
                 <h2
-                  class="display-6"
+                  className="display-6"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                   data-aos-delay="200"
@@ -22,17 +22,17 @@ const Cta = () => {
                   Get a free chapter of this book
                 </h2>
               </div>
-              <div class="cta-form-box">
+              <div className="cta-form-box">
                 {/* subscription form start  */}
                 <form action="assets/subscribe/subscribe.php" id="subscribe">
                   <div
-                    class="mb13"
+                    className="mb13"
                     data-aos="fade-up"
                     data-aos-duration="1000"
                     data-aos-delay="250"
                   >
                     <input
-                      class="cta-email"
+                      className="cta-email"
                       type="email"
                       name="email"
                       placeholder="Your Email"
@@ -40,32 +40,32 @@ const Cta = () => {
                     />
                   </div>
                   <button
-                    class="w-100 button button__primary align-items-center"
+                    className="w-100 button button__primary align-items-center"
                     id="subscribe-button"
                     data-aos="fade-up"
                     data-aos-duration="1000"
                     data-aos-delay="300"
                   >
                     <span
-                      >Subscribe Now <i class="icofont-arrow-right"></i
+                      >Subscribe Now <i className="icofont-arrow-right"></i
                     ></span>
                   </button>
-                  <div class="result">
+                  <div className="result">
                     <p
-                      class="success-msg"
+                      className="success-msg"
                       data-aos="fade-up"
                       data-aos-duration="1000"
                       data-aos-delay="350"
                     >
-                      <i class="icofont-check"></i> Your email has been stored!
+                      <i className="icofont-check"></i> Your email has been stored!
                     </p>
                     <p
-                      class="error-msg"
+                      className="error-msg"
                       data-aos="fade-up"
                       data-aos-duration="1000"
                       data-aos-delay="400"
                     >
-                      <i class="icofont-close"></i> Sorry! Something went wrong!
+                      <i className="icofont-close"></i> Sorry! Something went wrong!
                     </p>
                   </div>
                 </form>
@@ -75,9 +75,9 @@ const Cta = () => {
                   id="subscribe-mailchimp"
                   data-wow-duration="1.5s"
                 >
-                  <div class="mb13" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
+                  <div className="mb13" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
                     <input
-                      class="cta-email"
+                      className="cta-email"
                       type="email"
                       name="email"
                       placeholder="Your Email"
@@ -85,20 +85,20 @@ const Cta = () => {
                   </div>
                   <button
                     type="submit"
-                    class="w-100 button button__primary align-items-center"
+                    className="w-100 button button__primary align-items-center"
                      data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"
                   >
-                    <span>Subscribe Now <i class="icofont-arrow-right"></i></span>
+                    <span>Subscribe Now <i className="icofont-arrow-right"></i></span>
                   </button>
-                  <div class="result">
-                    <p class="success-msg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
-                      <i class="icofont-check"></i> Your email has been stored!
+                  <div className="result">
+                    <p className="success-msg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
+                      <i className="icofont-check"></i> Your email has been stored!
                     </p>
-                    <p class="error-msg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                      <i class="icofont-close"></i> Sorry! Something went wrong!
+                    <p className="error-msg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                      <i className="icofont-close"></i> Sorry! Something went wrong!
                     </p>
                   </div>
-                  <p class="mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
+                  <p className="mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
                     * eBook includes iBooks, PDF &amp; ePub versions
                   </p>
                 </form>  */}
