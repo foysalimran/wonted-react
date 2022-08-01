@@ -2,10 +2,10 @@
   &__item {
     box-shadow: 5px 5px $color-secondary;
     background-color: $bg-one;
-    img {
-      height: 100%;
-      object-fit: cover;
-    }
+    // img {
+    //   height: 100%;
+    //   object-fit: cover;
+    // }
   }
 
   .card {
@@ -22,10 +22,9 @@
     padding: 30px 10px 10px 0px;
 
     &__icon {
-      svg {
+      img {
         position: absolute;
         opacity: 0.3;
-        font-size: 80px;
         top: 0;
         right: 0;
       }
