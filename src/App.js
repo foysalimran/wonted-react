@@ -25,6 +25,7 @@ function App() {
     <div className="section-wrapper">
       <div id="preLoader"></div>
       <Header />
+      
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Version01 />} />
