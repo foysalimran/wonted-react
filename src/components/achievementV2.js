@@ -7,10 +7,10 @@ import img4 from '../assets/images/awards/4.jpg'
 import img5 from '../assets/images/awards/5.jpg'
 
 import {GiTrophy} from "react-icons/gi"
-import data from "../data/achievements.json"
+// import data from "../data/achievements.json"
 
 const AchievementV2 = () => {
-  const {achievements} = data;
+  // const {achievements} = data;
   return (
     <section id="achievement" className="section-padding achievement bg-one">
       <div className="container">

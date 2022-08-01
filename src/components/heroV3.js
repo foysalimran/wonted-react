@@ -1,8 +1,8 @@
 import React from 'react';
+import data from "../data/herov1.json"
 
-import heroImg from '../assets/images/book2.png'
-
-const HeroV3 = () => {
+const Herov3 = () => {
+  const { herov3 } = data;
     return (
         <section
         id="hero"
@@ -23,7 +23,7 @@ const HeroV3 = () => {
                   data-aos-duration="1000"
                   data-aos-delay="850"
                 >
-                  Let's make the best investment
+                  {herov3.subtitle}
                 </div>
                 <h1
                   className="display-4 mb-4 text-capitalize"
@@ -31,7 +31,7 @@ const HeroV3 = () => {
                   data-aos-duration="1000"
                   data-aos-delay="850"
                 >
-                  Read more and make success the result of perfection.
+                  {herov3.title}
                 </h1>
                 <p
                   className="text-muted mb-5 fs-5"
@@ -39,8 +39,7 @@ const HeroV3 = () => {
                   data-aos-duration="1000"
                   data-aos-delay="900"
                 >
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
-                  harum quibusdam, assumenda quia explicabo.
+                  {herov3.description}
                 </p>
               </div>
             </div>
@@ -53,16 +52,16 @@ const HeroV3 = () => {
               <div className="hero__images4 text-center">
                 <img
                   width="400"
-                  className="img-fluid"
-                  src={heroImg}
+                  className="img-fluid img"
+                  src={herov3.image}
                   alt=""
                 />
                 <a
                   href="https://youtu.be/ksImBkJNQt8"
                   className="glightbox3 video-btn"
                 >
-                  <i className="icofont-play"></i
-                ></a>
+                  <img className="img-fluid" src={herov3.icon} alt="video icon" width="25" height="25" />
+                  </a>
                 <div className="promo-video">
                   <div className="waves-block">
                     <div className="waves wave-1"></div>
@@ -78,4 +77,4 @@ const HeroV3 = () => {
     );
 };
 
-export default HeroV3;
+export default Herov3;

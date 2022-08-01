@@ -1,8 +1,10 @@
 import React from 'react';
+import data from "../data/cta.json"
 
 const Cta = () => {
+  const {cta} = data;
     return (
-        <section className="cta section-padding" id="cta">
+        <section className="cta section-padding" id="cta" style={{backgroundImage: `url("${cta.backgroundImage}")`}}>
         <div className="container">
           <div className="row justify-content-center cta__inner bg-one">
             <div className="col-lg-8">
@@ -11,15 +13,14 @@ const Cta = () => {
                   data-aos="fade-up"
                   data-aos-duration="1000"
                   data-aos-delay="150"
-                  >SUBSCRIBE NOW</span
-                >
+                  >{cta.subtitle}</span>
                 <h2
                   className="display-6"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                   data-aos-delay="200"
                 >
-                  Get a free chapter of this book
+                  {cta.title}
                 </h2>
               </div>
               <div className="cta-form-box">
