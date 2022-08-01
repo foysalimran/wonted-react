@@ -47,14 +47,19 @@ const Author = () => {
             <div className="author__image">
               <img
                 className="img-fluid"
-                src="assets/images/author.png"
+                src={about.image}
                 alt="Author Image"
               />
               <a
                 href="https://youtu.be/qg0_FinB6EE"
                 className="glightbox3 video-btn"
               >
-                <i className="icofont-play"></i>
+                <img
+                        className="img-fluid"
+                        src="../assets/icons/ui-play.svg"
+                        alt="icon"
+                        width="25"
+                      />
               </a>
               <div className="promo-video">
                 <div className="waves-block">
@@ -94,20 +99,6 @@ const Author = () => {
                     {data.achieves}
                   </li>
                 ))}
-                {/* <li>
-                  <i className="icofont-check"></i>Achieved 10+ awarded
-                </li>
-                <li>
-                  <i className="icofont-check"></i>Very passionate about
-                  writting
-                </li>
-                <li>
-                  <i className="icofont-check"></i>Most Popular writter in the
-                  year
-                </li>
-                <li>
-                  <i className="icofont-check"></i>17+ Books written
-                </li> */}
               </ul>
               <ul className="social-icon mt-3">
                 {about.social?.map((data, i) => (
