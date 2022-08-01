@@ -38,8 +38,8 @@ const Pricing = () => {
         </div>
         <div className="row align-items-center justify-content-center">
           {/* <!-- pricing table start --> */}
-          {pricing.pricingItem?.map((data) => (
-            <div key={data.id}
+          {pricing.pricingItem?.map((data, i) => (
+            <div key={i}
               className="col-md-6 col-lg-4 mb-4 mb-lg-0"
               data-aos="fade-up"
               data-aos-duration="1000"
@@ -50,8 +50,8 @@ const Pricing = () => {
                   <h3 className="pricing__title">{data.title}</h3>
                   <h3 className="pricing__price">{data.price}</h3>
                   <ul className="pricing__list">
-                    {data.feature?.map((items) => (
-                      <li>{items.item}</li>
+                    {data.feature?.map((items, i) => (
+                      <li key={i}>{items.item}</li>
                     ))}
                   </ul>
                   <a href="#" className="button button__primary">

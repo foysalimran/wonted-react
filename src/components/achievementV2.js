@@ -12,11 +12,11 @@ import data from "../data/achievements.json"
 const AchievementV2 = () => {
   const {achievements} = data;
   return (
-    <section id="achievement" class="section-padding achievement bg-one">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
-            <div class="section-title-center text-center">
+    <section id="achievement" className="section-padding achievement bg-one">
+      <div className="container">
+        <div className="row">
+          <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
+            <div className="section-title-center text-center">
               <span
                 data-aos="fade-up"
                 data-aos-duration="1000"
@@ -25,7 +25,7 @@ const AchievementV2 = () => {
                 Author Achievements
               </span>
               <h2
-                class="display-6"
+                className="display-6"
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="200"
@@ -33,7 +33,7 @@ const AchievementV2 = () => {
                 Honor & Awards Achieved
               </h2>
               <div
-                class="section-divider divider-traingle"
+                className="section-divider divider-traingle"
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="250"
@@ -41,22 +41,22 @@ const AchievementV2 = () => {
             </div>
           </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3">
           <div
-            class="col m-30px-b"
+            className="m-15px-tb"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            <div class="card h-100 translateEffect1">
+            <div className="card h-100 translateEffect1">
               <img
                 src={img1}
-                class="card-img-top"
+                className="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <div class="achievement__content">
-                  <div class="achievement__content__icon">
+              <div className="card-body">
+                <div className="achievement__content">
+                  <div className="achievement__content__icon">
                     <GiTrophy />
                   </div>
                   <h3>Winner</h3>
@@ -69,20 +69,20 @@ const AchievementV2 = () => {
             </div>
           </div>
           <div
-            class="col m-30px-b"
+            className="m-15px-tb"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="300"
           >
-            <div class="card h-100 translateEffect1">
+            <div className="card h-100 translateEffect1">
               <img
                 src={img2}
-                class="card-img-top"
+                className="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <div class="achievement__content">
-                  <div class="achievement__content__icon">
+              <div className="card-body">
+                <div className="achievement__content">
+                  <div className="achievement__content__icon">
                     <GiTrophy />
                   </div>
                   <h3>Guest of Honor</h3>
@@ -96,20 +96,20 @@ const AchievementV2 = () => {
             </div>
           </div>
           <div
-            class="col m-30px-b"
+            className="m-15px-tb"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="400"
           >
-            <div class="card h-100 translateEffect1">
+            <div className="card h-100 translateEffect1">
               <img
                 src={img3}
-                class="card-img-top"
+                className="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <div class="achievement__content">
-                  <div class="achievement__content__icon">
+              <div className="card-body">
+                <div className="achievement__content">
+                  <div className="achievement__content__icon">
                     <GiTrophy />
                   </div>
                   <h3>Nominated</h3>
@@ -123,20 +123,20 @@ const AchievementV2 = () => {
             </div>
           </div>
           <div
-            class="col m-30px-b"
+            className="m-15px-tb"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="500"
           >
-            <div class="card h-100 translateEffect1">
+            <div className="card h-100 translateEffect1">
               <img
                 src={img4}
-                class="card-img-top"
+                className="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <div class="achievement__content">
-                  <div class="achievement__content__icon">
+              <div className="card-body">
+                <div className="achievement__content">
+                  <div className="achievement__content__icon">
                     <GiTrophy />
                   </div>
                   <h3>Winner</h3>
@@ -150,20 +150,20 @@ const AchievementV2 = () => {
             </div>
           </div>
           <div
-            class="col m-30px-b"
+            className="m-15px-tb"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="600"
           >
-            <div class="card h-100 translateEffect1">
+            <div className="card h-100 translateEffect1">
               <img
                 src={img5}
-                class="card-img-top"
+                className="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <div class="achievement__content">
-                  <div class="achievement__content__icon">
+              <div className="card-body">
+                <div className="achievement__content">
+                  <div className="achievement__content__icon">
                     <GiTrophy />
                   </div>
                   <h3>Finalist</h3>
@@ -177,20 +177,20 @@ const AchievementV2 = () => {
             </div>
           </div>
           <div
-            class="col m-30px-b"
+            className="col m-15px-tb"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="700"
           >
-            <div class="card h-100 translateEffect1">
+            <div className="card h-100 translateEffect1">
               <img
                 src={img2}
-                class="card-img-top"
+                className="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <div class="achievement__content">
-                  <div class="achievement__content__icon">
+              <div className="card-body">
+                <div className="achievement__content">
+                  <div className="achievement__content__icon">
                     <GiTrophy />
                   </div>
                   <h3>Nominated</h3>

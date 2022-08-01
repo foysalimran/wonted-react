@@ -2,8 +2,10 @@
 import React from "react";
 import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
 import { IoLogoWhatsapp} from "react-icons/io";
+import data from "../data/contact.json"
 
 const Contact = () => {
+  const {contact} = data;
   return (
     // <!-- ========== Contact section start ========== -->
     <section id="contact" className="p-80px-tb bg-white">
@@ -16,7 +18,7 @@ const Contact = () => {
                 data-aos-duration="1000"
                 data-aos-delay="150"
               >
-                Contact
+                {contact.subtitle}
               </span>
               <h2
                 className="display-6"
@@ -24,7 +26,7 @@ const Contact = () => {
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
-                Write me anything
+                {contact.title}
               </h2>
               <div
                 className="section-divider divider-traingle"
@@ -98,7 +100,7 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 <button type="submit" className="button button__primary align-items-center">
-                  <span>Send Now</span>
+                  <span>{contact.btnText}</span>
                 </button>
               </form>
             </div>
@@ -114,45 +116,33 @@ const Contact = () => {
             <div className="contact__address p-30px">
               <ul className="contact__address__content">
                 <li>
-                  <span>Address:</span>16, Lankaway <br />
-                  Florida, USA 99544
+                  <span>{contact.address}</span>{contact.addressText1}<br />
+                  {contact.addressText2}
                 </li>
                 <li>
-                  <span>Phone:</span>
-                  <a href="tel:1124447900">112 444 7900</a>
+                  <span>{contact.phone}</span>
+                  <a href="tel:1124447900">{contact.number}</a>
                 </li>
                 <li>
-                  <span>Email:</span>
-                  <a href="#">support@support.com</a>
+                  <span>{contact.email}</span>
+                  <a href="#">{contact.emailText}</a>
                 </li>
               </ul>
-              <h4>Connect book socials</h4>
+              <h4>{contact.socialTitle}</h4>
               <ul className="social-icon mt-3">
-                <li>
-                  <a href="#">
-                  <FaFacebookF />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                  <FaTwitter />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                  <FaLinkedinIn />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                  <FaYoutube />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                  <IoLogoWhatsapp />
-                  </a>
-                </li>
+                {contact.social?.map((data, i) => (
+                  <li key={i}>
+                    <a href="#">
+                      <img
+                        className="img-fluid"
+                        src={data.icon}
+                        alt="icon"
+                        width="25"
+                        height="25"
+                      />
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

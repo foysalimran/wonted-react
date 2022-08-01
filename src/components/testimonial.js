@@ -22,7 +22,7 @@ const Testimonial = () => {
                 data-aos-duration="1000"
                 data-aos-delay="150"
               >
-                Testimonials
+                {testimonial.subtitle}
               </span>
               <h2
                 className="display-6"
@@ -30,7 +30,7 @@ const Testimonial = () => {
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
-                What people said about my books
+                {testimonial.title}
               </h2>
               <div
                 className="section-divider divider-traingle"
@@ -58,8 +58,14 @@ const Testimonial = () => {
                 },
               }}
             >
-            {testimonial?.map((data) => (
+            {testimonial.testimonialItem?.map((data) => (
               <SwiperSlide key={data.id}>
+                <div
+                    className="swiper-slide p-5px-lr"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
+                  >
                 <div className="testi-card card h-100 translateEffect1">
                   <div className="card-body p-4">
                     <div className="testi-card__quotation">
@@ -78,6 +84,7 @@ const Testimonial = () => {
                       </div>
                     </div>
                   </div>
+                </div>
                 </div>
               </SwiperSlide>
             ))}
