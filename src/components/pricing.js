@@ -39,7 +39,7 @@ const Pricing = () => {
         <div className="row align-items-center justify-content-center">
           {/* <!-- pricing table start --> */}
           {pricing.pricingItem?.map((data, i) => (
-            <div key={data.i}
+            <div key={i}
               className="col-md-6 col-lg-4 mb-4 mb-lg-0"
               data-aos="fade-up"
               data-aos-duration="1000"

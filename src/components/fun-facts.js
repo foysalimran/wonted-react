@@ -47,8 +47,8 @@ const FunFacts = () => {
               >
                 <div className="counters__stats-box h-100 translateEffect1">
                   <div className="counters__stats-icon">
-                    <img className="img-fluid" src={data.icon} alt="icon" width="80"
-                        height="80" />
+                    <img className="img-fluid" src={data.icon} alt="icon" width="100"
+                        height="100" />
                   </div>
                   <div className="counters__stats-box__number">
                   <CountUp end={data.countNumber} enableScrollSpy="true" />

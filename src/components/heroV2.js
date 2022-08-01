@@ -1,5 +1,4 @@
 import React from 'react';
-import heroImg from '../assets/images/book2.png'
 
 import data from "../data/herov2.json"
 
