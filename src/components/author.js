@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import data from "../data/about.json";
 
 const Author = () => {
+  const { about } = data;
   return (
     // <!-- ========== Author section start ========== -->
     <section id="author" className="section-padding author">
@@ -15,7 +17,7 @@ const Author = () => {
                 data-aos-duration="1000"
                 data-aos-delay="150"
               >
-                About author
+                {about.title}
               </span>
               <h2
                 className="display-6"
@@ -23,7 +25,7 @@ const Author = () => {
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
-                Learn about the book writer
+                {about.subtitle}
               </h2>
               <div
                 className="section-divider divider-traingle"
@@ -80,45 +82,47 @@ const Author = () => {
                 sapiente blanditiis perferendis corrupti non quisquam?
               </p>
               <ul className="author__content__desc m-30px-b">
-                <li>
+                {about.achievement?.map((data, i) => (
+                  <li key={i}>
+                    <img
+                      className="img-fluid"
+                      src={about.checkIcon}
+                      alt="icon"
+                      width="25"
+                      height="25"
+                    /> {" "}
+                    {data.achieves}
+                  </li>
+                ))}
+                {/* <li>
                   <i className="icofont-check"></i>Achieved 10+ awarded
                 </li>
                 <li>
-                  <i className="icofont-check"></i>Very passionate about writting
+                  <i className="icofont-check"></i>Very passionate about
+                  writting
                 </li>
                 <li>
-                  <i className="icofont-check"></i>Most Popular writter in the year
+                  <i className="icofont-check"></i>Most Popular writter in the
+                  year
                 </li>
                 <li>
                   <i className="icofont-check"></i>17+ Books written
-                </li>
+                </li> */}
               </ul>
-              <ul className="social-icon">
-                <li>
-                  <a href="#">
-                    <i className="icofont-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="icofont-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="icofont-linkedin"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="icofont-youtube-play"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="icofont-whatsapp"></i>
-                  </a>
-                </li>
+              <ul className="social-icon mt-3">
+                {about.social?.map((data, i) => (
+                  <li key={i}>
+                    <a href="#">
+                      <img
+                        className="img-fluid"
+                        src={data.icon}
+                        alt="icon"
+                        width="25"
+                        height="25"
+                      />
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

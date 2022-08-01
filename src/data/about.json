@@ -1,4 +1,38 @@
 {
+  "about": {
+    "title": "ABOUT AUTHOR",
+    "subtitle": "Learn about the book writer",
+    "image": "assets/images/author.png",
+    "icon": "assets/icons/ui-play.svg",
+    "userinfo": {
+      "name": "Michale John",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nam eveniet veritatis aliquid harum temporibus et pariatur. Incidunt, labore voluptatum minima tenetur, consequatur odit sapiente blanditiis perferendis corrupti non quisquam?"
+    },
+    "checkIcon": "assets/icons/check.svg",
+    "achievement": [
+      { "achieves": "Achieved 10+ awarded" },
+      { "achieves": "Very passionate about writting" },
+      { "achieves": "Most Popular writer in the year" },
+      { "achieves": "17+ Books written" }
+    ],
+    "social": [
+      {
+        "icon": "assets/icons/facebook.svg"
+      },
+      {
+        "icon": "assets/icons/twitter.svg"
+      },
+      {
+        "icon": "assets/icons/linkedin.svg"
+      },
+      {
+        "icon": "assets/icons/youtube-play.svg"
+      },
+      {
+        "icon": "assets/icons/whatsapp.svg"
+      }
+    ]
+  },
   "aboutv2": {
     "title": "ABOUT AUTHOR",
     "subtitle": "Learn about the book writer",
@@ -32,21 +66,21 @@
       }
     ],
     "social": [
-        {
-            "icon": "assets/icons/facebook.svg"
-        },
-        {
-            "icon": "assets/icons/twitter.svg"
-        },
-        {
-            "icon": "assets/icons/linkedin.svg"
-        },
-        {
-            "icon": "assets/icons/youtube-play.svg"
-        },
-        {
-            "icon": "assets/icons/whatsapp.svg"
-        }
+      {
+        "icon": "assets/icons/facebook.svg"
+      },
+      {
+        "icon": "assets/icons/twitter.svg"
+      },
+      {
+        "icon": "assets/icons/linkedin.svg"
+      },
+      {
+        "icon": "assets/icons/youtube-play.svg"
+      },
+      {
+        "icon": "assets/icons/whatsapp.svg"
+      }
     ]
   }
 }
