@@ -41,8 +41,11 @@
       }
     ]
   },
-  "chapterv2": [
-    {
+  "chapterv2": {
+    "title": "Chapters we've covered",
+    "subtitle": "CHAPTERS",
+    "chapterItem": [
+      {
       "id": 1,
       "chapter": "Chapter 01",
       "title": "Getting started",
@@ -97,4 +100,5 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quod sit amet aspernatur minima deleniti."
     }
   ]
+}
 }

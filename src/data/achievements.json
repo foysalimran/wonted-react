@@ -4,38 +4,44 @@
       "id": 1,
       "title": "Nominated",
       "image": "/assets/images/awards/1.jpg",
-      "description": "International Thriller Writers Award for Best Novel (These Toxic Things)"
+      "description": "International Thriller Writers Award for Best Novel (These Toxic Things)",
+      "icon": "/assets/icons/trophy.svg"
     },
     {
       "id": 2,
       "title": "Winner",
       "image": "/assets/images/awards/2.jpg",
-      "description": "International Thriller Writers Award for Best Novel (These Toxic Things)"
+      "description": "International Thriller Writers Award for Best Novel (These Toxic Things)",
+      "icon": "/assets/icons/trophy.svg"
     },
 
     {
       "id": 3,
       "title": "Guest of Honor",
       "image": "/assets/images/awards/3.jpg",
-      "description": "International Thriller Writers Award for Best Novel (These Toxic Things)"
+      "description": "International Thriller Writers Award for Best Novel (These Toxic Things)",
+      "icon": "/assets/icons/trophy.svg"
     },
     {
       "id": 4,
       "title": "Finalist",
       "image": "/assets/images/awards/4.jpg",
-      "description": "International Thriller Writers Award for Best Novel (These Toxic Things)"
+      "description": "International Thriller Writers Award for Best Novel (These Toxic Things)",
+      "icon": "/assets/icons/trophy.svg"
     },
     {
       "id": 5,
       "title": "Winner",
       "image": "/assets/images/awards/5.jpg",
-      "description": "International Thriller Writers Award for Best Novel (These Toxic Things)"
+      "description": "International Thriller Writers Award for Best Novel (These Toxic Things)",
+      "icon": "/assets/icons/trophy.svg"
     },
     {
       "id": 6,
       "title": "Nominated",
       "image": "/assets/images/awards/1.jpg",
-      "description": "International Thriller Writers Award for Best Novel (These Toxic Things)"
+      "description": "International Thriller Writers Award for Best Novel (These Toxic Things)",
+      "icon": "/assets/icons/trophy.svg"
     }
   ]
 }

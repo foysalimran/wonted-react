@@ -16,7 +16,7 @@ const {chapterv2} = chapterData;
                 data-aos-duration="1000"
                 data-aos-delay="150"
               >
-                CHAPTERS
+               {chapterv2.subtitle}
               </span>
               <h2
                 className="display-6"
@@ -24,7 +24,7 @@ const {chapterv2} = chapterData;
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
-                Chapters we've covered
+               {chapterv2.title}
               </h2>
               <div
                 className="section-divider divider-traingle"
@@ -36,7 +36,7 @@ const {chapterv2} = chapterData;
           </div>
         </div>
         <div className="row justify-content-center">
-          {chapterv2?.map((data) => (
+          {chapterv2.chapterItem?.map((data) => (
             <div
               key={data.id}
               className="col-md-6 col-lg-4 mb-4"

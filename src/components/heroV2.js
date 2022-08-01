@@ -1,9 +1,10 @@
 import React from 'react';
 
-import data from "../data/herov2.json"
+import data from "../data/herov1.json"
 
 const HeroV2 = () => {
   const {herov2} = data;
+  
     return (
         <section
         id="hero"
