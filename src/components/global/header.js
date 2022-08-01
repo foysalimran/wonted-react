@@ -1,5 +1,4 @@
 import { default as React, useState } from "react";
-import logo from "../../assets/images/wonted-logo.png";
 import { Link } from "react-scroll";
 import data from "../../data/header.json"
 
@@ -45,7 +44,6 @@ const Header = () => {
                   >
                     {data.title}
                   </Link>
-                  {console.log(data.isDropdown)}
                   {data?.isDropdown === true ? (
                     <ul className="dropdown-menu">
                     <li className="nav-item">
