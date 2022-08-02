@@ -1,6 +1,7 @@
 import React from 'react';
 
 import data from "../data/herov1.json"
+import {BiPlayCircle} from "react-icons/bi"
 
 const HeroV2 = () => {
   const {herov2} = data;
@@ -49,7 +50,7 @@ const HeroV2 = () => {
                 <a
                   href="https://youtu.be/dkxiTpwm0hs"
                   className="glightbox3 btn__secondary"
-                  ><i className="icofont-play-alt-2"></i>{herov2.aboutBtn}</a
+                  ><BiPlayCircle /> {herov2.aboutBtn}</a
                 >
                 </div>
               </div>
