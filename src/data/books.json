@@ -1,0 +1,36 @@
+{
+    "books": {
+        "title": "Latest released books",
+        "subtitle" : "BOOKS",
+        "image1": "assets/images/book.png",
+        "image2": "assets/images/book3.png",
+        "image3": "assets/images/book7.png",
+        "image4": "assets/images/book5.jpg",
+        "booksItem": {
+            "title": "2022 best selling books",
+            "subtitle": "BEST SELLING BOOKS",
+            "booksItemContent": [
+                {
+                    "title": "Think & grow rich",
+                    "description": "The book lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, aliquam.",
+                    "icon": "assets/icons/touch.svg"
+                },
+                {
+                    "title": "Rich dad, poor dad",
+                    "description": "The book lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, aliquam.",
+                    "icon": "assets/icons/touch.svg"
+                },
+                {
+                    "title": "Eat that frog",
+                    "description": "The book lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, aliquam.",
+                    "icon": "assets/icons/touch.svg"
+                },
+                {
+                    "title": "The Subtle Art of Not Giving a F*ck",
+                    "description": "The book lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, aliquam.",
+                    "icon": "assets/icons/touch.svg"
+                }
+            ]
+        }
+    }
+}

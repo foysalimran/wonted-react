@@ -31,7 +31,7 @@ const CtaV4 = () => {
             <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
               {ctav4.text}
             </p>
-            <ModalVideo  channel='youtube' autoplay isOpen={isOpen} videoId="dkxiTpwm0hs" onClose={() => setOpen(false)} />
+            
             <a
               href="#preview"
               className="smooth button button__primary"
@@ -48,11 +48,12 @@ const CtaV4 = () => {
             data-aos-duration="1000"
             data-aos-delay="250"
           >
+            <ModalVideo  channel='youtube' autoplay isOpen={isOpen} videoId="dkxiTpwm0hs" onClose={() => setOpen(false)} />
             <div className="ctav4__video-btn">
               <button onClick={()=> setOpen(true)}
                 className="video-btn"
               >
-                <FaPlay />
+                <img className="img-fluid" src={ctav4.icon} alt="icon" width="25" height="25" />
               </button>
               <div className="promo-video">
                 <div className="waves-block">
