@@ -7,6 +7,7 @@ import Chapterv2 from "../chapterv2";
 import Contact from "../contact";
 import Cta from "../cta";
 import CtaV5 from "../ctav5";
+import Header from "../global/header";
 import Herov3 from "../herov3";
 import Pricing from "../pricing";
 import Testimonial from "../testimonial";
@@ -14,6 +15,7 @@ import Testimonial from "../testimonial";
 const Version03 = () => {
   return (
     <>
+      <Header />
       <Herov3 />
       <Achievev3 />
       <Chapterv2 />

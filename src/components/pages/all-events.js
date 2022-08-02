@@ -33,7 +33,7 @@ const AllEvent = () => {
                   data-aos-duration="1000"
                   data-aos-delay="650"
                 >
-                  <a href="index.html">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li
                   data-aos="fade-up"

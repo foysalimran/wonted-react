@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import PagesHeader from '../pages-header';
 import img1 from '../../assets/images/blog/single-blog.jpg';
@@ -34,7 +35,7 @@ const SingleBlog = () => {
                 data-aos-duration="1000"
                 data-aos-delay="650"
               >
-                <a href="index.html">Home</a>
+                <a href="/">Home</a>
               </li>
               <li
                 data-aos="fade-up"
@@ -87,7 +88,7 @@ const SingleBlog = () => {
                 </p>
                 <p>
                   No sea takimata sanctus est Lorem
-                  <a href="index.html">Ipsum</a> dolor sit amet. Lorem ipsum
+                  <a href="/">Ipsum</a> dolor sit amet. Lorem ipsum
                   dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                   eirmod tempor invidunt ut labore et.
                 </p>
@@ -184,7 +185,7 @@ const SingleBlog = () => {
                   <strong>adipisicing</strong> elit, sed do eiusmod tempor quis
                   nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                   commodo consequat. Duis aute irure dolor in reprehenderit in
-                  <a href="index.html">sed</a> uia non numquam eius modi tempora
+                  <a href="/">sed</a> uia non numquam eius modi tempora
                   incidunt ut labore dolor.
                 </p>
               </div>

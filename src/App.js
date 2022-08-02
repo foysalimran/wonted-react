@@ -16,6 +16,8 @@ import SingleBlog from "./components/pages/single-blog";
 import Version03 from "./components/pages/version-03";
 import Version04 from "./components/pages/version-04";
 import Version06 from "./components/pages/version-06";
+import BlogRightSidebar from "./components/blog-right-sidebar";
+import BlogLeftSidebar from "./components/blog-left-sidebar";
 
 function App() {
   useEffect(() => {
@@ -25,7 +27,7 @@ function App() {
   return (
     <div className="section-wrapper">
       <div id="preLoader"></div>
-      <Header />
+      {/* <Header /> */}
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Version01 />} />
@@ -39,6 +41,8 @@ function App() {
         <Route path="all-blog" element={<AllBlog />} />
         <Route path="single-event" element={<SingleBlog />} />
         <Route path="all-event" element={<AllEvent />} />
+        <Route path="blog-right-sidebar" element={<BlogRightSidebar />} />
+        <Route path="blog-left-sidebar" element={<BlogLeftSidebar />} />
       </Routes>
     </BrowserRouter>
     <Footer />
