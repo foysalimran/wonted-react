@@ -1,9 +1,11 @@
 import React from "react";
+import data from "../data/cta.json"
 
 const CtaV2 = () => {
+  const {ctav2} = data;
   return (
     // <!-- ========== CTA v2 section start ========== -->
-    <section id="cta2" className="cta2 section-padding">
+    <section id="cta2" className="cta2 section-padding" style={{backgroundImage: `url(${ctav2.backgroundImage})`}} >
       <div className="container">
         <div className="row">
           <div className="col-md-8 col-lg-7 col-xl-6">
@@ -15,7 +17,7 @@ const CtaV2 = () => {
                   data-aos-duration="1000"
                   data-aos-delay="150"
                 >
-                  SUBSCRIBE NOW
+                  {ctav2.title}
                 </span>
                 <h2
                   className="display-6 m-20px-b"
@@ -23,7 +25,7 @@ const CtaV2 = () => {
                   data-aos-duration="1000"
                   data-aos-delay="200"
                 >
-                  Get a free chapter of this book
+                  {ctav2.subtitle}
                 </h2>
               </div>
               <div className="cta2__form">
@@ -45,7 +47,7 @@ const CtaV2 = () => {
                       className="button button__primary"
                       id="subscribe-button"
                     >
-                      <span>Subscribe</span>
+                      <span>{ctav2.btnText}</span>
                     </button>
                   </div>
                   <div className="result">
@@ -87,7 +89,7 @@ const CtaV2 = () => {
                   data-aos-duration="1000"
                   data-aos-delay="450"
                 >
-                  <small>* eBook includes iBooks, PDF & ePub versions</small>
+                  <small>{ctav2.smallText}</small>
                 </p>
               </div>
             </div>

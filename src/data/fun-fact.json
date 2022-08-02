@@ -2,6 +2,7 @@
     "funFacts": {
         "title": "AWESOME STATS",
         "subtitle": "All Milestones Achieved",
+        "bgColor": "#f5ebe6",
         "funFactsItem": [
             {
                 "countNumber": 35,

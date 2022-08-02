@@ -107,6 +107,64 @@
       }
     ]
   },
+  "aboutv4": {
+    "title": "ABOUT me",
+    "subtitle": "Some core information's about me",
+    "image": "assets/images/achive3.jpg",
+    "icon": "assets/icons/ui-play.svg",
+    "description": "Based on wikipedia, Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aspernatur quam in nostrum aliquam eligendi vel, modi cupiditate numquam officiis dicta minima placeat nulla impedit voluptatum adipisci beatae. Rerum, impedit.",
+    "userinfo": [
+      {
+        "title": "Name:",
+        "subtitle": "Jacob Thomas"
+      },
+      {
+        "title": "Born:",
+        "subtitle": "05. 16. 1992"
+      },
+      {
+        "title": "Phone:",
+        "subtitle": "+01879654585"
+      },
+      {
+        "title": "Email ID:",
+        "subtitle": "info@wonted.com"
+      },
+      {
+        "title": "Career started:",
+        "subtitle": "2015"
+      },
+      {
+        "title": "Languages:",
+        "subtitle": "English, French"
+      },
+      {
+        "title": "Country:",
+        "subtitle": "USA"
+      },
+      {
+        "title": "Address:",
+        "subtitle": "Etowah, TN 37331 United States"
+      }
+    ],
+    "social": [
+      {
+        "icon": "assets/icons/facebook.svg"
+      },
+      {
+        "icon": "assets/icons/twitter.svg"
+      },
+      {
+        "icon": "assets/icons/linkedin.svg"
+      },
+      {
+        "icon": "assets/icons/youtube-play.svg"
+      },
+      {
+        "icon": "assets/icons/whatsapp.svg"
+      }
+    ]
+  },
   "aboutv6": {
     "title": "ABOUT AUTHOR",
     "subtitle": "Learn about the book writer",
