@@ -16,6 +16,7 @@ import SingleBlog from "./components/pages/single-blog";
 import Version03 from "./components/pages/version-03";
 import Version04 from "./components/pages/version-04";
 import Version06 from "./components/pages/version-06";
+import Version05 from "./components/pages/version-05";
 
 function App() {
   useEffect(() => {
@@ -33,7 +34,7 @@ function App() {
         <Route path="v2" element={<Version02 />} />
         <Route path="v3" element={<Version03 />} />
         <Route path="v4" element={<Version04 />} />
-        <Route path="v5" element={<Version02 />} />
+        <Route path="v5" element={<Version05 />} />
         <Route path="v6" element={<Version06 />} />
         <Route path="single-blog" element={<SingleBlog />} />
         <Route path="all-blog" element={<AllBlog />} />
