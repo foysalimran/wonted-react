@@ -9,11 +9,11 @@ const Aboutv6 = () => {
     const [isOpen, setOpen] = useState(false)
   return (
     // <!-- ========== Author section start ========== -->
-    <section id="about" class="section-padding authorv2">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
-            <div class="section-title-center text-center">
+    <section id="about" className="section-padding authorv2">
+      <div className="container">
+        <div className="row">
+          <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
+            <div className="section-title-center text-center">
               <span
                 data-aos="fade-up"
                 data-aos-duration="1000"
@@ -22,7 +22,7 @@ const Aboutv6 = () => {
                 {aboutv6.subtitle}
               </span>
               <h2
-                class="display-6"
+                className="display-6"
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="200"
@@ -30,7 +30,7 @@ const Aboutv6 = () => {
                 {aboutv6.title}
               </h2>
               <div
-                class="section-divider divider-traingle"
+                className="section-divider divider-traingle"
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="250"
@@ -38,16 +38,16 @@ const Aboutv6 = () => {
             </div>
           </div>
         </div>
-        <div class="row gx-5">
+        <div className="row gx-5">
           <div
-            class="col-lg-6 mb-4 mb-lg-0"
+            className="col-lg-6 mb-4 mb-lg-0"
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            <div class="authorv2__image">
+            <div className="authorv2__image">
               <img
-                class="img-fluid"
+                className="img-fluid"
                 src="assets/images/achive2.jpg"
                 alt="Author Image"
               />
@@ -68,7 +68,7 @@ const Aboutv6 = () => {
             </div>
           </div>
           <div
-            class="col-lg-6"
+            className="col-lg-6"
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-delay="200"
@@ -79,44 +79,44 @@ const Aboutv6 = () => {
               eligendi vel, modi cupiditate numquam officiis dicta minima
               placeat nulla impedit voluptatum adipisci beatae. Rerum, impedit.
             </p>
-            <div class="authorv2__content">
-              <div class="authorv2__list">
-                <div class="row">
-                  <div class="col-6 mb-3">
+            <div className="authorv2__content">
+              <div className="authorv2__list">
+                <div className="row">
+                  <div className="col-6 mb-3">
                     <h4>Name:</h4>
-                    <p class="mb-0">Jacob Thomas</p>
+                    <p className="mb-0">Jacob Thomas</p>
                   </div>
-                  <div class="col-6 mb-3">
+                  <div className="col-6 mb-3">
                     <h4>Born:</h4>
-                    <p class="mb-0">05. 16. 1992</p>
+                    <p className="mb-0">05. 16. 1992</p>
                   </div>
-                  <div class="col-6 mb-3">
+                  <div className="col-6 mb-3">
                     <h4>Phone:</h4>
-                    <p class="mb-0">+61 (0) 111 222 333</p>
+                    <p className="mb-0">+61 (0) 111 222 333</p>
                   </div>
-                  <div class="col-6 mb-3">
+                  <div className="col-6 mb-3">
                     <h4>Email ID:</h4>
-                    <p class="mb-0">info@wonted.com</p>
+                    <p className="mb-0">info@wonted.com</p>
                   </div>
-                  <div class="col-6 mb-3">
+                  <div className="col-6 mb-3">
                     <h4>Career started:</h4>
-                    <p class="mb-0">2015</p>
+                    <p className="mb-0">2015</p>
                   </div>
-                  <div class="col-6 mb-3">
+                  <div className="col-6 mb-3">
                     <h4>Languages:</h4>
-                    <p class="mb-0">English, French</p>
+                    <p className="mb-0">English, French</p>
                   </div>
-                  <div class="col-6 mb-3">
+                  <div className="col-6 mb-3">
                     <h4>Country:</h4>
-                    <p class="mb-0">US</p>
+                    <p className="mb-0">US</p>
                   </div>
-                  <div class="col-6">
+                  <div className="col-6">
                     <h4>Address:</h4>
-                    <p class="mb-0">Etowah, TN 37331 United States</p>
+                    <p className="mb-0">Etowah, TN 37331 United States</p>
                   </div>
                 </div>
               </div>
-              <ul class="social-icon mt-3">
+              <ul className="social-icon mt-3">
               {aboutv6.social?.map((data, i) => (
                   <li key={i}>
                     {data.link === "" ? (
