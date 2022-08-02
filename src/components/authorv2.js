@@ -91,15 +91,19 @@ const AuthorV2 = () => {
               <ul className="social-icon mt-3">
                 {aboutv2.social?.map((data, i) => (
                   <li key={i}>
-                    <a href="#">
-                      <img
-                        className="img-fluid"
-                        src={data.icon}
-                        alt="icon"
-                        width="25"
-                        height="25"
-                      />
-                    </a>
+                    {data.link === "" ? (
+                      ""
+                    ) : (
+                      <a href={data.link}>
+                        <img
+                          className="img-fluid"
+                          src={data.icon}
+                          alt="icon"
+                          width="25"
+                          height="25"
+                        />
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>

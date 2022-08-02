@@ -2,11 +2,11 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
-import data from "../data/about.json"
+import data from "../data/about.json";
 
 const Aboutv6 = () => {
-    const { aboutv6 } = data;
-    const [isOpen, setOpen] = useState(false)
+  const { aboutv6 } = data;
+  const [isOpen, setOpen] = useState(false);
   return (
     // <!-- ========== Author section start ========== -->
     <section id="about" className="section-padding authorv2">
@@ -51,12 +51,22 @@ const Aboutv6 = () => {
                 src="assets/images/achive2.jpg"
                 alt="Author Image"
               />
-              <ModalVideo  channel='youtube' autoplay isOpen={isOpen} videoId="dkxiTpwm0hs" onClose={() => setOpen(false)} />
+              <ModalVideo
+                channel="youtube"
+                autoplay
+                isOpen={isOpen}
+                videoId="dkxiTpwm0hs"
+                onClose={() => setOpen(false)}
+              />
 
-              <button onClick={()=> setOpen(true)}
-                className="video-btn"
-              >
-                <img className="img-fluid" src={aboutv6.icon} alt="icon" width="25" height="25" />
+              <button onClick={() => setOpen(true)} className="video-btn">
+                <img
+                  className="img-fluid"
+                  src={aboutv6.icon}
+                  alt="icon"
+                  width="25"
+                  height="25"
+                />
               </button>
               <div className="promo-video">
                 <div className="waves-block">
@@ -117,7 +127,7 @@ const Aboutv6 = () => {
                 </div>
               </div>
               <ul className="social-icon mt-3">
-              {aboutv6.social?.map((data, i) => (
+                {aboutv6.social?.map((data, i) => (
                   <li key={i}>
                     {data.link === "" ? (
                       ""
