@@ -3,10 +3,10 @@ import data from "../data/books.json"
 import { AiFillStar } from 'react-icons/ai';
 
 
-const Booksv3 = () => {
+const Booksv3 = ({bgColor}) => {
     const {booksv3} = data;
   return (
-    <section className="books section-padding">
+    <section className="books section-padding"  style={{backgroundColor: `${bgColor}`}}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
@@ -46,7 +46,7 @@ const Booksv3 = () => {
            <div className="books__book h-100 translateEffect1">
              <img
                className="img-fluid"
-               src="assets/images/book3.png"
+               src={data.image}
                alt="Book 3"
              />
              <p className="books__book__subtitle">{data.subtitle}</p>

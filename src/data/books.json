@@ -35,7 +35,7 @@
     },
     "booksv3": {
         "title": "Books",
-        "subtitle": "Some of my best selling books",
+        "subtitle": "Weekly best selling at Amazon",
         "booksItem": [
             {
                 "id": 1,
@@ -47,22 +47,22 @@
             {
                 "id": 2,
                 "image": "assets/images/book7.png",
-                "subtitle": "Rich dad, poor dad",
-                "title": "Think & grow rich",
+                "subtitle": "Basic Programming",
+                "title": "Rich dad, poor dad",
                 "price": "$99"
             },
             {
                 "id": 3,
                 "image": "assets/images/book5.png",
-                "subtitle": "Eat the frog",
-                "title": "Think & grow rich",
+                "subtitle": "Basic Programming",
+                "title": "Eat the frog",
                 "price": "$99"
             },
             {
                 "id": 4,
                 "image": "assets/images/book6.png",
-                "subtitle": "Design patterns",
-                "title": "Think & grow rich",
+                "subtitle": "Basic Programming",
+                "title": "Design patterns",
                 "price": "$99"
             }
         ]
