@@ -1,13 +1,15 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import Headerv3 from "../global/headerv3";
 
-const BlogRightSidebar = () => {
+const BlogLeftSidebar = () => {
   return (
+    // <!-- ========== All blogs hero start ========== -->
     <>
-      {/* <!-- ========== All blogs hero start ========== --> */}
+      <Headerv3 />
       <section
-        id="right-sidebar"
+        id="left-sidebar"
         class="all-blogs hero__padding overflow-hidden position-relative bg-one"
       >
         <div class="container">
@@ -19,7 +21,7 @@ const BlogRightSidebar = () => {
                 data-aos-duration="1000"
                 data-aos-delay="600"
               >
-                Blog right sidebar
+                Blog left sidebar
               </h1>
               <ul>
                 <li
@@ -41,7 +43,7 @@ const BlogRightSidebar = () => {
                   data-aos-duration="1000"
                   data-aos-delay="750"
                 >
-                  Blog right sidebar
+                  Blog left sidebar
                 </li>
               </ul>
             </div>
@@ -53,173 +55,6 @@ const BlogRightSidebar = () => {
       <section class="section-padding all-blog2">
         <div class="container">
           <div class="row">
-            <div
-              class="col-md-7 col-lg-8 col-xl-9 mb-4 mb-md-0"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-delay="200"
-            >
-              <div class="all-blog2__area">
-                <div class="all-blog2__area__image">
-                  <img
-                    class="img-fluid"
-                    src="assets/images/blog/blog_04.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="all-blog2__area__menu">
-                  <ul>
-                    <li>
-                      <a href="index.html" title="Posts by wpthemego">
-                        WPTHEMEGO
-                      </a>
-                    </li>
-                    <li>/</li>
-                    <li>DECEMBER 3, 2019</li>
-                  </ul>
-                  <h2 class="fs-2">
-                    <a href="#">Lorem ipsum dolor sit amet</a>
-                  </h2>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the
-                    industry’sstandard dummy text ever since the 1500s, when an
-                    unknown printer took a galley of...
-                  </p>
-                  <a href="#" class="link">
-                    Read more<i class="icofont-rounded-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="all-blog2__area">
-                <div class="all-blog2__area__image">
-                  <img
-                    class="img-fluid"
-                    src="assets/images/blog/blog_05.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="all-blog2__area__menu">
-                  <ul>
-                    <li>
-                      <a href="index.html" title="Posts by wpthemego">
-                        WPTHEMEGO
-                      </a>
-                    </li>
-                    <li>/</li>
-                    <li>DECEMBER 3, 2019</li>
-                  </ul>
-                  <h2 class="fs-2">
-                    <a href="#">Lorem ipsum dolor sit amet</a>
-                  </h2>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the
-                    industry’sstandard dummy text ever since the 1500s, when an
-                    unknown printer took a galley of...
-                  </p>
-                  <a href="#" class="link">
-                    Read more<i class="icofont-rounded-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="all-blog2__area">
-                <div class="all-blog2__area__image">
-                  <img
-                    class="img-fluid"
-                    src="assets/images/blog/blog_06.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="all-blog2__area__menu">
-                  <ul>
-                    <li>
-                      <a href="index.html" title="Posts by wpthemego">
-                        WPTHEMEGO
-                      </a>
-                    </li>
-                    <li>/</li>
-                    <li>DECEMBER 3, 2019</li>
-                  </ul>
-                  <h2 class="fs-2">
-                    <a href="#">Lorem ipsum dolor sit amet</a>
-                  </h2>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the
-                    industry’sstandard dummy text ever since the 1500s, when an
-                    unknown printer took a galley of...
-                  </p>
-                  <a href="#" class="link">
-                    Read more<i class="icofont-rounded-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="all-blog2__area">
-                <div class="all-blog2__area__image">
-                  <img
-                    class="img-fluid"
-                    src="assets/images/blog/blog_07.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="all-blog2__area__menu">
-                  <ul>
-                    <li>
-                      <a href="index.html" title="Posts by wpthemego">
-                        WPTHEMEGO
-                      </a>
-                    </li>
-                    <li>/</li>
-                    <li>DECEMBER 3, 2019</li>
-                  </ul>
-                  <h2 class="fs-2">
-                    <a href="#">Lorem ipsum dolor sit amet</a>
-                  </h2>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the
-                    industry’sstandard dummy text ever since the 1500s, when an
-                    unknown printer took a galley of...
-                  </p>
-                  <a href="#" class="link">
-                    Read more<i class="icofont-rounded-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="all-blog2__area">
-                <div class="all-blog2__area__image">
-                  <img
-                    class="img-fluid"
-                    src="assets/images/blog/blog_08.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="all-blog2__area__menu">
-                  <ul>
-                    <li>
-                      <a href="index.html" title="Posts by wpthemego">
-                        WPTHEMEGO
-                      </a>
-                    </li>
-                    <li>/</li>
-                    <li>DECEMBER 3, 2019</li>
-                  </ul>
-                  <h2 class="fs-2">
-                    <a href="#">Lorem ipsum dolor sit amet</a>
-                  </h2>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the
-                    industry’sstandard dummy text ever since the 1500s, when an
-                    unknown printer took a galley of...
-                  </p>
-                  <a href="#" class="link">
-                    Read more<i class="icofont-rounded-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
             <div
               id="right"
               class="col-md-5 col-lg-4 col-xl-3"
@@ -423,12 +258,181 @@ const BlogRightSidebar = () => {
                 </div>
               </div>
             </div>
+            <div
+              class="col-md-7 col-lg-8 col-xl-9 mb-4 mb-md-0"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <div class="all-blog2__area">
+                <div class="all-blog2__area__image">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/blog/blog_04.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="all-blog2__area__menu">
+                  <ul>
+                    <li>
+                      <a href="index.html" title="Posts by Lindsy Powers">
+                        Lindsy Powers
+                      </a>
+                    </li>
+                    <li>/</li>
+                    <li>DECEMBER 3, 2019</li>
+                  </ul>
+                  <h2 class="fs-2">
+                    <a href="#">Books with sneaky sci-fi plots</a>
+                  </h2>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the
+                    industry’sstandard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of...
+                  </p>
+                  <a href="#" class="link">
+                    Read more<i class="icofont-rounded-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="all-blog2__area">
+                <div class="all-blog2__area__image">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/blog/blog_05.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="all-blog2__area__menu">
+                  <ul>
+                    <li>
+                      <a href="index.html" title="Posts by Vannessa Cronin">
+                        Vannessa Cronin
+                      </a>
+                    </li>
+                    <li>/</li>
+                    <li>DECEMBER 3, 2019</li>
+                  </ul>
+                  <h2 class="fs-2">
+                    <a href="#">Best science books of 2022 so far</a>
+                  </h2>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the
+                    industry’sstandard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of...
+                  </p>
+                  <a href="#" class="link">
+                    Read more<i class="icofont-rounded-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="all-blog2__area">
+                <div class="all-blog2__area__image">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/blog/blog_06.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="all-blog2__area__menu">
+                  <ul>
+                    <li>
+                      <a href="index.html" title="Posts by Al Woodworth">
+                        Al Woodworth
+                      </a>
+                    </li>
+                    <li>/</li>
+                    <li>DECEMBER 3, 2019</li>
+                  </ul>
+                  <h2 class="fs-2">
+                    <a href="#">A.J. Jacobs’ favorite recent reads</a>
+                  </h2>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the
+                    industry’sstandard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of...
+                  </p>
+                  <a href="#" class="link">
+                    Read more<i class="icofont-rounded-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="all-blog2__area">
+                <div class="all-blog2__area__image">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/blog/blog_07.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="all-blog2__area__menu">
+                  <ul>
+                    <li>
+                      <a href="index.html" title="Posts by Marcus Mann">
+                        Marcus Mann
+                      </a>
+                    </li>
+                    <li>/</li>
+                    <li>DECEMBER 3, 2019</li>
+                  </ul>
+                  <h2 class="fs-2">
+                    <a href="#">
+                      Books we’re talking about: film and TV edition
+                    </a>
+                  </h2>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the
+                    industry’sstandard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of...
+                  </p>
+                  <a href="#" class="link">
+                    Read more<i class="icofont-rounded-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="all-blog2__area">
+                <div class="all-blog2__area__image">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/blog/blog_08.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="all-blog2__area__menu">
+                  <ul>
+                    <li>
+                      <a href="index.html" title="Posts by Seira Wilson">
+                        Seira Wilson
+                      </a>
+                    </li>
+                    <li>/</li>
+                    <li>DECEMBER 3, 2019</li>
+                  </ul>
+                  <h2 class="fs-2">
+                    <a href="#">Best romance books of 2022 so far</a>
+                  </h2>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the
+                    industry’sstandard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of...
+                  </p>
+                  <a href="#" class="link">
+                    Read more<i class="icofont-rounded-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      {/* <!-- ========== Blog right sidebar end ========== --> */}
+      {/* // <!-- ========== Blog right sidebar end ========== --> */}
     </>
   );
 };
 
-export default BlogRightSidebar;
+export default BlogLeftSidebar;
