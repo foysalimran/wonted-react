@@ -28,5 +28,13 @@
     "image": "assets/images/writer.jpg",
     "firstBtn": "Latest Books",
     "secondBtn": "About Book"
+  },
+  "herov5": {
+    "title": "John Smith.",
+    "subtitle": "FINANCE MANAGEMENT BOOK WRITER",
+    "description": "I'm creative book writer based in Boston, and I'm very passionate and dedicate about my writings.",
+    "image": "assets/images/writer-4.png",
+    "buyBtn": "Awarded books",
+    "aboutBtn": "About me"
   }
 }

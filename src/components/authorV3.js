@@ -33,7 +33,7 @@ const Authorv3 = () => {
               <p className="m-30px-b">{authorv3.description}</p>
               <ul className="social-icon mt-0 mb-0">
                 {authorv3.social?.map((data, i) => (
-                  <li>
+                  <li key={i}>
                     {data.link === "" ? (
                       ""
                     ) : (
