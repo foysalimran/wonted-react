@@ -12,6 +12,8 @@ import FunFacts from "../fun-facts";
 import HeroV4 from "../herov4";
 import Pricing from "../pricing";
 import Testimonial from "../testimonial";
+import Eventv2 from "../eventv2";
+import Booksv3 from "../booksv3";
 
 const Version04 = () => {
   return (
@@ -22,7 +24,8 @@ const Version04 = () => {
       <Booksv2 />
       <Achievement />
       <CtaV5 />
-      <Cta />
+      <Eventv2 />
+      <Booksv3 />
       <Testimonial />
       <Contact />
     </>
