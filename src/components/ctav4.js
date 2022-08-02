@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FaPlay } from "react-icons/fa";
 import ModalVideo from 'react-modal-video';
 import data from "../data/cta.json"
 

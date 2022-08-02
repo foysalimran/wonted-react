@@ -1,20 +1,18 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import PagesHeader from "../pages-header";
-import blogImg1 from "../../assets/images/blog/blog_01.jpg";
-import blogImg2 from "../../assets/images/blog/blog_02.jpg";
-import blogImg3 from "../../assets/images/blog/blog_03.jpg";
-
 import { RiTimeFill } from "react-icons/ri";
 import { FaComments } from "react-icons/fa";
 import { HiShare } from "react-icons/hi";
 import data from "../../data/blog.json"
+import Headerv3 from "../global/headerv3";
 
 const AllBlog = () => {
   const {blog} = data;
 
   return (
     <>
+      <Headerv3 />
       <PagesHeader />
       <section
         id="all-blogs"

@@ -19,7 +19,7 @@ const Footer = () => {
                 data-aos-duration="1000"
                 data-aos-delay="150"
               >
-                <a href="index.html">
+                <a href="/">
                   {/* <!-- <h1 className="m-0">WONTED</h1> --> */}
                   <img src={footer.logo} alt="Wonted" />
                 </a>

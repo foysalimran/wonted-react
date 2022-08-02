@@ -12,13 +12,15 @@ import Blog from "../blog";
 import CtaV4 from "../ctav4";
 import Contactv2 from "../contactv2";
 import Cta from "../cta";
+import Headerv2 from "../global/headerv2";
 
 const Version04 = () => {
   return (
     <>
+      <Headerv2 />
       <HeroV4 />
       <AuthorV4 />
-      <FunFacts  bgColor="#f5ebe6" cardColor="#fff"/>
+      <FunFacts bgColor="#f5ebe6" cardColor="#fff" />
       <Booksv2 />
       <Achievement />
       <CtaV5 />

@@ -7,6 +7,7 @@ import Chapterv2 from "../chapterv2";
 import Contact from "../contact";
 import CtaV2 from "../ctav2";
 import FunFacts from "../fun-facts";
+import Header from "../global/header";
 import Herov2 from "../herov2";
 import Pricing from "../pricing";
 import Testimonial from "../testimonial";
@@ -14,6 +15,7 @@ import Testimonial from "../testimonial";
 const Version02 = () => {
   return (
     <>
+      <Header />
       <Herov2 />
       <AchieveV2 />
       <Chapterv2 />
