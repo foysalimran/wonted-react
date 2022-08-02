@@ -2,7 +2,7 @@ import React from "react";
 import Achieve from "../achieve";
 import Achievement from "../achievement";
 import AuthorV2 from "../authorv2";
-import Books from "../books";
+import Booksv2 from "../booksv2";
 import Chapter from "../chapter";
 import ChapterPreview from "../chapter-preview";
 import Contact from "../contact";
@@ -26,7 +26,7 @@ function Version01() {
       <AuthorV2 />
       <Achievement />
       <FunFacts />
-      <Books />
+      <Booksv2 />
       <CtaV5 />
       <Testimonial />
       <CtaV4 />
