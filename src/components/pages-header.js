@@ -9,7 +9,7 @@ const PagesHeader = () => {
           <div className="container">
             <div className="row">
               <nav className="navbar navbar-expand-lg">
-                <a className="navbar-brand" href="index.html">
+                <a className="navbar-brand" href="/">
                   {/* <h1 className="m-0">WONTED</h1> */}
                   <img src={logo} alt="Wonted" />
                 </a>

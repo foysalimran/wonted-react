@@ -9,6 +9,7 @@ import Contact from "../contact";
 import CtaV4 from "../ctav4";
 import CtaV5 from "../ctav5";
 import FunFacts from "../fun-facts";
+import Header from "../global/header";
 import Hero from "../hero";
 import Pricing from "../pricing";
 import Testimonial from "../testimonial";
@@ -16,6 +17,7 @@ import Testimonial from "../testimonial";
 function Version01() {
   return (
     <>
+     <Header />
       <Hero />
       <Achieve />
       <Chapter />
