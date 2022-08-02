@@ -11,10 +11,12 @@ import AuthorV2 from "../authorv2";
 import Booksv1 from "../booksv1";
 import AchievementV2 from "../achievementv2";
 import Contact from "../contact";
+import Headerv2 from "../global/headerv2";
 
 const Version05 = () => {
   return (
     <>
+    <Headerv2 />
       <Herov5 />
       <AuthorV2 />
       <Booksv1 /> 
