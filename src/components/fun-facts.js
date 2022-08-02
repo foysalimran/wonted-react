@@ -3,7 +3,6 @@ import CountUp from 'react-countup';
 import data from "../data/fun-fact.json"
 
 const FunFacts = ({bgColor, cardColor}) => {
-  console.log(cardColor);
   const {funFacts} = data;
 
   return (
