@@ -168,5 +168,80 @@
                 "isDropdown": false
             }
         ]
+    },
+    "headerv3": {
+        "logo": "assets/images/wonted-logo.png",
+        "menu": [
+            {
+                "link": "hero",
+                "title":"Home",
+                "isDropdown": true,
+                "dropdownItem": [
+                    {
+                        "link": "/",
+                        "title": "version 01"
+                    },
+                    {
+                        "link": "/v2",
+                        "title": "version 02"
+                    },
+                    {
+                        "link": "/v3",
+                        "title": "version 03"
+                    },
+                    {
+                        "link": "/v4",
+                        "title": "version 04"
+                    },
+                    {
+                        "link": "v5",
+                        "title": "version 05"
+                    },
+                    {
+                        "link": "v6",
+                        "title": "version 06"
+                    }
+                ]
+            },
+            
+            {
+                "link": "events",
+                "title": "Events",
+                "isDropdown": true,
+                "dropdownItem": [
+                    {
+                        "link": "all-events",
+                        "title": "All Events"
+                    },
+                    {
+                        "link": "/single-event",
+                        "title": "Single Event"
+                    }
+                ]
+            },
+            {
+                "link": "blog",
+                "title": "Blog",
+                "isDropdown": true,
+                "dropdownItem": [
+                    {
+                        "link": "all-blog",
+                        "title": "All Blog"
+                    },
+                    {
+                        "link": "single-blog",
+                        "title": "Single Blog"
+                    },
+                    {
+                        "link": "blog-right-sidebar",
+                        "title": "Blog Right Sidebar"
+                    },
+                    {
+                        "link": "blog-left-sidebar",
+                        "title": "Blog Left Sidebar"
+                    }
+                ]
+            }
+        ]
     }
 }

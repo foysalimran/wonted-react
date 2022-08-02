@@ -1,10 +1,9 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import about from "../assets/images/achive.png";
 import data from "../data/about.json";
 
-const AuthorV4 = () => {
+const Authorv4 = () => {
   const { aboutv4 } = data;
   return (
     // <!-- ========== Author section start ========== -->
@@ -113,4 +112,4 @@ const AuthorV4 = () => {
   );
 };
 
-export default AuthorV4;
+export default Authorv4;

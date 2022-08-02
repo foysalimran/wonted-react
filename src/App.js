@@ -7,7 +7,6 @@ import AOS from "aos";
 import { useEffect } from "react";
 import "./assets/css/aos.css";
 import Footer from "./components/global/footer";
-import Header from "./components/global/header";
 import AllBlog from "./components/pages/all-blog";
 import AllEvent from "./components/pages/all-events";
 
@@ -16,8 +15,8 @@ import SingleBlog from "./components/pages/single-blog";
 import Version03 from "./components/pages/version-03";
 import Version04 from "./components/pages/version-04";
 import Version06 from "./components/pages/version-06";
-import BlogRightSidebar from "./components/blog-right-sidebar";
-import BlogLeftSidebar from "./components/blog-left-sidebar";
+import BlogRightSidebar from "./components/pages/blog-right-sidebar";
+import BlogLeftSidebar from "./components/pages/blog-left-sidebar";
 
 function App() {
   useEffect(() => {

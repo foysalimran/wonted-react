@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import PagesHeader from "../pages-header";
 
@@ -7,10 +8,12 @@ import eventImg3 from '../../assets/images/events/3.jpg'
 import eventImg4 from '../../assets/images/events/4.jpg'
 import eventImg5 from '../../assets/images/events/5.jpg'
 import eventImg6 from '../../assets/images/events/6.jpg'
+import Headerv3 from "../global/headerv3";
 
 const AllEvent = () => {
   return (
     <>
+    <Headerv3 />
       <PagesHeader />
       <div
         id="all-events"
