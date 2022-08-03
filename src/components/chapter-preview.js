@@ -1,16 +1,25 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/alt-text */
-import React from "react";
-import Lightbox from "react-lightbox-component";
+import React, { useEffect } from "react";
 import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import $ from "jquery";
 import data from "../data/chapterPreview.json";
+import GLightbox from "glightbox";
+window.jQuery = $;
 
 const ChapterPreview = () => {
   const { chapterPreview } = data;
+  console.log(chapterPreview);
+  useEffect(() => {
+    GLightbox({
+      selector: ".glightbox2",
+      slideEffect: "zoom",
+    });
+  }, []);
 
   return (
     // <!-- ========== Chapter preview section start ========== -->
@@ -69,17 +78,25 @@ const ChapterPreview = () => {
                     data-aos-duration="1000"
                     data-aos-delay="200"
                   >
-                    <Lightbox
-                      images={[
-                        {
-                          src: data.image,
-                          title: data.title,
-                          description:data.description
-                        },
-                      ]}
-                      thumbnailWidth="100%"
-                      thumbnailHeight="auto"
-                    />
+                    <a
+                      href={data.image}
+                      className="glightbox2"
+                      data-glightbox={`description: .custom-desc${i}; descPosition: right;`}
+                    >
+                      <img
+                        className="chapter-img img-fluid"
+                        src={data.image}
+                        alt="image"
+                      />
+                    </a>
+                    <div className={`glightbox-desc custom-desc${i}`}>
+                      <h3 className="mb-4 text-center">{data.title}</h3>
+                      <p className="first-letter">{data.text1}</p>
+                      <p>{data.text2}</p>
+                      <p>{data.text3}</p>
+                      <p>{data.text4}</p>
+                      <p>{data.text5}</p>
+                    </div>
                   </div>
                 </SwiperSlide>
               ))}

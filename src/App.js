@@ -8,9 +8,8 @@ import Version06 from "./components/pages/version-06";
 import Version05 from "./components/pages/version-05";
 
 import AOS from "aos";
-import { useEffect } from "react";
 import "./assets/css/aos.css";
-
+import { useEffect } from "react";
 import Footer from "./components/global/footer";
 import AllBlog from "./components/pages/all-blog";
 import AllEvent from "./components/pages/all-events";
@@ -26,7 +25,6 @@ function App() {
   return (
     <div className="section-wrapper">
       <div id="preLoader"></div>
-      {/* <Header /> */}
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Version01 />} />
