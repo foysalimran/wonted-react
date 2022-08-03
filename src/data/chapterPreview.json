@@ -1,0 +1,65 @@
+{
+    "chapterPreview":{
+        "title": "Chapter Preview",
+        "subtitle": "Read some chapter free",
+        "chapters":[
+            {
+                "image": "/assets/images/chapter-preview/1.jpg",
+                "title": "Chapter - 01",
+                "description": "Chapter description"
+            },
+            {
+                "image": "/assets/images/chapter-preview/2.jpg",
+                "title": "Chapter - 02",
+                "description": "Chapter description"
+            },
+            {
+                "image": "/assets/images/chapter-preview/3.jpg",
+                "title": "Chapter - 03",
+                "description": "Chapter description"
+            },
+            {
+                "image": "/assets/images/chapter-preview/4.jpg",
+                "title": "Chapter - 04",
+                "description": "Chapter description"
+            },
+            {
+                "image": "/assets/images/chapter-preview/5.jpg",
+                "title": "Chapter - 05",
+                "description": "Chapter description"
+            }
+        ]
+
+    },
+    "chapterPreviewv2":{
+        "title": "Chapter Preview",
+        "subtitle": "Read some chapter free",
+        "chapters":[
+            {
+            "title": "Chapter 1",
+            "image": "assets/images/chapter-preview/6.png",
+            "active": true
+            },
+            {
+            "title": "Chapter 2",
+            "image": "assets/images/chapter-preview/7.png",
+            "active": false
+            },
+            {
+            "title": "Chapter 3",
+            "image": "assets/images/chapter-preview/8.png",
+            "active": false
+            },
+            {
+            "title": "Chapter 4",
+            "image": "assets/images/chapter-preview/9.png",
+            "active": false
+            },
+            {
+            "title": "Chapter 5",
+            "image": "assets/images/chapter-preview/10.png",
+            "active": false
+            }
+        ]
+    }
+}
