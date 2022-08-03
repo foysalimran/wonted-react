@@ -49,9 +49,8 @@ const AuthorV2 = () => {
           >
             <div className="authorv2__image">
               <img className="img-fluid" src={about} alt="Author Image" />
-              <ModalVideo  channel='youtube' autoplay isOpen={isOpen} videoId="dkxiTpwm0hs" onClose={() => setOpen(false)} />
+              <ModalVideo  channel='youtube' autoplay isOpen={isOpen} videoId={aboutv2.videoURL} onClose={() => setOpen(false)} />
               <button  onClick={() => setOpen(true)}
-                href="https://youtu.be/qg0_FinB6EE"
                 className="video-btn"
               >
                 <img
