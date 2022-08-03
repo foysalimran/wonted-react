@@ -6,21 +6,20 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import $ from "jquery"
+import $ from "jquery";
 import data from "../data/chapterPreview.json";
-import GLightbox from 'glightbox';
+import GLightbox from "glightbox";
 window.jQuery = $;
-
 
 const ChapterPreview = () => {
   const { chapterPreview } = data;
-console.log(chapterPreview);
+  console.log(chapterPreview);
   useEffect(() => {
-     GLightbox({
+    GLightbox({
       selector: ".glightbox2",
       slideEffect: "zoom",
     });
-  }, [])
+  }, []);
 
   return (
     // <!-- ========== Chapter preview section start ========== -->
@@ -71,347 +70,36 @@ console.log(chapterPreview);
                 },
               }}
             >
-              <SwiperSlide>
-                <div
-                  className="swiper-slide p-5px-lr translateEffect2"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  <a
-                      href="assets/images/chapter-preview/1.jpg"
+              {chapterPreview.chapters.map((data, i) => (
+                <SwiperSlide key={i}>
+                  <div
+                    className="swiper-slide p-5px-lr translateEffect2"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <a
+                      href={data.image}
                       className="glightbox2"
-                      data-glightbox=" description: .custom-desc1; descPosition: right;"
+                      data-glightbox={`description: .custom-desc${i}; descPosition: right;`}
                     >
                       <img
                         className="chapter-img img-fluid"
-                        src="assets/images/chapter-preview/1.jpg"
+                        src={data.image}
                         alt="image"
                       />
                     </a>
-                    <div className="glightbox-desc custom-desc1">
-                      <h3 className="mb-4 text-center">The Beginning</h3>
-                      <p className="first-letter">
-                        Dpsum vehicula eros ultrices lacinia Vestibulum ante
-                        ipsum primis in faucibus orci luctus et ultrices posuere
-                        cubilia Curae Duis quis ipsum vehicula eros ultrices
-                        lacinia. Vestibulum ante ipsum primis in faucibus orci
-                        luctus et ultrices posuere
-                      </p>
-                      <p>
-                        Primis pharetra facilisis lorem quis penatibus ad nulla
-                        inceptos, dui per tempor taciti aliquet consequat
-                        sodales, curae tristique gravida auctor interdum
-                        malesuada sagittis. Felis pretium eros ligula natoque ad
-                        ante rutrum himenaeos, adipiscing urna mauris porta quam
-                        efficitur odio, sagittis morbi tellus nisi molestie mus
-                        faucibus.
-                      </p>
-                      <p>
-                        Primis pharetra facilisis lorem quis penatibus ad nulla
-                        inceptos, dui per tempor taciti aliquet consequat
-                        sodales, curae tristique gravida auctor interdum
-                        malesuada sagittis. Felis pretium eros ligula natoque ad
-                        ante rutrum himenaeos, adipiscing urna mauris porta quam
-                        efficitur odio, sagittis morbi tellus nisi molestie mus
-                        faucibus.
-                      </p>
-                      <p>
-                        Primis pharetra facilisis lorem quis penatibus ad nulla
-                        inceptos, dui per tempor taciti aliquet consequat
-                        sodales, curae tristique gravida auctor interdum
-                        malesuada sagittis. Felis pretium eros ligula natoque ad
-                        ante rutrum himenaeos, adipiscing urna mauris porta quam
-                        efficitur odio, sagittis morbi tellus nisi molestie mus
-                        faucibus.
-                      </p>
-                      <p>
-                        Primis pharetra facilisis lorem quis penatibus ad nulla
-                        inceptos, dui per tempor taciti aliquet consequat
-                        sodales, curae tristique gravida auctor interdum
-                        malesuada sagittis. Felis pretium eros ligula natoque ad
-                        ante rutrum himenaeos, adipiscing urna mauris porta quam
-                        efficitur odio, sagittis morbi tellus nisi molestie mus
-                        faucibus.
-                      </p>
+                    <div className={`glightbox-desc custom-desc${i}`}>
+                      <h3 className="mb-4 text-center">{data.title}</h3>
+                      <p className="first-letter">{data.text1}</p>
+                      <p>{data.text2}</p>
+                      <p>{data.text3}</p>
+                      <p>{data.text4}</p>
+                      <p>{data.text5}</p>
                     </div>
-              
-                </div>
-            
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div
-                  className="swiper-slide p-5px-lr translateEffect2"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  <a
-                      href="assets/images/chapter-preview/2.jpg"
-                      className="glightbox2"
-                      data-glightbox="description: .custom-desc2; descPosition: right;"
-                    >
-                      <img
-                        className="chapter-img img-fluid"
-                        src="assets/images/chapter-preview/2.jpg"
-                        alt="image"
-                      />
-                    </a>
-                    <div className="glightbox-desc custom-desc2">
-                      <h3 className="mb-4 text-center">The Beginning 2</h3>
-                      <p className="first-letter">
-                        Epsum vehicula eros ultrices lacinia Vestibulum ante
-                        ipsum primis in faucibus orci luctus et ultrices posuere
-                        cubilia Curae Duis quis ipsum vehicula eros ultrices
-                        lacinia. Vestibulum ante ipsum primis in faucibus orci
-                        luctus et ultrices posuere
-                      </p>
-                      <p>
-                        Primis pharetra facilisis lorem quis penatibus ad nulla
-                        inceptos, dui per tempor taciti aliquet consequat
-                        sodales, curae tristique gravida auctor interdum
-                        malesuada sagittis. Felis pretium eros ligula natoque ad
-                        ante rutrum himenaeos, adipiscing urna mauris porta quam
-                        efficitur odio, sagittis morbi tellus nisi molestie mus
-                        faucibus.
-                      </p>
-                      <p>
-                        Primis pharetra facilisis lorem quis penatibus ad nulla
-                        inceptos, dui per tempor taciti aliquet consequat
-                        sodales, curae tristique gravida auctor interdum
-                        malesuada sagittis. Felis pretium eros ligula natoque ad
-                        ante rutrum himenaeos, adipiscing urna mauris porta quam
-                        efficitur odio, sagittis morbi tellus nisi molestie mus
-                        faucibus.
-                      </p>
-                      <p>
-                        Primis pharetra facilisis lorem quis penatibus ad nulla
-                        inceptos, dui per tempor taciti aliquet consequat
-                        sodales, curae tristique gravida auctor interdum
-                        malesuada sagittis. Felis pretium eros ligula natoque ad
-                        ante rutrum himenaeos, adipiscing urna mauris porta quam
-                        efficitur odio, sagittis morbi tellus nisi molestie mus
-                        faucibus.
-                      </p>
-                      <p>
-                        Primis pharetra facilisis lorem quis penatibus ad nulla
-                        inceptos, dui per tempor taciti aliquet consequat
-                        sodales, curae tristique gravida auctor interdum
-                        malesuada sagittis. Felis pretium eros ligula natoque ad
-                        ante rutrum himenaeos, adipiscing urna mauris porta quam
-                        efficitur odio, sagittis morbi tellus nisi molestie mus
-                        faucibus.
-                      </p>
-                    </div>
-              
-                </div>
-            
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div
-                  className="swiper-slide p-5px-lr translateEffect2"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  <a
-                      href="assets/images/chapter-preview/3.jpg"
-                      className="glightbox2"
-                      data-glightbox=" description: .custom-desc2; descPosition: right;"
-                    >
-                      <img
-                        className="chapter-img img-fluid"
-                        src="assets/images/chapter-preview/3.jpg"
-                        alt="image"
-                      />
-                    </a>
-                    <div className="glightbox-desc custom-desc2">
-                      <h3 className="mb-4 text-center">The Beginning 2</h3>
-                      <p className="first-letter">
-                        Dpsum vehicula eros ultrices lacinia Vestibulum ante
-                        ipsum primis in faucibus orci luctus et ultrices posuere
-                        cubilia Curae Duis quis ipsum vehicula eros ultrices
-                        lacinia. Vestibulum ante ipsum primis in faucibus orci
-                        luctus et ultrices posuere
-                      </p>
-                      <p>
-                        Primis pharetra facilisis lorem quis penatibus ad nulla
-                        inceptos, dui per tempor taciti aliquet consequat
-                        sodales, curae tristique gravida auctor interdum
-                        malesuada sagittis. Felis pretium eros ligula natoque ad
-                        ante rutrum himenaeos, adipiscing urna mauris porta quam
-                        efficitur odio, sagittis morbi tellus nisi molestie mus
-                        faucibus.
-                      </p>
-                      <p>
-                        Primis pharetra facilisis lorem quis penatibus ad nulla
-                        inceptos, dui per tempor taciti aliquet consequat
-                        sodales, curae tristique gravida auctor interdum
-                        malesuada sagittis. Felis pretium eros ligula natoque ad
-                        ante rutrum himenaeos, adipiscing urna mauris porta quam
-                        efficitur odio, sagittis morbi tellus nisi molestie mus
-                        faucibus.
-                      </p>
-                      <p>
-                        Primis pharetra facilisis lorem quis penatibus ad nulla
-                        inceptos, dui per tempor taciti aliquet consequat
-                        sodales, curae tristique gravida auctor interdum
-                        malesuada sagittis. Felis pretium eros ligula natoque ad
-                        ante rutrum himenaeos, adipiscing urna mauris porta quam
-                        efficitur odio, sagittis morbi tellus nisi molestie mus
-                        faucibus.
-                      </p>
-                      <p>
-                        Primis pharetra facilisis lorem quis penatibus ad nulla
-                        inceptos, dui per tempor taciti aliquet consequat
-                        sodales, curae tristique gravida auctor interdum
-                        malesuada sagittis. Felis pretium eros ligula natoque ad
-                        ante rutrum himenaeos, adipiscing urna mauris porta quam
-                        efficitur odio, sagittis morbi tellus nisi molestie mus
-                        faucibus.
-                      </p>
-                    </div>
-              
-                </div>
-            
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div
-                  className="swiper-slide p-5px-lr translateEffect2"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  <a
-                      href="assets/images/chapter-preview/1.jpg"
-                      className="glightbox2"
-                      data-glightbox=" description: .custom-desc1; descPosition: right;"
-                    >
-                      <img
-                        className="chapter-img img-fluid"
-                        src="assets/images/chapter-preview/1.jpg"
-                        alt="image"
-                      />
-                    </a>
-                    <div className="glightbox-desc custom-desc1">
-                      <h3 className="mb-4 text-center">The Beginning</h3>
-                      <p className="first-letter">
-                        Dpsum vehicula eros ultrices lacinia Vestibulum ante
-                        ipsum primis in faucibus orci luctus et ultrices posuere
-                        cubilia Curae Duis quis ipsum vehicula eros ultrices
-                        lacinia. Vestibulum ante ipsum primis in faucibus orci
-                        luctus et ultrices posuere
-                      </p>
-                      <p>
-                        Primis pharetra facilisis lorem quis penatibus ad nulla
-                        inceptos, dui per tempor taciti aliquet consequat
-                        sodales, curae tristique gravida auctor interdum
-                        malesuada sagittis. Felis pretium eros ligula natoque ad
-                        ante rutrum himenaeos, adipiscing urna mauris porta quam
-                        efficitur odio, sagittis morbi tellus nisi molestie mus
-                        faucibus.
-                      </p>
-                      <p>
-                        Primis pharetra facilisis lorem quis penatibus ad nulla
-                        inceptos, dui per tempor taciti aliquet consequat
-                        sodales, curae tristique gravida auctor interdum
-                        malesuada sagittis. Felis pretium eros ligula natoque ad
-                        ante rutrum himenaeos, adipiscing urna mauris porta quam
-                        efficitur odio, sagittis morbi tellus nisi molestie mus
-                        faucibus.
-                      </p>
-                      <p>
-                        Primis pharetra facilisis lorem quis penatibus ad nulla
-                        inceptos, dui per tempor taciti aliquet consequat
-                        sodales, curae tristique gravida auctor interdum
-                        malesuada sagittis. Felis pretium eros ligula natoque ad
-                        ante rutrum himenaeos, adipiscing urna mauris porta quam
-                        efficitur odio, sagittis morbi tellus nisi molestie mus
-                        faucibus.
-                      </p>
-                      <p>
-                        Primis pharetra facilisis lorem quis penatibus ad nulla
-                        inceptos, dui per tempor taciti aliquet consequat
-                        sodales, curae tristique gravida auctor interdum
-                        malesuada sagittis. Felis pretium eros ligula natoque ad
-                        ante rutrum himenaeos, adipiscing urna mauris porta quam
-                        efficitur odio, sagittis morbi tellus nisi molestie mus
-                        faucibus.
-                      </p>
-                    </div>
-                </div>
-            
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div
-                  className="swiper-slide p-5px-lr translateEffect2"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  <a
-                      href="assets/images/chapter-preview/1.jpg"
-                      className="glightbox2"
-                      data-glightbox=" description: .custom-desc1; descPosition: right;"
-                    >
-                      <img
-                        className="chapter-img img-fluid"
-                        src="assets/images/chapter-preview/1.jpg"
-                        alt="image"
-                      />
-                    </a>
-                    <div className="glightbox-desc custom-desc1">
-                      <h3 className="mb-4 text-center">The Beginning</h3>
-                      <p className="first-letter">
-                        Dpsum vehicula eros ultrices lacinia Vestibulum ante
-                        ipsum primis in faucibus orci luctus et ultrices posuere
-                        cubilia Curae Duis quis ipsum vehicula eros ultrices
-                        lacinia. Vestibulum ante ipsum primis in faucibus orci
-                        luctus et ultrices posuere
-                      </p>
-                      <p>
-                        Primis pharetra facilisis lorem quis penatibus ad nulla
-                        inceptos, dui per tempor taciti aliquet consequat
-                        sodales, curae tristique gravida auctor interdum
-                        malesuada sagittis. Felis pretium eros ligula natoque ad
-                        ante rutrum himenaeos, adipiscing urna mauris porta quam
-                        efficitur odio, sagittis morbi tellus nisi molestie mus
-                        faucibus.
-                      </p>
-                      <p>
-                        Primis pharetra facilisis lorem quis penatibus ad nulla
-                        inceptos, dui per tempor taciti aliquet consequat
-                        sodales, curae tristique gravida auctor interdum
-                        malesuada sagittis. Felis pretium eros ligula natoque ad
-                        ante rutrum himenaeos, adipiscing urna mauris porta quam
-                        efficitur odio, sagittis morbi tellus nisi molestie mus
-                        faucibus.
-                      </p>
-                      <p>
-                        Primis pharetra facilisis lorem quis penatibus ad nulla
-                        inceptos, dui per tempor taciti aliquet consequat
-                        sodales, curae tristique gravida auctor interdum
-                        malesuada sagittis. Felis pretium eros ligula natoque ad
-                        ante rutrum himenaeos, adipiscing urna mauris porta quam
-                        efficitur odio, sagittis morbi tellus nisi molestie mus
-                        faucibus.
-                      </p>
-                      <p>
-                        Primis pharetra facilisis lorem quis penatibus ad nulla
-                        inceptos, dui per tempor taciti aliquet consequat
-                        sodales, curae tristique gravida auctor interdum
-                        malesuada sagittis. Felis pretium eros ligula natoque ad
-                        ante rutrum himenaeos, adipiscing urna mauris porta quam
-                        efficitur odio, sagittis morbi tellus nisi molestie mus
-                        faucibus.
-                      </p>
-                    </div>
-                </div>
-              </SwiperSlide>
+                  </div>
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>
