@@ -1,59 +1,122 @@
 {
-    "footer": {
-        "logo": "assets/images/wonted-logo.png",
-        "copyright": "2022 All right reserved. Made with",
-        "name": "ThemeAtelier",
-        "icon": "assets/icons/heart.svg",
-        "menu": [
-            {
-                "link": "hero",
-                "title": "Home"
-            },
-            {
-                "link": "benefits",
-                "title": "Benefits"
-            },
-            {
-                "link": "chapters",
-                "title": "Chapters"
-            },
-            {
-                "link": "pricing",
-                "title": "Pricing"
-            },
-            {
-                "link": "author",
-                "title": "Author"
-            },
-            {
-                "link": "achievement",
-                "title": "Achievement"
-            },
-            {
-                "link": "reviews",
-                "title": "Reviews"
-            },
-            {
-                "link": "contact",
-                "title": "Contact"
-            }
-        ],
-        "social": [
-            {
-                "icon": "assets/icons/facebook.svg"
-            },
-            {
-                "icon": "assets/icons/twitter.svg"
-            },
-            {
-                "icon": "assets/icons/linkedin.svg"
-            },
-            {
-                "icon": "assets/icons/youtube-play.svg"
-            },
-            {
-                "icon": "assets/icons/whatsapp.svg"
-            }
-        ]
-    }
+  "footer": {
+    "logo": "assets/images/wonted-logo.png",
+    "copyright": "2022 All right reserved. Made with",
+    "name": "ThemeAtelier",
+    "icon": "assets/icons/heart.svg",
+    "menu": [
+      {
+        "link": "hero",
+        "title": "Home"
+      },
+      {
+        "link": "benefits",
+        "title": "Benefits"
+      },
+      {
+        "link": "chapters",
+        "title": "Chapters"
+      },
+      {
+        "link": "pricing",
+        "title": "Pricing"
+      },
+      {
+        "link": "author",
+        "title": "Author"
+      },
+      {
+        "link": "achievement",
+        "title": "Achievement"
+      },
+      {
+        "link": "reviews",
+        "title": "Reviews"
+      },
+      {
+        "link": "contact",
+        "title": "Contact"
+      }
+    ],
+    "social": [
+      {
+        "link": "https://www.facebook.com",
+        "icon": "assets/icons/facebook.svg"
+      },
+      {
+        "link": "https://www.twitter.com",
+        "icon": "assets/icons/twitter.svg"
+      },
+      {
+        "link": "https://www.linkedin.com",
+        "icon": "assets/icons/linkedin.svg"
+      },
+      {
+        "link": "https://www.youtube.com",
+        "icon": "assets/icons/youtube-play.svg"
+      },
+      {
+        "link": "https://www.whatsapp.com",
+        "icon": "assets/icons/whatsapp.svg"
+      }
+    ]
+  },
+  "footerv2": {
+    "logo": "assets/images/wonted-logo.png",
+    "copyright": "2022 All right reserved. Made with",
+    "name": "ThemeAtelier",
+    "icon": "assets/icons/heart.svg",
+    "menu": [
+      {
+        "link": "hero",
+        "title": "Home"
+      },
+      {
+        "link": "about",
+        "title": "About"
+      },
+      {
+        "link": "books",
+        "title": "Books"
+      },
+      {
+        "link": "events",
+        "title": "Events"
+      },
+      {
+        "link": "testimonials",
+        "title": "Testimonials"
+      },
+      {
+        "link": "blog",
+        "title": "Blog"
+      },
+      {
+        "link": "contact",
+        "title": "Contact"
+      }
+    ],
+    "social": [
+      {
+        "link": "https://www.facebook.com",
+        "icon": "assets/icons/facebook.svg"
+      },
+      {
+        "link": "https://www.twitter.com",
+        "icon": "assets/icons/twitter.svg"
+      },
+      {
+        "link": "https://www.linkedin.com",
+        "icon": "assets/icons/linkedin.svg"
+      },
+      {
+        "link": "https://www.youtube.com",
+        "icon": "assets/icons/youtube-play.svg"
+      },
+      {
+        "link": "https://www.whatsapp.com",
+        "icon": "assets/icons/whatsapp.svg"
+      }
+    ]
+  }
 }

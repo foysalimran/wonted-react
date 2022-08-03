@@ -1,11 +1,13 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useState } from "react";
+import ModalVideo from "react-modal-video";
 import about from "../assets/images/achive.png";
 import data from "../data/about.json";
 
 const AuthorV2 = () => {
   const { aboutv2 } = data;
+  const [isOpen, setOpen] = useState(false);
   return (
     // <!-- ========== Author section start ========== -->
     <section id="author" className="section-padding authorv2">
@@ -47,9 +49,9 @@ const AuthorV2 = () => {
           >
             <div className="authorv2__image">
               <img className="img-fluid" src={about} alt="Author Image" />
-              <a
-                href="https://youtu.be/qg0_FinB6EE"
-                className="glightbox3 video-btn"
+              <ModalVideo  channel='youtube' autoplay isOpen={isOpen} videoId={aboutv2.videoURL} onClose={() => setOpen(false)} />
+              <button  onClick={() => setOpen(true)}
+                className="video-btn"
               >
                 <img
                   className="img-fluid"
@@ -58,7 +60,7 @@ const AuthorV2 = () => {
                   width="25"
                   height="25"
                 />
-              </a>
+              </button>
               <div className="promo-video">
                 <div className="waves-block">
                   <div className="waves wave-1"></div>
@@ -91,15 +93,19 @@ const AuthorV2 = () => {
               <ul className="social-icon mt-3">
                 {aboutv2.social?.map((data, i) => (
                   <li key={i}>
-                    <a href="#">
-                      <img
-                        className="img-fluid"
-                        src={data.icon}
-                        alt="icon"
-                        width="25"
-                        height="25"
-                      />
-                    </a>
+                    {data.link === "" ? (
+                      ""
+                    ) : (
+                      <a href={data.link}>
+                        <img
+                          className="img-fluid"
+                          src={data.icon}
+                          alt="icon"
+                          width="25"
+                          height="25"
+                        />
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>

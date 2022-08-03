@@ -9,12 +9,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import data from "../data/chapterPreview.json";
 
-import image1 from "../assets/images/chapter-preview/1.jpg";
-import image2 from "../assets/images/chapter-preview/2.jpg";
-import image3 from "../assets/images/chapter-preview/3.jpg";
-import image4 from "../assets/images/chapter-preview/4.jpg";
-import image5 from "../assets/images/chapter-preview/5.jpg";
-
 const ChapterPreview = () => {
   const { chapterPreview } = data;
 

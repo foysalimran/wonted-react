@@ -19,7 +19,8 @@
     "subtitle": "LET'S MAKE THE BEST INVESTMENT",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad harum quibusdam, assumenda quia explicabo.",
     "image": "assets/images/book2.png",
-    "icon": "assets/icons/ui-play.svg"
+    "icon": "assets/icons/ui-play.svg",
+    "videoURL": "ksImBkJNQt8"
   },
   "herov4": {
     "name": "Sarah F.",
@@ -27,7 +28,8 @@
     "description": "I am a professional books writer based on New York. I've written over 12 books and 6 of them are new york times best seller.    ",
     "image": "assets/images/writer.jpg",
     "firstBtn": "Latest Books",
-    "secondBtn": "About Book"
+    "secondBtn": "About Book",
+    "videoURL": "ksImBkJNQt8"
   },
   "herov5": {
     "name": "Sarah F.",
