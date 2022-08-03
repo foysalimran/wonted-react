@@ -1,6 +1,22 @@
-import React from "react";
+import React, { useEffect } from 'react';
+import data from "../data/books.json";
 
 const Booksv2 = () => {
+  useEffect(() => {
+    const panels = document.querySelectorAll(".panel");
+    panels.forEach((panel) => {
+      panel.addEventListener("click", () => {
+        removeActiveClasses();
+        panel.classList.add("active");
+      });
+    });
+    function removeActiveClasses() {
+      panels.forEach((panel) => {
+        panel.classList.remove("active");
+      });
+    }
+  }, [])
+  const { booksv2 } = data;
   return (
     <section id="books" className="section-padding">
       <div className="container">
@@ -12,7 +28,7 @@ const Booksv2 = () => {
                 data-aos-duration="1000"
                 data-aos-delay="150"
               >
-                Books
+                {booksv2.title}
               </span>
               <h2
                 className="display-6"
@@ -20,7 +36,7 @@ const Booksv2 = () => {
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
-                Some of recent released books
+                {booksv2.subtitle}
               </h2>
               <div
                 className="section-divider divider-traingle"
@@ -39,46 +55,16 @@ const Booksv2 = () => {
         >
           <div className="chapter__preview2-content">
             <div className="chapter__preview2-container">
-              <div
-                className="panel cover-panel active"
-                style={{backgroundImage: "url('assets/images/chapter-preview/cover-1.jpg')"}}>
-                <h3>The King</h3>
-              </div>
-              <div
-                className="panel cover-panel"
-                style={{backgroundImage: "url('assets/images/chapter-preview/cover-2.jpg')"}}>
-                <h3>Death & Dark</h3>
-              </div>
-              <div
-                className="panel cover-panel"
-                style={{backgroundImage: "url('assets/images/chapter-preview/cover-3.jpg')"}}>
-                <h3>Chapter 3</h3>
-              </div>
-              <div
-                className="panel cover-panel"
-                style={{backgroundImage: "url('assets/images/chapter-preview/cover-4.jpg')"}}>
-                <h3>Sing Souls</h3>
-              </div>
-              <div
-                className="panel cover-panel"
-                style={{backgroundImage: "url('assets/images/chapter-preview/cover-5.jpg')"}}>
-                <h3>The Mermaid</h3>
-              </div>
-              <div
-                className="panel cover-panel"
-                style={{backgroundImage: "url('assets/images/chapter-preview/cover-6.jpg')"}}>
-                <h3>The Worst</h3>
-              </div>
-              <div
-                className="panel cover-panel"
-                style={{backgroundImage: "url('assets/images/chapter-preview/cover-1.jpg')"}}>
-                <h3>Drug Lord</h3>
-              </div>
-              <div
-                className="panel cover-panel"
-                style={{backgroundImage: "url('assets/images/chapter-preview/cover-3.jpg')"}}>
-                <h3>White Bird</h3>
-              </div>
+              {booksv2.booksItem.map((data, i) => 
+              <div key={i}
+                  className={`panel cover-panel ${i === 0 ? 'active' : ''}`}
+                  style={{
+                    backgroundImage: `url(${data.image})`
+                  }}
+                >
+                  <h3>{data.title}</h3>
+                </div>
+              )}
             </div>
           </div>
         </div>

@@ -33,6 +33,52 @@
             ]
         }
     },
+    "booksv2": {
+        "title": "Books",
+        "subtitle": "Some of recent released books",
+        "booksItem": [
+            {
+                "title": "The King",
+                "image": "assets/images/chapter-preview/cover-1.jpg",
+                "active": true
+            },
+            {
+                "title": "Death & Dark",
+                "image": "assets/images/chapter-preview/cover-2.jpg",
+                "active": false
+            },
+            {
+                "title": "Return Gen Z",
+                "image": "assets/images/chapter-preview/cover-3.jpg",
+                "active": false
+            },
+            {
+                "title": "Sign Souls",
+                "image": "assets/images/chapter-preview/cover-4.jpg",
+                "active": false
+            },
+            {
+                "title": "The Mermaid",
+                "image": "assets/images/chapter-preview/cover-5.jpg",
+                "active": false
+            },
+            {
+                "title": "Worst Letter",
+                "image": "assets/images/chapter-preview/cover-6.jpg",
+                "active": false
+            },
+            {
+                "title": "Drug Lord",
+                "image": "assets/images/chapter-preview/cover-1.jpg",
+                "active": false
+            },
+            {
+                "title": "White Bird",
+                "image": "assets/images/chapter-preview/cover-3.jpg",
+                "active": false
+            }
+        ]
+    },
     "booksv3": {
         "title": "Books",
         "subtitle": "Weekly best selling at Amazon",

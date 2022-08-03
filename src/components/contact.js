@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import data from "../data/contact.json";
+import data from "../data/contact.json"
 
 const Contact = () => {
   const { contact } = data;

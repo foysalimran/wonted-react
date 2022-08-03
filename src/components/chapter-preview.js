@@ -7,11 +7,14 @@ import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import $ from "jquery"
-
+import data from "../data/chapterPreview.json";
 import GLightbox from 'glightbox';
 window.jQuery = $;
-const ChapterPreview = () => {
 
+
+const ChapterPreview = () => {
+  const { chapterPreview } = data;
+console.log(chapterPreview);
   useEffect(() => {
      GLightbox({
       selector: ".glightbox2",
@@ -31,7 +34,7 @@ const ChapterPreview = () => {
                 data-aos-duration="1000"
                 data-aos-delay="150"
               >
-                CHAPTERS PREVIEW
+                {chapterPreview.title}
               </span>
               <h2
                 className="display-6"
@@ -39,7 +42,7 @@ const ChapterPreview = () => {
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
-                Read some chapter free.
+                {chapterPreview.subtitle}
               </h2>
               <div
                 className="section-divider divider-traingle"
@@ -410,7 +413,6 @@ const ChapterPreview = () => {
                 </div>
               </SwiperSlide>
             </Swiper>
-          
           </div>
         </div>
       </div>
