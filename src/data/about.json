@@ -1,9 +1,10 @@
 {
   "about": {
-    "title": "ABOUT AUTHOR",
-    "subtitle": "Learn about the book writer",
+    "title": "Learn about the book writer",
+    "subtitle": "ABOUT AUTHOR",
     "image": "assets/images/author.png",
     "icon": "assets/icons/ui-play.svg",
+    "videoURL": "ksImBkJNQt8",
     "userinfo": {
       "name": "Michale John",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nam eveniet veritatis aliquid harum temporibus et pariatur. Incidunt, labore voluptatum minima tenetur, consequatur odit sapiente blanditiis perferendis corrupti non quisquam?"
@@ -39,8 +40,8 @@
     ]
   },
   "aboutv2": {
-    "title": "ABOUT AUTHOR",
-    "subtitle": "Learn about the book writer",
+    "title": "Learn about the book writer",
+    "subtitle": "ABOUT AUTHOR",
     "image": "assets/images/achive.png",
     "icon": "assets/icons/ui-play.svg",
     "description": "Based on wikipedia, Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aspernatur quam in nostrum aliquam eligendi vel, modi cupiditate numquam officiis dicta minima placeat nulla impedit voluptatum adipisci beatae. Rerum, impedit.",
@@ -123,10 +124,11 @@
     ]
   },
   "aboutv4": {
-    "title": "ABOUT me",
-    "subtitle": "Some core information's about me",
+    "title": "Some core information's about me",
+    "subtitle": "ABOUT ME",
     "image": "assets/images/achive3.jpg",
     "icon": "assets/icons/ui-play.svg",
+    "videoURL": "ksImBkJNQt8",
     "description": "Based on wikipedia, Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aspernatur quam in nostrum aliquam eligendi vel, modi cupiditate numquam officiis dicta minima placeat nulla impedit voluptatum adipisci beatae. Rerum, impedit.",
     "userinfo": [
       {
@@ -186,8 +188,8 @@
     ]
   },
   "aboutv6": {
-    "title": "ABOUT AUTHOR",
-    "subtitle": "Learn about the book writer",
+    "title": "Learn about the book writer",
+    "subtitle": "ABOUT AUTHOR",
     "image": "assets/images/achive2.png",
     "icon": "assets/icons/ui-play.svg",
     "videoURL": "qg0_FinB6EE",

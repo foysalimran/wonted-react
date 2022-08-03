@@ -4,7 +4,7 @@ import data from "../data/achievements.json"
 const AchievementV2 = ({bgColor}) => {
   const {achievements} = data;
   return (
-    <section id="achievement" className="section-padding achievement bg-one" style={{backgroundColor: `${bgColor}`}}>
+    <section id="achievements" className="section-padding achievement bg-one" style={{backgroundColor: `${bgColor}`}}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">

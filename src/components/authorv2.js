@@ -1,11 +1,13 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useState } from "react";
+import ModalVideo from "react-modal-video";
 import about from "../assets/images/achive.png";
 import data from "../data/about.json";
 
 const AuthorV2 = () => {
   const { aboutv2 } = data;
+  const [isOpen, setOpen] = useState(false);
   return (
     // <!-- ========== Author section start ========== -->
     <section id="author" className="section-padding authorv2">
@@ -47,9 +49,10 @@ const AuthorV2 = () => {
           >
             <div className="authorv2__image">
               <img className="img-fluid" src={about} alt="Author Image" />
-              <a
+              <ModalVideo  channel='youtube' autoplay isOpen={isOpen} videoId="dkxiTpwm0hs" onClose={() => setOpen(false)} />
+              <button  onClick={() => setOpen(true)}
                 href="https://youtu.be/qg0_FinB6EE"
-                className="glightbox3 video-btn"
+                className="video-btn"
               >
                 <img
                   className="img-fluid"
@@ -58,7 +61,7 @@ const AuthorV2 = () => {
                   width="25"
                   height="25"
                 />
-              </a>
+              </button>
               <div className="promo-video">
                 <div className="waves-block">
                   <div className="waves wave-1"></div>
