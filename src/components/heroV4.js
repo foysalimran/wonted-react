@@ -1,10 +1,13 @@
-import React from 'react';
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React, { useState } from 'react';
 import data from "../data/herov1.json"
 
 import {BiPlayCircle} from "react-icons/bi"
+import ModalVideo from 'react-modal-video';
 
 const HeroV4 = () => {
   const {herov4} = data;
+  const [isOpen, setOpen] = useState(false);
     return (
         <section
         id="hero"
@@ -59,11 +62,11 @@ const HeroV4 = () => {
                   <a href="#books" className="smooth button button__primary me-3">
                     <span>{herov4.firstBtn}</span>
                   </a>
-                  <a
-                    href="https://youtu.be/qg0_FinB6EE"
-                    className="glightbox3 btn__secondary"
-                    ><BiPlayCircle />{herov4.secondBtn}</a
-                  >
+                  <ModalVideo  channel='youtube' autoplay isOpen={isOpen} videoId={herov4.videoURL} onClose={() => setOpen(false)} />
+                  <a onClick={() => setOpen(true)}
+                    href="#"
+                    className="btn__secondary"
+                    ><BiPlayCircle />{herov4.secondBtn}</a>
                 </div>
               </div>
             </div>
