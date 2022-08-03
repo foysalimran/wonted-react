@@ -7,6 +7,8 @@ import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import data from "../data/chapterPreview.json";
+
 import image1 from "../assets/images/chapter-preview/1.jpg";
 import image2 from "../assets/images/chapter-preview/2.jpg";
 import image3 from "../assets/images/chapter-preview/3.jpg";
@@ -14,15 +16,11 @@ import image4 from "../assets/images/chapter-preview/4.jpg";
 import image5 from "../assets/images/chapter-preview/5.jpg";
 
 const ChapterPreview = () => {
+  const { chapterPreview } = data;
 
   return (
     // <!-- ========== Chapter preview section start ========== -->
     <section id="preview" className="section-padding chapter-preview">
-
-
- 
-
-      
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
@@ -32,7 +30,7 @@ const ChapterPreview = () => {
                 data-aos-duration="1000"
                 data-aos-delay="150"
               >
-                CHAPTERS PREVIEW
+                {chapterPreview.title}
               </span>
               <h2
                 className="display-6"
@@ -40,7 +38,7 @@ const ChapterPreview = () => {
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
-                Read some chapter free.
+                {chapterPreview.subtitle}
               </h2>
               <div
                 className="section-divider divider-traingle"
@@ -69,125 +67,29 @@ const ChapterPreview = () => {
                 },
               }}
             >
-              <SwiperSlide>
-                <div
-                  className="swiper-slide p-5px-lr translateEffect2"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  <Lightbox
-                    images={[
-                      {
-                        src: image1,
-                        title: "image title",
-                        description: "image description",
-                      },
-                    ]}
-                    thumbnailWidth= '100%'
-                    thumbnailHeight= 'auto'
-                  />
-              
-                </div>
-            
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div
-                  className="swiper-slide p-5px-lr translateEffect2"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  <Lightbox
-                    images={[
-                      {
-                        src: image2,
-                        title: "image title",
-                        description: "image description",
-                       
-                      },
-                    ]}
-                    thumbnailWidth= '100%'
-                    thumbnailHeight= 'auto'
-                  />
-              
-                </div>
-            
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div
-                  className="swiper-slide p-5px-lr translateEffect2"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  <Lightbox
-                    images={[
-                      {
-                        src: image3,
-                        title: "image title",
-                        description: "image description",
-                       
-                      },
-                    ]}
-                    thumbnailWidth= '100%'
-                    thumbnailHeight= 'auto'
-                  />
-              
-                </div>
-            
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div
-                  className="swiper-slide p-5px-lr translateEffect2"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  <Lightbox
-                    images={[
-                      {
-                        src: image4,
-                        title: "image title",
-                        description: "image description",
-                       
-                      },
-                    ]}
-                    thumbnailWidth= '100%'
-                    thumbnailHeight= 'auto'
-                  />
-              
-                </div>
-            
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div
-                  className="swiper-slide p-5px-lr translateEffect2"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  <Lightbox
-                    images={[
-                      {
-                        src: image5,
-                        title: "image title",
-                        description: "image description",
-                       
-                      },
-                    ]}
-                    thumbnailWidth= '100%'
-                    thumbnailHeight= 'auto'
-                  />
-              
-                </div>
-              </SwiperSlide>
+              {chapterPreview.chapters.map((data, i) => (
+                <SwiperSlide key={i}>
+                  <div
+                    className="swiper-slide p-5px-lr translateEffect2"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <Lightbox
+                      images={[
+                        {
+                          src: data.image,
+                          title: data.title,
+                          description:data.description
+                        },
+                      ]}
+                      thumbnailWidth="100%"
+                      thumbnailHeight="auto"
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
             </Swiper>
-          
           </div>
         </div>
       </div>

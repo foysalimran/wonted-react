@@ -1,7 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
-import { IoLogoWhatsapp} from "react-icons/io";
 import data from "../data/contact.json"
 
 const Contact = () => {
