@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import data from "../data/books.json";
 
 const Booksv2 = () => {
+  useEffect(() => {
+    const panels = document.querySelectorAll(".panel");
+    panels.forEach((panel) => {
+      panel.addEventListener("click", () => {
+        removeActiveClasses();
+        panel.classList.add("active");
+      });
+    });
+    function removeActiveClasses() {
+      panels.forEach((panel) => {
+        panel.classList.remove("active");
+      });
+    }
+  }, [])
   const { booksv2 } = data;
   return (
     <section id="books" className="section-padding">
@@ -41,26 +55,15 @@ const Booksv2 = () => {
         >
           <div className="chapter__preview2-content">
             <div className="chapter__preview2-container">
-              {booksv2.booksItem.map((data, i) =>
-                data.active === true ? (
-                  <div key={i}
-                    className="panel cover-panel active"
-                    style={{
-                      backgroundImage: `url(${data.image})`
-                    }}
-                  >
-                    <h3>{data.title}</h3>
-                  </div>
-                ) : (
-                  <div  key={i}
-                    className="panel cover-panel"
-                    style={{
-                      backgroundImage: `url(${data.image})`
-                    }}
-                  >
-                    <h3>{data.title}</h3>
-                  </div>
-                )
+              {booksv2.booksItem.map((data, i) => 
+              <div key={i}
+                  className={`panel cover-panel ${i === 0 ? 'active' : ''}`}
+                  style={{
+                    backgroundImage: `url(${data.image})`
+                  }}
+                >
+                  <h3>{data.title}</h3>
+                </div>
               )}
             </div>
           </div>
