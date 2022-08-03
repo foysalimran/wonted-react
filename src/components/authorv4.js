@@ -52,10 +52,9 @@ const Authorv4 = () => {
                 src={aboutv4.image}
                 alt="Author Image"
               />
-              <ModalVideo  channel='youtube' autoplay isOpen={isOpen} videoId="dkxiTpwm0hs" onClose={() => setOpen(false)} />
+              <ModalVideo  channel='youtube' autoplay isOpen={isOpen} videoId={aboutv4.videoURL} onClose={() => setOpen(false)} />
               <button  onClick={() => setOpen(true)}
-                href={aboutv4.videoURL}
-                className="glightbox3 video-btn"
+                className="video-btn"
               >
                 <img
                   className="img-fluid"

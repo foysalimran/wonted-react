@@ -47,7 +47,7 @@ const CtaV4 = () => {
             data-aos-duration="1000"
             data-aos-delay="250"
           >
-            <ModalVideo  channel='youtube' autoplay isOpen={isOpen} videoId="dkxiTpwm0hs" onClose={() => setOpen(false)} />
+            <ModalVideo  channel='youtube' autoplay isOpen={isOpen} videoId={ctav4.videoURL} onClose={() => setOpen(false)} />
             <div className="ctav4__video-btn">
               <button onClick={()=> setOpen(true)}
                 className="video-btn"
