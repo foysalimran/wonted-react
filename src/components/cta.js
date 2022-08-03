@@ -99,7 +99,7 @@ const Cta = () => {
                 )}
               />
 
-              {/* subscription form start  */}
+           
               {/* <form action="assets/subscribe/subscribe.php" id="subscribe">
                   <div
                     className="mb13"
