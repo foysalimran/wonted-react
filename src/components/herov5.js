@@ -1,6 +1,6 @@
 import React from 'react';
-import data from "../data/herov1.json"
 import MailchimpSubscribe from "react-mailchimp-subscribe";
+import data from "../data/herov1.json";
 
 const url =
   "https://themeatelier.us17.list-manage.com/subscribe/post?u=318da6141291eeac976c39d64&amp;id=4297abfa34";

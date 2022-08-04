@@ -1,15 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import Footerv3 from "../global/footerv3";
-import Headerv3 from "../global/headerv3";
 import {
   FaFacebookF,
   FaLinkedinIn,
   FaTwitter,
-  FaYoutube,
+  FaYoutube
 } from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import { IoLogoWhatsapp } from "react-icons/io";
+import Footerv3 from "../global/footerv3";
+import Headerv3 from "../global/headerv3";
 
 const SingleEvent = () => {
   return (

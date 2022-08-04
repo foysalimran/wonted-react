@@ -1,10 +1,12 @@
 import React from "react";
-import data from "../data/achievements.json"
 
-const AchievementV2 = ({bgColor}) => {
+
+import data from "../data/achievements.json";
+
+const AchievementV2 = () => {
   const {achievements} = data;
   return (
-    <section id="achievements" className="section-padding achievement bg-one" style={{backgroundColor: `${bgColor}`}}>
+    <section id="achievement" className="section-padding achievement bg-one">
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
@@ -66,6 +68,167 @@ const AchievementV2 = ({bgColor}) => {
            </div>
          </div>
         ))}
+          {/* <div
+            className="m-15px-tb"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <div className="card h-100 translateEffect1">
+              <img
+                src={img1}
+                className="card-img-top"
+                alt="..."
+              />
+              <div className="card-body">
+                <div className="achievement__content">
+                  <div className="achievement__content__icon">
+                    <GiTrophy />
+                  </div>
+                  <h3>Winner</h3>
+                  <p>
+                    International Thriller Writers Award for Best Novel (These
+                    Toxic Things)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="m-15px-tb"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            <div className="card h-100 translateEffect1">
+              <img
+                src={img2}
+                className="card-img-top"
+                alt="..."
+              />
+              <div className="card-body">
+                <div className="achievement__content">
+                  <div className="achievement__content__icon">
+                    <GiTrophy />
+                  </div>
+                  <h3>Guest of Honor</h3>
+                  <p>
+                    {" "}
+                    International Thriller Writers Award for Best Novel (These
+                    Toxic Things){" "}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="m-15px-tb"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            <div className="card h-100 translateEffect1">
+              <img
+                src={img3}
+                className="card-img-top"
+                alt="..."
+              />
+              <div className="card-body">
+                <div className="achievement__content">
+                  <div className="achievement__content__icon">
+                    <GiTrophy />
+                  </div>
+                  <h3>Nominated</h3>
+                  <p>
+                    {" "}
+                    International Thriller Writers Award for Best Novel (These
+                    Toxic Things){" "}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="m-15px-tb"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <div className="card h-100 translateEffect1">
+              <img
+                src={img4}
+                className="card-img-top"
+                alt="..."
+              />
+              <div className="card-body">
+                <div className="achievement__content">
+                  <div className="achievement__content__icon">
+                    <GiTrophy />
+                  </div>
+                  <h3>Winner</h3>
+                  <p>
+                    {" "}
+                    International Thriller Writers Award for Best Novel (These
+                    Toxic Things){" "}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="m-15px-tb"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          >
+            <div className="card h-100 translateEffect1">
+              <img
+                src={img5}
+                className="card-img-top"
+                alt="..."
+              />
+              <div className="card-body">
+                <div className="achievement__content">
+                  <div className="achievement__content__icon">
+                    <GiTrophy />
+                  </div>
+                  <h3>Finalist</h3>
+                  <p>
+                    {" "}
+                    International Thriller Writers Award for Best Novel (These
+                    Toxic Things){" "}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="col m-15px-tb"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="700"
+          >
+            <div className="card h-100 translateEffect1">
+              <img
+                src={img2}
+                className="card-img-top"
+                alt="..."
+              />
+              <div className="card-body">
+                <div className="achievement__content">
+                  <div className="achievement__content__icon">
+                    <GiTrophy />
+                  </div>
+                  <h3>Nominated</h3>
+                  <p>
+                    {" "}
+                    International Thriller Writers Award for Best Novel (These
+                    Toxic Things){" "}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div> */}
         </div>
       </div>
     </section>

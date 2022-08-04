@@ -1,5 +1,6 @@
 import React from "react";
 import { Accordion } from "react-bootstrap";
+import { IoIosArrowDown } from "react-icons/io";
 // import chapter from "../assets/images/hero-2.png";
 import data from "../data/chapter.json";
 
@@ -59,7 +60,7 @@ const Chapter = () => {
               {/* <!-- accordion start --> */}
               {chapter.chapterItem?.map((data) => (
                 <Accordion.Item eventKey={data.id.toString()} key={data.id}>
-                  <Accordion.Header>{data.title}</Accordion.Header>
+                  <Accordion.Header><span>{data.title}</span> <IoIosArrowDown/></Accordion.Header>
                   <Accordion.Body>
                     <p className="accordion-body text-secondary">
                       {data.description}
