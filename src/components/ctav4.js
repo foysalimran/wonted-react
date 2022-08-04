@@ -62,7 +62,7 @@ const CtaV4 = () => {
                 ""
               ) : (
                 <>
-                  <a href={ctav4.videoURL} class="glightbox3 video-btn">
+                  <a href={ctav4.videoURL} className="glightbox3 video-btn">
                     <FiPlay />
                   </a>
                   <div className="promo-video">

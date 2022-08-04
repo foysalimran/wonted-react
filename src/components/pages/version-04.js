@@ -13,6 +13,7 @@ import CtaV4 from "../ctav4";
 import Contactv2 from "../contactv2";
 import Cta from "../cta";
 import Headerv2 from "../global/headerv2";
+import Footerv2 from "../global/footerv2";
 
 const Version04 = () => {
   return (
@@ -31,6 +32,7 @@ const Version04 = () => {
       <CtaV4 />
       <Contactv2 />
       <Cta />
+      <Footerv2 />
     </>
   );
 };

@@ -4,8 +4,8 @@ import CtaV3 from "../ctav3";
 import data from "../../data/footer.json";
 import { Link } from "react-scroll";
 
-const Footer = () => {
-  const { footer } = data;
+const Footerv2 = () => {
+  const { footerv2 } = data;
   return (
     <>
       <CtaV3 />
@@ -21,12 +21,12 @@ const Footer = () => {
               >
                 <a href="/">
                   {/* <!-- <h1 className="m-0">WONTED</h1> --> */}
-                  <img src={footer.logo} alt="Wonted" />
+                  <img src={footerv2.logo} alt="Wonted" />
                 </a>
               </div>
               <div className="col-lg-6 d-flex justify-content-center align-items-center mb-3 mb-lg-0">
                 <ul className="footer__menu">
-                  {footer.menu?.map((data, i) => (
+                  {footerv2.menu?.map((data, i) => (
                     <li
                       key={i}
                       data-aos="fade-up"
@@ -53,7 +53,7 @@ const Footer = () => {
               </div>
               <div className="col-lg-3 d-flex justify-content-center align-items-center mb-3 mb-lg-0 justify-content-lg-end">
                 <ul className="social-icon">
-                  {footer.social?.map((data, i) => (
+                  {footerv2.social?.map((data, i) => (
                     <li
                       key={i}
                       data-aos="fade-up"
@@ -84,15 +84,15 @@ const Footer = () => {
             <div className="row">
               <div className="col-12">
                 <p className="m-0 text-center">
-                  &copy; {footer.copyright}
+                  &copy; {footerv2.copyright}
                   <img
                     className="img-fluid"
-                    src={footer.icon}
+                    src={footerv2.icon}
                     alt="footer icon"
                     width="20"
                     height="20"
                   />{" "}
-                  by <a href="#">{footer.name}</a>
+                  by <a href="#">{footerv2.name}</a>
                 </p>
               </div>
             </div>
@@ -104,4 +104,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footerv2;

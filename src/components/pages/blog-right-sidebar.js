@@ -10,13 +10,13 @@ const BlogRightSidebar = () => {
       {/* <!-- ========== All blogs hero start ========== --> */}
       <section
         id="right-sidebar"
-        class="all-blogs hero__padding overflow-hidden position-relative bg-one"
+        className="all-blogs hero__padding overflow-hidden position-relative bg-one"
       >
-        <div class="container">
-          <div class="row">
-            <div class="blog-title">
+        <div className="container">
+          <div className="row">
+            <div className="blog-title">
               <h1
-                class="display-3"
+                className="display-3"
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="600"
@@ -29,14 +29,14 @@ const BlogRightSidebar = () => {
                   data-aos-duration="1000"
                   data-aos-delay="650"
                 >
-                  <a href="index.html">Home</a>
+                  <a href="/home">Home</a>
                 </li>
                 <li
                   data-aos="fade-up"
                   data-aos-duration="1000"
                   data-aos-delay="700"
                 >
-                  <i class="icofont-rounded-right"></i>
+                  <i className="icofont-rounded-right"></i>
                 </li>
                 <li
                   data-aos="fade-up"
@@ -52,34 +52,34 @@ const BlogRightSidebar = () => {
       </section>
       {/* <!-- ========== All blogs hero end ========== --> */}
       {/* <!-- ========== Blog right sidebar start ========== --> */}
-      <section class="section-padding all-blog2">
-        <div class="container">
-          <div class="row">
+      <section className="section-padding all-blog2">
+        <div className="container">
+          <div className="row">
             <div
-              class="col-md-7 col-lg-8 col-xl-9 mb-4 mb-md-0"
+              className="col-md-7 col-lg-8 col-xl-9 mb-4 mb-md-0"
               data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-delay="200"
             >
-              <div class="all-blog2__area">
-                <div class="all-blog2__area__image">
+              <div className="all-blog2__area">
+                <div className="all-blog2__area__image">
                   <img
-                    class="img-fluid"
+                    className="img-fluid"
                     src="assets/images/blog/blog_04.jpg"
                     alt=""
                   />
                 </div>
-                <div class="all-blog2__area__menu">
+                <div className="all-blog2__area__menu">
                   <ul>
                     <li>
-                      <a href="index.html" title="Posts by wpthemego">
+                      <a href="/" title="Posts by wpthemego">
                         WPTHEMEGO
                       </a>
                     </li>
                     <li>/</li>
                     <li>DECEMBER 3, 2019</li>
                   </ul>
-                  <h2 class="fs-2">
+                  <h2 className="fs-2">
                     <a href="#">Lorem ipsum dolor sit amet</a>
                   </h2>
                   <p>
@@ -88,30 +88,30 @@ const BlogRightSidebar = () => {
                     industry’sstandard dummy text ever since the 1500s, when an
                     unknown printer took a galley of...
                   </p>
-                  <a href="#" class="link">
-                    Read more<i class="icofont-rounded-right"></i>
+                  <a href="#" className="link">
+                    Read more<i className="icofont-rounded-right"></i>
                   </a>
                 </div>
               </div>
-              <div class="all-blog2__area">
-                <div class="all-blog2__area__image">
+              <div className="all-blog2__area">
+                <div className="all-blog2__area__image">
                   <img
-                    class="img-fluid"
+                    className="img-fluid"
                     src="assets/images/blog/blog_05.jpg"
                     alt=""
                   />
                 </div>
-                <div class="all-blog2__area__menu">
+                <div className="all-blog2__area__menu">
                   <ul>
                     <li>
-                      <a href="index.html" title="Posts by wpthemego">
+                      <a href="/" title="Posts by wpthemego">
                         WPTHEMEGO
                       </a>
                     </li>
                     <li>/</li>
                     <li>DECEMBER 3, 2019</li>
                   </ul>
-                  <h2 class="fs-2">
+                  <h2 className="fs-2">
                     <a href="#">Lorem ipsum dolor sit amet</a>
                   </h2>
                   <p>
@@ -120,30 +120,30 @@ const BlogRightSidebar = () => {
                     industry’sstandard dummy text ever since the 1500s, when an
                     unknown printer took a galley of...
                   </p>
-                  <a href="#" class="link">
-                    Read more<i class="icofont-rounded-right"></i>
+                  <a href="#" className="link">
+                    Read more<i className="icofont-rounded-right"></i>
                   </a>
                 </div>
               </div>
-              <div class="all-blog2__area">
-                <div class="all-blog2__area__image">
+              <div className="all-blog2__area">
+                <div className="all-blog2__area__image">
                   <img
-                    class="img-fluid"
+                    className="img-fluid"
                     src="assets/images/blog/blog_06.jpg"
                     alt=""
                   />
                 </div>
-                <div class="all-blog2__area__menu">
+                <div className="all-blog2__area__menu">
                   <ul>
                     <li>
-                      <a href="index.html" title="Posts by wpthemego">
+                      <a href="/" title="Posts by wpthemego">
                         WPTHEMEGO
                       </a>
                     </li>
                     <li>/</li>
                     <li>DECEMBER 3, 2019</li>
                   </ul>
-                  <h2 class="fs-2">
+                  <h2 className="fs-2">
                     <a href="#">Lorem ipsum dolor sit amet</a>
                   </h2>
                   <p>
@@ -152,30 +152,30 @@ const BlogRightSidebar = () => {
                     industry’sstandard dummy text ever since the 1500s, when an
                     unknown printer took a galley of...
                   </p>
-                  <a href="#" class="link">
-                    Read more<i class="icofont-rounded-right"></i>
+                  <a href="#" className="link">
+                    Read more<i className="icofont-rounded-right"></i>
                   </a>
                 </div>
               </div>
-              <div class="all-blog2__area">
-                <div class="all-blog2__area__image">
+              <div className="all-blog2__area">
+                <div className="all-blog2__area__image">
                   <img
-                    class="img-fluid"
+                    className="img-fluid"
                     src="assets/images/blog/blog_07.jpg"
                     alt=""
                   />
                 </div>
-                <div class="all-blog2__area__menu">
+                <div className="all-blog2__area__menu">
                   <ul>
                     <li>
-                      <a href="index.html" title="Posts by wpthemego">
+                      <a href="/" title="Posts by wpthemego">
                         WPTHEMEGO
                       </a>
                     </li>
                     <li>/</li>
                     <li>DECEMBER 3, 2019</li>
                   </ul>
-                  <h2 class="fs-2">
+                  <h2 className="fs-2">
                     <a href="#">Lorem ipsum dolor sit amet</a>
                   </h2>
                   <p>
@@ -184,30 +184,30 @@ const BlogRightSidebar = () => {
                     industry’sstandard dummy text ever since the 1500s, when an
                     unknown printer took a galley of...
                   </p>
-                  <a href="#" class="link">
-                    Read more<i class="icofont-rounded-right"></i>
+                  <a href="#" className="link">
+                    Read more<i className="icofont-rounded-right"></i>
                   </a>
                 </div>
               </div>
-              <div class="all-blog2__area">
-                <div class="all-blog2__area__image">
+              <div className="all-blog2__area">
+                <div className="all-blog2__area__image">
                   <img
-                    class="img-fluid"
+                    className="img-fluid"
                     src="assets/images/blog/blog_08.jpg"
                     alt=""
                   />
                 </div>
-                <div class="all-blog2__area__menu">
+                <div className="all-blog2__area__menu">
                   <ul>
                     <li>
-                      <a href="index.html" title="Posts by wpthemego">
+                      <a href="/" title="Posts by wpthemego">
                         WPTHEMEGO
                       </a>
                     </li>
                     <li>/</li>
                     <li>DECEMBER 3, 2019</li>
                   </ul>
-                  <h2 class="fs-2">
+                  <h2 className="fs-2">
                     <a href="#">Lorem ipsum dolor sit amet</a>
                   </h2>
                   <p>
@@ -216,26 +216,26 @@ const BlogRightSidebar = () => {
                     industry’sstandard dummy text ever since the 1500s, when an
                     unknown printer took a galley of...
                   </p>
-                  <a href="#" class="link">
-                    Read more<i class="icofont-rounded-right"></i>
+                  <a href="#" className="link">
+                    Read more<i className="icofont-rounded-right"></i>
                   </a>
                 </div>
               </div>
             </div>
             <div
               id="right"
-              class="col-md-5 col-lg-4 col-xl-3"
+              className="col-md-5 col-lg-4 col-xl-3"
               data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-delay="200"
             >
-              <div class="all-blog2__sidebar">
+              <div className="all-blog2__sidebar">
                 <form>
                   <input type="text" placeholder="Search" />
-                  <i class="icofont-search-1"></i>
+                  <i className="icofont-search-1"></i>
                 </form>
-                <div class="all-blog2__sidebar__categories item-border">
-                  <h2 class="fs-4 mb-3">Blog Categories</h2>
+                <div className="all-blog2__sidebar__categories item-border">
+                  <h2 className="fs-4 mb-3">Blog Categories</h2>
                   <ul>
                     <li>
                       <a href="#">Accessories</a>(2)
@@ -266,89 +266,89 @@ const BlogRightSidebar = () => {
                     </li>
                   </ul>
                 </div>
-                <div class="all-blog2__sidebar__latest-news item-border">
-                  <h2 class="fs-4 mb-3">Latest News</h2>
-                  <div class="all-blog2__sidebar__latest-news__item">
-                    <div class="all-blog2__sidebar__latest-news__item__image">
+                <div className="all-blog2__sidebar__latest-news item-border">
+                  <h2 className="fs-4 mb-3">Latest News</h2>
+                  <div className="all-blog2__sidebar__latest-news__item">
+                    <div className="all-blog2__sidebar__latest-news__item__image">
                       <a href="#">
                         <img
                           width="80"
                           height="80"
                           src="assets/images/blog/sidebar-image-1.jpg"
-                          class=""
+                          className=""
                           alt="Sidebar Image 01"
                         />
                       </a>
                     </div>
-                    <div class="all-blog2__sidebar__latest-news__item__content">
-                      <h4 class="fs-5 title">
+                    <div className="all-blog2__sidebar__latest-news__item__content">
+                      <h4 className="fs-5 title">
                         <a href="#">
                           Amazon Editors’ personal audiobook favorites
                         </a>
                       </h4>
-                      <p class="mb-0">On October 3, 2016</p>
+                      <p className="mb-0">On October 3, 2016</p>
                     </div>
                   </div>
-                  <div class="all-blog2__sidebar__latest-news__item">
-                    <div class="all-blog2__sidebar__latest-news__item__image">
+                  <div className="all-blog2__sidebar__latest-news__item">
+                    <div className="all-blog2__sidebar__latest-news__item__image">
                       <a href="#">
                         <img
                           width="80"
                           height="80"
                           src="assets/images/blog/sidebar-image-2.jpg"
-                          class="#"
+                          className="#"
                           alt="Sidebar Image 02"
                         />
                       </a>
                     </div>
-                    <div class="all-blog2__sidebar__latest-news__item__content">
-                      <h4 class="fs-5 title">
+                    <div className="all-blog2__sidebar__latest-news__item__content">
+                      <h4 className="fs-5 title">
                         <a href="#">Simply ipsum is lorem dummy text</a>
                       </h4>
-                      <p class="mb-0">On October 14, 2016</p>
+                      <p className="mb-0">On October 14, 2016</p>
                     </div>
                   </div>
-                  <div class="all-blog2__sidebar__latest-news__item">
-                    <div class="all-blog2__sidebar__latest-news__item__image">
+                  <div className="all-blog2__sidebar__latest-news__item">
+                    <div className="all-blog2__sidebar__latest-news__item__image">
                       <a href="#">
                         <img
                           width="80"
                           height="80"
                           src="assets/images/blog/sidebar-image-3.jpg"
-                          class="#"
+                          className="#"
                           alt="Sidebar Image 03"
                         />
                       </a>
                     </div>
-                    <div class="all-blog2__sidebar__latest-news__item__content">
-                      <h4 class="fs-5 title">
+                    <div className="all-blog2__sidebar__latest-news__item__content">
+                      <h4 className="fs-5 title">
                         <a href="#">Lorem Ipsum dummy simply text is</a>
                       </h4>
-                      <p class="mb-0">On October 14, 2016</p>
+                      <p className="mb-0">On October 14, 2016</p>
                     </div>
                   </div>
-                  <div class="all-blog2__sidebar__latest-news__item">
-                    <div class="all-blog2__sidebar__latest-news__item__image">
+                  <div className="all-blog2__sidebar__latest-news__item">
+                    <div className="all-blog2__sidebar__latest-news__item__image">
                       <a href="#">
                         <img
                           width="80"
                           height="80"
                           src="assets/images/blog/sidebar-image-4.jpg"
-                          class=""
+                          className=""
                           alt="Sidebar Image 04"
                         />
                       </a>
                     </div>
-                    <div class="all-blog2__sidebar__latest-news__item__content">
-                      <h4 class="fs-5 title">
+                    <div className="all-blog2__sidebar__latest-news__item__content">
+                      <h4 className="fs-5 title">
                         <a href="#">Books with sneaky sci-fi plots</a>
                       </h4>
-                      <p class="mb-0">On October 14, 2016</p>
+                      <p className="mb-0">On October 14, 2016</p>
                     </div>
                   </div>
                 </div>
-                <div class="all-blog2__sidebar__archive item-border">
-                  <h2 class="fs-4 mb-3">Archives</h2>
+                <div className="all-blog2__sidebar__archive item-border">
+                  <h2 className="fs-4 mb-3">Archives</h2>
                   <ul>
                     <li>
                       <a href="#">December 2019</a>&nbsp;(1)
@@ -370,38 +370,38 @@ const BlogRightSidebar = () => {
                     </li>
                   </ul>
                 </div>
-                <div class="all-blog2__sidebar__social item-border">
-                  <h2 class="fs-4 mb-3">Social</h2>
-                  <ul class="social-icon my-4">
+                <div className="all-blog2__sidebar__social item-border">
+                  <h2 className="fs-4 mb-3">Social</h2>
+                  <ul className="social-icon my-4">
                     <li>
                       <a href="#">
-                        <i class="icofont-facebook"></i>
+                        <i className="icofont-facebook"></i>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="icofont-twitter"></i>
+                        <i className="icofont-twitter"></i>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="icofont-linkedin"></i>
+                        <i className="icofont-linkedin"></i>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="icofont-youtube-play"></i>
+                        <i className="icofont-youtube-play"></i>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="icofont-whatsapp"></i>
+                        <i className="icofont-whatsapp"></i>
                       </a>
                     </li>
                   </ul>
                 </div>
-                <div class="all-blog2__sidebar__popular-tags item-border">
-                  <h2 class="fs-4 mb-3">Popular Tags</h2>
+                <div className="all-blog2__sidebar__popular-tags item-border">
+                  <h2 className="fs-4 mb-3">Popular Tags</h2>
                   <ul>
                     <li>
                       <a href="#">clocks</a>

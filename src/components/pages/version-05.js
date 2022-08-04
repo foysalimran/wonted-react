@@ -12,6 +12,7 @@ import Booksv1 from "../booksv1";
 import AchievementV2 from "../achievementv2";
 import Contact from "../contact";
 import Headerv2 from "../global/headerv2";
+import Footerv2 from "../global/footerv2";
 
 const Version05 = () => {
   return (
@@ -29,6 +30,7 @@ const Version05 = () => {
       <Blog />
       <CtaV4 />
       <Contact />
+      <Footerv2 />
     </>
   );
 };

@@ -53,81 +53,12 @@ const Eventv2 = () => {
                     {data.description}
                   </p>
                 </div>
-                <a href="single-event.html" className="link">
+                <a href="single-event" className="link">
                   {data.btn}<i className="icofont-rounded-right"></i>
                 </a>
               </div>
             </div>
           ))}
-
-          {/* <div
-              className="col m-30px-b"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="300"
-            >
-              <div className="card h-100 translateEffect1">
-                <div className="card-body">
-                  <div className="date">
-                    <p>23 <span>JUNE</span></p>
-                  </div>
-                  <h4 className="mb-3">Discussion On Horror Thriller</h4>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Labore quas voluptatibus porro quod quo
-                  </p>
-                </div>
-                <a href="single-event.html" className="link"
-                  >Read more<i className="icofont-rounded-right"></i
-                ></a>
-              </div>
-            </div>
-            <div
-              className="col m-30px-b"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="400"
-            >
-              <div className="card h-100 translateEffect1">
-                <div className="card-body">
-                  <div className="date">
-                    <p>23 <span>JUNE</span></p>
-                  </div>
-                  <h4 className="mb-3">Discussion On Horror Thriller</h4>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Labore quas voluptatibus porro quod quo blanditiis sint
-                    ipsam! Repellendus, voluptatibus soluta!
-                  </p>
-                </div>
-                <a href="single-event.html" className="link"
-                  >Read more<i className="icofont-rounded-right"></i
-                ></a>
-              </div>
-            </div>
-            <div
-              className="col m-30px-b"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="500"
-            >
-              <div className="card h-100 translateEffect1">
-                <div className="card-body">
-                  <div className="date">
-                    <p>23 <span>JUNE</span></p>
-                  </div>
-                  <h4 className="mb-3">Discussion On Horror Thriller</h4>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Labore quas voluptatibus porro quod quo blanditiis sint
-                    ipsam! Repellendus, voluptatibus soluta!
-                  </p>
-                </div>
-                <a href="single-event.html" className="link"
-                  >Read more<i className="icofont-rounded-right"></i
-                ></a>
-              </div>
-            </div> */}
         </div>
       </div>
     </section>

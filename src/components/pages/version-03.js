@@ -7,6 +7,7 @@ import Chapterv2 from "../chapterv2";
 import Contact from "../contact";
 import Cta from "../cta";
 import CtaV5 from "../ctav5";
+import Footer from "../global/footer";
 import Header from "../global/header";
 import Herov3 from "../herov3";
 import Pricing from "../pricing";
@@ -27,6 +28,7 @@ const Version03 = () => {
       <CtaV5 />
       <Testimonial />
       <Contact />
+      <Footer />
     </>
   );
 };

@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import PagesHeader from '../pages-header';
 import img1 from '../../assets/images/blog/single-blog.jpg';
 import img2 from '../../assets/images/blog/blog_01.jpg';
 import img3 from '../../assets/images/blog/blog_02.jpg';
@@ -9,11 +8,12 @@ import user2 from '../../assets/images/user-2.png';
 import { FaFacebookF, FaLinkedinIn, FaTwitter, FaRegCalendarAlt, FaYoutube, FaRegCommentDots } from "react-icons/fa";
 import { IoLogoWhatsapp} from "react-icons/io";
 import { BiUser} from "react-icons/bi";
+import Headerv3 from '../global/headerv3';
 
 const SingleBlog = () => {
     return (
         <>
-        <PagesHeader />
+        <Headerv3 />
              <section
       id="all-blogs"
       className="all-blogs hero__padding overflow-hidden position-relative bg-one"

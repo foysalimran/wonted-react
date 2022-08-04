@@ -63,7 +63,7 @@ const AuthorV2 = () => {
                 ""
               ) : (
                 <>
-                  <a href={aboutv2.videoURL} class="glightbox3 video-btn">
+                  <a href={aboutv2.videoURL} className="glightbox3 video-btn">
                     <FiPlay />
                   </a>
                   <div className="promo-video">

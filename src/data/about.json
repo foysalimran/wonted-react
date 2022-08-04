@@ -3,7 +3,6 @@
     "title": "Learn about the book writer",
     "subtitle": "ABOUT AUTHOR",
     "image": "assets/images/author.png",
-    "icon": "assets/icons/ui-play.svg",
     "videoURL": "https://www.youtube.com/watch?v=ksImBkJNQt8",
     "userinfo": {
       "name": "Michale John",
@@ -43,7 +42,6 @@
     "title": "Learn about the book writer",
     "subtitle": "ABOUT AUTHOR",
     "image": "assets/images/achive.png",
-    "icon": "assets/icons/ui-play.svg",
     "videoURL": "https://www.youtube.com/watch?v=ksImBkJNQt8",
     "description": "Based on wikipedia, Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aspernatur quam in nostrum aliquam eligendi vel, modi cupiditate numquam officiis dicta minima placeat nulla impedit voluptatum adipisci beatae. Rerum, impedit.",
     "userinfo": [
@@ -128,7 +126,6 @@
     "title": "Some core information's about me",
     "subtitle": "ABOUT ME",
     "image": "assets/images/achive3.jpg",
-    "icon": "assets/icons/ui-play.svg",
     "videoURL": "https://www.youtube.com/watch?v=ksImBkJNQt8",
     "description": "Based on wikipedia, Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aspernatur quam in nostrum aliquam eligendi vel, modi cupiditate numquam officiis dicta minima placeat nulla impedit voluptatum adipisci beatae. Rerum, impedit.",
     "userinfo": [

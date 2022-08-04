@@ -46,7 +46,7 @@ const Event = () => {
             >
               <article className="events__single-event h-100 translateEffect1">
                 <div className="events__single-event__image">
-                  <a href="single-event.html">
+                  <a href="single-event">
                     <img
                       className="img-fluid"
                       src={data.image}
@@ -57,7 +57,7 @@ const Event = () => {
                 <div className="events__single-event__body">
                   <div className="events__single-event__content">
                     <h2 className="fs-4">
-                      <a href="single-event.html">
+                      <a href="single-event">
                         {data.title}
                       </a>
                     </h2>

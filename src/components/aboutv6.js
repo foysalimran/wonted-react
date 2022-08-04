@@ -63,7 +63,7 @@ const Aboutv6 = () => {
                 ""
               ) : (
                 <>
-                  <a href={aboutv6.videoURL} class="glightbox3 video-btn">
+                  <a href={aboutv6.videoURL} className="glightbox3 video-btn">
                     <FiPlay />
                   </a>
                   <div className="promo-video">

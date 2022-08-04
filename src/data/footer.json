@@ -80,12 +80,16 @@
         "title": "Books"
       },
       {
+        "link": "achievements",
+        "title": "Achievement"
+      },
+      {
         "link": "events",
         "title": "Events"
       },
       {
-        "link": "testimonials",
-        "title": "Testimonials"
+        "link": "reviews",
+        "title": "Testimonial"
       },
       {
         "link": "blog",

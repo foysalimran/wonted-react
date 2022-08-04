@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import PagesHeader from "../pages-header";
 import { RiTimeFill } from "react-icons/ri";
 import { FaComments } from "react-icons/fa";
 import { HiShare } from "react-icons/hi";
@@ -13,7 +12,6 @@ const AllBlog = () => {
   return (
     <>
       <Headerv3 />
-      <PagesHeader />
       <section
         id="all-blogs"
         className="all-blogs hero__padding overflow-hidden position-relative bg-one"
@@ -69,14 +67,14 @@ const AllBlog = () => {
             >
               <article className="blog__single-post h-100 translateEffect1">
                 <div className="blog__single-post__image">
-                  <a href="single-blog.html">
+                  <a href="single-blog">
                     <img className="img-fluid" src={data.image} alt="Blog 01" />
                   </a>
                 </div>
                 <div className="blog__single-post__body">
                   <div className="blog__single-post__content">
                     <h2 className="fs-4">
-                      <a href="single-blog.html">{data.title}</a>
+                      <a href="single-blog">{data.title}</a>
                     </h2>
                     <p className="m-0">{data.description}</p>
                   </div>

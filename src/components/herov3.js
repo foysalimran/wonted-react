@@ -70,7 +70,7 @@ const Herov3 = () => {
                 ""
               ) : (
                 <>
-                  <a href={herov3.videoURL} class="glightbox3 video-btn">
+                  <a href={herov3.videoURL} className="glightbox3 video-btn">
                     <FiPlay />
                   </a>
                   <div className="promo-video">
