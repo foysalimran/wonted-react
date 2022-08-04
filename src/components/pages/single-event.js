@@ -17,13 +17,13 @@ const SingleEvent = () => {
       {/* <!-- ========== All blogs hero start ========== --> */}
       <section
         id="single-events"
-        class="all-blogs hero__padding overflow-hidden position-relative bg-one"
+        className="all-blogs hero__padding overflow-hidden position-relative bg-one"
       >
-        <div class="container">
-          <div class="row">
-            <div class="blog-title">
+        <div className="container">
+          <div className="row">
+            <div className="blog-title">
               <h1
-                class="display-3"
+                className="display-3"
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="600"
@@ -43,7 +43,7 @@ const SingleEvent = () => {
                   data-aos-duration="1000"
                   data-aos-delay="700"
                 >
-                  <i class="icofont-rounded-right"></i>
+                  <i className="icofont-rounded-right"></i>
                 </li>
                 <li
                   data-aos="fade-up"
@@ -59,25 +59,25 @@ const SingleEvent = () => {
       </section>
       {/* <!-- ========== All blogs hero end ========== --> */}
       {/* <!-- ========== Blog right sidebar start ========== --> */}
-      <section class="section-padding single-event">
-        <div class="container">
-          <div class="row">
+      <section className="section-padding single-event">
+        <div className="container">
+          <div className="row">
             <div
-              class="col-md-7 col-lg-8 col-xl-9 mb-4 mb-md-0"
+              className="col-md-7 col-lg-8 col-xl-9 mb-4 mb-md-0"
               data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-delay="700"
             >
-              <div class="single-event__area">
-                <div class="single-event__area__image">
+              <div className="single-event__area">
+                <div className="single-event__area__image">
                   <img
-                    class="img-fluid"
+                    className="img-fluid"
                     src="assets/images/events/1.jpg"
                     alt=""
                   />
                 </div>
-                <div class="single-event__area__menu">
-                  <h2 class="fs-2">Discussion On Horror Thriller</h2>
+                <div className="single-event__area__menu">
+                  <h2 className="fs-2">Discussion On Horror Thriller</h2>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the
@@ -105,8 +105,8 @@ const SingleEvent = () => {
                     atque natus. Perspiciatis, corporis a! Sequi consequuntur
                     ipsa quam ad veritatis inventore doloribus doloremque.
                   </p>
-                  <div class="single-event__area__social">
-                    <h2 class="fs-4">Share the event</h2>
+                  <div className="single-event__area__social">
+                    <h2 className="fs-4">Share the event</h2>
                     <ul className="social-icon my-4">
                   <li>
                     <a href="https://www.facebook.com/">
@@ -140,82 +140,82 @@ const SingleEvent = () => {
             </div>
             <div
               id="right"
-              class="col-md-5 col-lg-4 col-xl-3"
+              className="col-md-5 col-lg-4 col-xl-3"
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-delay="700"
             >
-              <div class="single-event__sidebar">
-                <h3 class="item-border text-center">Event Details</h3>
-                <div class="single-event__sidebar__details item-border">
+              <div className="single-event__sidebar">
+                <h3 className="item-border text-center">Event Details</h3>
+                <div className="single-event__sidebar__details item-border">
                   <ul>
                     <li>
-                      <i class="icofont-calendar"></i>
+                      <i className="icofont-calendar"></i>
                       <div>
-                        <p class="para-1">Date</p>
-                        <p class="para-2">November 17, 2022</p>
+                        <p className="para-1">Date</p>
+                        <p className="para-2">November 17, 2022</p>
                       </div>
                     </li>
                     <li>
-                      <i class="icofont-location-pin"></i>
+                      <i className="icofont-location-pin"></i>
                       <div>
-                        <p class="para-1">Location</p>
-                        <p class="para-2">Milan</p>
+                        <p className="para-1">Location</p>
+                        <p className="para-2">Milan</p>
                       </div>
                     </li>
                     <li>
-                      <i class="icofont-location-arrow"></i>
+                      <i className="icofont-location-arrow"></i>
                       <div>
-                        <p class="para-1">Venue</p>
-                        <p class="para-2">San Siro Stadium</p>
+                        <p className="para-1">Venue</p>
+                        <p className="para-2">San Siro Stadium</p>
                       </div>
                     </li>
                     <li>
-                      <i class="icofont-flag"></i>
+                      <i className="icofont-flag"></i>
                       <div>
-                        <p class="para-1">Address</p>
-                        <p class="para-2">Strada 2a, MI, Italy</p>
+                        <p className="para-1">Address</p>
+                        <p className="para-2">Strada 2a, MI, Italy</p>
                       </div>
                     </li>
                     <li>
-                      <i class="icofont-user-alt-3"></i>
+                      <i className="icofont-user-alt-3"></i>
                       <div>
-                        <p class="para-1">Organizer</p>
-                        <p class="para-2">Cloud inc.</p>
+                        <p className="para-1">Organizer</p>
+                        <p className="para-2">Cloud inc.</p>
                       </div>
                     </li>
                     <li>
-                      <i class="icofont-price"></i>
+                      <i className="icofont-price"></i>
                       <div>
-                        <p class="para-1">Price</p>
-                        <p class="para-2">$10</p>
+                        <p className="para-1">Price</p>
+                        <p className="para-2">$10</p>
                       </div>
                     </li>
                     <li>
-                      <i class="icofont-price"></i>
+                      <i className="icofont-price"></i>
                       <div>
-                        <p class="para-1">Remaining Tickets</p>
-                        <p class="para-2">180 Tickets</p>
+                        <p className="para-1">Remaining Tickets</p>
+                        <p className="para-2">180 Tickets</p>
                       </div>
                     </li>
                     <li>
-                      <i class="icofont-phone"></i>
+                      <i className="icofont-phone"></i>
                       <div>
-                        <p class="para-1">Phone</p>
-                        <p class="para-2">+00879564</p>
+                        <p className="para-1">Phone</p>
+                        <p className="para-2">+00879564</p>
                       </div>
                     </li>
                     <li>
-                      <i class="icofont-email"></i>
+                      <i className="icofont-email"></i>
                       <div>
-                        <p class="para-1">Email</p>
-                        <p class="para-2">email@email.com</p>
+                        <p className="para-1">Email</p>
+                        <p className="para-2">email@email.com</p>
                       </div>
                     </li>
                   </ul>
                 </div>
-                <div class="text-center">
-                  <a href="#" class="button button__primary">
+                <div className="text-center">
+                  <a href="#" className="button button__primary">
                     <span>Purchase Ticket</span>
                   </a>
                 </div>

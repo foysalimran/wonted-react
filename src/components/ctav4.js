@@ -5,7 +5,7 @@ import $ from "jquery";
 import GLightbox from "glightbox";
 window.jQuery = $;
 
-const CtaV4 = () => {
+const Ctav4 = () => {
   const { ctav4 } = data;
   useEffect(() => {
     GLightbox({
@@ -83,4 +83,4 @@ const CtaV4 = () => {
   );
 };
 
-export default CtaV4;
+export default Ctav4;
