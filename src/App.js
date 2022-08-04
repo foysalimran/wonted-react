@@ -10,7 +10,6 @@ import Version06 from "./components/pages/version-06";
 import AOS from "aos";
 import { useEffect } from "react";
 import "./assets/css/aos.css";
-import Header from "./components/global/header";
 import AllBlog from "./components/pages/all-blog";
 import AllEvent from "./components/pages/all-events";
 import BlogLeftSidebar from "./components/pages/blog-left-sidebar";
@@ -25,8 +24,6 @@ function App() {
   return (
     <div className="section-wrapper">
       <div id="preLoader"></div>
-      <Header />
-      
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Version01 />} />

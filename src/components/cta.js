@@ -33,7 +33,7 @@ const url =
         >
           <span>Submit</span>
         </button>
-        <div class="message col m-10px-t">
+        <div className="message col m-10px-t">
           {status === "sending" && (
             <div className=" alert alert-warning">sending...</div>
           )}
