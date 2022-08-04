@@ -1,7 +1,7 @@
 import { default as React, useState } from "react";
 import { GoChevronDown } from "react-icons/go";
 import { Link } from "react-scroll";
-import data from "../../data/header.json"
+import data from "../../data/header.json";
 
 const Header = () => {
   const {header } = data;
@@ -14,15 +14,6 @@ const Header = () => {
     }
   }
   window.addEventListener("scroll", setFixed);
-
-  // useEffect(() => {
-  //   $(".scroll").onePgaeNav({
-  //     activeClass: "active",
-  //     wrapper: "#onepage-nav",
-  //     navStop: 60,
-  //     navStart: 200,
-  //   });
-  // }, [])
 
   return (
     <header className={fix ? "header navbar_fixed" : "header"}>
