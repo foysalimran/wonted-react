@@ -344,6 +344,9 @@
       color: $color-light;
     }
   }
+  &__subscribe__form__message, &__subscribe__form__success{
+max-width:300px
+  }
 }
 
 .success-msg,

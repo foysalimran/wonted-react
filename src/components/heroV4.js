@@ -6,7 +6,7 @@ import $ from "jquery";
 import GLightbox from "glightbox";
 window.jQuery = $;
 
-const HeroV4 = () => {
+const Herov4 = () => {
   const { herov4 } = data;
   
   useEffect(() => {
@@ -101,4 +101,4 @@ const HeroV4 = () => {
   );
 };
 
-export default HeroV4;
+export default Herov4;

@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import data from "../data/chapterPreview.json";
 
 const ChapterPreviewV2 = () => {
+  useEffect(() => {
+    const panels = document.querySelectorAll(".panel");
+    panels.forEach((panel) => {
+      panel.addEventListener("click", () => {
+        removeActiveClasses();
+        panel.classList.add("active");
+      });
+    });
+    function removeActiveClasses() {
+      panels.forEach((panel) => {
+        panel.classList.remove("active");
+      });
+    }
+  }, [])
   const { chapterPreviewv2 } = data;
 
   return (
@@ -44,25 +58,14 @@ const ChapterPreviewV2 = () => {
           <div className="chapter__preview2-content">
             <div className="chapter__preview2-container">
               {chapterPreviewv2.chapters.map((data, i) =>
-                data.active === true ? (
-                  <div
-                    className="panel active"
-                    style={{
-                      backgroundImage: `url(${data.image})`,
-                    }}
-                  >
-                    <h3>{data.title}</h3>
-                  </div>
-                ) : (
-                  <div
-                    className="panel"
-                    style={{
-                      backgroundImage: `url(${data.image})`,
-                    }}
-                  >
-                    <h3>{data.title}</h3>
-                  </div>
-                )
+                 <div key={i}
+                 className={`panel ${i === 0 ? 'active' : ''}`}
+                 style={{
+                   backgroundImage: `url(${data.image})`,
+                 }}
+               >
+                 <h3>{data.title}</h3>
+               </div>
               )}
             </div>
           </div>

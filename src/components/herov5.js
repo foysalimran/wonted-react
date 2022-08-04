@@ -1,5 +1,59 @@
 import React from 'react';
 import data from "../data/herov1.json"
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+
+const url =
+  "https://themeatelier.us17.list-manage.com/subscribe/post?u=318da6141291eeac976c39d64&amp;id=4297abfa34";
+
+//SUBSCRIBE FORM
+function SubscribeForm({ status, message, onValidated }) {
+  let email;
+  const submit = (e) => {
+    e.preventDefault()
+    email &&
+      email.value.indexOf("@") > -1 &&
+      onValidated({
+        EMAIL: email.value,
+      });
+  };
+
+  return (
+    <form>
+      <div
+        className="input-group"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="750"
+      >
+        <input
+          ref={(node) => (email = node)}
+          type="email"
+          placeholder="Your email"
+        />
+        <button className="button button__primary" onClick={submit}>
+          <span>Subscribe</span>
+        </button>
+      </div>
+      <div class="message col m-10px-t hero__subscribe__form__message">
+        {status === "sending" && (
+          <div className=" alert alert-warning">sending...</div>
+        )}
+        {status === "error" && (
+          <div
+            className="alert alert-danger"
+            dangerouslySetInnerHTML={{ __html: message }}
+          />
+        )}
+      </div>
+      {status === "success" && (
+        <div
+          className="alert alert-success hero__subscribe__form__success"
+          dangerouslySetInnerHTML={{ __html: message }}
+        />
+      )}
+    </form>
+  );
+}
 
 const Herov5 = () => {
     const {herov5} = data;
@@ -49,45 +103,16 @@ const Herov5 = () => {
                 >
                   {herov5.description}
                 </p>
-                <form
-                  action="assets/subscribe/subscribe.php"
-                  id="subscribe"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="800"
-                >
-                  <div className="input-group">
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Email"
-                      id="subscriber-email"
-                    />
-                    <button
-                      className="button button__primary"
-                      id="subscribe-button"
-                    >
-                      <span>{herov5.btn}</span>
-                    </button>
-                  </div>
-                  <div className="result">
-                    <p className="success-msg">
-                      <i className="icofont-check"></i> Your email has been stored!
-                    </p>
-                    <p className="error-msg">
-                      <i className="icofont-close"></i> Sorry! Something went wrong!
-                    </p>
-                  </div>
-                </form>
-                {/* <!-- Mailchimp subscription form --> */}
-                 {/* <form action="#" id="subscribe-mailchimp" data-wow-duration="1.5s">
-                <input type="email" name="email"  placeholder="Your Email" className="input-box">
-                <button type="submit" className="button button__primary">Subscribe</button>
-                <div className="result">
-                    <p className="success-msg"><i className="icofont-check"></i> You email has been stored!</p>
-                    <p className="error-msg"><i className="icofont-close"></i> Sorry! Something went wrong!</p>
-                </div>
-              </form>  */}
+                <MailchimpSubscribe
+                url={url}
+                render={({ subscribe, status, message }) => (
+                  <SubscribeForm
+                    status={status}
+                    message={message}
+                    onValidated={(formData) => subscribe(formData)}
+                  />
+                )}
+              />
               </div>
             </div>
             <div

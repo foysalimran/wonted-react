@@ -1,7 +1,7 @@
 import React from "react";
 import data from "../data/cta.json"
 
-const CtaV5 = () => {
+const Ctav5 = () => {
   const {ctav5 } = data;
 
   return (
@@ -72,4 +72,4 @@ const CtaV5 = () => {
   );
 };
 
-export default CtaV5;
+export default Ctav5;
