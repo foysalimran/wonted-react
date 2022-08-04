@@ -1,5 +1,4 @@
 import React from "react";
-import { AiOutlineCheckCircle, AiOutlineCloseCircle } from "react-icons/ai";
 import data from "../data/herov1.json";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 
@@ -35,7 +34,7 @@ function SubscribeForm({ status, message, onValidated }) {
           <span>Subscribe</span>
         </button>
       </div>
-      <div class="message col m-10px-t hero__subscribe__form__message">
+      <div className="message col m-10px-t hero__subscribe__form__message">
         {status === "sending" && (
           <div className=" alert alert-warning">sending...</div>
         )}

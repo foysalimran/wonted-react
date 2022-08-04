@@ -1,14 +1,24 @@
-import React, { useState } from "react";
-import ModalVideo from 'react-modal-video';
-import data from "../data/cta.json"
+import React, { useEffect } from "react";
+import { FiPlay } from "react-icons/fi";
+import data from "../data/cta.json";
+import $ from "jquery";
+import GLightbox from "glightbox";
+window.jQuery = $;
 
-const CtaV4 = () => {
-  const {ctav4} = data;
-  const [isOpen, setOpen] = useState(false)
+const Ctav4 = () => {
+  const { ctav4 } = data;
+  useEffect(() => {
+    GLightbox({
+      selector: ".glightbox3",
+    });
+  }, []);
 
   return (
     // <!-- ========== CTA v4 section start ========== -->
-    <section className="section-padding ctav4" style={{backgroundImage: `url(${ctav4.backgroundImage})`}}>
+    <section
+      className="section-padding ctav4"
+      style={{ backgroundImage: `url(${ctav4.backgroundImage})` }}
+    >
       <div className="container">
         <div className="row">
           <div className="col-md-6 mb-4 mb-lg-0 ctav4__content">
@@ -30,7 +40,7 @@ const CtaV4 = () => {
             <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
               {ctav4.text}
             </p>
-            
+
             <a
               href="#preview"
               className="smooth button button__primary"
@@ -47,20 +57,23 @@ const CtaV4 = () => {
             data-aos-duration="1000"
             data-aos-delay="250"
           >
-            <ModalVideo  channel='youtube' autoplay isOpen={isOpen} videoId={ctav4.videoURL} onClose={() => setOpen(false)} />
             <div className="ctav4__video-btn">
-              <button onClick={()=> setOpen(true)}
-                className="video-btn"
-              >
-                <img className="img-fluid" src={ctav4.icon} alt="icon" width="25" height="25" />
-              </button>
-              <div className="promo-video">
-                <div className="waves-block">
-                  <div className="waves wave-1"></div>
-                  <div className="waves wave-2"></div>
-                  <div className="waves wave-3"></div>
-                </div>
-              </div>
+              {ctav4.videoURL === "" ? (
+                ""
+              ) : (
+                <>
+                  <a href={ctav4.videoURL} className="glightbox3 video-btn">
+                    <FiPlay />
+                  </a>
+                  <div className="promo-video">
+                    <div className="waves-block">
+                      <div className="waves wave-1"></div>
+                      <div className="waves wave-2"></div>
+                      <div className="waves wave-3"></div>
+                    </div>
+                  </div>
+                </>
+              )}
             </div>
           </div>
         </div>
@@ -70,4 +83,4 @@ const CtaV4 = () => {
   );
 };
 
-export default CtaV4;
+export default Ctav4;

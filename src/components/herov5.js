@@ -34,7 +34,7 @@ function SubscribeForm({ status, message, onValidated }) {
           <span>Subscribe</span>
         </button>
       </div>
-      <div class="message col m-10px-t hero__subscribe__form__message">
+      <div className="message col m-10px-t hero__subscribe__form__message">
         {status === "sending" && (
           <div className=" alert alert-warning">sending...</div>
         )}
@@ -60,17 +60,17 @@ const Herov5 = () => {
     return (
         <section
         id="hero"
-        class="hero hero__padding overflow-hidden position-relative bg-one"
+        className="hero hero__padding overflow-hidden position-relative bg-one"
       >
-        <div class="circle x1"></div>
-        <div class="circle x2"></div>
-        <div class="circle x3"></div>
-        <div class="circle x4"></div>
-        <div class="circle x5"></div>
-        <div class="container">
-          <div class="row gx-5 align-items-center">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-              <div class="hero__content position-relative">
+        <div className="circle x1"></div>
+        <div className="circle x2"></div>
+        <div className="circle x3"></div>
+        <div className="circle x4"></div>
+        <div className="circle x5"></div>
+        <div className="container">
+          <div className="row gx-5 align-items-center">
+            <div className="col-lg-6 mb-4 mb-lg-0">
+              <div className="hero__content position-relative">
               <div
                   className="badge-text mb-2 fs-3 fw-bold"
                   data-aos="fade-up"
@@ -116,25 +116,25 @@ const Herov5 = () => {
               </div>
             </div>
             <div
-              class="col-lg-6 d-flex"
+              className="col-lg-6 d-flex"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="700"
             >
-              <div class="hero__book">
-                <div class="hero__book--wrapper">
-                  <img class="img-fluid" src={herov5.bookImage} alt="" />
+              <div className="hero__book">
+                <div className="hero__book--wrapper">
+                  <img className="img-fluid" src={herov5.bookImage} alt="" />
                 </div>
               </div>
-              <div class="hero__author text-center">
-                <div class="hero__author--inner hero__author--inner2">
+              <div className="hero__author text-center">
+                <div className="hero__author--inner hero__author--inner2">
                   <div
-                    class="hero__author--inner--pic hero__author--inner2--pic d-flex align-items-end justify-content-center"
+                    className="hero__author--inner--pic hero__author--inner2--pic d-flex align-items-end justify-content-center"
                     style={{backgroundImage: `url(${herov5.writerImage})`}}
                   ></div>
-                  <div class="frame frame-1"></div>
-                  <div class="frame frame-2"></div>
-                  <div class="frame frame-3"></div>
+                  <div className="frame frame-1"></div>
+                  <div className="frame frame-2"></div>
+                  <div className="frame frame-3"></div>
                 </div>
               </div>
             </div>

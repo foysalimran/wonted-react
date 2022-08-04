@@ -1,12 +1,20 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React, { useState } from "react";
-import ModalVideo from "react-modal-video";
+import React, { useEffect } from "react";
+import { FiPlay } from "react-icons/fi";
 import data from "../data/about.json";
+import $ from "jquery";
+import GLightbox from "glightbox";
+window.jQuery = $;
 
 const Aboutv6 = () => {
   const { aboutv6 } = data;
-  const [isOpen, setOpen] = useState(false);
+  useEffect(() => {
+    GLightbox({
+      selector: ".glightbox3",
+    });
+  }, []);
+
   return (
     // <!-- ========== Author section start ========== -->
     <section id="about" className="section-padding authorv2">
@@ -51,30 +59,22 @@ const Aboutv6 = () => {
                 src="assets/images/achive2.jpg"
                 alt="Author Image"
               />
-              <ModalVideo
-                channel="youtube"
-                autoplay
-                isOpen={isOpen}
-                videoId="dkxiTpwm0hs"
-                onClose={() => setOpen(false)}
-              />
-
-              <button onClick={() => setOpen(true)} className="video-btn">
-                <img
-                  className="img-fluid"
-                  src={aboutv6.icon}
-                  alt="icon"
-                  width="25"
-                  height="25"
-                />
-              </button>
-              <div className="promo-video">
-                <div className="waves-block">
-                  <div className="waves wave-1"></div>
-                  <div className="waves wave-2"></div>
-                  <div className="waves wave-3"></div>
-                </div>
-              </div>
+              {aboutv6.videoURL === "" ? (
+                ""
+              ) : (
+                <>
+                  <a href={aboutv6.videoURL} className="glightbox3 video-btn">
+                    <FiPlay />
+                  </a>
+                  <div className="promo-video">
+                    <div className="waves-block">
+                      <div className="waves wave-1"></div>
+                      <div className="waves wave-2"></div>
+                      <div className="waves wave-3"></div>
+                    </div>
+                  </div>
+                </>
+              )}
             </div>
           </div>
           <div
