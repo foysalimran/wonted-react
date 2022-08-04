@@ -1,28 +1,28 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/alt-text */
-import React from "react";
-import Lightbox from "react-lightbox-component";
+import React, { useEffect } from "react";
 import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-import image1 from "../assets/images/chapter-preview/1.jpg";
-import image2 from "../assets/images/chapter-preview/2.jpg";
-import image3 from "../assets/images/chapter-preview/3.jpg";
-import image4 from "../assets/images/chapter-preview/4.jpg";
-import image5 from "../assets/images/chapter-preview/5.jpg";
+import $ from "jquery";
+import data from "../data/chapterPreview.json";
+import GLightbox from "glightbox";
+window.jQuery = $;
 
 const ChapterPreview = () => {
+  const { chapterPreview } = data;
+  useEffect(() => {
+    GLightbox({
+      selector: ".glightbox2",
+      slideEffect: "zoom",
+    });
+  }, []);
 
   return (
     // <!-- ========== Chapter preview section start ========== -->
     <section id="preview" className="section-padding chapter-preview">
-
-
- 
-
-      
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
@@ -32,7 +32,7 @@ const ChapterPreview = () => {
                 data-aos-duration="1000"
                 data-aos-delay="150"
               >
-                CHAPTERS PREVIEW
+                {chapterPreview.title}
               </span>
               <h2
                 className="display-6"
@@ -40,7 +40,7 @@ const ChapterPreview = () => {
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
-                Read some chapter free.
+                {chapterPreview.subtitle}
               </h2>
               <div
                 className="section-divider divider-traingle"
@@ -69,125 +69,37 @@ const ChapterPreview = () => {
                 },
               }}
             >
-              <SwiperSlide>
-                <div
-                  className="swiper-slide p-5px-lr translateEffect2"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  <Lightbox
-                    images={[
-                      {
-                        src: image1,
-                        title: "image title",
-                        description: "image description",
-                      },
-                    ]}
-                    thumbnailWidth= '100%'
-                    thumbnailHeight= 'auto'
-                  />
-              
-                </div>
-            
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div
-                  className="swiper-slide p-5px-lr translateEffect2"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  <Lightbox
-                    images={[
-                      {
-                        src: image2,
-                        title: "image title",
-                        description: "image description",
-                       
-                      },
-                    ]}
-                    thumbnailWidth= '100%'
-                    thumbnailHeight= 'auto'
-                  />
-              
-                </div>
-            
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div
-                  className="swiper-slide p-5px-lr translateEffect2"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  <Lightbox
-                    images={[
-                      {
-                        src: image3,
-                        title: "image title",
-                        description: "image description",
-                       
-                      },
-                    ]}
-                    thumbnailWidth= '100%'
-                    thumbnailHeight= 'auto'
-                  />
-              
-                </div>
-            
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div
-                  className="swiper-slide p-5px-lr translateEffect2"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  <Lightbox
-                    images={[
-                      {
-                        src: image4,
-                        title: "image title",
-                        description: "image description",
-                       
-                      },
-                    ]}
-                    thumbnailWidth= '100%'
-                    thumbnailHeight= 'auto'
-                  />
-              
-                </div>
-            
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div
-                  className="swiper-slide p-5px-lr translateEffect2"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  <Lightbox
-                    images={[
-                      {
-                        src: image5,
-                        title: "image title",
-                        description: "image description",
-                       
-                      },
-                    ]}
-                    thumbnailWidth= '100%'
-                    thumbnailHeight= 'auto'
-                  />
-              
-                </div>
-              </SwiperSlide>
+              {chapterPreview.chapters.map((data, i) => (
+                <SwiperSlide key={i}>
+                  <div
+                    className="swiper-slide p-5px-lr translateEffect2"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <a
+                      href={data.image}
+                      className="glightbox2"
+                      data-glightbox={`description: .custom-desc${i}; descPosition: right;`}
+                    >
+                      <img
+                        className="chapter-img img-fluid"
+                        src={data.image}
+                        alt="image"
+                      />
+                    </a>
+                    <div className={`glightbox-desc custom-desc${i}`}>
+                      <h3 className="mb-4 text-center">{data.title}</h3>
+                      <p className="first-letter">{data.text1}</p>
+                      <p>{data.text2}</p>
+                      <p>{data.text3}</p>
+                      <p>{data.text4}</p>
+                      <p>{data.text5}</p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
             </Swiper>
-          
           </div>
         </div>
       </div>

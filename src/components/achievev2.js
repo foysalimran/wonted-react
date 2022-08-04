@@ -1,7 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { ImBook } from "react-icons/im";
-import { GiHappySkull, GiStairsGoal } from "react-icons/gi"
 import data from "../data/achieve.json";
 
 const AchieveV2 = () => {

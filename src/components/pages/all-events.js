@@ -1,17 +1,15 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import PagesHeader from "../pages-header";
-
-import eventImg1 from '../../assets/images/events/1.jpg'
-import eventImg2 from '../../assets/images/events/2.jpg'
-import eventImg3 from '../../assets/images/events/3.jpg'
-import eventImg4 from '../../assets/images/events/4.jpg'
-import eventImg5 from '../../assets/images/events/5.jpg'
-import eventImg6 from '../../assets/images/events/6.jpg'
+import data from "../../data/events.json";
+import { FaRegCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
+import Headerv3 from "../global/headerv3";
+import Footerv3 from "../global/footerv3";
 
 const AllEvent = () => {
+  const { events } = data;
   return (
     <>
-      <PagesHeader />
+      <Headerv3 />
       <div
         id="all-events"
         className="all-blogs hero__padding overflow-hidden position-relative bg-one"
@@ -33,7 +31,7 @@ const AllEvent = () => {
                   data-aos-duration="1000"
                   data-aos-delay="650"
                 >
-                  <a href="index.html">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li
                   data-aos="fade-up"
@@ -58,240 +56,39 @@ const AllEvent = () => {
       <div className="section-padding events">
         <div className="container">
           <div className="row">
-            <div
-              className="col-md-6 col-lg-4 mb-4"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="200"
-            >
-              <article className="events__single-event">
-                <div className="events__single-event__image">
-                  <a href="single-event.html">
-                    <img
-                      className="img-fluid"
-                      src={eventImg1}
-                      alt="events 01"
-                    />
-                  </a>
-                </div>
-                <div className="events__single-event__body">
-                  <div className="events__single-event__content">
-                    <h2 className="fs-4">
-                      <a href="single-event.html">
-                        Discussion On Horror Thriller
-                      </a>
-                    </h2>
-                    <p className="m-0">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Maxime provident, in tempore incidunt laudantium.
-                    </p>
+            {events.singleBlog.map((data, i) => (
+              <div key={i}
+                className="col-md-6 col-lg-4 mb-4"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+              >
+                <article className="events__single-event h-100 translateEffect1">
+                  <div className="events__single-event__image">
+                    <a href="single-event">
+                      <img className="img-fluid" src={data.image} alt="" />
+                    </a>
                   </div>
-                  <div className="events__single-event__meta">
-                    <div>
-                      <i className="icofont-calendar"></i> 3 June, 2021
+                  <div className="events__single-event__body">
+                    <div className="events__single-event__content">
+                      <h2 className="fs-4">
+                        <a href="single-event">{data.title}</a>
+                      </h2>
+                      <p className="m-0">{data.description}</p>
                     </div>
-                    <div>
-                      <i className="icofont-location-pin"></i> Milan
+                    <div className="events__single-event__meta">
+                      <div>
+                        <FaRegCalendarAlt /> {data.date} {data.month},{" "}
+                        {data.year}
+                      </div>
+                      <div>
+                        <FaMapMarkerAlt /> {data.location}
+                      </div>
                     </div>
                   </div>
-                </div>
-              </article>
-            </div>
-            <div
-              className="col-md-6 col-lg-4 mb-4"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="300"
-            >
-              <article className="events__single-event">
-                <div className="events__single-event__image">
-                  <a href="single-event.html">
-                    <img
-                      className="img-fluid"
-                      src={eventImg2}
-                      alt="events 01"
-                    />
-                  </a>
-                </div>
-                <div className="events__single-event__body">
-                  <div className="events__single-event__content">
-                    <h2 className="fs-4">
-                      <a href="single-event.html">
-                        Discussion On Horror Thriller
-                      </a>
-                    </h2>
-                    <p className="m-0">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Maxime provident, in tempore incidunt laudantium.
-                    </p>
-                  </div>
-                  <div className="events__single-event__meta">
-                    <div>
-                      <i className="icofont-calendar"></i> 3 June, 2021
-                    </div>
-                    <div>
-                      <i className="icofont-location-pin"></i> Boston
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div
-              className="col-md-6 col-lg-4 mb-4"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="400"
-            >
-              <article className="events__single-event">
-                <div className="events__single-event__image">
-                  <a href="single-event.html">
-                    <img
-                      className="img-fluid"
-                      src={eventImg3}
-                      alt="events 02"
-                    />
-                  </a>
-                </div>
-                <div className="events__single-event__body">
-                  <div className="events__single-event__content">
-                    <h2 className="fs-4">
-                      <a href="single-event.html">
-                        Discussion On Horror Thriller
-                      </a>
-                    </h2>
-                    <p className="m-0">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Maxime provident, in tempore incidunt laudantium.
-                    </p>
-                  </div>
-                  <div className="events__single-event__meta">
-                    <div>
-                      <i className="icofont-calendar"></i> 3 June, 2021
-                    </div>
-                    <div>
-                      <i className="icofont-location-pin"></i> Juventus
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div
-              className="col-md-6 col-lg-4 mb-4"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="500"
-            >
-              <article className="events__single-event">
-                <div className="events__single-event__image">
-                  <a href="single-event.html">
-                    <img
-                      className="img-fluid"
-                      src={eventImg4}
-                      alt="events 02"
-                    />
-                  </a>
-                </div>
-                <div className="events__single-event__body">
-                  <div className="events__single-event__content">
-                    <h2 className="fs-4">
-                      <a href="single-event.html">
-                        Discussion On Horror Thriller
-                      </a>
-                    </h2>
-                    <p className="m-0">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Maxime provident, in tempore incidunt laudantium.
-                    </p>
-                  </div>
-                  <div className="events__single-event__meta">
-                    <div>
-                      <i className="icofont-calendar"></i> 3 June, 2021
-                    </div>
-                    <div>
-                      <i className="icofont-location-pin"></i> Atalanta
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div
-              className="col-md-6 col-lg-4 mb-4"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="600"
-            >
-              <article className="events__single-event">
-                <div className="events__single-event__image">
-                  <a href="single-event.html">
-                    <img
-                      className="img-fluid"
-                      src={eventImg5}
-                      alt="events 03"
-                    />
-                  </a>
-                </div>
-                <div className="events__single-event__body">
-                  <div className="events__single-event__content">
-                    <h2 className="fs-4">
-                      <a href="single-event.html">
-                        Discussion On Horror Thriller
-                      </a>
-                    </h2>
-                    <p className="m-0">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Maxime provident, in tempore incidunt laudantium.
-                    </p>
-                  </div>
-                  <div className="events__single-event__meta">
-                    <div>
-                      <i className="icofont-calendar"></i> 3 June, 2021
-                    </div>
-                    <div>
-                      <i className="icofont-location-pin"></i> Madrid
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div
-              className="col-md-6 col-lg-4 mb-4"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="700"
-            >
-              <article className="events__single-event">
-                <div className="events__single-event__image">
-                  <a href="single-event.html">
-                    <img
-                      className="img-fluid"
-                      src={eventImg6}
-                      alt="events 03"
-                    />
-                  </a>
-                </div>
-                <div className="events__single-event__body">
-                  <div className="events__single-event__content">
-                    <h2 className="fs-4">
-                      <a href="single-event.html">
-                        Discussion On Horror Thriller
-                      </a>
-                    </h2>
-                    <p className="m-0">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Maxime provident, in tempore incidunt laudantium.
-                    </p>
-                  </div>
-                  <div className="events__single-event__meta">
-                    <div>
-                      <i className="icofont-calendar"></i> 3 June, 2021
-                    </div>
-                    <div>
-                      <i className="icofont-location-pin"></i> North London
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
+                </article>
+              </div>
+            ))}
           </div>
           <div className="blog__pagination">
             <nav aria-label="Page navigation example">
@@ -326,6 +123,7 @@ const AllEvent = () => {
           </div>
         </div>
       </div>
+      <Footerv3 />
     </>
   );
 };

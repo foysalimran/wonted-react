@@ -135,7 +135,7 @@
         top: 25px;
       }
     }
-    img {
+    .img {
       position: relative;
 
       z-index: 2;
@@ -343,6 +343,9 @@
       background-color: $color-primary;
       color: $color-light;
     }
+  }
+  &__subscribe__form__message, &__subscribe__form__success{
+max-width:300px
   }
 }
 

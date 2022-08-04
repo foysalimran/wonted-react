@@ -1,10 +1,20 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useEffect } from "react";
+import { FiPlay } from "react-icons/fi";
 import data from "../data/about.json";
+import $ from "jquery";
+import GLightbox from "glightbox";
+window.jQuery = $;
 
 const Author = () => {
   const { about } = data;
+  useEffect(() => {
+    GLightbox({
+      selector: ".glightbox3",
+    });
+  }, []);
+
   return (
     // <!-- ========== Author section start ========== -->
     <section id="author" className="section-padding author">
@@ -46,28 +56,26 @@ const Author = () => {
           >
             <div className="author__image">
               <img
-                className="img-fluid"
+                className="img-fluid img"
                 src={about.image}
                 alt="Author Image"
               />
-              <a
-                href="https://youtu.be/qg0_FinB6EE"
-                className="glightbox3 video-btn"
-              >
-                <img
-                        className="img-fluid"
-                        src="../assets/icons/ui-play.svg"
-                        alt="icon"
-                        width="25"
-                      />
-              </a>
-              <div className="promo-video">
-                <div className="waves-block">
-                  <div className="waves wave-1"></div>
-                  <div className="waves wave-2"></div>
-                  <div className="waves wave-3"></div>
-                </div>
-              </div>
+              {about.videoURL === "" ? (
+                ""
+              ) : (
+                <>
+                  <a href={about.videoURL} className="glightbox3 video-btn">
+                    <FiPlay />
+                  </a>
+                  <div className="promo-video">
+                    <div className="waves-block">
+                      <div className="waves wave-1"></div>
+                      <div className="waves wave-2"></div>
+                      <div className="waves wave-3"></div>
+                    </div>
+                  </div>
+                </>
+              )}
             </div>
           </div>
           {/* <!-- author image end --> */}
@@ -95,7 +103,7 @@ const Author = () => {
                       alt="icon"
                       width="25"
                       height="25"
-                    /> {" "}
+                    />{" "}
                     {data.achieves}
                   </li>
                 ))}
@@ -103,15 +111,19 @@ const Author = () => {
               <ul className="social-icon mt-3">
                 {about.social?.map((data, i) => (
                   <li key={i}>
-                    <a href="#">
-                      <img
-                        className="img-fluid"
-                        src={data.icon}
-                        alt="icon"
-                        width="25"
-                        height="25"
-                      />
-                    </a>
+                    {data.link === "" ? (
+                      ""
+                    ) : (
+                      <a href={data.link}>
+                        <img
+                          className="img-fluid"
+                          src={data.icon}
+                          alt="icon"
+                          width="25"
+                          height="25"
+                        />
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>
