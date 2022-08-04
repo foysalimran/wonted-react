@@ -3,6 +3,15 @@
 import React from "react";
 import Footerv3 from "../global/footerv3";
 import Headerv3 from "../global/headerv3";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FiChevronRight } from "react-icons/fi";
+import { BsSearch } from "react-icons/bs";
 
 const BlogRightSidebar = () => {
   return (
@@ -37,7 +46,7 @@ const BlogRightSidebar = () => {
                   data-aos-duration="1000"
                   data-aos-delay="700"
                 >
-                  <i className="icofont-rounded-right"></i>
+                  <FiChevronRight />
                 </li>
                 <li
                   data-aos="fade-up"
@@ -81,7 +90,7 @@ const BlogRightSidebar = () => {
                     <li>DECEMBER 3, 2019</li>
                   </ul>
                   <h2 className="fs-2">
-                    <a href="#">Lorem ipsum dolor sit amet</a>
+                    <a href="/single-blog">Lorem ipsum dolor sit amet</a>
                   </h2>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -89,8 +98,8 @@ const BlogRightSidebar = () => {
                     industry’sstandard dummy text ever since the 1500s, when an
                     unknown printer took a galley of...
                   </p>
-                  <a href="#" className="link">
-                    Read more<i className="icofont-rounded-right"></i>
+                  <a href="/single-blog" className="link">
+                    Read more <FiChevronRight />
                   </a>
                 </div>
               </div>
@@ -113,7 +122,7 @@ const BlogRightSidebar = () => {
                     <li>DECEMBER 3, 2019</li>
                   </ul>
                   <h2 className="fs-2">
-                    <a href="#">Lorem ipsum dolor sit amet</a>
+                    <a href="/single-blog">Lorem ipsum dolor sit amet</a>
                   </h2>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -121,8 +130,8 @@ const BlogRightSidebar = () => {
                     industry’sstandard dummy text ever since the 1500s, when an
                     unknown printer took a galley of...
                   </p>
-                  <a href="#" className="link">
-                    Read more<i className="icofont-rounded-right"></i>
+                  <a href="/single-blog" className="link">
+                    Read more <FiChevronRight />
                   </a>
                 </div>
               </div>
@@ -145,7 +154,7 @@ const BlogRightSidebar = () => {
                     <li>DECEMBER 3, 2019</li>
                   </ul>
                   <h2 className="fs-2">
-                    <a href="#">Lorem ipsum dolor sit amet</a>
+                    <a href="/single-blog">Lorem ipsum dolor sit amet</a>
                   </h2>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -153,8 +162,8 @@ const BlogRightSidebar = () => {
                     industry’sstandard dummy text ever since the 1500s, when an
                     unknown printer took a galley of...
                   </p>
-                  <a href="#" className="link">
-                    Read more<i className="icofont-rounded-right"></i>
+                  <a href="/single-blog" className="link">
+                    Read more <FiChevronRight />
                   </a>
                 </div>
               </div>
@@ -177,7 +186,7 @@ const BlogRightSidebar = () => {
                     <li>DECEMBER 3, 2019</li>
                   </ul>
                   <h2 className="fs-2">
-                    <a href="#">Lorem ipsum dolor sit amet</a>
+                    <a href="/single-blog">Lorem ipsum dolor sit amet</a>
                   </h2>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -185,8 +194,8 @@ const BlogRightSidebar = () => {
                     industry’sstandard dummy text ever since the 1500s, when an
                     unknown printer took a galley of...
                   </p>
-                  <a href="#" className="link">
-                    Read more<i className="icofont-rounded-right"></i>
+                  <a href="/single-blog" className="link">
+                    Read more <FiChevronRight />
                   </a>
                 </div>
               </div>
@@ -209,7 +218,7 @@ const BlogRightSidebar = () => {
                     <li>DECEMBER 3, 2019</li>
                   </ul>
                   <h2 className="fs-2">
-                    <a href="#">Lorem ipsum dolor sit amet</a>
+                    <a href="/single-blog">Lorem ipsum dolor sit amet</a>
                   </h2>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -217,8 +226,8 @@ const BlogRightSidebar = () => {
                     industry’sstandard dummy text ever since the 1500s, when an
                     unknown printer took a galley of...
                   </p>
-                  <a href="#" className="link">
-                    Read more<i className="icofont-rounded-right"></i>
+                  <a href="/single-blog" className="link">
+                    Read more <FiChevronRight />
                   </a>
                 </div>
               </div>
@@ -233,7 +242,7 @@ const BlogRightSidebar = () => {
               <div className="all-blog2__sidebar">
                 <form>
                   <input type="text" placeholder="Search" />
-                  <i className="icofont-search-1"></i>
+                  <BsSearch />
                 </form>
                 <div className="all-blog2__sidebar__categories item-border">
                   <h2 className="fs-4 mb-3">Blog Categories</h2>
@@ -292,7 +301,7 @@ const BlogRightSidebar = () => {
                   </div>
                   <div className="all-blog2__sidebar__latest-news__item">
                     <div className="all-blog2__sidebar__latest-news__item__image">
-                      <a href="#">
+                      <a href="/single-blog">
                         <img
                           width="80"
                           height="80"
@@ -311,7 +320,7 @@ const BlogRightSidebar = () => {
                   </div>
                   <div className="all-blog2__sidebar__latest-news__item">
                     <div className="all-blog2__sidebar__latest-news__item__image">
-                      <a href="#">
+                      <a href="/single-blog">
                         <img
                           width="80"
                           height="80"
@@ -330,7 +339,7 @@ const BlogRightSidebar = () => {
                   </div>
                   <div className="all-blog2__sidebar__latest-news__item">
                     <div className="all-blog2__sidebar__latest-news__item__image">
-                      <a href="#">
+                      <a href="/single-blog">
                         <img
                           width="80"
                           height="80"
@@ -375,28 +384,28 @@ const BlogRightSidebar = () => {
                   <h2 className="fs-4 mb-3">Social</h2>
                   <ul className="social-icon my-4">
                     <li>
-                      <a href="#">
-                        <i className="icofont-facebook"></i>
+                      <a href="https://www.facebook.com/">
+                        <FaFacebookF />
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="icofont-twitter"></i>
+                      <a href="https://www.twitter.com/">
+                        <FaTwitter />
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="icofont-linkedin"></i>
+                      <a href="https://www.linkedin.com/">
+                        <FaLinkedinIn />
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="icofont-youtube-play"></i>
+                      <a href="https://www.youtube.com/">
+                        <FaYoutube />
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="icofont-whatsapp"></i>
+                      <a href="https://www.whatsapp.com">
+                        <IoLogoWhatsapp />
                       </a>
                     </li>
                   </ul>

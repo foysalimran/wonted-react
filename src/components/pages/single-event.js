@@ -6,6 +6,7 @@ import {
   FaTwitter,
   FaYoutube
 } from "react-icons/fa";
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { IoLogoWhatsapp } from "react-icons/io";
 import Footerv3 from "../global/footerv3";
 import Headerv3 from "../global/headerv3";
@@ -43,7 +44,7 @@ const SingleEvent = () => {
                   data-aos-duration="1000"
                   data-aos-delay="700"
                 >
-                  <i className="icofont-rounded-right"></i>
+                  <HiOutlineArrowNarrowRight />
                 </li>
                 <li
                   data-aos="fade-up"
@@ -108,32 +109,32 @@ const SingleEvent = () => {
                   <div className="single-event__area__social">
                     <h2 className="fs-4">Share the event</h2>
                     <ul className="social-icon my-4">
-                  <li>
-                    <a href="https://www.facebook.com/">
-                      <FaFacebookF />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.twitter.com/">
-                      <FaTwitter />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/">
-                      <FaLinkedinIn />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.youtube.com/">
-                      <FaYoutube />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.whatsapp.com">
-                      <IoLogoWhatsapp />
-                    </a>
-                  </li>
-                </ul>
+                      <li>
+                        <a href="https://www.facebook.com/">
+                          <FaFacebookF />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.twitter.com/">
+                          <FaTwitter />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.linkedin.com/">
+                          <FaLinkedinIn />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.youtube.com/">
+                          <FaYoutube />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.whatsapp.com">
+                          <IoLogoWhatsapp />
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
