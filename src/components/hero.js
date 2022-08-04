@@ -1,9 +1,62 @@
 import React from "react";
-import { AiOutlineCheckCircle, AiOutlineCloseCircle } from "react-icons/ai";
 import data from "../data/herov1.json";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+
+const url =
+  "https://themeatelier.us17.list-manage.com/subscribe/post?u=318da6141291eeac976c39d64&amp;id=4297abfa34";
+
+//SUBSCRIBE FORM
+function SubscribeForm({ status, message, onValidated }) {
+  let email;
+  const submit = (e) => {
+    e.preventDefault()
+    email &&
+      email.value.indexOf("@") > -1 &&
+      onValidated({
+        EMAIL: email.value,
+      });
+  };
+
+  return (
+    <form>
+      <div
+        className="input-group"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="750"
+      >
+        <input
+          ref={(node) => (email = node)}
+          type="email"
+          placeholder="Your email"
+        />
+        <button className="button button__primary" onClick={submit}>
+          <span>Subscribe</span>
+        </button>
+      </div>
+      <div class="message col m-10px-t hero__subscribe__form__message">
+        {status === "sending" && (
+          <div className=" alert alert-warning">sending...</div>
+        )}
+        {status === "error" && (
+          <div
+            className="alert alert-danger"
+            dangerouslySetInnerHTML={{ __html: message }}
+          />
+        )}
+      </div>
+      {status === "success" && (
+        <div
+          className="alert alert-success hero__subscribe__form__success"
+          dangerouslySetInnerHTML={{ __html: message }}
+        />
+      )}
+    </form>
+  );
+}
 
 const Hero = () => {
-  const {herov1} = data;
+  const { herov1 } = data;
   return (
     // <!-- ========== Hero section start ========== -->
     <section
@@ -43,57 +96,16 @@ const Hero = () => {
               >
                 {herov1.description}
               </p>
-              <form action="assets/subscribe/subscribe.php" id="subscribe">
-                <div
-                  className="input-group"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="750"
-                >
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    id="subscriber-email"
+              <MailchimpSubscribe
+                url={url}
+                render={({ subscribe, status, message }) => (
+                  <SubscribeForm
+                    status={status}
+                    message={message}
+                    onValidated={(formData) => subscribe(formData)}
                   />
-                  <button
-                    className="button button__primary"
-                    id="subscribe-button"
-                  >
-                    <span>Subscribe</span>
-                  </button>
-                </div>
-                <div className="result">
-                  <p
-                    className="success-msg"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="800"
-                  >
-                    <AiOutlineCheckCircle /> Your email has been stored!
-                  </p>
-                  <p
-                    className="error-msg"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="850"
-                  >
-                    <AiOutlineCloseCircle /> Sorry! Something went wrong!
-                  </p>
-                </div>
-              </form>
-              {/* <form action="#" id="subscribe-mailchimp" data-wow-duration="1.5s">
-                    <div className="input-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750">
-                      <input type="email" name="email" placeholder="Email" id="subscriber-email" />
-                      <button className="button button__primary" id="subscribe-button">
-                        <span>Subscribe</span>
-                      </button>
-                    </div>
-                    <div className="result">
-                        <p className="success-msg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800"><AiOutlineCheckCircle /></AiOutlineCheckCircle> You email has been stored!</p>
-                        <p className="error-msg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="850"><AiOutlineCloseCircle /> Sorry! Something went wrong!</p>
-                    </div>
-                  </form> */}
+                )}
+              />
             </div>
           </div>
           <div
@@ -106,7 +118,9 @@ const Hero = () => {
               <img className="img-fluid" src={herov1.image} alt="" />
               <div className="hero__images--badge">
                 <span>
-                  <span className="hero__images--badge--text1">{herov1.tagTitle}</span>
+                  <span className="hero__images--badge--text1">
+                    {herov1.tagTitle}
+                  </span>
                   <span className="hero__images--badge--text2">
                     {herov1.tagText}
                   </span>
@@ -117,7 +131,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
- 
+
     // <!-- ========== Hero section start ========== -->
   );
 };

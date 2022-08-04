@@ -7,12 +7,12 @@ import "swiper/css/autoplay";
 import { Autoplay, Pagination } from "swiper";
 import testimonialData from "../data/testimonial.json"
 
-const Testimonial = () => {
+const Testimonial = ({bgColor, cardColor}) => {
   const { testimonial } = testimonialData;
 
   return (
     // <!-- ========== Testimonial section start ========== -->
-    <section id="reviews" className="section-padding testimonial bg-one">
+    <section id="reviews" className="section-padding testimonial bg-one" style={{backgroundColor: `${bgColor}`}}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
@@ -66,7 +66,7 @@ const Testimonial = () => {
                     data-aos-duration="1000"
                     data-aos-delay="300"
                   >
-                <div className="testi-card card h-100 translateEffect1">
+                <div className="testi-card card h-100 translateEffect1" style={{backgroundColor: `${cardColor}`}}>
                   <div className="card-body p-4">
                     <div className="testi-card__quotation">
                       <i className="icofont-quote-right"></i>

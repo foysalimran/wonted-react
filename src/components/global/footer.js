@@ -19,7 +19,7 @@ const Footer = () => {
                 data-aos-duration="1000"
                 data-aos-delay="150"
               >
-                <a href="index.html">
+                <a href="/">
                   {/* <!-- <h1 className="m-0">WONTED</h1> --> */}
                   <img src={footer.logo} alt="Wonted" />
                 </a>
@@ -34,17 +34,16 @@ const Footer = () => {
                       data-aos-delay="200"
                     >
                       <Link
-                      activeClass="active"
-                      className="benefits"
-                      to={`${data.link}`}
-                      spy={true}
-                      smooth={true}
-                      duration={500}
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      offset={-60}
-                  
+                        activeClass="active"
+                        className="benefits"
+                        to={`${data.link}`}
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        offset={-60}
                       >
                         {data.title}
                       </Link>
@@ -55,20 +54,25 @@ const Footer = () => {
               <div className="col-lg-3 d-flex justify-content-center align-items-center mb-3 mb-lg-0 justify-content-lg-end">
                 <ul className="social-icon">
                   {footer.social?.map((data, i) => (
-                    <li key={i}
+                    <li
+                      key={i}
                       data-aos="fade-up"
                       data-aos-duration="1000"
                       data-aos-delay="300"
                     >
-                      <a href="#">
-                      <img
-                        className="img-fluid"
-                        src={data.icon}
-                        alt="icon"
-                        width="25"
-                        height="25"
-                      />
-                      </a>
+                      {data.link === "" ? (
+                        ""
+                      ) : (
+                        <a href={data.link}>
+                          <img
+                            className="img-fluid"
+                            src={data.icon}
+                            alt="icon"
+                            width="25"
+                            height="25"
+                          />
+                        </a>
+                      )}
                     </li>
                   ))}
                 </ul>

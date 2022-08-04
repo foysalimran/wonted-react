@@ -2,7 +2,7 @@
   "achievements": {
     "title": "Achievements",
     "subtitle": "Honor & Awards Achieved",
-    "icon": "/assets/icons/trophy.svg",
+    "icon": "/assets/icons/award.svg",
     "awards": [
       {
         "id": 1,

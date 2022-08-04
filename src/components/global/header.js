@@ -1,5 +1,5 @@
 import { default as React, useState } from "react";
-import logo from "../../assets/images/wonted-logo.png";
+import { GoChevronDown } from "react-icons/go";
 import { Link } from "react-scroll";
 import data from "../../data/header.json"
 
@@ -14,6 +14,15 @@ const Header = () => {
     }
   }
   window.addEventListener("scroll", setFixed);
+
+  // useEffect(() => {
+  //   $(".scroll").onePgaeNav({
+  //     activeClass: "active",
+  //     wrapper: "#onepage-nav",
+  //     navStop: 60,
+  //     navStart: 200,
+  //   });
+  // }, [])
 
   return (
     <header className={fix ? "header navbar_fixed" : "header"}>
@@ -44,40 +53,17 @@ const Header = () => {
                     offset={-60}
                   >
                     {data.title}
+                    {data?.isDropdown === true ? <GoChevronDown /> : ""}
                   </Link>
-                  {console.log(data.isDropdown)}
                   {data?.isDropdown === true ? (
                     <ul className="dropdown-menu">
-                    <li className="nav-item">
-                      <a href="/"className="nav-link">
-                        Home One
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="/v2" className="nav-link">
-                        Home Two
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="v3" className="nav-link">
-                        Home Three
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="v4" className="nav-link">
-                        Home Four
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="v5" className="nav-link">
-                        Home Five
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a href="v6" className="nav-link">
-                        Home Six
-                      </a>
-                    </li>
+                    {data.dropdownItem.map((item, i) => (
+                        <li key={i} className="nav-item">
+                        <a href={item.link} className="nav-link">
+                          {item.title}
+                        </a>
+                      </li>
+                    ))}
                   </ul>
                   ) : (
                     ""

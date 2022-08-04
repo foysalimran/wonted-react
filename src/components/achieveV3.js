@@ -1,6 +1,9 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import data from "../data/achieve.json";
 
-const AchieveV3 = () => {
+const Achievev3 = () => {
+  const { achivev3 } = data;
   return (
     <section id="benefits" className="achieve3 section-padding">
       <div className="container">
@@ -15,7 +18,7 @@ const AchieveV3 = () => {
                     data-aos-duration="1000"
                     data-aos-delay="150"
                   >
-                    What you'll achieve by this book
+                    {achivev3.title}
                   </h2>
                   <p
                     className="text-muted mb-5 fs-5"
@@ -23,8 +26,7 @@ const AchieveV3 = () => {
                     data-aos-duration="1000"
                     data-aos-delay="200"
                   >
-                    Lorem ipsum dolor sit amet, consectetuer laoreet dolore
-                    magna.
+                    {achivev3.description}
                   </p>
                 </div>
               </div>
@@ -40,12 +42,25 @@ const AchieveV3 = () => {
               >
                 <div className="achieve3__item h-100 translateEffect1">
                   <div className="achieve__icon m-20px-b">
-                    <i className="icofont-ebook"></i>
+                    <img
+                      className="img-fluid"
+                      src={achivev3.achieveItem1.icon}
+                      alt="icon"
+                      width="40"
+                      height="40"
+                    />
                   </div>
-                  <h3 className="m-15px-b">Experience</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <h3 className="m-15px-b">{achivev3.achieveItem1.title}</h3>
+                  <p>{achivev3.achieveItem1.description}</p>
                   <a href="#" className="link">
-                    Read more<i className="icofont-rounded-right"></i>
+                    {achivev3.achieveItem1.linkItem}
+                    <img
+                      className="img-fluid"
+                      src={achivev3.achieveItem1.icon}
+                      alt="icon"
+                      width="25"
+                      height="25"
+                    />
                   </a>
                 </div>
               </div>
@@ -58,12 +73,25 @@ const AchieveV3 = () => {
               >
                 <div className="achieve3__item h-100 translateEffect1">
                   <div className="achieve__icon m-20px-b">
-                    <i className="icofont-dice-multiple"></i>
+                    <img
+                      className="img-fluid"
+                      src={achivev3.achieveItem2.icon}
+                      alt="icon"
+                      width="40"
+                      height="40"
+                    />
                   </div>
-                  <h3 className="m-15px-b">Motivation</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <h3 className="m-15px-b">{achivev3.achieveItem2.title}</h3>
+                  <p>{achivev3.achieveItem2.description}</p>
                   <a href="#" className="link">
-                    Read more<i className="icofont-rounded-right"></i>
+                    {achivev3.achieveItem2.linkBtn}
+                    <img
+                      className="img-fluid"
+                      src={achivev3.achieveItem1.btnIcon}
+                      alt="icon"
+                      width="20"
+                      height="20"
+                    />
                   </a>
                 </div>
               </div>
@@ -79,12 +107,25 @@ const AchieveV3 = () => {
           >
             <div className="achieve3__item h-100 translateEffect1">
               <div className="achieve__icon m-20px-b">
-                <i className="icofont-goal"></i>
+                <img
+                  className="img-fluid"
+                  src={achivev3.achieveItem3.icon}
+                  alt="icon"
+                  width="40"
+                  height="40"
+                />
               </div>
-              <h3 className="m-15px-b">Goals</h3>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <h3 className="m-15px-b">{achivev3.achieveItem3.title}</h3>
+              <p>{achivev3.achieveItem3.description}</p>
               <a href="#" className="link">
-                Read more<i className="icofont-rounded-right"></i>
+                {achivev3.achieveItem3.linkBtn}
+                <img
+                  className="img-fluid"
+                  src={achivev3.achieveItem1.btnIcon}
+                  alt="icon"
+                  width="20"
+                  height="20"
+                />
               </a>
             </div>
           </div>
@@ -97,12 +138,25 @@ const AchieveV3 = () => {
           >
             <div className="achieve3__item h-100 translateEffect1">
               <div className="achieve__icon m-20px-b">
-                <i className="icofont-brand-target"></i>
+                <img
+                  className="img-fluid"
+                  src={achivev3.achieveItem4.icon}
+                  alt="icon"
+                  width="40"
+                  height="40"
+                />
               </div>
-              <h3 className="m-15px-b">Vision</h3>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <h3 className="m-15px-b">{achivev3.achieveItem4.title}</h3>
+              <p>{achivev3.achieveItem4.description}</p>
               <a href="#" className="link">
-                Read more<i className="icofont-rounded-right"></i>
+                {achivev3.achieveItem4.linkBtn}
+                <img
+                  className="img-fluid"
+                  src={achivev3.achieveItem1.btnIcon}
+                  alt="icon"
+                  width="20"
+                  height="20"
+                />
               </a>
             </div>
           </div>
@@ -115,12 +169,25 @@ const AchieveV3 = () => {
           >
             <div className="achieve3__item h-100 translateEffect1">
               <div className="achieve__icon m-20px-b">
-                <i className="icofont-worker"></i>
+                <img
+                  className="img-fluid"
+                  src={achivev3.achieveItem5.icon}
+                  alt="icon"
+                  width="40"
+                  height="40"
+                />
               </div>
-              <h3 className="m-15px-b">Mission</h3>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <h3 className="m-15px-b">{achivev3.achieveItem5.title}</h3>
+              <p>{achivev3.achieveItem5.description}</p>
               <a href="#" className="link">
-                Read more<i className="icofont-rounded-right"></i>
+                {achivev3.achieveItem5.linkBtn}
+                <img
+                  className="img-fluid"
+                  src={achivev3.achieveItem1.btnIcon}
+                  alt="icon"
+                  width="20"
+                  height="20"
+                />
               </a>
             </div>
           </div>
@@ -133,12 +200,25 @@ const AchieveV3 = () => {
           >
             <div className="achieve3__item h-100 translateEffect1">
               <div className="achieve__icon m-20px-b">
-                <i className="icofont-connection"></i>
+                <img
+                  className="img-fluid"
+                  src={achivev3.achieveItem6.icon}
+                  alt="icon"
+                  width="40"
+                  height="40"
+                />
               </div>
-              <h3 className="m-15px-b">Strategy</h3>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <h3 className="m-15px-b">{achivev3.achieveItem6.title}</h3>
+              <p>{achivev3.achieveItem6.description}</p>
               <a href="#" className="link">
-                Read more<i className="icofont-rounded-right"></i>
+                {achivev3.achieveItem6.linkBtn}
+                <img
+                  className="img-fluid"
+                  src={achivev3.achieveItem1.btnIcon}
+                  alt="icon"
+                  width="20"
+                  height="20"
+                />
               </a>
             </div>
           </div>
@@ -148,4 +228,4 @@ const AchieveV3 = () => {
   );
 };
 
-export default AchieveV3;
+export default Achievev3;

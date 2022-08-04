@@ -2,13 +2,15 @@ import React from "react";
 import Achieve from "../achieve";
 import Achievement from "../achievement";
 import AuthorV2 from "../authorv2";
-import Books from "../books";
+import Booksv2 from "../booksv2";
 import Chapter from "../chapter";
 import ChapterPreview from "../chapter-preview";
 import Contact from "../contact";
 import CtaV4 from "../ctav4";
 import CtaV5 from "../ctav5";
 import FunFacts from "../fun-facts";
+import Footer from "../global/footer";
+import Header from "../global/header";
 import Hero from "../hero";
 import Pricing from "../pricing";
 import Testimonial from "../testimonial";
@@ -16,6 +18,7 @@ import Testimonial from "../testimonial";
 function Version01() {
   return (
     <>
+     <Header />
       <Hero />
       <Achieve />
       <Chapter />
@@ -24,11 +27,12 @@ function Version01() {
       <AuthorV2 />
       <Achievement />
       <FunFacts />
-      <Books />
+      <Booksv2 />
       <CtaV5 />
       <Testimonial />
       <CtaV4 />
       <Contact />
+      <Footer />
     </>
   );
 }

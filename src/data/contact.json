@@ -1,32 +1,37 @@
 {
-    "contact": {
-        "title": "Write me anything",
-        "subtitle": "CONTACT",
-        "btnText": "Send Now",
-        "address": "ADDRESS:",
-        "addressText1": "16, Lankaway",
-        "addressText2": "Florida, USA 99544",
-        "phone": "PHONE:",
-        "number": "112 444 7900",
-        "email": "EMAIL:",
-        "emailText": "support@support.com",
-        "socialTitle": "Connect book socials",
-        "social": [
-            {
-                "icon": "assets/icons/facebook.svg"
-            },
-            {
-                "icon": "assets/icons/twitter.svg"
-            },
-            {
-                "icon": "assets/icons/linkedin.svg"
-            },
-            {
-                "icon": "assets/icons/youtube-play.svg"
-            },
-            {
-                "icon": "assets/icons/whatsapp.svg"
-            }
-        ]
-    }
+  "contact": {
+    "title": "Write me anything",
+    "subtitle": "CONTACT",
+    "btnText": "Send Now",
+    "address": "ADDRESS:",
+    "addressText1": "16, Lankaway",
+    "addressText2": "Florida, USA 99544",
+    "phone": "PHONE:",
+    "number": "112 444 7900",
+    "email": "EMAIL:",
+    "emailText": "support@support.com",
+    "socialTitle": "Connect book socials",
+    "social": [
+      {
+        "link": "https://www.facebook.com",
+        "icon": "assets/icons/facebook.svg"
+      },
+      {
+        "link": "https://www.twitter.com",
+        "icon": "assets/icons/twitter.svg"
+      },
+      {
+        "link": "https://www.linkedin.com",
+        "icon": "assets/icons/linkedin.svg"
+      },
+      {
+        "link": "https://www.youtube.com",
+        "icon": "assets/icons/youtube-play.svg"
+      },
+      {
+        "link": "https://www.whatsapp.com",
+        "icon": "assets/icons/whatsapp.svg"
+      }
+    ]
+  }
 }

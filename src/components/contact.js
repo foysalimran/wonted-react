@@ -1,11 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
-import { IoLogoWhatsapp} from "react-icons/io";
 import data from "../data/contact.json"
 
 const Contact = () => {
-  const {contact} = data;
+  const { contact } = data;
   return (
     // <!-- ========== Contact section start ========== -->
     <section id="contact" className="p-80px-tb bg-white">
@@ -46,7 +44,11 @@ const Contact = () => {
             data-aos-delay="200"
           >
             <div className="contact-form-box">
-              <form id="contact-form" method="post" action="https://formspree.io/f/xeqdjekd">
+              <form
+                id="contact-form"
+                method="post"
+                action="https://formspree.io/f/xeqdjekd"
+              >
                 <div className="message col">
                   <p className="email-loading alert alert-warning">
                     <img src="assets/images/loading.gif" alt="" />
@@ -57,7 +59,8 @@ const Contact = () => {
                     successfully been sent.
                   </p>
                   <p className="email-failed alert alert-danger">
-                    <i className="icofont-close-circled"></i> Something went wrong!
+                    <i className="icofont-close-circled"></i> Something went
+                    wrong!
                   </p>
                 </div>
                 <div className="mb13">
@@ -99,7 +102,10 @@ const Contact = () => {
                     required=""
                   ></textarea>
                 </div>
-                <button type="submit" className="button button__primary align-items-center">
+                <button
+                  type="submit"
+                  className="button button__primary align-items-center"
+                >
                   <span>{contact.btnText}</span>
                 </button>
               </form>
@@ -116,7 +122,9 @@ const Contact = () => {
             <div className="contact__address p-30px">
               <ul className="contact__address__content">
                 <li>
-                  <span>{contact.address}</span>{contact.addressText1}<br />
+                  <span>{contact.address}</span>
+                  {contact.addressText1}
+                  <br />
                   {contact.addressText2}
                 </li>
                 <li>
@@ -132,15 +140,19 @@ const Contact = () => {
               <ul className="social-icon mt-3">
                 {contact.social?.map((data, i) => (
                   <li key={i}>
-                    <a href="#">
-                      <img
-                        className="img-fluid"
-                        src={data.icon}
-                        alt="icon"
-                        width="25"
-                        height="25"
-                      />
-                    </a>
+                    {data.link === "" ? (
+                      ""
+                    ) : (
+                      <a href={data.link}>
+                        <img
+                          className="img-fluid"
+                          src={data.icon}
+                          alt="icon"
+                          width="25"
+                          height="25"
+                        />
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>
