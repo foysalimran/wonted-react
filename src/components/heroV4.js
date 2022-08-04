@@ -8,7 +8,7 @@ window.jQuery = $;
 
 const HeroV4 = () => {
   const { herov4 } = data;
-  console.log(herov4.videoURL);
+  
   useEffect(() => {
     GLightbox({
       selector: ".glightbox3",

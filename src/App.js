@@ -15,6 +15,7 @@ import AllEvent from "./components/pages/all-events";
 import SingleBlog from "./components/pages/single-blog";
 import BlogRightSidebar from "./components/pages/blog-right-sidebar";
 import BlogLeftSidebar from "./components/pages/blog-left-sidebar";
+import SingleEvent from "./components/pages/single-event";
 
 function App() {
   useEffect(() => {
@@ -35,7 +36,7 @@ function App() {
           <Route path="v6" element={<Version06 />} />
           <Route path="single-blog" element={<SingleBlog />} />
           <Route path="all-blog" element={<AllBlog />} />
-          <Route path="single-event" element={<SingleBlog />} />
+          <Route path="single-event" element={<SingleEvent />} />
           <Route path="all-event" element={<AllEvent />} />
           <Route path="blog-right-sidebar" element={<BlogRightSidebar />} />
           <Route path="blog-left-sidebar" element={<BlogLeftSidebar />} />

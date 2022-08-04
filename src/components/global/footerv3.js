@@ -1,14 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import CtaV3 from "../ctav3";
-import data from "../../data/footer.json";
+import data from "../../data/footer.json"
 import { Link } from "react-scroll";
 
-const Footerv2 = () => {
-  const { footerv2, footer } = data;
+const Footerv3 = () => {
+    const { footerv3, footer} = data;
+
   return (
     <>
       <CtaV3 />
+      {/* <!-- ========== Footer section Start ========== --> */}
       <footer className="footer bg-one overflow-hidden">
         <div className="container">
           <div className="footer__top m-50px-t m-50px-b">
@@ -26,7 +28,7 @@ const Footerv2 = () => {
               </div>
               <div className="col-lg-6 d-flex justify-content-center align-items-center mb-3 mb-lg-0">
                 <ul className="footer__menu">
-                  {footerv2.menu?.map((data, i) => (
+                  {footerv3.menu?.map((data, i) => (
                     <li
                       key={i}
                       data-aos="fade-up"
@@ -104,4 +106,4 @@ const Footerv2 = () => {
   );
 };
 
-export default Footerv2;
+export default Footerv3;

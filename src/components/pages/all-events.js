@@ -3,6 +3,7 @@ import React from "react";
 import data from "../../data/events.json";
 import { FaRegCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
 import Headerv3 from "../global/headerv3";
+import Footerv3 from "../global/footerv3";
 
 const AllEvent = () => {
   const { events } = data;
@@ -122,6 +123,7 @@ const AllEvent = () => {
           </div>
         </div>
       </div>
+      <Footerv3 />
     </>
   );
 };

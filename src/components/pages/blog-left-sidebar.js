@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import Footerv3 from "../global/footerv3";
 import Headerv3 from "../global/headerv3";
 
 const BlogLeftSidebar = () => {
@@ -431,6 +432,7 @@ const BlogLeftSidebar = () => {
         </div>
       </section>
       {/* // <!-- ========== Blog right sidebar end ========== --> */}
+      <Footerv3 />
     </>
   );
 };

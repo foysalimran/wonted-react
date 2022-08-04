@@ -5,6 +5,7 @@ import { FaComments } from "react-icons/fa";
 import { HiShare } from "react-icons/hi";
 import data from "../../data/blog.json"
 import Headerv3 from "../global/headerv3";
+import Footerv3 from "../global/footerv3";
 
 const AllBlog = () => {
   const {blog} = data;
@@ -130,6 +131,7 @@ const AllBlog = () => {
           </div>
         </div>
       </section>
+      <Footerv3 />
     </>
   );
 };

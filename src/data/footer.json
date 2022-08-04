@@ -62,10 +62,6 @@
     ]
   },
   "footerv2": {
-    "logo": "assets/images/wonted-logo.png",
-    "copyright": "2022 All right reserved. Made with",
-    "name": "ThemeAtelier",
-    "icon": "assets/icons/heart.svg",
     "menu": [
       {
         "link": "hero",
@@ -99,28 +95,23 @@
         "link": "contact",
         "title": "Contact"
       }
-    ],
-    "social": [
+    ]
+  },
+  "footerv3": {
+    "menu": [
       {
-        "link": "https://www.facebook.com",
-        "icon": "assets/icons/facebook.svg"
+        "link": "hero",
+        "title": "Home"
       },
       {
-        "link": "https://www.twitter.com",
-        "icon": "assets/icons/twitter.svg"
+        "link": "events",
+        "title": "Events"
       },
       {
-        "link": "https://www.linkedin.com",
-        "icon": "assets/icons/linkedin.svg"
-      },
-      {
-        "link": "https://www.youtube.com",
-        "icon": "assets/icons/youtube-play.svg"
-      },
-      {
-        "link": "https://www.whatsapp.com",
-        "icon": "assets/icons/whatsapp.svg"
+        "link": "blog",
+        "title": "Blog"
       }
     ]
+    
   }
 }
