@@ -1,10 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import img1 from "../../assets/images/blog/single-blog.jpg";
-import img2 from "../../assets/images/blog/blog_01.jpg";
-import img3 from "../../assets/images/blog/blog_02.jpg";
-import user1 from "../../assets/images/user-1.png";
-import user2 from "../../assets/images/user-2.png";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -71,7 +66,8 @@ const SingleBlog = () => {
           <div className="row">
             <div className="col-lg-10 offset-lg-1">
               <article>
-                <img className="img-fluid" src={img1} alt="" />
+                <img className="img-fluid" src="/assets/images/blog/single-blog.jpg" alt="" />
+
                 <ul className="single-blog__metainfo">
                   <li>
                     <BiUser />
@@ -130,12 +126,12 @@ const SingleBlog = () => {
                   <div className="row mt-4">
                     <div className="col-md-6 mb-4">
                       <div className="post-img">
-                        <img className="img-fluid" src={img2} alt="" />
+                        <img className="img-fluid" src="/assets/images/blog/blog_01.jpg" alt="" />
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="post-img">
-                        <img className="img-fluid" src={img3} alt="" />
+                        <img className="img-fluid" src="/assets/images/blog/blog_02.jpg" alt="" />
                       </div>
                     </div>
                   </div>
@@ -234,7 +230,7 @@ const SingleBlog = () => {
                 <div className="single-blog__comment__wrap">
                   <div className="single-blog__comment__item bg-one">
                     <div className="single-blog__comment__item__image">
-                      <img className="img-fluid" src={user1} alt="mage" />
+                      <img className="img-fluid" src="/assets/images/user-1.png" alt="mage" />
                     </div>
                     <div className="single-blog__comment__item__content">
                       <div className="comment-author-info">
@@ -266,7 +262,7 @@ const SingleBlog = () => {
                   </div>
                   <div className="single-blog__comment__item md-m-0px-l m-40px-l bg-one">
                     <div className="single-blog__comment__item__image">
-                      <img className="img-fluid" src={user2} alt="mage" />
+                      <img className="img-fluid" src="/assets/images/user-2.png" alt="mage" />
                     </div>
                     <div className="single-blog__comment__item__content">
                       <div className="comment-author-info">
@@ -298,7 +294,7 @@ const SingleBlog = () => {
                   </div>
                   <div className="single-blog__comment__item bg-one">
                     <div className="single-blog__comment__item__image">
-                      <img className="img-fluid" src={user1} alt="mage" />
+                      <img className="img-fluid" src="/assets/images/user-1.png" alt="mage" />
                     </div>
                     <div className="single-blog__comment__item__content">
                       <div className="comment-author-info">
