@@ -5,6 +5,7 @@ import data from "../data/herov1.json";
 const Herov3 = () => {
   const { herov3 } = data;
   const [isOpen, setOpen] = useState(false);
+
   return (
     <section
       id="hero"
