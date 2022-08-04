@@ -1,13 +1,20 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from "react";
-import ModalVideo from "react-modal-video";
+import React, { useEffect } from "react";
+import { FiPlay } from "react-icons/fi";
 import data from "../data/about.json";
+import $ from "jquery";
+import GLightbox from "glightbox";
+window.jQuery = $;
 
 const Author = () => {
   const { about } = data;
-  const [isOpen, setOpen] = useState(false);
-  console.log(about.videoURL);
+  useEffect(() => {
+    GLightbox({
+      selector: ".glightbox3",
+    });
+  }, []);
+
   return (
     // <!-- ========== Author section start ========== -->
     <section id="author" className="section-padding author">
@@ -53,25 +60,22 @@ const Author = () => {
                 src={about.image}
                 alt="Author Image"
               />
-              <ModalVideo  channel='youtube' autoplay isOpen={isOpen} videoId={about.videoURL} onClose={() => setOpen(false)} />
-              <button  onClick={() => setOpen(true)}
-                className="video-btn"
-              >
-                <img
-                  className="img-fluid"
-                  src={about.icon}
-                  alt="icon"
-                  width="25"
-                  height="25"
-                />
-              </button>
-              <div className="promo-video">
-                <div className="waves-block">
-                  <div className="waves wave-1"></div>
-                  <div className="waves wave-2"></div>
-                  <div className="waves wave-3"></div>
-                </div>
-              </div>
+              {about.videoURL === "" ? (
+                ""
+              ) : (
+                <>
+                  <a href={about.videoURL} class="glightbox3 video-btn">
+                    <FiPlay />
+                  </a>
+                  <div className="promo-video">
+                    <div className="waves-block">
+                      <div className="waves wave-1"></div>
+                      <div className="waves wave-2"></div>
+                      <div className="waves wave-3"></div>
+                    </div>
+                  </div>
+                </>
+              )}
             </div>
           </div>
           {/* <!-- author image end --> */}
@@ -99,7 +103,7 @@ const Author = () => {
                       alt="icon"
                       width="25"
                       height="25"
-                    /> {" "}
+                    />{" "}
                     {data.achieves}
                   </li>
                 ))}

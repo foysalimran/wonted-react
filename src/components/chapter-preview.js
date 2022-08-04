@@ -13,7 +13,7 @@ window.jQuery = $;
 
 const ChapterPreview = () => {
   const { chapterPreview } = data;
-  console.log(chapterPreview);
+
   useEffect(() => {
     GLightbox({
       selector: ".glightbox2",
