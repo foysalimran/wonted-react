@@ -7,7 +7,6 @@ import data from "../data/about.json";
 const Author = () => {
   const { about } = data;
   const [isOpen, setOpen] = useState(false);
-  console.log(about.videoURL);
   return (
     // <!-- ========== Author section start ========== -->
     <section id="author" className="section-padding author">
