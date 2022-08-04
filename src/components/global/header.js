@@ -15,6 +15,15 @@ const Header = () => {
   }
   window.addEventListener("scroll", setFixed);
 
+  // useEffect(() => {
+  //   $(".scroll").onePgaeNav({
+  //     activeClass: "active",
+  //     wrapper: "#onepage-nav",
+  //     navStop: 60,
+  //     navStart: 200,
+  //   });
+  // }, [])
+
   return (
     <header className={fix ? "header navbar_fixed" : "header"}>
       <div className="container">

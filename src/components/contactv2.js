@@ -124,11 +124,11 @@ const Contactv2 = () => {
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            <div class="contact__address contactv4">
+            <div className="contact__address contactv4">
               <div id="map">
                 <iframe src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
               </div>
-              <ul class="contactv4__content">
+              <ul className="contactv4__content">
                 <li>
                 <FaMapMarkerAlt /> {contact.addressText2}
                 </li>

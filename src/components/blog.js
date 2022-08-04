@@ -49,14 +49,14 @@ const Blog = () => {
             >
               <article className="blog__single-post h-100 translateEffect1">
                 <div className="blog__single-post__image">
-                  <a href="single-blog.html">
+                  <a href="single-blog">
                     <img className="img-fluid" src={data.image} alt="Blog 01" />
                   </a>
                 </div>
                 <div className="blog__single-post__body">
                   <div className="blog__single-post__content">
                     <h2 className="fs-4">
-                      <a href="single-blog.html">{data.title}</a>
+                      <a href="single-blog">{data.title}</a>
                     </h2>
                     <p className="m-0">{data.description}</p>
                   </div>

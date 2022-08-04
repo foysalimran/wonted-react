@@ -1,10 +1,17 @@
-import React, { useState } from "react";
-import ModalVideo from "react-modal-video";
+import React, { useEffect } from "react";
+import { FiPlay } from "react-icons/fi";
 import data from "../data/herov1.json";
+import $ from "jquery";
+import GLightbox from "glightbox";
+window.jQuery = $;
 
 const Herov3 = () => {
   const { herov3 } = data;
-  const [isOpen, setOpen] = useState(false);
+  useEffect(() => {
+    GLightbox({
+      selector: ".glightbox3",
+    });
+  }, []);
 
   return (
     <section
@@ -59,33 +66,22 @@ const Herov3 = () => {
                 src={herov3.image}
                 alt=""
               />
-              <ModalVideo
-                channel="youtube"
-                autoplay
-                isOpen={isOpen}
-                videoId="dkxiTpwm0hs"
-                onClose={() => setOpen(false)}
-              />
-              <button
-                onClick={() => setOpen(true)}
-                href={herov3.videoURL}
-                className="glightbox3 video-btn"
-              >
-                <img
-                  className="img-fluid"
-                  src={herov3.icon}
-                  alt="icon"
-                  width="25"
-                  height="25"
-                />
-              </button>
-              <div className="promo-video">
-                <div className="waves-block">
-                  <div className="waves wave-1"></div>
-                  <div className="waves wave-2"></div>
-                  <div className="waves wave-3"></div>
-                </div>
-              </div>
+              {herov3.videoURL === "" ? (
+                ""
+              ) : (
+                <>
+                  <a href={herov3.videoURL} className="glightbox3 video-btn">
+                    <FiPlay />
+                  </a>
+                  <div className="promo-video">
+                    <div className="waves-block">
+                      <div className="waves wave-1"></div>
+                      <div className="waves wave-2"></div>
+                      <div className="waves wave-3"></div>
+                    </div>
+                  </div>
+                </>
+              )}
             </div>
           </div>
         </div>

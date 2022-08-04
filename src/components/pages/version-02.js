@@ -7,6 +7,7 @@ import Chapterv2 from "../chapterv2";
 import Contact from "../contact";
 import CtaV2 from "../ctav2";
 import FunFacts from "../fun-facts";
+import Footer from "../global/footer";
 import Header from "../global/header";
 import Herov2 from "../herov2";
 import Pricing from "../pricing";
@@ -27,6 +28,7 @@ const Version02 = () => {
       <FunFacts />
       <Testimonial />
       <Contact />
+      <Footer />
     </>
   );
 };

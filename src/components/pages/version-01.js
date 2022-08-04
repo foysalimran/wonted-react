@@ -9,6 +9,7 @@ import Contact from "../contact";
 import CtaV4 from "../ctav4";
 import CtaV5 from "../ctav5";
 import FunFacts from "../fun-facts";
+import Footer from "../global/footer";
 import Header from "../global/header";
 import Hero from "../hero";
 import Pricing from "../pricing";
@@ -31,6 +32,7 @@ function Version01() {
       <Testimonial />
       <CtaV4 />
       <Contact />
+      <Footer />
     </>
   );
 }

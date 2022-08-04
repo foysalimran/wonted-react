@@ -1,5 +1,4 @@
 import React from "react";
-import { AiOutlineCheckCircle, AiOutlineCloseCircle } from "react-icons/ai";
 import data from "../data/herov1.json";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 
