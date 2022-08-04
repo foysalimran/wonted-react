@@ -1,115 +1,104 @@
-import React from 'react';
-import data from "../data/cta.json"
+import React from "react";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+import data from "../data/cta.json";
+// import NewsLetterForm from "./NewsLetterForm";
+
+const url =
+  "https://themeatelier.us17.list-manage.com/subscribe/post?u=318da6141291eeac976c39d64&amp;id=4297abfa34";
+
+  //SUBSCRIBE FORM
+  function SubscribeForm ({ status, message, onValidated }) {
+    let email;
+    const submit = () => {
+      email &&
+        email.value.indexOf("@") > -1 &&
+        onValidated({
+          EMAIL: email.value,
+        });
+    };
+  
+    return (
+      <div  data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="250">
+        <input
+          ref={(node) => (email = node)}
+          type="email"
+          placeholder="Your email"
+        />
+        <br />
+        <button
+          className="w-100 button button__primary align-items-center aos-init"
+          onClick={submit}
+        >
+          <span>Submit</span>
+        </button>
+        <div class="message col m-10px-t">
+          {status === "sending" && (
+            <div className=" alert alert-warning">sending...</div>
+          )}
+          {status === "error" && (
+            <div
+              className="alert alert-danger"
+              dangerouslySetInnerHTML={{ __html: message }}
+            />
+          )}
+        </div>
+        {status === "success" && (
+          <div
+            className="alert alert-success"
+            dangerouslySetInnerHTML={{ __html: message }}
+          />
+        )}
+      </div>
+    );
+  }
 
 const Cta = () => {
-  const {cta} = data;
-    return (
-        <section className="cta section-padding" id="cta" style={{backgroundImage: `url("${cta.backgroundImage}")`}}>
-        <div className="container">
-          <div className="row justify-content-center cta__inner bg-one">
-            <div className="col-lg-8">
-              <div className="section-title-center mb-0 text-center">
-                <span
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="150"
-                  >{cta.subtitle}</span>
-                <h2
-                  className="display-6"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  {cta.title}
-                </h2>
-              </div>
-              <div className="cta-form-box">
-                {/* subscription form start  */}
-                <form action="assets/subscribe/subscribe.php" id="subscribe">
-                  <div
-                    className="mb13"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="250"
-                  >
-                    <input
-                      className="cta-email"
-                      type="email"
-                      name="email"
-                      placeholder="Your Email"
-                      id="subscriber-email"
-                    />
-                  </div>
-                  <button
-                    className="w-100 button button__primary align-items-center"
-                    id="subscribe-button"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="300"
-                  >
-                    <span
-                      >Subscribe Now <i className="icofont-arrow-right"></i
-                    ></span>
-                  </button>
-                  <div className="result">
-                    <p
-                      className="success-msg"
-                      data-aos="fade-up"
-                      data-aos-duration="1000"
-                      data-aos-delay="350"
-                    >
-                      <i className="icofont-check"></i> Your email has been stored!
-                    </p>
-                    <p
-                      className="error-msg"
-                      data-aos="fade-up"
-                      data-aos-duration="1000"
-                      data-aos-delay="400"
-                    >
-                      <i className="icofont-close"></i> Sorry! Something went wrong!
-                    </p>
-                  </div>
-                </form>
-                 {/* Mailchimp subscription form  */}
-                {/* <form
-                  action="#"
-                  id="subscribe-mailchimp"
-                  data-wow-duration="1.5s"
-                >
-                  <div className="mb13" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
-                    <input
-                      className="cta-email"
-                      type="email"
-                      name="email"
-                      placeholder="Your Email"
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    className="w-100 button button__primary align-items-center"
-                     data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"
-                  >
-                    <span>Subscribe Now <i className="icofont-arrow-right"></i></span>
-                  </button>
-                  <div className="result">
-                    <p className="success-msg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
-                      <i className="icofont-check"></i> Your email has been stored!
-                    </p>
-                    <p className="error-msg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                      <i className="icofont-close"></i> Sorry! Something went wrong!
-                    </p>
-                  </div>
-                  <p className="mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
-                    * eBook includes iBooks, PDF &amp; ePub versions
-                  </p>
-                </form>  */}
-                {/* <!-- subscription form end --> */}
-              </div>
+  const { cta } = data;
+  return (
+    <section
+      className="cta section-padding"
+      id="cta"
+      style={{ backgroundImage: `url("${cta.backgroundImage}")` }}
+    >
+      <div className="container">
+        <div className="row justify-content-center cta__inner bg-one">
+          <div className="col-lg-8">
+            <div className="section-title-center mb-0 text-center">
+              <span
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="150"
+              >
+                {cta.subtitle}
+              </span>
+              <h2
+                className="display-6"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+              >
+                {cta.title}
+              </h2>
+            </div>
+            <div className="cta-form-box">
+              <MailchimpSubscribe
+                url={url}
+                render={({ subscribe, status, message }) => (
+                  <SubscribeForm
+                    status={status}
+                    message={message}
+                    onValidated={(formData) => subscribe(formData)}
+                  />
+                )}
+              />
             </div>
           </div>
         </div>
-      </section>
-    );
+      </div>
+    </section>
+  );
 };
 
 export default Cta;

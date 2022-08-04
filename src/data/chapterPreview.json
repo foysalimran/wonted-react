@@ -57,28 +57,23 @@
         "chapters":[
             {
             "title": "Chapter 1",
-            "image": "assets/images/chapter-preview/6.png",
-            "active": true
+            "image": "assets/images/chapter-preview/6.png"
             },
             {
             "title": "Chapter 2",
-            "image": "assets/images/chapter-preview/7.png",
-            "active": false
+            "image": "assets/images/chapter-preview/7.png"
             },
             {
             "title": "Chapter 3",
-            "image": "assets/images/chapter-preview/8.png",
-            "active": false
+            "image": "assets/images/chapter-preview/8.png"
             },
             {
             "title": "Chapter 4",
-            "image": "assets/images/chapter-preview/9.png",
-            "active": false
+            "image": "assets/images/chapter-preview/9.png"
             },
             {
             "title": "Chapter 5",
-            "image": "assets/images/chapter-preview/10.png",
-            "active": false
+            "image": "assets/images/chapter-preview/10.png"
             }
         ]
     }

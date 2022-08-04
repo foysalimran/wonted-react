@@ -39,43 +39,36 @@
         "booksItem": [
             {
                 "title": "The King",
-                "image": "assets/images/chapter-preview/cover-1.jpg",
-                "active": true
+                "image": "assets/images/chapter-preview/cover-1.jpg"
             },
             {
                 "title": "Death & Dark",
-                "image": "assets/images/chapter-preview/cover-2.jpg",
-                "active": false
+                "image": "assets/images/chapter-preview/cover-2.jpg"
+                
             },
             {
                 "title": "Return Gen Z",
-                "image": "assets/images/chapter-preview/cover-3.jpg",
-                "active": false
+                "image": "assets/images/chapter-preview/cover-3.jpg"
             },
             {
                 "title": "Sign Souls",
-                "image": "assets/images/chapter-preview/cover-4.jpg",
-                "active": false
+                "image": "assets/images/chapter-preview/cover-4.jpg"
             },
             {
                 "title": "The Mermaid",
-                "image": "assets/images/chapter-preview/cover-5.jpg",
-                "active": false
+                "image": "assets/images/chapter-preview/cover-5.jpg"
             },
             {
                 "title": "Worst Letter",
-                "image": "assets/images/chapter-preview/cover-6.jpg",
-                "active": false
+                "image": "assets/images/chapter-preview/cover-6.jpg"
             },
             {
                 "title": "Drug Lord",
-                "image": "assets/images/chapter-preview/cover-1.jpg",
-                "active": false
+                "image": "assets/images/chapter-preview/cover-1.jpg"
             },
             {
                 "title": "White Bird",
-                "image": "assets/images/chapter-preview/cover-3.jpg",
-                "active": false
+                "image": "assets/images/chapter-preview/cover-3.jpg"
             }
         ]
     },
