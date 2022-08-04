@@ -37,7 +37,7 @@ function App() {
           <Route path="single-blog" element={<SingleBlog />} />
           <Route path="all-blog" element={<AllBlog />} />
           <Route path="single-event" element={<SingleEvent />} />
-          <Route path="all-event" element={<AllEvent />} />
+          <Route path="all-events" element={<AllEvent />} />
           <Route path="blog-right-sidebar" element={<BlogRightSidebar />} />
           <Route path="blog-left-sidebar" element={<BlogLeftSidebar />} />
         </Routes>

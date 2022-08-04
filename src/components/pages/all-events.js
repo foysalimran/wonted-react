@@ -56,8 +56,8 @@ const AllEvent = () => {
       <div className="section-padding events">
         <div className="container">
           <div className="row">
-            {events.singleBlog.map((data) => (
-              <div
+            {events.singleBlog.map((data, i) => (
+              <div key={i}
                 className="col-md-6 col-lg-4 mb-4"
                 data-aos="fade-up"
                 data-aos-duration="1000"
