@@ -9,7 +9,6 @@
     "aos": "^2.3.4",
     "axios": "^0.27.2",
     "bootstrap": "^5.2.0",
-    "formik": "^2.2.9",
     "glightbox": "^3.2.0",
     "install": "^0.13.0",
     "jquery": "^3.6.0",
@@ -27,8 +26,7 @@
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.7",
     "single-page-nav": "^1.0.0",
-    "swiper": "^8.3.2",
-    "yup": "^0.32.11"
+    "swiper": "^8.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
