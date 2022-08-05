@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useEffect } from "react";
-import data from "../data/herov1.json";
-import { BiPlayCircle } from "react-icons/bi";
-import $ from "jquery";
 import GLightbox from "glightbox";
+import $ from "jquery";
+import React, { useEffect } from "react";
+import { BiPlayCircle } from "react-icons/bi";
+import data from "../data/hero.json";
 window.jQuery = $;
 
 const Herov4 = () => {
