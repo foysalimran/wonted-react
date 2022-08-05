@@ -6,6 +6,7 @@ import {
 } from "react-icons/fa";
 import { MdEmail, MdCall} from "react-icons/md";
 import data from "../data/contact.json";
+import { contactFormAction } from "../global";
 
 const Contactv2 = () => {
   const { contact } = data;
@@ -52,7 +53,7 @@ const Contactv2 = () => {
               <form
                 id="contact-form"
                 method="post"
-                action="https://formspree.io/f/xeqdjekd"
+                action={contactFormAction.link}
               >
                 <div className="message col">
                   <p className="email-loading alert alert-warning">

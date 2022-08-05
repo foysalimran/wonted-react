@@ -1,9 +1,7 @@
 import React from "react";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import data from "../data/cta.json";
-
-const url =
-  "https://themeatelier.us17.list-manage.com/subscribe/post?u=318da6141291eeac976c39d64&amp;id=4297abfa34";
+import { mailchimpLink } from "../global";
 
   //SUBSCRIBE FORM
   function SubscribeForm ({ status, message, onValidated }) {
@@ -83,7 +81,7 @@ const Cta = () => {
             </div>
             <div className="cta-form-box">
               <MailchimpSubscribe
-                url={url}
+                url={mailchimpLink.link}
                 render={({ subscribe, status, message }) => (
                   <SubscribeForm
                     status={status}

@@ -12,13 +12,14 @@ import Blog from "../blog";
 import Ctav4 from "../ctav4";
 import Contactv2 from "../contactv2";
 import Cta from "../cta";
-import Headerv2 from "../global/headerv2";
-import Footerv2 from "../global/footerv2";
+import Header from "../global/header";
+import Footer from "../global/footer";
 
-const Version04 = () => {
+const Version04 = ({headerv2, footer}) => {
+  const {menuv2} = footer;
   return (
     <>
-      <Headerv2 />
+      <Header header={headerv2} />
       <Herov4 />
       <Authorv4 />
       <FunFacts bgColor="#f5ebe6" cardColor="#fff" />
@@ -32,7 +33,7 @@ const Version04 = () => {
       <Ctav4 />
       <Contactv2 />
       <Cta />
-      <Footerv2 />
+      <Footer menu={menuv2} />
     </>
   );
 };

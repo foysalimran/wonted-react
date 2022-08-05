@@ -7,15 +7,17 @@ import Booksv2 from "../booksv2";
 import Cta from "../cta";
 import Event from "../event";
 import FunFacts from "../fun-facts";
-import Footerv2 from "../global/footerv2";
-import Headerv2 from "../global/headerv2";
+import Footer from "../global/footer";
+import Header from "../global/header";
 import Herov6 from "../herov6";
 import Testimonial from "../testimonial";
 
-const Version06 = () => {
+const Version06 = ({ headerv2, footer }) => {
+  const { menuv2 } = footer;
+
   return (
     <>
-      <Headerv2 />
+      <Header header={headerv2} />
       <Herov6 />
       <Aboutv6 />
       <Booksv1 />
@@ -26,7 +28,7 @@ const Version06 = () => {
       <Booksv2 />
       <Testimonial />
       <Blog />
-      <Footerv2 />
+      <Footer menu={menuv2} />
     </>
   );
 };

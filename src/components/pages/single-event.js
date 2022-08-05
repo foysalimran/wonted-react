@@ -1,20 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import {
-  FaFacebookF,
-  FaLinkedinIn,
-  FaTwitter,
-  FaYoutube
-} from "react-icons/fa";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-import { IoLogoWhatsapp } from "react-icons/io";
-import Footerv3 from "../global/footerv3";
-import Headerv3 from "../global/headerv3";
+import { socialLink } from "../../global";
+import Footer from "../global/footer";
+import Header from "../global/header";
 
-const SingleEvent = () => {
+const SingleEvent = ({ headerv3, footer }) => {
+  const { menuv3 } = footer;
+
   return (
     <>
-      <Headerv3 />
+      <Header header={headerv3} />
       {/* <!-- ========== All blogs hero start ========== --> */}
       <section
         id="single-events"
@@ -109,31 +105,81 @@ const SingleEvent = () => {
                   <div className="single-event__area__social">
                     <h2 className="fs-4">Share the event</h2>
                     <ul className="social-icon my-4">
-                      <li>
-                        <a href="https://www.facebook.com/">
-                          <FaFacebookF />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.twitter.com/">
-                          <FaTwitter />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.linkedin.com/">
-                          <FaLinkedinIn />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.youtube.com/">
-                          <FaYoutube />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.whatsapp.com">
-                          <IoLogoWhatsapp />
-                        </a>
-                      </li>
+                      {socialLink.facebook === "" ? (
+                        ""
+                      ) : (
+                        <li>
+                          <a href={socialLink.facebook}>
+                            <img
+                              className="img-fluid"
+                              src="assets/icons/facebook.svg"
+                              alt="icon"
+                              width="25"
+                              height="25"
+                            />
+                          </a>
+                        </li>
+                      )}
+                      {socialLink.twitter === "" ? (
+                        ""
+                      ) : (
+                        <li>
+                          <a href={socialLink.twitter}>
+                            <img
+                              className="img-fluid"
+                              src="assets/icons/twitter.svg"
+                              alt="icon"
+                              width="25"
+                              height="25"
+                            />
+                          </a>
+                        </li>
+                      )}
+                      {socialLink.linkedin === "" ? (
+                        ""
+                      ) : (
+                        <li>
+                          <a href={socialLink.linkedin}>
+                            <img
+                              className="img-fluid"
+                              src="assets/icons/linkedin.svg"
+                              alt="icon"
+                              width="25"
+                              height="25"
+                            />
+                          </a>
+                        </li>
+                      )}
+                      {socialLink.youtube === "" ? (
+                        ""
+                      ) : (
+                        <li>
+                          <a href={socialLink.youtube}>
+                            <img
+                              className="img-fluid"
+                              src="assets/icons/youtube-play.svg"
+                              alt="icon"
+                              width="25"
+                              height="25"
+                            />
+                          </a>
+                        </li>
+                      )}
+                      {socialLink.whatsapp === "" ? (
+                        ""
+                      ) : (
+                        <li>
+                          <a href={socialLink.whatsapp}>
+                            <img
+                              className="img-fluid"
+                              src="assets/icons/whatsapp.svg"
+                              alt="icon"
+                              width="25"
+                              height="25"
+                            />
+                          </a>
+                        </li>
+                      )}
                     </ul>
                   </div>
                 </div>
@@ -226,7 +272,7 @@ const SingleEvent = () => {
         </div>
       </section>
       {/* <!-- ========== Blog right sidebar end ========== --> */}
-      <Footerv3 />
+      <Footer menu={menuv3} />
     </>
   );
 };

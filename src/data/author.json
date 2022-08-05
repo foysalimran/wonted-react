@@ -4,28 +4,6 @@
     "title": "Martin John",
     "subtitle": "THE AUTHOR",
     "text": "Style: Art, Fiction",
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In ducimus enim fuga vero cumque possimus ipsum, alias numquam sint et, voluptates quisquam. Totam atque, fuga culpa corrupti eos reiciendis excepturi ad sint sequi magnam, iste voluptates eaque. In, omnis cumque rem modi atque, dolorem fuga illum dicta quidem atque dignissimos! Ipsum sequi harum commodi laborum, ducimus tempore debitis nesciunt quasi! Deleniti.",
-    "social": [
-      {
-        "link": "https://www.facebook.com",
-        "icon": "assets/icons/facebook.svg"
-      },
-      {
-        "link": "https://www.twitter.com",
-        "icon": "assets/icons/twitter.svg"
-      },
-      {
-        "link": "https://www.linkedin.com",
-        "icon": "assets/icons/linkedin.svg"
-      },
-      {
-        "link": "https://www.youtube.com",
-        "icon": "assets/icons/youtube-play.svg"
-      },
-      {
-        "link": "https://www.whatsapp.com",
-        "icon": "assets/icons/whatsapp.svg"
-      }
-    ]
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In ducimus enim fuga vero cumque possimus ipsum, alias numquam sint et, voluptates quisquam. Totam atque, fuga culpa corrupti eos reiciendis excepturi ad sint sequi magnam, iste voluptates eaque. In, omnis cumque rem modi atque, dolorem fuga illum dicta quidem atque dignissimos! Ipsum sequi harum commodi laborum, ducimus tempore debitis nesciunt quasi! Deleniti."
   }
 }

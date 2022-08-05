@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import data from "../data/contact.json"
+import { contactFormAction, socialLink } from "../global";
 
 const Contact = () => {
   const { contact } = data;
@@ -47,7 +48,7 @@ const Contact = () => {
               <form
                 id="contact-form"
                 method="post"
-                action="https://formspree.io/f/xeqdjekd"
+                action={contactFormAction.link}
               >
                 <div className="message col">
                   <p className="email-loading alert alert-warning">
@@ -138,23 +139,81 @@ const Contact = () => {
               </ul>
               <h4>{contact.socialTitle}</h4>
               <ul className="social-icon mt-3">
-                {contact.social?.map((data, i) => (
-                  <li key={i}>
-                    {data.link === "" ? (
-                      ""
-                    ) : (
-                      <a href={data.link}>
-                        <img
-                          className="img-fluid"
-                          src={data.icon}
-                          alt="icon"
-                          width="25"
-                          height="25"
-                        />
-                      </a>
-                    )}
+              {socialLink.facebook === "" ? (
+                  ""
+                ) : (
+                  <li>
+                    <a href={socialLink.facebook}>
+                      <img
+                        className="img-fluid"
+                        src="assets/icons/facebook.svg"
+                        alt="icon"
+                        width="25"
+                        height="25"
+                      />
+                    </a>
                   </li>
-                ))}
+                )}
+                {socialLink.twitter === "" ? (
+                  ""
+                ) : (
+                  <li>
+                    <a href={socialLink.twitter}>
+                      <img
+                        className="img-fluid"
+                        src="assets/icons/twitter.svg"
+                        alt="icon"
+                        width="25"
+                        height="25"
+                      />
+                    </a>
+                  </li>
+                )}
+                {socialLink.linkedin === "" ? (
+                  ""
+                ) : (
+                  <li>
+                    <a href={socialLink.linkedin}>
+                      <img
+                        className="img-fluid"
+                        src="assets/icons/linkedin.svg"
+                        alt="icon"
+                        width="25"
+                        height="25"
+                      />
+                    </a>
+                  </li>
+                )}
+                {socialLink.youtube === "" ? (
+                  ""
+                ) : (
+                  <li>
+                    <a href={socialLink.youtube}>
+                      <img
+                        className="img-fluid"
+                        src="assets/icons/youtube-play.svg"
+                        alt="icon"
+                        width="25"
+                        height="25"
+                      />
+                    </a>
+                  </li>
+                )}
+                {socialLink.whatsapp === "" ? (
+                  ""
+                ) : (
+                  <li>
+                    <a href={socialLink.whatsapp}>
+                      <img
+                        className="img-fluid"
+                        src="assets/icons/whatsapp.svg"
+                        alt="icon"
+                        width="25"
+                        height="25"
+                      />
+                    </a>
+                  </li>
+                )}
               </ul>
             </div>
           </div>

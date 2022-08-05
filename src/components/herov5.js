@@ -1,15 +1,13 @@
-import React from 'react';
+import React from "react";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
-import data from "../data/herov1.json";
-
-const url =
-  "https://themeatelier.us17.list-manage.com/subscribe/post?u=318da6141291eeac976c39d64&amp;id=4297abfa34";
+import data from "../data/hero.json";
+import { mailchimpLink } from "../global";
 
 //SUBSCRIBE FORM
 function SubscribeForm({ status, message, onValidated }) {
   let email;
   const submit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     email &&
       email.value.indexOf("@") > -1 &&
       onValidated({
@@ -56,55 +54,55 @@ function SubscribeForm({ status, message, onValidated }) {
 }
 
 const Herov5 = () => {
-    const {herov5} = data;
-    return (
-        <section
-        id="hero"
-        className="hero hero__padding overflow-hidden position-relative bg-one"
-      >
-        <div className="circle x1"></div>
-        <div className="circle x2"></div>
-        <div className="circle x3"></div>
-        <div className="circle x4"></div>
-        <div className="circle x5"></div>
-        <div className="container">
-          <div className="row gx-5 align-items-center">
-            <div className="col-lg-6 mb-4 mb-lg-0">
-              <div className="hero__content position-relative">
+  const { herov5 } = data;
+  return (
+    <section
+      id="hero"
+      className="hero hero__padding overflow-hidden position-relative bg-one"
+    >
+      <div className="circle x1"></div>
+      <div className="circle x2"></div>
+      <div className="circle x3"></div>
+      <div className="circle x4"></div>
+      <div className="circle x5"></div>
+      <div className="container">
+        <div className="row gx-5 align-items-center">
+          <div className="col-lg-6 mb-4 mb-lg-0">
+            <div className="hero__content position-relative">
               <div
-                  className="badge-text mb-2 fs-3 fw-bold"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="700"
-                >
-                  Hello,
-                </div>
-                <h1
-                  className="display-4 mb-2 text-capitalize"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="750"
-                >
-                  I am {herov5.name}
-                </h1>
-                <div
-                  className="badge-text mb-4 fs-5 fw-bold"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="800"
-                >
-                 {herov5.title}
-                </div>
-                <p
-                  className="mb-5 fs-5"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="850"
-                >
-                  {herov5.description}
-                </p>
-                <MailchimpSubscribe
-                url={url}
+                className="badge-text mb-2 fs-3 fw-bold"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="700"
+              >
+                Hello,
+              </div>
+              <h1
+                className="display-4 mb-2 text-capitalize"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="750"
+              >
+                I am {herov5.name}
+              </h1>
+              <div
+                className="badge-text mb-4 fs-5 fw-bold"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+              >
+                {herov5.title}
+              </div>
+              <p
+                className="mb-5 fs-5"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="850"
+              >
+                {herov5.description}
+              </p>
+              <MailchimpSubscribe
+                url={mailchimpLink.link}
                 render={({ subscribe, status, message }) => (
                   <SubscribeForm
                     status={status}
@@ -113,35 +111,35 @@ const Herov5 = () => {
                   />
                 )}
               />
+            </div>
+          </div>
+          <div
+            className="col-lg-6 d-flex"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="700"
+          >
+            <div className="hero__book">
+              <div className="hero__book--wrapper">
+                <img className="img-fluid" src={herov5.bookImage} alt="" />
               </div>
             </div>
-            <div
-              className="col-lg-6 d-flex"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="700"
-            >
-              <div className="hero__book">
-                <div className="hero__book--wrapper">
-                  <img className="img-fluid" src={herov5.bookImage} alt="" />
-                </div>
-              </div>
-              <div className="hero__author text-center">
-                <div className="hero__author--inner hero__author--inner2">
-                  <div
-                    className="hero__author--inner--pic hero__author--inner2--pic d-flex align-items-end justify-content-center"
-                    style={{backgroundImage: `url(${herov5.writerImage})`}}
-                  ></div>
-                  <div className="frame frame-1"></div>
-                  <div className="frame frame-2"></div>
-                  <div className="frame frame-3"></div>
-                </div>
+            <div className="hero__author text-center">
+              <div className="hero__author--inner hero__author--inner2">
+                <div
+                  className="hero__author--inner--pic hero__author--inner2--pic d-flex align-items-end justify-content-center"
+                  style={{ backgroundImage: `url(${herov5.writerImage})` }}
+                ></div>
+                <div className="frame frame-1"></div>
+                <div className="frame frame-2"></div>
+                <div className="frame frame-3"></div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    );
+      </div>
+    </section>
+  );
 };
 
 export default Herov5;
