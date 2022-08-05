@@ -3,12 +3,13 @@ import React from "react";
 import { RiTimeFill } from "react-icons/ri";
 import { FaComments } from "react-icons/fa";
 import { HiShare } from "react-icons/hi";
-import data from "../../data/blog.json"
-import Footerv3 from "../global/footerv3";
+import data from "../../data/blog.json";
 import Header from "../global/header";
+import Footer from "../global/footer";
 
-const AllBlog = ({headerv3}) => {
-  const {blog} = data;
+const AllBlog = ({ headerv3, footer }) => {
+  const { menuv3 } = footer;
+  const { blog } = data;
 
   return (
     <>
@@ -58,45 +59,49 @@ const AllBlog = ({headerv3}) => {
       <section id="blog" className="section-padding blog">
         <div className="container">
           <div className="row">
-          {blog.blogList.slice(0, 6).map((data, i) => (
-            <div
-              key={i}
-              className="col-md-6 col-lg-4 mb-4 mb-lg-0"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="200"
-            >
-              <article className="blog__single-post h-100 translateEffect1">
-                <div className="blog__single-post__image">
-                  <a href="single-blog">
-                    <img className="img-fluid" src={data.image} alt="Blog 01" />
-                  </a>
-                </div>
-                <div className="blog__single-post__body">
-                  <div className="blog__single-post__content">
-                    <h2 className="fs-4">
-                      <a href="single-blog">{data.title}</a>
-                    </h2>
-                    <p className="m-0">{data.description}</p>
+            {blog.blogList.slice(0, 6).map((data, i) => (
+              <div
+                key={i}
+                className="col-md-6 col-lg-4 mb-4 mb-lg-0"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+              >
+                <article className="blog__single-post h-100 translateEffect1">
+                  <div className="blog__single-post__image">
+                    <a href="single-blog">
+                      <img
+                        className="img-fluid"
+                        src={data.image}
+                        alt="Blog 01"
+                      />
+                    </a>
                   </div>
-                  <div className="blog__single-post__meta">
-                    <div className="d-flex gap-2 align-items-center">
-                      <RiTimeFill />
-                      {data.date}
+                  <div className="blog__single-post__body">
+                    <div className="blog__single-post__content">
+                      <h2 className="fs-4">
+                        <a href="single-blog">{data.title}</a>
+                      </h2>
+                      <p className="m-0">{data.description}</p>
                     </div>
-                    <ul>
-                      <li>
-                        <FaComments />
-                      </li>
-                      <li>
-                        <HiShare />
-                      </li>
-                    </ul>
+                    <div className="blog__single-post__meta">
+                      <div className="d-flex gap-2 align-items-center">
+                        <RiTimeFill />
+                        {data.date}
+                      </div>
+                      <ul>
+                        <li>
+                          <FaComments />
+                        </li>
+                        <li>
+                          <HiShare />
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-              </article>
-            </div>
-          ))}
+                </article>
+              </div>
+            ))}
           </div>
           <div className="blog__pagination">
             <nav aria-label="Page navigation example">
@@ -131,7 +136,7 @@ const AllBlog = ({headerv3}) => {
           </div>
         </div>
       </section>
-      <Footerv3 />
+      <Footer menu={menuv3} />
     </>
   );
 };

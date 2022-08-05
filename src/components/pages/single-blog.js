@@ -10,10 +10,12 @@ import {
 } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { BiUser } from "react-icons/bi";
-import Footerv3 from "../global/footerv3";
 import Header from "../global/header";
+import Footer from "../global/footer";
 
-const SingleBlog = ({ headerv3 }) => {
+const SingleBlog = ({ headerv3, footer}) => {
+  const { menuv3 } = footer;
+
   return (
     <>
       <Header header={headerv3} />
@@ -415,7 +417,7 @@ const SingleBlog = ({ headerv3 }) => {
           </div>
         </div>
       </div>
-      <Footerv3 />
+      <Footer menu={menuv3} />
     </>
   );
 };

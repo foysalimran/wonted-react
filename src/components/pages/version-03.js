@@ -13,7 +13,8 @@ import Herov3 from "../herov3";
 import Pricing from "../pricing";
 import Testimonial from "../testimonial";
 
-const Version03 = ({header}) => {
+const Version03 = ({header, footer}) => {
+  const {menu} = footer;
   return (
     <>
       <Header header={header}/>
@@ -28,7 +29,7 @@ const Version03 = ({header}) => {
       <CtaV5 />
       <Testimonial />
       <Contact />
-      <Footer />
+      <Footer menu={menu}/>
     </>
   );
 };

@@ -4,14 +4,16 @@ import {
   FaFacebookF,
   FaLinkedinIn,
   FaTwitter,
-  FaYoutube
+  FaYoutube,
 } from "react-icons/fa";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { IoLogoWhatsapp } from "react-icons/io";
-import Footerv3 from "../global/footerv3";
+import Footer from "../global/footer";
 import Header from "../global/header";
 
-const SingleEvent = ({headerv3}) => {
+const SingleEvent = ({ headerv3, footer }) => {
+  const { menuv3 } = footer;
+
   return (
     <>
       <Header header={headerv3} />
@@ -226,7 +228,7 @@ const SingleEvent = ({headerv3}) => {
         </div>
       </section>
       {/* <!-- ========== Blog right sidebar end ========== --> */}
-      <Footerv3 />
+      <Footer menu={menuv3} />
     </>
   );
 };

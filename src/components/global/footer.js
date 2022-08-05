@@ -4,8 +4,10 @@ import CtaV3 from "../ctav3";
 import data from "../../data/footer.json";
 import { Link } from "react-scroll";
 
-const Footer = () => {
+const Footer = ({menu}) => {
+console.log(menu);
   const { footer } = data;
+
   return (
     <>
       <CtaV3 />
@@ -26,7 +28,7 @@ const Footer = () => {
               </div>
               <div className="col-lg-6 d-flex justify-content-center align-items-center mb-3 mb-lg-0">
                 <ul className="footer__menu">
-                  {footer.menu?.map((data, i) => (
+                  {menu?.map((data, i) => (
                     <li
                       key={i}
                       data-aos="fade-up"
@@ -91,7 +93,7 @@ const Footer = () => {
                     alt="footer icon"
                     width="20"
                     height="20"
-                  />{" "}
+                  />
                   by <a href="#">{footer.name}</a>
                 </p>
               </div>

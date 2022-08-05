@@ -15,7 +15,9 @@ import Hero from "../hero";
 import Pricing from "../pricing";
 import Testimonial from "../testimonial";
 
-const Version01 = ({header}) => {
+const Version01 = ({header, footer}) => {
+  const {menu} = footer;
+
   return (
     <>
      <Header header={header} />
@@ -32,7 +34,7 @@ const Version01 = ({header}) => {
       <Testimonial />
       <CtaV4 />
       <Contact />
-      <Footer />
+      <Footer menu={menu} />
     </>
   );
 }

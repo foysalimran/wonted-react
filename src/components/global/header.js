@@ -4,7 +4,6 @@ import { GoChevronDown } from "react-icons/go";
 import { Link } from "react-scroll";
 
 const Header = ({ header }) => {
-  console.log(header);
   const [isActive, setActive] = useState(false);
   const [fix, setFix] = useState(false);
   const handleToggle = () => {
@@ -56,7 +55,7 @@ const Header = ({ header }) => {
                         aria-expanded="false"
                       >
                         {data.title}
-                        <span onClick={handleToggle} class="sub-menu-toggle">
+                        <span onClick={handleToggle} className="sub-menu-toggle">
                           <GoChevronDown />
                         </span>
                       </Link>

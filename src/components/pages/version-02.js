@@ -13,7 +13,8 @@ import Herov2 from "../herov2";
 import Pricing from "../pricing";
 import Testimonial from "../testimonial";
 
-const Version02 = ({header}) => {
+const Version02 = ({header, footer}) => {
+  const {menu} = footer;
   return (
     <>
       <Header header={header} />
@@ -28,7 +29,7 @@ const Version02 = ({header}) => {
       <FunFacts />
       <Testimonial />
       <Contact />
-      <Footer />
+      <Footer menu={menu} />
     </>
   );
 };

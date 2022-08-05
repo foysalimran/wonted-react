@@ -2,10 +2,11 @@
 import React from "react";
 import data from "../../data/events.json";
 import { FaRegCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
-import Footerv3 from "../global/footerv3";
 import Header from "../global/header";
+import Footer from "../global/footer";
 
-const AllEvent = ({ headerv3 }) => {
+const AllEvent = ({ headerv3, footer}) => {
+  const { menuv3 } = footer;
   const { events } = data;
   return (
     <>
@@ -124,7 +125,7 @@ const AllEvent = ({ headerv3 }) => {
           </div>
         </div>
       </div>
-      <Footerv3 />
+      <Footer menu={menuv3} />
     </>
   );
 };

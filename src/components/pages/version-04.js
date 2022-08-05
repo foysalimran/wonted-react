@@ -12,10 +12,11 @@ import Blog from "../blog";
 import Ctav4 from "../ctav4";
 import Contactv2 from "../contactv2";
 import Cta from "../cta";
-import Footerv2 from "../global/footerv2";
 import Header from "../global/header";
+import Footer from "../global/footer";
 
-const Version04 = ({headerv2}) => {
+const Version04 = ({headerv2, footer}) => {
+  const {menuv2} = footer;
   return (
     <>
       <Header header={headerv2} />
@@ -32,7 +33,7 @@ const Version04 = ({headerv2}) => {
       <Ctav4 />
       <Contactv2 />
       <Cta />
-      <Footerv2 />
+      <Footer menu={menuv2} />
     </>
   );
 };
