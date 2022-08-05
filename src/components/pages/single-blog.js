@@ -10,13 +10,13 @@ import {
 } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { BiUser } from "react-icons/bi";
-import Headerv3 from "../global/headerv3";
 import Footerv3 from "../global/footerv3";
+import Header from "../global/header";
 
-const SingleBlog = () => {
+const SingleBlog = ({ headerv3 }) => {
   return (
     <>
-      <Headerv3 />
+      <Header header={headerv3} />
       <section
         id="all-blogs"
         className="all-blogs hero__padding overflow-hidden position-relative bg-one"
@@ -66,7 +66,11 @@ const SingleBlog = () => {
           <div className="row">
             <div className="col-lg-10 offset-lg-1">
               <article>
-                <img className="img-fluid" src="/assets/images/blog/single-blog.jpg" alt="" />
+                <img
+                  className="img-fluid"
+                  src="/assets/images/blog/single-blog.jpg"
+                  alt=""
+                />
 
                 <ul className="single-blog__metainfo">
                   <li>
@@ -126,12 +130,20 @@ const SingleBlog = () => {
                   <div className="row mt-4">
                     <div className="col-md-6 mb-4">
                       <div className="post-img">
-                        <img className="img-fluid" src="/assets/images/blog/blog_01.jpg" alt="" />
+                        <img
+                          className="img-fluid"
+                          src="/assets/images/blog/blog_01.jpg"
+                          alt=""
+                        />
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="post-img">
-                        <img className="img-fluid" src="/assets/images/blog/blog_02.jpg" alt="" />
+                        <img
+                          className="img-fluid"
+                          src="/assets/images/blog/blog_02.jpg"
+                          alt=""
+                        />
                       </div>
                     </div>
                   </div>
@@ -230,7 +242,11 @@ const SingleBlog = () => {
                 <div className="single-blog__comment__wrap">
                   <div className="single-blog__comment__item bg-one">
                     <div className="single-blog__comment__item__image">
-                      <img className="img-fluid" src="/assets/images/user-1.png" alt="mage" />
+                      <img
+                        className="img-fluid"
+                        src="/assets/images/user-1.png"
+                        alt="mage"
+                      />
                     </div>
                     <div className="single-blog__comment__item__content">
                       <div className="comment-author-info">
@@ -262,7 +278,11 @@ const SingleBlog = () => {
                   </div>
                   <div className="single-blog__comment__item md-m-0px-l m-40px-l bg-one">
                     <div className="single-blog__comment__item__image">
-                      <img className="img-fluid" src="/assets/images/user-2.png" alt="mage" />
+                      <img
+                        className="img-fluid"
+                        src="/assets/images/user-2.png"
+                        alt="mage"
+                      />
                     </div>
                     <div className="single-blog__comment__item__content">
                       <div className="comment-author-info">
@@ -294,7 +314,11 @@ const SingleBlog = () => {
                   </div>
                   <div className="single-blog__comment__item bg-one">
                     <div className="single-blog__comment__item__image">
-                      <img className="img-fluid" src="/assets/images/user-1.png" alt="mage" />
+                      <img
+                        className="img-fluid"
+                        src="/assets/images/user-1.png"
+                        alt="mage"
+                      />
                     </div>
                     <div className="single-blog__comment__item__content">
                       <div className="comment-author-info">

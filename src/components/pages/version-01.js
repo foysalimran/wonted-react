@@ -15,10 +15,10 @@ import Hero from "../hero";
 import Pricing from "../pricing";
 import Testimonial from "../testimonial";
 
-function Version01() {
+const Version01 = ({header}) => {
   return (
     <>
-     <Header />
+     <Header header={header} />
       <Hero />
       <Achieve />
       <Chapter />

@@ -12,13 +12,13 @@ import Blog from "../blog";
 import Ctav4 from "../ctav4";
 import Contactv2 from "../contactv2";
 import Cta from "../cta";
-import Headerv2 from "../global/headerv2";
 import Footerv2 from "../global/footerv2";
+import Header from "../global/header";
 
-const Version04 = () => {
+const Version04 = ({headerv2}) => {
   return (
     <>
-      <Headerv2 />
+      <Header header={headerv2} />
       <Herov4 />
       <Authorv4 />
       <FunFacts bgColor="#f5ebe6" cardColor="#fff" />

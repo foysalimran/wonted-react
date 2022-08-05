@@ -16,7 +16,10 @@ import BlogLeftSidebar from "./components/pages/blog-left-sidebar";
 import BlogRightSidebar from "./components/pages/blog-right-sidebar";
 import SingleBlog from "./components/pages/single-blog";
 import SingleEvent from "./components/pages/single-event";
+import headerData from "./data/header.json";
+
 function App() {
+  const { header, headerv2, headerv3 } = headerData;
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -26,19 +29,31 @@ function App() {
       <div id="preLoader"></div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Version01 />} />
-          <Route path="v1" element={<Version01 />} />
-          <Route path="v2" element={<Version02 />} />
-          <Route path="v3" element={<Version03 />} />
-          <Route path="v4" element={<Version04 />} />
-          <Route path="v5" element={<Version05 />} />
-          <Route path="v6" element={<Version06 />} />
-          <Route path="single-blog" element={<SingleBlog />} />
-          <Route path="all-blog" element={<AllBlog />} />
-          <Route path="single-event" element={<SingleEvent />} />
-          <Route path="all-events" element={<AllEvent />} />
-          <Route path="blog-right-sidebar" element={<BlogRightSidebar />} />
-          <Route path="blog-left-sidebar" element={<BlogLeftSidebar />} />
+          <Route path="/" element={<Version01 header={header} />} />
+          <Route path="v1" element={<Version01 header={header} />} />
+          <Route path="v2" element={<Version02 header={header} />} />
+          <Route path="v3" element={<Version03 header={header} />} />
+          <Route path="v4" element={<Version04 headerv2={headerv2} />} />
+          <Route path="v5" element={<Version05 headerv2={headerv2} />} />
+          <Route path="v6" element={<Version06 headerv2={headerv2} />} />
+          <Route
+            path="single-blog"
+            element={<SingleBlog headerv3={headerv3} />}
+          />
+          <Route path="all-blog" element={<AllBlog headerv3={headerv3} />} />
+          <Route
+            path="single-event"
+            element={<SingleEvent headerv3={headerv3} />}
+          />
+          <Route path="all-events" element={<AllEvent headerv3={headerv3} />} />
+          <Route
+            path="blog-right-sidebar"
+            element={<BlogRightSidebar headerv3={headerv3} />}
+          />
+          <Route
+            path="blog-left-sidebar"
+            element={<BlogLeftSidebar headerv3={headerv3} />}
+          />
         </Routes>
       </BrowserRouter>
     </div>

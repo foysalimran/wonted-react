@@ -9,12 +9,12 @@ import {
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { IoLogoWhatsapp } from "react-icons/io";
 import Footerv3 from "../global/footerv3";
-import Headerv3 from "../global/headerv3";
+import Header from "../global/header";
 
-const SingleEvent = () => {
+const SingleEvent = ({headerv3}) => {
   return (
     <>
-      <Headerv3 />
+      <Header header={headerv3} />
       {/* <!-- ========== All blogs hero start ========== --> */}
       <section
         id="single-events"

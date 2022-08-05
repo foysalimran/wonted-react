@@ -2,7 +2,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import Footerv3 from "../global/footerv3";
-import Headerv3 from "../global/headerv3";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -12,13 +11,14 @@ import {
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FiChevronRight } from "react-icons/fi";
 import { BsSearch } from "react-icons/bs";
+import Header from "../global/header";
 
-const BlogLeftSidebar = () => {
+const BlogLeftSidebar = ({ headerv3 }) => {
 
   return (
     // <!-- ========== All blogs hero start ========== -->
     <>
-      <Headerv3 />
+      <Header header={headerv3}/>
       <section
         id="left-sidebar"
         className="all-blogs hero__padding overflow-hidden position-relative bg-one"

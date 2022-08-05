@@ -8,14 +8,14 @@ import Cta from "../cta";
 import Event from "../event";
 import FunFacts from "../fun-facts";
 import Footerv2 from "../global/footerv2";
-import Headerv2 from "../global/headerv2";
+import Header from "../global/header";
 import Herov6 from "../herov6";
 import Testimonial from "../testimonial";
 
-const Version06 = () => {
+const Version06 = ({ headerv2 }) => {
   return (
     <>
-      <Headerv2 />
+      <Header header={headerv2} />
       <Herov6 />
       <Aboutv6 />
       <Booksv1 />

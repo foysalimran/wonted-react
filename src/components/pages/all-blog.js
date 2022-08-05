@@ -4,15 +4,15 @@ import { RiTimeFill } from "react-icons/ri";
 import { FaComments } from "react-icons/fa";
 import { HiShare } from "react-icons/hi";
 import data from "../../data/blog.json"
-import Headerv3 from "../global/headerv3";
 import Footerv3 from "../global/footerv3";
+import Header from "../global/header";
 
-const AllBlog = () => {
+const AllBlog = ({headerv3}) => {
   const {blog} = data;
 
   return (
     <>
-      <Headerv3 />
+      <Header header={headerv3} />
       <section
         id="all-blogs"
         className="all-blogs hero__padding overflow-hidden position-relative bg-one"

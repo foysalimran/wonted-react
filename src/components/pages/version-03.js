@@ -13,10 +13,10 @@ import Herov3 from "../herov3";
 import Pricing from "../pricing";
 import Testimonial from "../testimonial";
 
-const Version03 = () => {
+const Version03 = ({header}) => {
   return (
     <>
-      <Header />
+      <Header header={header}/>
       <Herov3 />
       <Achievev3 />
       <Chapterv2 />
