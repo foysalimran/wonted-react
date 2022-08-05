@@ -1,6 +1,6 @@
 import React from "react";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
-import data from "../data/herov1.json";
+import data from "../data/hero.json";
 import { mailchimpLink } from "../global";
 
 //SUBSCRIBE FORM
