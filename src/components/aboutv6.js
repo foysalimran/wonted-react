@@ -8,7 +8,7 @@ import GLightbox from "glightbox";
 import { socialLink } from "../global";
 window.jQuery = $;
 
-const Aboutv6 = () => {
+const Aboutv6 = ({isBg}) => {
   const { aboutv6 } = data;
   useEffect(() => {
     GLightbox({
@@ -18,7 +18,7 @@ const Aboutv6 = () => {
 
   return (
     // <!-- ========== Author section start ========== -->
-    <section id="about" className="section-padding authorv2">
+    <section id="about" className={`section-padding authorv2 ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">

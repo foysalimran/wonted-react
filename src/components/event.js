@@ -3,11 +3,11 @@ import data from "../data/events.json";
 
 import { FaRegCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
-const Event = () => {
+const Event = ({isBg }) => {
   const { events } = data;
   return (
     // <!-- ========== Events section end ========== -->
-    <section id="events" className="section-padding event bg-one">
+    <section id="events" className={`section-padding event ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">

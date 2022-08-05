@@ -61,7 +61,7 @@ const Blog = ({isBg}) => {
                     <p className="m-0">{data.description}</p>
                   </div>
                   <div className="blog__single-post__meta">
-                    <div className="d-flex gap-2 align-items-center">
+                    <div className="d-flex gap-2 align-items-center time">
                       <RiTimeFill />
                       {data.date}
                     </div>
