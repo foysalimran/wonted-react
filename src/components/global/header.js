@@ -2,6 +2,8 @@ import { default as React, useState } from "react";
 import { Navbar } from "react-bootstrap";
 import { GoChevronDown } from "react-icons/go";
 import { Link } from "react-scroll";
+import { siteLogo } from "../../global";
+
 
 const Header = ({ header }) => {
   const [isActive, setActive] = useState(false);
@@ -25,7 +27,7 @@ const Header = ({ header }) => {
           <Navbar bg="none" expand="lg">
             <a className="navbar-brand" href="/">
               {/* <!-- <h1 className="m-0">WONTED</h1> --> */}
-              <img src={header.logo} alt="Wonted" />
+              <img src={siteLogo.logo} alt={siteLogo.alt} />
             </a>
             <Navbar.Toggle aria-controls="navbarSupportedContent">
               <span></span>

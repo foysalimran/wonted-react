@@ -5,6 +5,7 @@ import { FiPlay } from "react-icons/fi";
 import data from "../data/about.json";
 import $ from "jquery";
 import GLightbox from "glightbox";
+import { socialLink } from "../global";
 window.jQuery = $;
 
 const Author = () => {
@@ -109,23 +110,81 @@ const Author = () => {
                 ))}
               </ul>
               <ul className="social-icon mt-3">
-                {about.social?.map((data, i) => (
-                  <li key={i}>
-                    {data.link === "" ? (
-                      ""
-                    ) : (
-                      <a href={data.link}>
-                        <img
-                          className="img-fluid"
-                          src={data.icon}
-                          alt="icon"
-                          width="25"
-                          height="25"
-                        />
-                      </a>
-                    )}
+              {socialLink.facebook === "" ? (
+                  ""
+                ) : (
+                  <li>
+                    <a href={socialLink.facebook}>
+                      <img
+                        className="img-fluid"
+                        src="assets/icons/facebook.svg"
+                        alt="icon"
+                        width="25"
+                        height="25"
+                      />
+                    </a>
                   </li>
-                ))}
+                )}
+                {socialLink.twitter === "" ? (
+                  ""
+                ) : (
+                  <li>
+                    <a href={socialLink.twitter}>
+                      <img
+                        className="img-fluid"
+                        src="assets/icons/twitter.svg"
+                        alt="icon"
+                        width="25"
+                        height="25"
+                      />
+                    </a>
+                  </li>
+                )}
+                {socialLink.linkedin === "" ? (
+                  ""
+                ) : (
+                  <li>
+                    <a href={socialLink.linkedin}>
+                      <img
+                        className="img-fluid"
+                        src="assets/icons/linkedin.svg"
+                        alt="icon"
+                        width="25"
+                        height="25"
+                      />
+                    </a>
+                  </li>
+                )}
+                {socialLink.youtube === "" ? (
+                  ""
+                ) : (
+                  <li>
+                    <a href={socialLink.youtube}>
+                      <img
+                        className="img-fluid"
+                        src="assets/icons/youtube-play.svg"
+                        alt="icon"
+                        width="25"
+                        height="25"
+                      />
+                    </a>
+                  </li>
+                )}
+                {socialLink.whatsapp === "" ? (
+                  ""
+                ) : (
+                  <li>
+                    <a href={socialLink.whatsapp}>
+                      <img
+                        className="img-fluid"
+                        src="assets/icons/whatsapp.svg"
+                        alt="icon"
+                        width="25"
+                        height="25"
+                      />
+                    </a>
+                  </li>
+                )}
               </ul>
             </div>
           </div>
