@@ -1,6 +1,7 @@
 import { default as React, useState } from "react";
 import { Navbar } from "react-bootstrap";
 import { GoChevronDown } from "react-icons/go";
+import { Link as PageLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import { siteLogo } from "../../global";
 
@@ -68,9 +69,9 @@ const Header = ({ header }) => {
                       >
                         {data.dropdownItem.map((item, i) => (
                           <li key={i} className="nav-item">
-                            <a href={item.link} className="nav-link">
+                            <PageLink to={item.link} className="nav-link">
                               {item.title}
-                            </a>
+                            </PageLink>
                           </li>
                         ))}
                       </ul>

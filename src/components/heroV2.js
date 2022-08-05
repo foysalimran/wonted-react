@@ -1,7 +1,7 @@
 import React from 'react';
 
-import data from "../data/herov1.json"
-import {BiPlayCircle} from "react-icons/bi"
+import { BiPlayCircle } from "react-icons/bi";
+import data from "../data/hero.json";
 
 const Herov2 = ({isBg}) => {
   const {herov2} = data;

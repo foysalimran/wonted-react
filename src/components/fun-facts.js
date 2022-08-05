@@ -1,10 +1,9 @@
 import React from "react";
 import CountUp from 'react-countup';
-import data from "../data/fun-fact.json"
+import data from "../data/fun-fact.json";
 
 const FunFacts = ({isBg}) => {
   const {funFacts} = data;
-
   return (
     // <!-- ========== Fun facts section start ========== -->
     <section className={`section-padding counters  ${isBg === "yes" ? "bg-one": "" }`}>
@@ -57,66 +56,6 @@ const FunFacts = ({isBg}) => {
                 </div>
               </li>
               ))}
-              {/* <li
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="300"
-              >
-                <div className="counters__stats-box h-100 translateEffect1">
-                  <div className="counters__stats-icon">
-                    <BiBookReader />
-                  </div>
-                  <div className="counters__stats-box__number">
-                    <CountUp end={9999} enableScrollSpy="true" />+
-                  </div>
-                  <h5>Active Readers</h5>
-                </div>
-              </li>
-              <li
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="400"
-              >
-                <div className="counters__stats-box h-100 translateEffect1">
-                  <div className="counters__stats-icon">
-                    <FaHourglassHalf />
-                  </div>
-                  <div className="counters__stats-box__number">
-                  <CountUp end={41} enableScrollSpy="true" />k
-                  </div>
-                  <h5>Writing Hours</h5>
-                </div>
-              </li>
-              <li
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="500"
-              >
-                <div className="counters__stats-box h-100 translateEffect1">
-                  <div className="counters__stats-icon">
-                    <AiOutlineShoppingCart />
-                  </div>
-                  <div className="counters__stats-box__number">
-                  <CountUp end={992} enableScrollSpy="true" />k
-                  </div>
-                  <h5>Total Sells</h5>
-                </div>
-              </li>
-              <li
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="600"
-              >
-                <div className="counters__stats-box h-100 translateEffect1">
-                  <div className="counters__stats-icon">
-                    <FaAward />
-                  </div>
-                  <div className="counters__stats-box__number">
-                  <CountUp end={20} enableScrollSpy="true" />
-                  </div>
-                  <h5>Awards</h5>
-                </div>
-              </li> */}
             </ul>
           </div>
         </div>
