@@ -10,28 +10,6 @@
     "number": "112 444 7900",
     "email": "EMAIL:",
     "emailText": "support@support.com",
-    "socialTitle": "Connect book socials",
-    "social": [
-      {
-        "link": "https://www.facebook.com",
-        "icon": "assets/icons/facebook.svg"
-      },
-      {
-        "link": "https://www.twitter.com",
-        "icon": "assets/icons/twitter.svg"
-      },
-      {
-        "link": "https://www.linkedin.com",
-        "icon": "assets/icons/linkedin.svg"
-      },
-      {
-        "link": "https://www.youtube.com",
-        "icon": "assets/icons/youtube-play.svg"
-      },
-      {
-        "link": "https://www.whatsapp.com",
-        "icon": "assets/icons/whatsapp.svg"
-      }
-    ]
+    "socialTitle": "Connect book socials"
   }
 }

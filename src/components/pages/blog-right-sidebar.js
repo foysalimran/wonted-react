@@ -1,17 +1,11 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import {
-  FaFacebookF,
-  FaLinkedinIn,
-  FaTwitter,
-  FaYoutube,
-} from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io";
 import { FiChevronRight } from "react-icons/fi";
 import { BsSearch } from "react-icons/bs";
 import Header from "../global/header";
 import Footer from "../global/footer";
+import { socialLink } from "../../global";
 
 const BlogRightSidebar = ({ headerv3, footer }) => {
   const { menuv3 } = footer;
@@ -385,31 +379,81 @@ const BlogRightSidebar = ({ headerv3, footer }) => {
                 <div className="all-blog2__sidebar__social item-border">
                   <h2 className="fs-4 mb-3">Social</h2>
                   <ul className="social-icon my-4">
-                    <li>
-                      <a href="https://www.facebook.com/">
-                        <FaFacebookF />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.twitter.com/">
-                        <FaTwitter />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.linkedin.com/">
-                        <FaLinkedinIn />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.youtube.com/">
-                        <FaYoutube />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.whatsapp.com">
-                        <IoLogoWhatsapp />
-                      </a>
-                    </li>
+                    {socialLink.facebook === "" ? (
+                      ""
+                    ) : (
+                      <li>
+                        <a href={socialLink.facebook}>
+                          <img
+                            className="img-fluid"
+                            src="assets/icons/facebook.svg"
+                            alt="icon"
+                            width="25"
+                            height="25"
+                          />
+                        </a>
+                      </li>
+                    )}
+                    {socialLink.twitter === "" ? (
+                      ""
+                    ) : (
+                      <li>
+                        <a href={socialLink.twitter}>
+                          <img
+                            className="img-fluid"
+                            src="assets/icons/twitter.svg"
+                            alt="icon"
+                            width="25"
+                            height="25"
+                          />
+                        </a>
+                      </li>
+                    )}
+                    {socialLink.linkedin === "" ? (
+                      ""
+                    ) : (
+                      <li>
+                        <a href={socialLink.linkedin}>
+                          <img
+                            className="img-fluid"
+                            src="assets/icons/linkedin.svg"
+                            alt="icon"
+                            width="25"
+                            height="25"
+                          />
+                        </a>
+                      </li>
+                    )}
+                    {socialLink.youtube === "" ? (
+                      ""
+                    ) : (
+                      <li>
+                        <a href={socialLink.youtube}>
+                          <img
+                            className="img-fluid"
+                            src="assets/icons/youtube-play.svg"
+                            alt="icon"
+                            width="25"
+                            height="25"
+                          />
+                        </a>
+                      </li>
+                    )}
+                    {socialLink.whatsapp === "" ? (
+                      ""
+                    ) : (
+                      <li>
+                        <a href={socialLink.whatsapp}>
+                          <img
+                            className="img-fluid"
+                            src="assets/icons/whatsapp.svg"
+                            alt="icon"
+                            width="25"
+                            height="25"
+                          />
+                        </a>
+                      </li>
+                    )}
                   </ul>
                 </div>
                 <div className="all-blog2__sidebar__popular-tags item-border">

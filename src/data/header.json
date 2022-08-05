@@ -1,6 +1,5 @@
 {
     "header": {
-        "logo": "assets/images/wonted-logo.png",
         "menu": [
             {
                 "link": "hero",
@@ -71,7 +70,6 @@
         ]
     },
     "headerv2": {
-        "logo": "assets/images/wonted-logo.png",
         "menu": [
             {
                 "link": "hero",
@@ -170,7 +168,6 @@
         ]
     },
     "headerv3": {
-        "logo": "assets/images/wonted-logo.png",
         "menu": [
             {
                 "link": "hero",
