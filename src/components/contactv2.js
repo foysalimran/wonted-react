@@ -5,14 +5,15 @@ import {
     FaMapMarkerAlt
 } from "react-icons/fa";
 import { MdEmail, MdCall} from "react-icons/md";
+import { Link } from "react-router-dom";
 import data from "../data/contact.json";
-import { contactFormAction } from "../global";
+import { contactFormAction, contactMap } from "../global";
 
-const Contactv2 = () => {
+const Contactv2 = ({isBg}) => {
   const { contact } = data;
   return (
     // <!-- ========== Contact section start ========== -->
-    <section id="contact" className="p-80px-tb bg-white">
+    <section id="contact" className={`p-80px-tb ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
@@ -127,7 +128,7 @@ const Contactv2 = () => {
           >
             <div className="contact__address contactv4">
               <div id="map">
-                <iframe src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                <iframe src={contactMap.link}></iframe>
               </div>
               <ul className="contactv4__content">
                 <li>
@@ -135,7 +136,7 @@ const Contactv2 = () => {
                 </li>
                 <li>
                 <MdEmail />
-                  <a href="#">{contact.emailText}</a>
+                  <Link to="/#">{contact.emailText}</Link>
                 </li>
                 <li>
                 <MdCall />

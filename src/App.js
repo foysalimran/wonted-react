@@ -11,7 +11,7 @@ import AOS from "aos";
 import { useEffect } from "react";
 import "./assets/css/aos.css";
 import AllBlog from "./components/pages/all-blog";
-import AllEvent from "./components/pages/all-events";
+import AllEvent from "./components/pages/all-event";
 import BlogLeftSidebar from "./components/pages/blog-left-sidebar";
 import BlogRightSidebar from "./components/pages/blog-right-sidebar";
 import SingleBlog from "./components/pages/single-blog";

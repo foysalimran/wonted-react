@@ -18,17 +18,17 @@ const Version06 = ({ headerv2, footer }) => {
   return (
     <>
       <Header header={headerv2} />
-      <Herov6 />
-      <Aboutv6 />
-      <Booksv1 />
-      <FunFacts />
-      <Achievement />
-      <Cta />
-      <Event />
-      <Booksv2 />
-      <Testimonial />
-      <Blog />
-      <Footer menu={menuv2} />
+      <Herov6 isBg="yes"/>
+      <Aboutv6 isBg=""/>
+      <Booksv1 isBg="yes"/>
+      <FunFacts isBg=""/>
+      <Achievement isBg="yes"/>
+      <Cta isBg=""/>
+      <Event isBg="yes"/>
+      <Booksv2 isBg=""/>
+      <Testimonial isBg="yes"/>
+      <Blog isBg=""/>
+      <Footer isBg="yes" menu={menuv2} />
     </>
   );
 };

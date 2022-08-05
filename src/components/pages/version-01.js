@@ -6,8 +6,8 @@ import Booksv2 from "../booksv2";
 import Chapter from "../chapter";
 import ChapterPreview from "../chapter-preview";
 import Contact from "../contact";
-import CtaV4 from "../ctav4";
-import CtaV5 from "../ctav5";
+import Ctav4 from "../ctav4";
+import Ctav5 from "../ctav5";
 import FunFacts from "../fun-facts";
 import Footer from "../global/footer";
 import Header from "../global/header";
@@ -21,20 +21,20 @@ const Version01 = ({header, footer}) => {
   return (
     <>
      <Header header={header} />
-      <Hero />
-      <Achieve />
-      <Chapter />
-      <ChapterPreview />
-      <Pricing />
-      <AuthorV2 />
-      <Achievement />
-      <FunFacts />
-      <Booksv2 />
-      <CtaV5 />
-      <Testimonial />
-      <CtaV4 />
-      <Contact />
-      <Footer menu={menu} />
+      <Hero isBg="yes" />
+      <Achieve isBg="" />
+      <Chapter isBg="yes" />
+      <ChapterPreview isBg="" />
+      <Pricing isBg="yes" />
+      <AuthorV2 isBg="" />
+      <Achievement isBg="yes" />
+      <FunFacts isBg=""/>
+      <Booksv2 isBg="yes" />
+      <Ctav5 isBg=""/>
+      <Testimonial isBg="yes" />
+      <Ctav4 isBg="" />
+      <Contact isBg="" />
+      <Footer  isBg="yes" menu={menu} />
     </>
   );
 }

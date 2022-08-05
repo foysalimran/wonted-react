@@ -2,10 +2,10 @@
 import React from "react";
 import data from "../data/author.json";
 
-const Authorv3 = () => {
+const Authorv3 = ({isBg}) => {
   const { authorv3 } = data;
   return (
-    <section id="author" className="section-padding authorv3 bg-one">
+    <section id="author" className={`section-padding authorv3 ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div

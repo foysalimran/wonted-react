@@ -1,11 +1,11 @@
 import React from "react";
 import data from "../data/books.json"
 
-const Booksv1 = () => {
+const Booksv1 = ({isBg}) => {
     const { books} = data;
   return (
     // <!-- ========== Books section start ========== -->
-    <section id="books" className="booksv1 section-padding bg-one">
+    <section id="books" className={`booksv1 section-padding  ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">

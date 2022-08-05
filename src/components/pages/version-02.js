@@ -1,11 +1,11 @@
 import React from "react";
 import AchievementV2 from "../achievementv2";
-import AchieveV2 from "../achievev2";
+import Achievev2 from "../achievev2";
 import Author from "../author";
 import ChapterPreviewV2 from "../chapter-preview-v2";
 import Chapterv2 from "../chapterv2";
 import Contact from "../contact";
-import CtaV2 from "../ctav2";
+import Ctav2 from "../ctav2";
 import FunFacts from "../fun-facts";
 import Footer from "../global/footer";
 import Header from "../global/header";
@@ -18,18 +18,18 @@ const Version02 = ({header, footer}) => {
   return (
     <>
       <Header header={header} />
-      <Herov2 />
-      <AchieveV2 />
-      <Chapterv2 />
-      <CtaV2 />
-      <ChapterPreviewV2 />
-      <Pricing />
-      <Author />
-      <AchievementV2 />
-      <FunFacts />
-      <Testimonial />
-      <Contact />
-      <Footer menu={menu} />
+      <Herov2 isBg="yes"/>
+      <Achievev2 isBg=""/>
+      <Chapterv2 isBg="yes" />
+      <Ctav2 isBg=""/>
+      <ChapterPreviewV2 isBg="" />
+      <Pricing isBg="yes"/>
+      <Author isBg="" />
+      <AchievementV2 isBg="yes"/>
+      <FunFacts isBg="" />
+      <Testimonial isBg="yes"/>
+      <Contact isBg=""/>
+      <Footer isBg="yes" menu={menu} />
     </>
   );
 };

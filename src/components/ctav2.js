@@ -53,13 +53,13 @@ function SubscribeForm({ status, message, onValidated }) {
   );
 }
 
-const CtaV2 = () => {
+const Ctav2 = ({isBg}) => {
   const { ctav2 } = data;
   return (
     // <!-- ========== CTA v2 section start ========== -->
     <section
       id="cta2"
-      className="cta2 section-padding"
+      className={`cta2 section-padding  ${isBg === "yes" ? "bg-one": "" }`}
       style={{ backgroundImage: `url(${ctav2.backgroundImage})` }}
     >
       <div className="container">
@@ -113,4 +113,4 @@ const CtaV2 = () => {
   );
 };
 
-export default CtaV2;
+export default Ctav2;

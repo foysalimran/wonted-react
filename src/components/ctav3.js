@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../data/cta.json"
+import data from "../data/cta.json";
 
 const CtaV3 = () => {
   const {ctav3} = data;

@@ -1,11 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 import data from "../data/achieve.json";
 
-const AchieveV2 = () => {
+const Achievev2 = ({isBg}) => {
   const {achivev2} = data
   return (
-    <section id="benefits" className="achivev2 section-padding">
+    <section id="benefits" className={`achivev2 section-padding ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div className="col-lg-4">
@@ -45,9 +46,9 @@ const AchieveV2 = () => {
            <p>
              {data.description}
            </p>
-           <a href="#" className="link">
+           <Link to="/#" className="link">
             {data.linkBtn}  <img className="img-fluid"src={data.btnIcon} alt="icon" width="20" height="20" />
-           </a>
+           </Link>
          </div>
        </div>
           ))}
@@ -58,4 +59,4 @@ const AchieveV2 = () => {
   );
 };
 
-export default AchieveV2;
+export default Achievev2;

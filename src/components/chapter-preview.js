@@ -11,7 +11,7 @@ import data from "../data/chapterPreview.json";
 import GLightbox from "glightbox";
 window.jQuery = $;
 
-const ChapterPreview = () => {
+const ChapterPreview = ({isBg}) => {
   const { chapterPreview } = data;
   useEffect(() => {
     GLightbox({
@@ -22,7 +22,7 @@ const ChapterPreview = () => {
 
   return (
     // <!-- ========== Chapter preview section start ========== -->
-    <section id="preview" className="section-padding chapter-preview">
+    <section id="preview" className={`section-padding chapter-preview ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">

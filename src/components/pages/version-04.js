@@ -20,20 +20,20 @@ const Version04 = ({headerv2, footer}) => {
   return (
     <>
       <Header header={headerv2} />
-      <Herov4 />
-      <Authorv4 />
-      <FunFacts bgColor="#f5ebe6" cardColor="#fff" />
-      <Booksv2 />
-      <Achievement />
-      <Ctav5 />
-      <Eventv2 />
-      <Booksv3 />
-      <Testimonial />
-      <Blog />
-      <Ctav4 />
-      <Contactv2 />
-      <Cta />
-      <Footer menu={menuv2} />
+      <Herov4 isBg="yes" />
+      <Authorv4 isBg=""/>
+      <FunFacts isBg="yes"/>
+      <Booksv2 isBg=""/>
+      <Achievement isBg="yes"/>
+      <Ctav5 isBg=""/>
+      <Eventv2 isBg="yes"/>
+      <Booksv3 isBg=""/>
+      <Testimonial isBg="yes"/>
+      <Blog isBg=""/>
+      <Ctav4 isBg=""/>
+      <Contactv2 isBg=""/>
+      <Cta isBg="yes"/>
+      <Footer isBg="yes" menu={menuv2} />
     </>
   );
 };

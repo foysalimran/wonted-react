@@ -2,14 +2,15 @@ import React from "react";
 import { FaComments } from "react-icons/fa";
 import { HiShare } from "react-icons/hi";
 import { RiTimeFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 import data from "../data/blog.json";
 
-const Blog = () => {
+const Blog = ({isBg}) => {
   const { blog } = data;
 
   return (
     // <!-- ========== Blog section start ========== -->
-    <section id="blog" className="section-padding blog">
+    <section id="blog" className={`section-padding blog ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
@@ -49,19 +50,19 @@ const Blog = () => {
             >
               <article className="blog__single-post h-100 translateEffect1">
                 <div className="blog__single-post__image">
-                  <a href="single-blog">
+                  <Link to="/single-blog">
                     <img className="img-fluid" src={data.image} alt="Blog 01" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="blog__single-post__body">
                   <div className="blog__single-post__content">
                     <h2 className="fs-4">
-                      <a href="single-blog">{data.title}</a>
+                      <Link to="/single-blog">{data.title}</Link>
                     </h2>
                     <p className="m-0">{data.description}</p>
                   </div>
                   <div className="blog__single-post__meta">
-                    <div className="d-flex gap-2 align-items-center">
+                    <div className="d-flex gap-2 align-items-center time">
                       <RiTimeFill />
                       {data.date}
                     </div>

@@ -5,7 +5,7 @@ import { FiPlay } from "react-icons/fi";
 import data from "../data/hero.json";
 window.jQuery = $;
 
-const Herov3 = () => {
+const Herov3 = ({isBg}) => {
   const { herov3 } = data;
   useEffect(() => {
     GLightbox({
@@ -16,7 +16,7 @@ const Herov3 = () => {
   return (
     <section
       id="hero"
-      className="hero hero__padding overflow-hidden position-relative bg-one"
+      className={`hero hero__padding overflow-hidden position-relative ${isBg === "yes" ? "bg-one": "" }`}
     >
       <div className="circle x1"></div>
       <div className="circle x2"></div>

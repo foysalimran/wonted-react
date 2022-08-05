@@ -51,11 +51,11 @@ import { mailchimpLink } from "../global";
     );
   }
 
-const Cta = () => {
+const Cta = ({isBg}) => {
   const { cta } = data;
   return (
     <section
-      className="cta section-padding"
+      className={`cta section-padding ${isBg === "yes" ? "bg-one": "" }`}
       id="cta"
       style={{ backgroundImage: `url("${cta.backgroundImage}")` }}
     >
