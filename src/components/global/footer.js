@@ -5,13 +5,15 @@ import data from "../../data/footer.json";
 import { Link } from "react-scroll";
 import { siteLogo, socialLink } from "../../global";
 
-const Footer = ({menu, isBg}) => {
+const Footer = ({ menu, isBg }) => {
   const { footer } = data;
 
   return (
     <>
       <CtaV3 />
-      <footer className={`footer overflow-hidden ${isBg === "yes" ? "bg-one": "" }`}>
+      <footer
+        className={`footer overflow-hidden ${isBg === "yes" ? "bg-one" : ""}`}
+      >
         <div className="container">
           <div className="footer__top m-50px-t m-50px-b">
             <div className="row">
@@ -55,81 +57,101 @@ const Footer = ({menu, isBg}) => {
               </div>
               <div className="col-lg-3 d-flex justify-content-center align-items-center mb-3 mb-lg-0 justify-content-lg-end">
                 <ul className="social-icon">
-                {socialLink.facebook === "" ? (
-                  ""
-                ) : (
-                  <li>
-                    <a href={socialLink.facebook}>
-                      <img
-                        className="img-fluid"
-                        src="assets/icons/facebook.svg"
-                        alt="icon"
-                        width="25"
-                        height="25"
-                      />
-                    </a>
-                  </li>
-                )}
-                {socialLink.twitter === "" ? (
-                  ""
-                ) : (
-                  <li>
-                    <a href={socialLink.twitter}>
-                      <img
-                        className="img-fluid"
-                        src="assets/icons/twitter.svg"
-                        alt="icon"
-                        width="25"
-                        height="25"
-                      />
-                    </a>
-                  </li>
-                )}
-                {socialLink.linkedin === "" ? (
-                  ""
-                ) : (
-                  <li>
-                    <a href={socialLink.linkedin}>
-                      <img
-                        className="img-fluid"
-                        src="assets/icons/linkedin.svg"
-                        alt="icon"
-                        width="25"
-                        height="25"
-                      />
-                    </a>
-                  </li>
-                )}
-                {socialLink.youtube === "" ? (
-                  ""
-                ) : (
-                  <li>
-                    <a href={socialLink.youtube}>
-                      <img
-                        className="img-fluid"
-                        src="assets/icons/youtube-play.svg"
-                        alt="icon"
-                        width="25"
-                        height="25"
-                      />
-                    </a>
-                  </li>
-                )}
-                {socialLink.whatsapp === "" ? (
-                  ""
-                ) : (
-                  <li>
-                    <a href={socialLink.whatsapp}>
-                      <img
-                        className="img-fluid"
-                        src="assets/icons/whatsapp.svg"
-                        alt="icon"
-                        width="25"
-                        height="25"
-                      />
-                    </a>
-                  </li>
-                )}
+                  {socialLink.facebook === "" ? (
+                    ""
+                  ) : (
+                    <li
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <a href={socialLink.facebook}>
+                        <img
+                          className="img-fluid"
+                          src="assets/icons/facebook.svg"
+                          alt="icon"
+                          width="25"
+                          height="25"
+                        />
+                      </a>
+                    </li>
+                  )}
+                  {socialLink.twitter === "" ? (
+                    ""
+                  ) : (
+                    <li
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="250"
+                    >
+                      <a href={socialLink.twitter}>
+                        <img
+                          className="img-fluid"
+                          src="assets/icons/twitter.svg"
+                          alt="icon"
+                          width="25"
+                          height="25"
+                        />
+                      </a>
+                    </li>
+                  )}
+                  {socialLink.linkedin === "" ? (
+                    ""
+                  ) : (
+                    <li
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="300"
+                    >
+                      <a href={socialLink.linkedin}>
+                        <img
+                          className="img-fluid"
+                          src="assets/icons/linkedin.svg"
+                          alt="icon"
+                          width="25"
+                          height="25"
+                        />
+                      </a>
+                    </li>
+                  )}
+                  {socialLink.youtube === "" ? (
+                    ""
+                  ) : (
+                    <li
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="300"
+                    >
+                      <a href={socialLink.youtube}>
+                        <img
+                          className="img-fluid"
+                          src="assets/icons/youtube-play.svg"
+                          alt="icon"
+                          width="25"
+                          height="25"
+                        />
+                      </a>
+                    </li>
+                  )}
+                  {socialLink.whatsapp === "" ? (
+                    ""
+                  ) : (
+                    <li
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="350"
+                    >
+                      <a href={socialLink.whatsapp}>
+                        <img
+                          className="img-fluid"
+                          src="assets/icons/whatsapp.svg"
+                          alt="icon"
+                          width="25"
+                          height="25"
+                        />
+                      </a>
+                    </li>
+                  )}
                 </ul>
               </div>
             </div>

@@ -4,7 +4,9 @@ import Achievement from "../achievement";
 import Blog from "../blog";
 import Booksv1 from "../booksv1";
 import Booksv2 from "../booksv2";
+import Contact from "../contact";
 import Cta from "../cta";
+import Ctav5 from "../ctav5";
 import Event from "../event";
 import FunFacts from "../fun-facts";
 import Footer from "../global/footer";
@@ -28,6 +30,8 @@ const Version06 = ({ headerv2, footer }) => {
       <Booksv2 isBg=""/>
       <Testimonial isBg="yes"/>
       <Blog isBg=""/>
+      <Ctav5 />
+      <Contact isBg=""/>
       <Footer isBg="yes" menu={menuv2} />
     </>
   );

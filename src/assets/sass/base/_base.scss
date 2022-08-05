@@ -4,6 +4,9 @@
     scroll-behavior: inherit;
   }
 }
+.scroll {
+  scroll-behavior: smooth;
+}
 
 // Selection bg and color
 ::selection {
@@ -50,7 +53,7 @@ body {
   display: inline-block;
 }
 // Section title
-[class*="section-title-"] {
+[class*='section-title-'] {
   margin-bottom: 50px;
   span {
     text-transform: uppercase;
@@ -94,7 +97,7 @@ body {
 
 .divider-traingle:before {
   position: absolute;
-  content: "";
+  content: '';
   width: 18px;
   height: 18px;
   background-color: $color-primary;
@@ -106,7 +109,7 @@ body {
 
 .divider-traingle:after {
   position: absolute;
-  content: "";
+  content: '';
   width: 18px;
   height: 18px;
   background: $color-primary;
@@ -145,7 +148,7 @@ body {
     color: $color-light;
     background: $color-secondary;
     &::before {
-      content: "";
+      content: '';
       background: $color-primary;
       width: 125%;
       left: -12%;
@@ -181,7 +184,7 @@ body {
 
   &::before,
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 15px;
     height: 100%;

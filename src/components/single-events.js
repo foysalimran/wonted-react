@@ -3,7 +3,7 @@ import {
   FaFacebookF,
   FaLinkedinIn,
   FaTwitter,
-  FaYoutube,
+  FaYoutube
 } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 
