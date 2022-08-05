@@ -3,7 +3,7 @@ import {
   FaFacebookF,
   FaLinkedinIn,
   FaTwitter,
-  FaYoutube,
+  FaYoutube
 } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 
@@ -165,7 +165,7 @@ const SingleEvents = () => {
                 </ul>
               </div>
               <div className="text-center">
-                <a href="#" className="button button__primary">
+                <a href="/#" className="button button__primary">
                   <span>Purchase Ticket</span>
                 </a>
               </div>

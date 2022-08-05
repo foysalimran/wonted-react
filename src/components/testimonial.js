@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/autoplay";
 import { Autoplay, Pagination } from "swiper";
-import testimonialData from "../data/testimonial.json"
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
+import testimonialData from "../data/testimonial.json";
 
 const Testimonial = ({isBg}) => {
   const { testimonial } = testimonialData;
@@ -50,11 +50,11 @@ const Testimonial = ({isBg}) => {
               breakpoints={{
                 768: {
                   slidesPerView: 2,
-                  spaceBetween: 30,
+                  spaceBetween: 20,
                 },
                 1024: {
                   slidesPerView: 3,
-                  spaceBetween: 30,
+                  spaceBetween: 20,
                 },
               }}
             >

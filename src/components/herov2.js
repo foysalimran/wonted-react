@@ -1,7 +1,6 @@
 import React from "react";
 
 import { BiPlayCircle } from "react-icons/bi";
-import { Link } from "react-scroll";
 import data from "../data/hero.json";
 
 const Herov2 = ({ isBg }) => {
