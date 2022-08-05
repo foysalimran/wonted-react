@@ -15,3 +15,6 @@ export const mailchimpLink = {
 export const contactFormAction = {
     link: "https://formspree.io/f/xeqdjekd"
 }
+export const contactMap = {
+    link: "https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+}

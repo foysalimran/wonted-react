@@ -4,12 +4,12 @@ import { HiShare } from "react-icons/hi";
 import { RiTimeFill } from "react-icons/ri";
 import data from "../data/blog.json";
 
-const Blog = () => {
+const Blog = ({isBg}) => {
   const { blog } = data;
 
   return (
     // <!-- ========== Blog section start ========== -->
-    <section id="blog" className="section-padding blog">
+    <section id="blog" className={`section-padding blog ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">

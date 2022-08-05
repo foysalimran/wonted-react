@@ -53,12 +53,12 @@ function SubscribeForm({ status, message, onValidated }) {
   );
 }
 
-const Herov5 = () => {
+const Herov5 = ({isBg}) => {
   const { herov5 } = data;
   return (
     <section
       id="hero"
-      className="hero hero__padding overflow-hidden position-relative bg-one"
+      className={`hero hero__padding overflow-hidden position-relative ${isBg === "yes" ? "bg-one": "" }`}
     >
       <div className="circle x1"></div>
       <div className="circle x2"></div>
