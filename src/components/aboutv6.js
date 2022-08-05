@@ -85,46 +85,17 @@ const Aboutv6 = () => {
             data-aos-delay="200"
           >
             <p>
-              Based on wikipedia, Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Optio aspernatur quam in nostrum aliquam
-              eligendi vel, modi cupiditate numquam officiis dicta minima
-              placeat nulla impedit voluptatum adipisci beatae. Rerum, impedit.
+              {aboutv6.description}
             </p>
             <div className="authorv2__content">
               <div className="authorv2__list">
                 <div className="row">
-                  <div className="col-6 mb-3">
-                    <h4>Name:</h4>
-                    <p className="mb-0">Jacob Thomas</p>
+                  {aboutv6.userinfo.map((data, i) => (
+                    <div key={i} className="col-6 mb-3">
+                    <h4>{data.title}</h4>
+                    <p className="mb-0">{data.subtitle}</p>
                   </div>
-                  <div className="col-6 mb-3">
-                    <h4>Born:</h4>
-                    <p className="mb-0">05. 16. 1992</p>
-                  </div>
-                  <div className="col-6 mb-3">
-                    <h4>Phone:</h4>
-                    <p className="mb-0">+61 (0) 111 222 333</p>
-                  </div>
-                  <div className="col-6 mb-3">
-                    <h4>Email ID:</h4>
-                    <p className="mb-0">info@wonted.com</p>
-                  </div>
-                  <div className="col-6 mb-3">
-                    <h4>Career started:</h4>
-                    <p className="mb-0">2015</p>
-                  </div>
-                  <div className="col-6 mb-3">
-                    <h4>Languages:</h4>
-                    <p className="mb-0">English, French</p>
-                  </div>
-                  <div className="col-6 mb-3">
-                    <h4>Country:</h4>
-                    <p className="mb-0">US</p>
-                  </div>
-                  <div className="col-6">
-                    <h4>Address:</h4>
-                    <p className="mb-0">Etowah, TN 37331 United States</p>
-                  </div>
+                  ))}
                 </div>
               </div>
               <ul className="social-icon mt-3">
