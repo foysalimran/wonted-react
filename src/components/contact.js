@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 import data from "../data/contact.json"
 import { contactFormAction, socialLink } from "../global";
 
@@ -134,7 +135,7 @@ const Contact = ({isBg}) => {
                 </li>
                 <li>
                   <span>{contact.email}</span>
-                  <a href="#">{contact.emailText}</a>
+                  <Link to="/#">{contact.emailText}</Link>
                 </li>
               </ul>
               <h4>{contact.socialTitle}</h4>

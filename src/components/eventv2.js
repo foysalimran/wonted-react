@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import data from "../data/events.json";
 
 const Eventv2 = ({ isBg }) => {
@@ -53,9 +54,9 @@ const Eventv2 = ({ isBg }) => {
                     {data.description}
                   </p>
                 </div>
-                <a href="single-event" className="link">
+                <Link to="/single-event" className="link">
                   {data.btn}<i className="icofont-rounded-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
           ))}

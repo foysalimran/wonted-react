@@ -10,6 +10,7 @@ import {
   } from "react-icons/fa";
   import { IoLogoWhatsapp } from "react-icons/io";
   import { BiUser } from "react-icons/bi";
+import { Link } from 'react-router-dom';
 
 const SingleBlogs = () => {
     return (
@@ -27,14 +28,14 @@ const SingleBlogs = () => {
                 <ul className="single-blog__metainfo">
                   <li>
                     <BiUser />
-                    <a href="#">John</a>
+                    <Link to="/#">John</Link>
                   </li>
                   <li>
                     <FaRegCalendarAlt />
-                    <a href="#">12 May, 2022</a>
+                    <Link to="/#">12 May, 2022</Link>
                   </li>
                   <li>
-                    <FaRegCommentDots /> <a href="#">3 Comments</a>
+                    <FaRegCommentDots /> <Link to="/#">3 Comments</Link>
                   </li>
                 </ul>
                 <h2 className="display-5 single-blog__title">
@@ -51,7 +52,7 @@ const SingleBlogs = () => {
                   </p>
                   <p>
                     No sea takimata sanctus est Lorem
-                    <a href="/">Ipsum</a> dolor sit amet. Lorem ipsum dolor sit
+                    <Link to="/">Ipsum</Link> dolor sit amet. Lorem ipsum dolor sit
                     amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                     tempor invidunt ut labore et.
                   </p>
@@ -150,7 +151,7 @@ const SingleBlogs = () => {
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex
                     ea commodo consequat. Duis aute irure dolor in reprehenderit
                     in
-                    <a href="/">sed</a> uia non numquam eius modi tempora
+                    <Link to="/">sed</Link> uia non numquam eius modi tempora
                     incidunt ut labore dolor.
                   </p>
                 </div>

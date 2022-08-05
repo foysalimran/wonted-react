@@ -10,6 +10,7 @@ import {
     FaYoutube,
   } from "react-icons/fa";
   import { IoLogoWhatsapp } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 const BlogLeftSidebars = () => {
     return (
@@ -32,31 +33,31 @@ const BlogLeftSidebars = () => {
                   <h2 className="fs-4 mb-3">Blog Categories</h2>
                   <ul>
                     <li>
-                      <a href="#">Accessories</a>(2)
+                      <Link to="/#">Accessories</Link>(2)
                     </li>
                     <li>
-                      <a href="#">Blog</a>(8)
+                      <Link to="/#">Blog</Link>(8)
                     </li>
                     <li>
-                      <a href="#">Clocks</a>(4)
+                      <Link to="/#">Clocks</Link>(4)
                     </li>
                     <li>
-                      <a href="#">Home Accent</a>(1)
+                      <Link to="/#">Home Accent</Link>(1)
                     </li>
                     <li>
-                      <a href="#">Lighting</a> (3)
+                      <Link to="/#">Lighting</Link> (3)
                     </li>
                     <li>
-                      <a href="#">Post Format</a>(9)
+                      <Link to="/#">Post Format</Link>(9)
                     </li>
                     <li>
-                      <a href="#">Sofas</a>(1)
+                      <Link to="/#">Sofas</Link>(1)
                     </li>
                     <li>
-                      <a href="#">Table &amp; Desk</a>(2)
+                      <Link to="/#">Table &amp; Desk</Link>(2)
                     </li>
                     <li>
-                      <a href="#">Uncategorized</a> (10)
+                      <Link to="/#">Uncategorized</Link> (10)
                     </li>
                   </ul>
                 </div>
@@ -64,7 +65,7 @@ const BlogLeftSidebars = () => {
                   <h2 className="fs-4 mb-3">Latest News</h2>
                   <div className="all-blog2__sidebar__latest-news__item">
                     <div className="all-blog2__sidebar__latest-news__item__image">
-                      <a href="/single-blog">
+                      <Link to="/single-blog">
                         <img
                           width="80"
                           height="80"
@@ -72,60 +73,60 @@ const BlogLeftSidebars = () => {
                           className=""
                           alt="Sidebar Image 01"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="all-blog2__sidebar__latest-news__item__content">
                       <h4 className="fs-5 title">
-                        <a href="/single-blog">
+                        <Link to="/single-blog">
                           Amazon Editors’ personal audiobook favorites
-                        </a>
+                        </Link>
                       </h4>
                       <p className="mb-0">On October 3, 2016</p>
                     </div>
                   </div>
                   <div className="all-blog2__sidebar__latest-news__item">
                     <div className="all-blog2__sidebar__latest-news__item__image">
-                      <a href="/single-blog">
+                      <Link to="/single-blog">
                         <img
                           width="80"
                           height="80"
                           src="assets/images/blog/sidebar-image-2.jpg"
                           alt="Sidebar Image 02"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="all-blog2__sidebar__latest-news__item__content">
                       <h4 className="fs-5 title">
-                        <a href="/single-blog">
+                        <Link to="/single-blog">
                           Simply ipsum is lorem dummy text
-                        </a>
+                        </Link>
                       </h4>
                       <p className="mb-0">On October 14, 2016</p>
                     </div>
                   </div>
                   <div className="all-blog2__sidebar__latest-news__item">
                     <div className="all-blog2__sidebar__latest-news__item__image">
-                      <a href="/single-blog">
+                      <Link to="/single-blog">
                         <img
                           width="80"
                           height="80"
                           src="assets/images/blog/sidebar-image-3.jpg"
                           alt="Sidebar Image 03"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="all-blog2__sidebar__latest-news__item__content">
                       <h4 className="fs-5 title">
-                        <a href="/single-blog">
+                        <Link to="/single-blog">
                           Lorem Ipsum dummy simply text is
-                        </a>
+                        </Link>
                       </h4>
                       <p className="mb-0">On October 14, 2016</p>
                     </div>
                   </div>
                   <div className="all-blog2__sidebar__latest-news__item">
                     <div className="all-blog2__sidebar__latest-news__item__image">
-                      <a href="/single-blog">
+                      <Link to="/single-blog">
                         <img
                           width="80"
                           height="80"
@@ -133,13 +134,13 @@ const BlogLeftSidebars = () => {
                           className=""
                           alt="Sidebar Image 04"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="all-blog2__sidebar__latest-news__item__content">
                       <h4 className="fs-5 title">
-                        <a href="/single-blog">
+                        <Link to="/single-blog">
                           Books with sneaky sci-fi plots
-                        </a>
+                        </Link>
                       </h4>
                       <p className="mb-0">On October 14, 2016</p>
                     </div>
@@ -149,22 +150,22 @@ const BlogLeftSidebars = () => {
                   <h2 className="fs-4 mb-3">Archives</h2>
                   <ul>
                     <li>
-                      <a href="#">December 2019</a>&nbsp;(1)
+                      <Link to="/#">December 2019</Link>&nbsp;(1)
                     </li>
                     <li>
-                      <a href="#">January 2019</a>&nbsp;(7)
+                      <Link to="/#">January 2019</Link>&nbsp;(7)
                     </li>
                     <li>
-                      <a href="#">October 2018</a>&nbsp;(1)
+                      <Link to="/#">October 2018</Link>&nbsp;(1)
                     </li>
                     <li>
-                      <a href="#">January 2018</a>&nbsp;(1)
+                      <Link to="/#">January 2018</Link>&nbsp;(1)
                     </li>
                     <li>
-                      <a href="#">October 2017</a>&nbsp;(1)
+                      <Link to="/#">October 2017</Link>&nbsp;(1)
                     </li>
                     <li>
-                      <a href="#">October 2016</a>&nbsp;(10)
+                      <Link to="/#">October 2016</Link>&nbsp;(10)
                     </li>
                   </ul>
                 </div>
@@ -172,29 +173,29 @@ const BlogLeftSidebars = () => {
                   <h2 className="fs-4 mb-3">Social</h2>
                   <ul className="social-icon my-4">
                   <li>
-                    <a href="https://www.facebook.com/">
+                    <Link to="https://www.facebook.com/">
                       <FaFacebookF />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="https://www.twitter.com/">
+                    <Link to="https://www.twitter.com/">
                       <FaTwitter />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/">
+                    <Link to="https://www.linkedin.com/">
                       <FaLinkedinIn />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="https://www.youtube.com/">
+                    <Link to="https://www.youtube.com/">
                       <FaYoutube />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="https://www.whatsapp.com">
+                    <Link to="https://www.whatsapp.com">
                       <IoLogoWhatsapp />
-                    </a>
+                    </Link>
                   </li>
                   </ul>
                 </div>
@@ -202,22 +203,22 @@ const BlogLeftSidebars = () => {
                   <h2 className="fs-4 mb-3">Popular Tags</h2>
                   <ul>
                     <li>
-                      <a href="#">clocks</a>
+                      <Link to="/#">clocks</Link>
                     </li>
                     <li>
-                      <a href="#">Home Accent</a>
+                      <Link to="/#">Home Accent</Link>
                     </li>
                     <li>
-                      <a href="#">Lighting</a>
+                      <Link to="/#">Lighting</Link>
                     </li>
                     <li>
-                      <a href="#">sofas</a>
+                      <Link to="/#">sofas</Link>
                     </li>
                     <li>
-                      <a href="#">table</a>
+                      <Link to="/#">table</Link>
                     </li>
                     <li>
-                      <a href="#">table & desk</a>
+                      <Link to="/#">table & desk</Link>
                     </li>
                   </ul>
                 </div>
@@ -240,15 +241,15 @@ const BlogLeftSidebars = () => {
                 <div className="all-blog2__area__menu">
                   <ul>
                     <li>
-                      <a href="/" title="Posts by Lindsy Powers">
+                      <Link to="/" title="Posts by Lindsy Powers">
                         Lindsy Powers
-                      </a>
+                      </Link>
                     </li>
                     <li>/</li>
                     <li>DECEMBER 3, 2019</li>
                   </ul>
                   <h2 className="fs-2">
-                    <a href="/single-blog">Books with sneaky sci-fi plots</a>
+                    <Link to="/single-blog">Books with sneaky sci-fi plots</Link>
                   </h2>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -256,9 +257,9 @@ const BlogLeftSidebars = () => {
                     industry’sstandard dummy text ever since the 1500s, when an
                     unknown printer took a galley of...
                   </p>
-                  <a href="/single-blog" className="link">
+                  <Link to="/single-blog" className="link">
                     Read more<i className="icofont-rounded-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="all-blog2__area">
@@ -272,15 +273,15 @@ const BlogLeftSidebars = () => {
                 <div className="all-blog2__area__menu">
                   <ul>
                     <li>
-                      <a href="/" title="Posts by Vannessa Cronin">
+                      <Link to="/" title="Posts by Vannessa Cronin">
                         Vannessa Cronin
-                      </a>
+                      </Link>
                     </li>
                     <li>/</li>
                     <li>DECEMBER 3, 2019</li>
                   </ul>
                   <h2 className="fs-2">
-                    <a href="/single-blog">Best science books of 2022 so far</a>
+                    <Link to="/single-blog">Best science books of 2022 so far</Link>
                   </h2>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -288,9 +289,9 @@ const BlogLeftSidebars = () => {
                     industry’sstandard dummy text ever since the 1500s, when an
                     unknown printer took a galley of...
                   </p>
-                  <a href="/single-blog" className="link">
+                  <Link to="/single-blog" className="link">
                     Read more <FiChevronRight />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="all-blog2__area">
@@ -304,17 +305,17 @@ const BlogLeftSidebars = () => {
                 <div className="all-blog2__area__menu">
                   <ul>
                     <li>
-                      <a href="/" title="Posts by Al Woodworth">
+                      <Link to="/" title="Posts by Al Woodworth">
                         Al Woodworth
-                      </a>
+                      </Link>
                     </li>
                     <li>/</li>
                     <li>DECEMBER 3, 2019</li>
                   </ul>
                   <h2 className="fs-2">
-                    <a href="/single-blog">
+                    <Link to="/single-blog">
                       A.J. Jacobs’ favorite recent reads
-                    </a>
+                    </Link>
                   </h2>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -322,10 +323,10 @@ const BlogLeftSidebars = () => {
                     industry’sstandard dummy text ever since the 1500s, when an
                     unknown printer took a galley of...
                   </p>
-                  <a href="/single-blog" className="link">
+                  <Link to="/single-blog" className="link">
                     Read more
                     <FiChevronRight />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="all-blog2__area">
@@ -339,17 +340,17 @@ const BlogLeftSidebars = () => {
                 <div className="all-blog2__area__menu">
                   <ul>
                     <li>
-                      <a href="/" title="Posts by Marcus Mann">
+                      <Link to="/" title="Posts by Marcus Mann">
                         Marcus Mann
-                      </a>
+                      </Link>
                     </li>
                     <li>/</li>
                     <li>DECEMBER 3, 2019</li>
                   </ul>
                   <h2 className="fs-2">
-                    <a href="/single-blog">
+                    <Link to="/single-blog">
                       Books we’re talking about: film and TV edition
-                    </a>
+                    </Link>
                   </h2>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -357,10 +358,10 @@ const BlogLeftSidebars = () => {
                     industry’sstandard dummy text ever since the 1500s, when an
                     unknown printer took a galley of...
                   </p>
-                  <a href="/single-blog" className="link">
+                  <Link to="/single-blog" className="link">
                     Read more
                     <FiChevronRight />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="all-blog2__area">
@@ -374,15 +375,15 @@ const BlogLeftSidebars = () => {
                 <div className="all-blog2__area__menu">
                   <ul>
                     <li>
-                      <a href="/" title="Posts by Seira Wilson">
+                      <Link to="/" title="Posts by Seira Wilson">
                         Seira Wilson
-                      </a>
+                      </Link>
                     </li>
                     <li>/</li>
                     <li>DECEMBER 3, 2019</li>
                   </ul>
                   <h2 className="fs-2">
-                    <a href="/single-blog">Best romance books of 2022 so far</a>
+                    <Link to="/single-blog">Best romance books of 2022 so far</Link>
                   </h2>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -390,10 +391,10 @@ const BlogLeftSidebars = () => {
                     industry’sstandard dummy text ever since the 1500s, when an
                     unknown printer took a galley of...
                   </p>
-                  <a href="/single-blog" className="link">
+                  <Link to="/single-blog" className="link">
                     Read more
                     <FiChevronRight />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

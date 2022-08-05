@@ -2,6 +2,7 @@ import React from "react";
 import data from "../data/events.json";
 
 import { FaRegCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 const Event = ({isBg }) => {
   const { events } = data;
@@ -46,20 +47,20 @@ const Event = ({isBg }) => {
             >
               <article className="events__single-event h-100 translateEffect1">
                 <div className="events__single-event__image">
-                  <a href="single-event">
+                  <Link to="/single-event">
                     <img
                       className="img-fluid"
                       src={data.image}
                       alt=""
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className="events__single-event__body">
                   <div className="events__single-event__content">
                     <h2 className="fs-4">
-                      <a href="single-event">
+                      <Link to="/single-event">
                         {data.title}
-                      </a>
+                      </Link>
                     </h2>
                     <p className="m-0">
                      {data.description}

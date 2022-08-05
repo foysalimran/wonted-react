@@ -5,6 +5,7 @@ import {
     FaMapMarkerAlt
 } from "react-icons/fa";
 import { MdEmail, MdCall} from "react-icons/md";
+import { Link } from "react-router-dom";
 import data from "../data/contact.json";
 import { contactFormAction, contactMap } from "../global";
 
@@ -135,7 +136,7 @@ const Contactv2 = ({isBg}) => {
                 </li>
                 <li>
                 <MdEmail />
-                  <a href="#">{contact.emailText}</a>
+                  <Link to="/#">{contact.emailText}</Link>
                 </li>
                 <li>
                 <MdCall />

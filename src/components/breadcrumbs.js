@@ -1,5 +1,6 @@
 import React from "react";
 import { BiChevronRight } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Breadcrumbs = ({ title, isBg }) => {
   return (
@@ -24,7 +25,7 @@ const Breadcrumbs = ({ title, isBg }) => {
                 data-aos-duration="1000"
                 data-aos-delay="650"
               >
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li
                 data-aos="fade-up"

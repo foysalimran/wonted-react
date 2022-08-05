@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 import data from "../data/achieve.json";
 
 const Achievev2 = ({isBg}) => {
@@ -45,9 +46,9 @@ const Achievev2 = ({isBg}) => {
            <p>
              {data.description}
            </p>
-           <a href="#" className="link">
+           <Link to="/#" className="link">
             {data.linkBtn}  <img className="img-fluid"src={data.btnIcon} alt="icon" width="20" height="20" />
-           </a>
+           </Link>
          </div>
        </div>
           ))}
