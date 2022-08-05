@@ -1,8 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import Footerv3 from "../global/footerv3";
-import Headerv3 from "../global/headerv3";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -12,13 +10,16 @@ import {
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FiChevronRight } from "react-icons/fi";
 import { BsSearch } from "react-icons/bs";
+import Header from "../global/header";
+import Footer from "../global/footer";
 
-const BlogLeftSidebar = () => {
+const BlogLeftSidebar = ({ headerv3, footer }) => {
+  const { menuv3 } = footer;
 
   return (
     // <!-- ========== All blogs hero start ========== -->
     <>
-      <Headerv3 />
+      <Header header={headerv3} />
       <section
         id="left-sidebar"
         className="all-blogs hero__padding overflow-hidden position-relative bg-one"
@@ -146,7 +147,9 @@ const BlogLeftSidebar = () => {
                     </div>
                     <div className="all-blog2__sidebar__latest-news__item__content">
                       <h4 className="fs-5 title">
-                        <a href="/single-blog">Simply ipsum is lorem dummy text</a>
+                        <a href="/single-blog">
+                          Simply ipsum is lorem dummy text
+                        </a>
                       </h4>
                       <p className="mb-0">On October 14, 2016</p>
                     </div>
@@ -164,7 +167,9 @@ const BlogLeftSidebar = () => {
                     </div>
                     <div className="all-blog2__sidebar__latest-news__item__content">
                       <h4 className="fs-5 title">
-                        <a href="/single-blog">Lorem Ipsum dummy simply text is</a>
+                        <a href="/single-blog">
+                          Lorem Ipsum dummy simply text is
+                        </a>
                       </h4>
                       <p className="mb-0">On October 14, 2016</p>
                     </div>
@@ -183,7 +188,9 @@ const BlogLeftSidebar = () => {
                     </div>
                     <div className="all-blog2__sidebar__latest-news__item__content">
                       <h4 className="fs-5 title">
-                        <a href="/single-blog">Books with sneaky sci-fi plots</a>
+                        <a href="/single-blog">
+                          Books with sneaky sci-fi plots
+                        </a>
                       </h4>
                       <p className="mb-0">On October 14, 2016</p>
                     </div>
@@ -215,32 +222,32 @@ const BlogLeftSidebar = () => {
                 <div className="all-blog2__sidebar__social item-border">
                   <h2 className="fs-4 mb-3">Social</h2>
                   <ul className="social-icon my-4">
-                      <li>
-                        <a href="https://www.facebook.com/">
-                          <FaFacebookF />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.twitter.com/">
-                          <FaTwitter />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.linkedin.com/">
-                          <FaLinkedinIn />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.youtube.com/">
-                          <FaYoutube />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.whatsapp.com">
-                          <IoLogoWhatsapp />
-                        </a>
-                      </li>
-                    </ul>
+                    <li>
+                      <a href="https://www.facebook.com/">
+                        <FaFacebookF />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.twitter.com/">
+                        <FaTwitter />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/">
+                        <FaLinkedinIn />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/">
+                        <FaYoutube />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.whatsapp.com">
+                        <IoLogoWhatsapp />
+                      </a>
+                    </li>
+                  </ul>
                 </div>
                 <div className="all-blog2__sidebar__popular-tags item-border">
                   <h2 className="fs-4 mb-3">Popular Tags</h2>
@@ -356,7 +363,9 @@ const BlogLeftSidebar = () => {
                     <li>DECEMBER 3, 2019</li>
                   </ul>
                   <h2 className="fs-2">
-                    <a href="/single-blog">A.J. Jacobs’ favorite recent reads</a>
+                    <a href="/single-blog">
+                      A.J. Jacobs’ favorite recent reads
+                    </a>
                   </h2>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -365,7 +374,8 @@ const BlogLeftSidebar = () => {
                     unknown printer took a galley of...
                   </p>
                   <a href="/single-blog" className="link">
-                    Read more<FiChevronRight />
+                    Read more
+                    <FiChevronRight />
                   </a>
                 </div>
               </div>
@@ -399,7 +409,8 @@ const BlogLeftSidebar = () => {
                     unknown printer took a galley of...
                   </p>
                   <a href="/single-blog" className="link">
-                    Read more<FiChevronRight />
+                    Read more
+                    <FiChevronRight />
                   </a>
                 </div>
               </div>
@@ -431,7 +442,8 @@ const BlogLeftSidebar = () => {
                     unknown printer took a galley of...
                   </p>
                   <a href="/single-blog" className="link">
-                    Read more<FiChevronRight />
+                    Read more
+                    <FiChevronRight />
                   </a>
                 </div>
               </div>
@@ -440,7 +452,7 @@ const BlogLeftSidebar = () => {
         </div>
       </section>
       {/* // <!-- ========== Blog right sidebar end ========== --> */}
-      <Footerv3 />
+      <Footer menu={menuv3} />
     </>
   );
 };

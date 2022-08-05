@@ -2,14 +2,15 @@
 import React from "react";
 import data from "../../data/events.json";
 import { FaRegCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
-import Headerv3 from "../global/headerv3";
-import Footerv3 from "../global/footerv3";
+import Header from "../global/header";
+import Footer from "../global/footer";
 
-const AllEvent = () => {
+const AllEvent = ({ headerv3, footer}) => {
+  const { menuv3 } = footer;
   const { events } = data;
   return (
     <>
-      <Headerv3 />
+      <Header header={headerv3} />
       <div
         id="all-events"
         className="all-blogs hero__padding overflow-hidden position-relative bg-one"
@@ -57,7 +58,8 @@ const AllEvent = () => {
         <div className="container">
           <div className="row">
             {events.singleBlog.map((data, i) => (
-              <div key={i}
+              <div
+                key={i}
                 className="col-md-6 col-lg-4 mb-4"
                 data-aos="fade-up"
                 data-aos-duration="1000"
@@ -123,7 +125,7 @@ const AllEvent = () => {
           </div>
         </div>
       </div>
-      <Footerv3 />
+      <Footer menu={menuv3} />
     </>
   );
 };

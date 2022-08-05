@@ -11,26 +11,27 @@ import AuthorV2 from "../authorv2";
 import Booksv1 from "../booksv1";
 import AchievementV2 from "../achievementv2";
 import Contact from "../contact";
-import Headerv2 from "../global/headerv2";
-import Footerv2 from "../global/footerv2";
+import Header from "../global/header";
+import Footer from "../global/footer";
 
-const Version05 = () => {
+const Version05 = ({ headerv2, footer}) => {
+  const {menuv2 } = footer;
   return (
     <>
-    <Headerv2 />
+      <Header header={headerv2} />
       <Herov5 />
       <AuthorV2 />
-      <Booksv1 /> 
+      <Booksv1 />
       <FunFacts />
-      <Booksv3 bgColor="#f5ebe6"/>
-      <AchievementV2 bgColor="#fff"/>
+      <Booksv3 bgColor="#f5ebe6" />
+      <AchievementV2 bgColor="#fff" />
       <Eventv2 />
-      <Testimonial bgColor="#fff" cardColor="#f5ebe6"/>
+      <Testimonial bgColor="#fff" cardColor="#f5ebe6" />
       <Ctav5 />
       <Blog />
       <Ctav4 />
       <Contact />
-      <Footerv2 />
+      <Footer menu={menuv2} />
     </>
   );
 };

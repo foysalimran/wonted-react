@@ -13,10 +13,11 @@ import Herov3 from "../herov3";
 import Pricing from "../pricing";
 import Testimonial from "../testimonial";
 
-const Version03 = () => {
+const Version03 = ({header, footer}) => {
+  const {menu} = footer;
   return (
     <>
-      <Header />
+      <Header header={header}/>
       <Herov3 />
       <Achievev3 />
       <Chapterv2 />
@@ -28,7 +29,7 @@ const Version03 = () => {
       <CtaV5 />
       <Testimonial />
       <Contact />
-      <Footer />
+      <Footer menu={menu}/>
     </>
   );
 };

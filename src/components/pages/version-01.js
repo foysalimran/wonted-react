@@ -15,10 +15,12 @@ import Hero from "../hero";
 import Pricing from "../pricing";
 import Testimonial from "../testimonial";
 
-function Version01() {
+const Version01 = ({header, footer}) => {
+  const {menu} = footer;
+
   return (
     <>
-     <Header />
+     <Header header={header} />
       <Hero />
       <Achieve />
       <Chapter />
@@ -32,7 +34,7 @@ function Version01() {
       <Testimonial />
       <CtaV4 />
       <Contact />
-      <Footer />
+      <Footer menu={menu} />
     </>
   );
 }

@@ -1,8 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import Footerv3 from "../global/footerv3";
-import Headerv3 from "../global/headerv3";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -12,11 +10,15 @@ import {
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FiChevronRight } from "react-icons/fi";
 import { BsSearch } from "react-icons/bs";
+import Header from "../global/header";
+import Footer from "../global/footer";
 
-const BlogRightSidebar = () => {
+const BlogRightSidebar = ({ headerv3, footer }) => {
+  const { menuv3 } = footer;
+
   return (
     <>
-      <Headerv3 />
+      <Header header={headerv3} />
       {/* <!-- ========== All blogs hero start ========== --> */}
       <section
         id="right-sidebar"
@@ -439,7 +441,7 @@ const BlogRightSidebar = () => {
         </div>
       </section>
       {/* <!-- ========== Blog right sidebar end ========== --> */}
-      <Footerv3 />
+      <Footer menu={menuv3} />
     </>
   );
 };
