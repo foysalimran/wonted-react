@@ -2,11 +2,11 @@ import React from "react";
 import CountUp from 'react-countup';
 import data from "../data/fun-fact.json";
 
-const FunFacts = ({bgColor, cardColor}) => {
+const FunFacts = ({isBg}) => {
   const {funFacts} = data;
   return (
     // <!-- ========== Fun facts section start ========== -->
-    <section className="section-padding counters" style={{backgroundColor: `${bgColor}`}}>
+    <section className={`section-padding counters  ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
@@ -44,7 +44,7 @@ const FunFacts = ({bgColor, cardColor}) => {
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
-                <div className="counters__stats-box h-100 translateEffect1" style={{backgroundColor: `${cardColor}`}}>
+                <div className="counters__stats-box h-100 translateEffect1">
                   <div className="counters__stats-icon">
                     <img className="img-fluid" src={data.icon} alt="icon" width="100"
                         height="100" />

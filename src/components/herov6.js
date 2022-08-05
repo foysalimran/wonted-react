@@ -1,11 +1,11 @@
 import React from "react";
 
-const Herov6 = () => {
+const Herov6 = ({isBg}) => {
   return (
     //  <!-- ========== Hero section start ========== -->
     <section
       id="hero"
-      className="hero hero__padding overflow-hidden position-relative bg-one"
+      className={`hero hero__padding overflow-hidden position-relative ${isBg === "yes" ? "bg-one": "" }`}
     >
       <div className="circle x1"></div>
       <div className="circle x2"></div>

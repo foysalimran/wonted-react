@@ -5,13 +5,13 @@ import data from "../../data/footer.json";
 import { Link } from "react-scroll";
 import { siteLogo, socialLink } from "../../global";
 
-const Footer = ({menu}) => {
+const Footer = ({menu, isBg}) => {
   const { footer } = data;
 
   return (
     <>
       <CtaV3 />
-      <footer className="footer bg-one overflow-hidden">
+      <footer className={`footer overflow-hidden ${isBg === "yes" ? "bg-one": "" }`}>
         <div className="container">
           <div className="footer__top m-50px-t m-50px-b">
             <div className="row">

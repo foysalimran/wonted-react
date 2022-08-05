@@ -2,11 +2,11 @@
 import React from "react";
 import data from "../data/achieve.json";
 
-const Achieve = () => {
+const Achieve = ({isBg}) => {
   const {achieve} = data;
   return (
     // <!-- ========== Achieve section start ========== -->
-    <section id="benefits" className="achieve section-padding">
+    <section id="benefits" className={`achieve section-padding  ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">

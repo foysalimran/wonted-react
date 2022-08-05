@@ -1,13 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 import data from "../data/contact.json"
 import { contactFormAction, socialLink } from "../global";
 
-const Contact = () => {
+const Contact = ({isBg}) => {
   const { contact } = data;
   return (
     // <!-- ========== Contact section start ========== -->
-    <section id="contact" className="p-80px-tb bg-white">
+    <section id="contact" className={`p-80px-tb bg-white ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
@@ -134,7 +135,7 @@ const Contact = () => {
                 </li>
                 <li>
                   <span>{contact.email}</span>
-                  <a href="#">{contact.emailText}</a>
+                  <Link to="/#">{contact.emailText}</Link>
                 </li>
               </ul>
               <h4>{contact.socialTitle}</h4>

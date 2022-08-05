@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import data from "../data/chapterPreview.json";
 
-const ChapterPreviewV2 = () => {
+const ChapterPreviewV2 = ({isBg}) => {
   useEffect(() => {
     const panels = document.querySelectorAll(".panel");
     panels.forEach((panel) => {
@@ -20,7 +20,7 @@ const ChapterPreviewV2 = () => {
 
   return (
     // <!-- ========== Chapter preview section start ========== -->
-    <section id="preview" className="section-padding chapter-preview">
+    <section id="preview" className={`section-padding chapter-preview ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">

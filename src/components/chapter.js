@@ -4,12 +4,12 @@ import { IoIosArrowDown } from "react-icons/io";
 // import chapter from "../assets/images/hero-2.png";
 import data from "../data/chapter.json";
 
-const Chapter = () => {
+const Chapter = ({isBg}) => {
   const { chapter } = data;
 
   return (
     // <!-- ========== Chapters section start ========== -->
-    <section id="chapters" className="section-padding bg-one">
+    <section id="chapters" className={`section-padding ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">

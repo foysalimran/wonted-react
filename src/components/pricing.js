@@ -2,12 +2,12 @@
 import React from "react";
 import data from "../data/pricing.json";
 
-const Pricing = () => {
+const Pricing = ({isBg}) => {
   const { pricing } = data;
 
   return (
     // <!-- ========== Pricing section start ========== -->
-    <section id="pricing" className="section-padding pricing bg-one">
+    <section id="pricing" className={`section-padding pricing ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">

@@ -3,10 +3,10 @@ import React from "react";
 
 import data from "../data/achievements.json";
 
-const AchievementV2 = () => {
+const Achievementv2 = ({isBg}) => {
   const {achievements} = data;
   return (
-    <section id="achievement" className="section-padding achievement bg-one">
+    <section id="achievement" className={`section-padding achievement ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
@@ -68,11 +68,10 @@ const AchievementV2 = () => {
            </div>
          </div>
         ))}
-         
         </div>
       </div>
     </section>
   );
 };
 
-export default AchievementV2;
+export default Achievementv2;
