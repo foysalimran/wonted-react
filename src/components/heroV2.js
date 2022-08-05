@@ -3,13 +3,13 @@ import React from 'react';
 import data from "../data/herov1.json"
 import {BiPlayCircle} from "react-icons/bi"
 
-const HeroV2 = () => {
+const Herov2 = ({isBg}) => {
   const {herov2} = data;
   
     return (
         <section
         id="hero"
-        className="hero hero__padding overflow-hidden position-relative bg-one"
+        className={`hero hero__padding overflow-hidden position-relative ${isBg === "yes" ? "bg-one": "" }`}
       >
         <div className="circle x1"></div>
         <div className="circle x2"></div>
@@ -76,4 +76,4 @@ const HeroV2 = () => {
     );
 };
 
-export default HeroV2;
+export default Herov2;

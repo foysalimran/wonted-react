@@ -7,7 +7,7 @@ import { mailchimpLink } from "../global";
 function SubscribeForm({ status, message, onValidated }) {
   let email;
   const submit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     email &&
       email.value.indexOf("@") > -1 &&
       onValidated({
@@ -53,13 +53,13 @@ function SubscribeForm({ status, message, onValidated }) {
   );
 }
 
-const Hero = () => {
+const Hero = ({ isBg }) => {
   const { herov1 } = data;
   return (
     // <!-- ========== Hero section start ========== -->
     <section
       id="hero"
-      className="hero hero__padding overflow-hidden position-relative bg-one"
+      className={`hero hero__padding overflow-hidden position-relative ${isBg === "yes" ? "bg-one": "" }`}
     >
       <div className="circle x1"></div>
       <div className="circle x2"></div>

@@ -5,7 +5,7 @@ import $ from "jquery";
 import GLightbox from "glightbox";
 window.jQuery = $;
 
-const Ctav4 = () => {
+const Ctav4 = ({isBg}) => {
   const { ctav4 } = data;
   useEffect(() => {
     GLightbox({
@@ -16,8 +16,8 @@ const Ctav4 = () => {
   return (
     // <!-- ========== CTA v4 section start ========== -->
     <section
-      className="section-padding ctav4"
-      style={{ backgroundImage: `url(${ctav4.backgroundImage})` }}
+      className={`section-padding ctav4 ${isBg === "yes" ? "bg-one": "" }`}
+      style={{backgroundImage: `url(${ctav4.backgroundImage})`}}
     >
       <div className="container">
         <div className="row">

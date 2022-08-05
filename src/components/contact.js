@@ -3,11 +3,11 @@ import React from "react";
 import data from "../data/contact.json"
 import { contactFormAction, socialLink } from "../global";
 
-const Contact = () => {
+const Contact = ({isBg}) => {
   const { contact } = data;
   return (
     // <!-- ========== Contact section start ========== -->
-    <section id="contact" className="p-80px-tb bg-white">
+    <section id="contact" className={`p-80px-tb bg-white ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">

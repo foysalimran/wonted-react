@@ -2,10 +2,10 @@
 import React from "react";
 import data from "../data/achieve.json";
 
-const AchieveV2 = () => {
+const Achievev2 = ({isBg}) => {
   const {achivev2} = data
   return (
-    <section id="benefits" className="achivev2 section-padding">
+    <section id="benefits" className={`achivev2 section-padding ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div className="col-lg-4">
@@ -58,4 +58,4 @@ const AchieveV2 = () => {
   );
 };
 
-export default AchieveV2;
+export default Achievev2;

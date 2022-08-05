@@ -1,12 +1,12 @@
 import React from "react";
 import data from "../data/cta.json"
 
-const Ctav5 = () => {
+const Ctav5 = ({isBg}) => {
   const {ctav5 } = data;
 
   return (
     // <!-- ========== CTA v5 section start ========== -->
-    <section className="section-padding ctav5" style={{backgroundImage: `url(${ctav5.backgroundImage})`}}>
+    <section className={`section-padding ctav5  ${isBg === "yes" ? "bg-one": "" }`} style={{backgroundImage: `url(${ctav5.backgroundImage})`}}>
       <div className="container">
         <div className="row">
           <div className="ctav5__content">
