@@ -18,7 +18,7 @@ const Aboutv6 = ({isBg}) => {
 
   return (
     // <!-- ========== Author section start ========== -->
-    <section id="about" className={`section-padding authorv2 ${isBg === "yes" ? "bg-one": "" }`}>
+    <section id="author" className={`section-padding authorv2 ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
