@@ -9,7 +9,7 @@ import Ctav4 from "../ctav4";
 import Herov5 from "../herov5";
 import AuthorV2 from "../authorv2";
 import Booksv1 from "../booksv1";
-import AchievementV2 from "../achievementv2";
+import Achievementv2 from "../achievementv2";
 import Contact from "../contact";
 import Header from "../global/header";
 import Footer from "../global/footer";
@@ -19,19 +19,19 @@ const Version05 = ({ headerv2, footer}) => {
   return (
     <>
       <Header header={headerv2} />
-      <Herov5 />
-      <AuthorV2 />
-      <Booksv1 />
-      <FunFacts />
-      <Booksv3 bgColor="#f5ebe6" />
-      <AchievementV2 bgColor="#fff" />
-      <Eventv2 />
-      <Testimonial bgColor="#fff" cardColor="#f5ebe6" />
-      <Ctav5 />
-      <Blog />
-      <Ctav4 />
-      <Contact />
-      <Footer menu={menuv2} />
+      <Herov5 isBg="yes"/>
+      <AuthorV2 isBg=""/>
+      <Booksv1 isBg="yes"/>
+      <FunFacts isBg=""/>
+      <Booksv3 isBg="yes"/>
+      <Achievementv2 isBg=""/>
+      <Eventv2 isBg="yes"/>
+      <Testimonial isBg=""/>
+      <Ctav5 isBg=""/>
+      <Blog isBg=""/>
+      <Ctav4 isBg=""/>
+      <Contact isBg=""/>
+      <Footer isBg="yes" menu={menuv2} />
     </>
   );
 };

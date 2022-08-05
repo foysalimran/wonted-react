@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import data from "../data/books.json";
 
-const Booksv2 = () => {
+const Booksv2 = ({isBg}) => {
   useEffect(() => {
     const panels = document.querySelectorAll(".panel");
     panels.forEach((panel) => {
@@ -18,7 +18,7 @@ const Booksv2 = () => {
   }, [])
   const { booksv2 } = data;
   return (
-    <section id="books" className="section-padding">
+    <section id="books" className={`section-padding ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">

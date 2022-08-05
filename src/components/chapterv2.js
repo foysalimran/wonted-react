@@ -1,12 +1,12 @@
 import React from "react";
 import chapterData from "../data/chapter.json";
 
-const ChapterV2 = () => {
+const ChapterV2 = ({isBg}) => {
 const {chapterv2} = chapterData;
 
   return (
     // <!-- ========== Chapter section start ========== -->
-    <section id="chapters" className="section-padding chapter bg-one">
+    <section id="chapters" className={`section-padding chapter ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">

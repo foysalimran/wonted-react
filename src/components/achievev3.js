@@ -1,11 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 import data from "../data/achieve.json";
 
-const Achievev3 = () => {
+const Achievev3 = ({isBg}) => {
   const { achivev3 } = data;
   return (
-    <section id="benefits" className="achieve3 section-padding">
+    <section id="benefits" className={`achieve3 section-padding  ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div className="col-lg-6 my-auto">
@@ -52,7 +53,7 @@ const Achievev3 = () => {
                   </div>
                   <h3 className="m-15px-b">{achivev3.achieveItem1.title}</h3>
                   <p>{achivev3.achieveItem1.description}</p>
-                  <a href="#" className="link">
+                  <Link to="/#" className="link">
                     {achivev3.achieveItem1.linkItem}
                     <img
                       className="img-fluid"
@@ -61,7 +62,7 @@ const Achievev3 = () => {
                       width="25"
                       height="25"
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -83,7 +84,7 @@ const Achievev3 = () => {
                   </div>
                   <h3 className="m-15px-b">{achivev3.achieveItem2.title}</h3>
                   <p>{achivev3.achieveItem2.description}</p>
-                  <a href="#" className="link">
+                  <Link to="/#" className="link">
                     {achivev3.achieveItem2.linkBtn}
                     <img
                       className="img-fluid"
@@ -92,7 +93,7 @@ const Achievev3 = () => {
                       width="20"
                       height="20"
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -117,7 +118,7 @@ const Achievev3 = () => {
               </div>
               <h3 className="m-15px-b">{achivev3.achieveItem3.title}</h3>
               <p>{achivev3.achieveItem3.description}</p>
-              <a href="#" className="link">
+              <Link to="/#" className="link">
                 {achivev3.achieveItem3.linkBtn}
                 <img
                   className="img-fluid"
@@ -126,7 +127,7 @@ const Achievev3 = () => {
                   width="20"
                   height="20"
                 />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -148,7 +149,7 @@ const Achievev3 = () => {
               </div>
               <h3 className="m-15px-b">{achivev3.achieveItem4.title}</h3>
               <p>{achivev3.achieveItem4.description}</p>
-              <a href="#" className="link">
+              <Link to="/#" className="link">
                 {achivev3.achieveItem4.linkBtn}
                 <img
                   className="img-fluid"
@@ -157,7 +158,7 @@ const Achievev3 = () => {
                   width="20"
                   height="20"
                 />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -179,7 +180,7 @@ const Achievev3 = () => {
               </div>
               <h3 className="m-15px-b">{achivev3.achieveItem5.title}</h3>
               <p>{achivev3.achieveItem5.description}</p>
-              <a href="#" className="link">
+              <Link to="/#" className="link">
                 {achivev3.achieveItem5.linkBtn}
                 <img
                   className="img-fluid"
@@ -188,7 +189,7 @@ const Achievev3 = () => {
                   width="20"
                   height="20"
                 />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -210,7 +211,7 @@ const Achievev3 = () => {
               </div>
               <h3 className="m-15px-b">{achivev3.achieveItem6.title}</h3>
               <p>{achivev3.achieveItem6.description}</p>
-              <a href="#" className="link">
+              <Link to="/#" className="link">
                 {achivev3.achieveItem6.linkBtn}
                 <img
                   className="img-fluid"
@@ -219,7 +220,7 @@ const Achievev3 = () => {
                   width="20"
                   height="20"
                 />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

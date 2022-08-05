@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import "./assets/css/margins-paddings.css";
 import Version01 from "./components/pages/version-01";
 import Version02 from "./components/pages/version-02";
@@ -11,14 +11,22 @@ import AOS from "aos";
 import { useEffect } from "react";
 import "./assets/css/aos.css";
 import AllBlog from "./components/pages/all-blog";
-import AllEvent from "./components/pages/all-events";
+import AllEvent from "./components/pages/all-event";
 import BlogLeftSidebar from "./components/pages/blog-left-sidebar";
 import BlogRightSidebar from "./components/pages/blog-right-sidebar";
 import SingleBlog from "./components/pages/single-blog";
 import SingleEvent from "./components/pages/single-event";
-import headerData from "./data/header.json";
 import footerData from "./data/footer.json";
+import headerData from "./data/header.json";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 function App() {
   const { header, headerv2, headerv3 } = headerData;
   const { footer } = footerData;
@@ -30,6 +38,7 @@ function App() {
     <div className="section-wrapper">
       <div id="preLoader"></div>
       <BrowserRouter>
+        <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Version01 header={header} footer={footer} />} />
           <Route path="v1" element={<Version01 header={header} footer={footer} />} />

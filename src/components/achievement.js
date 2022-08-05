@@ -1,10 +1,10 @@
 import React from "react";
 import achievementData from "../data/achievements.json";
-const Achievement = () => {
+const Achievement = ({isBg}) => {
 const { achievements } = achievementData;
 
   return (
-    <section id="achievements" className="section-padding achievement bg-one">
+    <section id="achievements" className={`section-padding achievement ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
