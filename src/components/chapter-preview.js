@@ -6,10 +6,8 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import $ from "jquery";
 import data from "../data/chapterPreview.json";
 import GLightbox from "glightbox";
-window.jQuery = $;
 
 const ChapterPreview = ({isBg}) => {
   const { chapterPreview } = data;

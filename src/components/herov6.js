@@ -1,11 +1,13 @@
 import React from "react";
 
-const Herov6 = ({isBg}) => {
+const Herov6 = ({ isBg }) => {
   return (
     //  <!-- ========== Hero section start ========== -->
     <section
       id="hero"
-      className={`hero hero__padding overflow-hidden position-relative ${isBg === "yes" ? "bg-one": "" }`}
+      className={`hero hero__padding overflow-hidden position-relative ${
+        isBg === "yes" ? "bg-one" : ""
+      }`}
     >
       <div className="circle x1"></div>
       <div className="circle x2"></div>
@@ -16,57 +18,26 @@ const Herov6 = ({isBg}) => {
         <div className="row align-items-center">
           <div className="col-lg-6 mb-4 mb-lg-0">
             <div className="hero__content position-relative">
-              <h1
-                className="display-4 mb-2 text-capitalize"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="700"
-              >
-                John Smith.
-              </h1>
-              <div
-                className="badge-text fs-5 mb-4"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="750"
-              >
+              <h1 className="display-4 mb-2 text-capitalize">John Smith.</h1>
+              <div className="badge-text fs-5 mb-4">
                 Finance management book writer
               </div>
-              <p
-                className="mb-5 fs-5"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="800"
-              >
+              <p className="mb-5 fs-5">
                 I'm creative book writer based in Boston, and I'm very
                 passionate and dedicate about my writings.
               </p>
-              <a
-                href="#author"
-                className="button button__primary me-3"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="850"
-              >
+              <a href="#author" className="button button__primary me-3">
                 <span>Awarded books</span>
               </a>
               <a
                 href="https://youtu.be/qg0_FinB6EE"
                 className="glightbox3 btn__secondary"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="900"
               >
                 <i className="icofont-play-alt-2"></i> About me
               </a>
             </div>
           </div>
-          <div
-            className="col-lg-6"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="800"
-          >
+          <div className="col-lg-6">
             <div className="hero__author text-center">
               <div className="hero__author--inner3">
                 <div className="hero__author--inner3--wrapper">
