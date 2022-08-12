@@ -42,7 +42,7 @@ const Event = ({ isBg }) => {
         </div>
         <div className="row justify-content-center">
           {events.singleBlog.slice(0, 3).map((data, i) => (
-            <div
+            <div key={i}
               className="col-md-6 col-lg-4 mb-4"
               data-aos="fade-up"
               data-aos-duration="1000"
