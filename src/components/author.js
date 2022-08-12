@@ -1,11 +1,10 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import GLightbox from "glightbox";
 import React, { useEffect } from "react";
 import { FiPlay } from "react-icons/fi";
 import data from "../data/about.json";
-import GLightbox from "glightbox";
 import { socialLink } from "../global";
-
 const Author = ({isBg}) => {
   const { about } = data;
   useEffect(() => {

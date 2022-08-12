@@ -1,8 +1,7 @@
+import GLightbox from "glightbox";
 import React, { useEffect } from "react";
 import { FiPlay } from "react-icons/fi";
 import data from "../data/cta.json";
-import GLightbox from "glightbox";
-
 
 const Ctav4 = ({isBg}) => {
   const { ctav4 } = data;
