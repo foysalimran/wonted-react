@@ -9,36 +9,21 @@ import { Link } from "react-router-dom";
 import data from "../data/contact.json";
 import { contactFormAction, contactMap } from "../global";
 
-const Contactv2 = ({isBg}) => {
+const Contactv2 = ({ isBg }) => {
   const { contact } = data;
   return (
     // <!-- ========== Contact section start ========== -->
-    <section id="contact" className={`p-80px-tb ${isBg === "yes" ? "bg-one": "" }`}>
+    <section
+      id="contact"
+      className={`p-80px-tb ${isBg === "yes" ? "bg-one" : ""}`}
+    >
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
             <div className="section-title-center text-center">
-              <span
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="150"
-              >
-                {contact.subtitle}
-              </span>
-              <h2
-                className="display-6"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="200"
-              >
-                {contact.title}
-              </h2>
-              <div
-                className="section-divider divider-traingle"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="250"
-              ></div>
+              <span>{contact.subtitle}</span>
+              <h2 className="display-6">{contact.title}</h2>
+              <div className="section-divider divider-traingle"></div>
             </div>
           </div>
         </div>
@@ -132,14 +117,14 @@ const Contactv2 = ({isBg}) => {
               </div>
               <ul className="contactv4__content">
                 <li>
-                <FaMapMarkerAlt /> {contact.addressText2}
+                  <FaMapMarkerAlt /> {contact.addressText2}
                 </li>
                 <li>
-                <MdEmail />
+                  <MdEmail />
                   <Link to="/#">{contact.emailText}</Link>
                 </li>
                 <li>
-                <MdCall />
+                  <MdCall />
                   <a href="tel:1124447900">{contact.number}</a>
                 </li>
               </ul>

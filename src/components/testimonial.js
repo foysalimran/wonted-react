@@ -7,37 +7,24 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import testimonialData from "../data/testimonial.json";
 
-const Testimonial = ({isBg}) => {
+const Testimonial = ({ isBg }) => {
   const { testimonial } = testimonialData;
 
   return (
     // <!-- ========== Testimonial section start ========== -->
-    <section id="reviews" className={`section-padding testimonial ${isBg === "yes" ? "bg-one": "" }`}>
+    <section
+      id="reviews"
+      className={`section-padding testimonial ${
+        isBg === "yes" ? "bg-one" : ""
+      }`}
+    >
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
             <div className="section-title-center text-center">
-              <span
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="150"
-              >
-                {testimonial.subtitle}
-              </span>
-              <h2
-                className="display-6"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="200"
-              >
-                {testimonial.title}
-              </h2>
-              <div
-                className="section-divider divider-traingle"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="250"
-              ></div>
+              <span>{testimonial.subtitle}</span>
+              <h2 className="display-6">{testimonial.title}</h2>
+              <div className="section-divider divider-traingle"></div>
             </div>
           </div>
         </div>
@@ -58,33 +45,29 @@ const Testimonial = ({isBg}) => {
                 },
               }}
             >
-            {testimonial.testimonialItem?.map((data) => (
-              <SwiperSlide key={data.id}>
-                <div
-                    className="swiper-slide p-5px-lr"
-                  >
-                <div className="testi-card card h-100 translateEffect1">
-                  <div className="card-body p-4">
-                    <div className="testi-card__quotation">
-                      <i className="icofont-quote-right"></i>
-                    </div>
-                    <p className="my-4">
-                      {data.description}
-                    </p>
-                    <div className="testi-card__user-info pt-4">
-                      <div className="testimonial__user-info__image">
-                        <img src={data.image} alt={data.title} />
-                      </div>
-                      <div className="testimonial__user-info__content">
-                        <h4 className="mb-0">{data.name}</h4>
-                        <p className="mb-0">{data.title}</p>
+              {testimonial.testimonialItem?.map((data) => (
+                <SwiperSlide key={data.id}>
+                  <div className="swiper-slide p-5px-lr">
+                    <div className="testi-card card h-100 translateEffect1">
+                      <div className="card-body p-4">
+                        <div className="testi-card__quotation">
+                          <i className="icofont-quote-right"></i>
+                        </div>
+                        <p className="my-4">{data.description}</p>
+                        <div className="testi-card__user-info pt-4">
+                          <div className="testimonial__user-info__image">
+                            <img src={data.image} alt={data.title} />
+                          </div>
+                          <div className="testimonial__user-info__content">
+                            <h4 className="mb-0">{data.name}</h4>
+                            <p className="mb-0">{data.title}</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                </div>
-              </SwiperSlide>
-            ))}
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>

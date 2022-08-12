@@ -4,37 +4,22 @@ import { IoIosArrowDown } from "react-icons/io";
 // import chapter from "../assets/images/hero-2.png";
 import data from "../data/chapter.json";
 
-const Chapter = ({isBg}) => {
+const Chapter = ({ isBg }) => {
   const { chapter } = data;
 
   return (
     // <!-- ========== Chapters section start ========== -->
-    <section id="chapters" className={`section-padding ${isBg === "yes" ? "bg-one": "" }`}>
+    <section
+      id="chapters"
+      className={`section-padding ${isBg === "yes" ? "bg-one" : ""}`}
+    >
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
             <div className="section-title-center text-center">
-              <span
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="150"
-              >
-                {chapter.subtitle}
-              </span>
-              <h2
-                className="display-6"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="200"
-              >
-                {chapter.title}
-              </h2>
-              <div
-                className="section-divider divider-traingle"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="250"
-              ></div>
+              <span>{chapter.subtitle}</span>
+              <h2 className="display-6">{chapter.title}</h2>
+              <div className="section-divider divider-traingle"></div>
             </div>
           </div>
         </div>
@@ -60,7 +45,9 @@ const Chapter = ({isBg}) => {
               {/* <!-- accordion start --> */}
               {chapter.chapterItem?.map((data) => (
                 <Accordion.Item eventKey={data.id.toString()} key={data.id}>
-                  <Accordion.Header><span>{data.title}</span> <IoIosArrowDown/></Accordion.Header>
+                  <Accordion.Header>
+                    <span>{data.title}</span> <IoIosArrowDown />
+                  </Accordion.Header>
                   <Accordion.Body>
                     <p className="accordion-body text-secondary">
                       {data.description}
