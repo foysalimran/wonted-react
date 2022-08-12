@@ -43,7 +43,7 @@ const Pricing = ({isBg}) => {
               className="col-md-6 col-lg-4 mb-4 mb-lg-0"
               data-aos="fade-up"
               data-aos-duration="1000"
-              data-aos-delay="300"
+              data-aos-delay={(i+2) * 50}
             >
               {data.card === "active" ? (
                 <div className="pricing__item translateEffect1 active">

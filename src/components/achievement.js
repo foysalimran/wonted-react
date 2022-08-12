@@ -1,10 +1,15 @@
 import React from "react";
 import achievementData from "../data/achievements.json";
-const Achievement = ({isBg}) => {
-const { achievements } = achievementData;
+const Achievement = ({ isBg }) => {
+  const { achievements } = achievementData;
 
   return (
-    <section id="achievements" className={`section-padding achievement ${isBg === "yes" ? "bg-one": "" }`}>
+    <section
+      id="achievements"
+      className={`section-padding achievement ${
+        isBg === "yes" ? "bg-one" : ""
+      }`}
+    >
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
@@ -34,13 +39,13 @@ const { achievements } = achievementData;
           </div>
         </div>
         <div className="row row-cols-1 row-cols-md-2">
-          {achievements?.awards?.map((data) => (
+          {achievements?.awards?.map((data, i) => (
             <div
               key={data.id}
               className="m-15px-tb"
               data-aos="fade-up"
               data-aos-duration="1000"
-              data-aos-delay="200"
+              data-aos-delay={(i + 2) * 50}
             >
               <div className="achievement__item h-100 translateEffect1">
                 <div className="row row-cols-2">
@@ -54,12 +59,12 @@ const { achievements } = achievementData;
                   <div className="col mt-0">
                     <div className="achievement__content">
                       <div className="achievement__content__icon">
-                      <img
-                        className="img-fluid"
-                        src={achievements.icon}
-                        alt="icon"
-                        width="80"
-                      />
+                        <img
+                          className="img-fluid"
+                          src={achievements.icon}
+                          alt="icon"
+                          width="80"
+                        />
                       </div>
                       <h3>{data.title}</h3>
                       <p>{data.description}</p>
