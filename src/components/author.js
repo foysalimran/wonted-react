@@ -5,8 +5,6 @@ import React, { useEffect } from "react";
 import { FiPlay } from "react-icons/fi";
 import data from "../data/about.json";
 import { socialLink } from "../global";
-
-
 const Author = ({isBg}) => {
   const { about } = data;
   useEffect(() => {

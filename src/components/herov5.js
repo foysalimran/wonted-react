@@ -8,20 +8,15 @@ function SubscribeForm({ status, message, onValidated }) {
   let email;
   const submit = (e) => {
     e.preventDefault();
-    email &&
-      email.value.indexOf("@") > -1 &&
-      onValidated({
-        EMAIL: email.value,
-      });
+    onValidated({
+      EMAIL: email.value,
+    });
   };
 
   return (
     <form>
       <div
         className="input-group"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-delay="750"
       >
         <input
           ref={(node) => (email = node)}
@@ -53,12 +48,14 @@ function SubscribeForm({ status, message, onValidated }) {
   );
 }
 
-const Herov5 = ({isBg}) => {
+const Herov5 = ({ isBg }) => {
   const { herov5 } = data;
   return (
     <section
       id="hero"
-      className={`hero hero__padding overflow-hidden position-relative ${isBg === "yes" ? "bg-one": "" }`}
+      className={`hero hero__padding overflow-hidden position-relative ${
+        isBg === "yes" ? "bg-one" : ""
+      }`}
     >
       <div className="circle x1"></div>
       <div className="circle x2"></div>
@@ -69,38 +66,12 @@ const Herov5 = ({isBg}) => {
         <div className="row gx-5 align-items-center">
           <div className="col-lg-6 mb-4 mb-lg-0">
             <div className="hero__content position-relative">
-              <div
-                className="badge-text mb-2 fs-3 fw-bold"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="700"
-              >
-                Hello,
-              </div>
-              <h1
-                className="display-4 mb-2 text-capitalize"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="750"
-              >
+              <div className="badge-text mb-2 fs-3 fw-bold">Hello,</div>
+              <h1 className="display-4 mb-2 text-capitalize">
                 I am {herov5.name}
               </h1>
-              <div
-                className="badge-text mb-4 fs-5 fw-bold"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="800"
-              >
-                {herov5.title}
-              </div>
-              <p
-                className="mb-5 fs-5"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="850"
-              >
-                {herov5.description}
-              </p>
+              <div className="badge-text mb-4 fs-5 fw-bold">{herov5.title}</div>
+              <p className="mb-5 fs-5">{herov5.description}</p>
               <MailchimpSubscribe
                 url={mailchimpLink.link}
                 render={({ subscribe, status, message }) => (
@@ -113,12 +84,7 @@ const Herov5 = ({isBg}) => {
               />
             </div>
           </div>
-          <div
-            className="col-lg-6 d-flex"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="700"
-          >
+          <div className="col-lg-6 d-flex">
             <div className="hero__book">
               <div className="hero__book--wrapper">
                 <img className="img-fluid" src={herov5.bookImage} alt="" />

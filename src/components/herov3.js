@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { FiPlay } from "react-icons/fi";
 import data from "../data/hero.json";
 
-const Herov3 = ({isBg}) => {
+const Herov3 = ({ isBg }) => {
   const { herov3 } = data;
   useEffect(() => {
     GLightbox({
@@ -14,7 +14,9 @@ const Herov3 = ({isBg}) => {
   return (
     <section
       id="hero"
-      className={`hero hero__padding overflow-hidden position-relative ${isBg === "yes" ? "bg-one": "" }`}
+      className={`hero hero__padding overflow-hidden position-relative ${
+        isBg === "yes" ? "bg-one" : ""
+      }`}
     >
       <div className="circle x1"></div>
       <div className="circle x2"></div>
@@ -25,38 +27,14 @@ const Herov3 = ({isBg}) => {
         <div className="row gx-5 align-items-center">
           <div className="col-md-7 mb-4 mb-md-0">
             <div className="hero__content position-relative">
-              <div
-                className="badge-text mb-2 text-uppercase"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="850"
-              >
+              <div className="badge-text mb-2 text-uppercase">
                 {herov3.subtitle}
               </div>
-              <h1
-                className="display-4 mb-4 text-capitalize"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="850"
-              >
-                {herov3.title}
-              </h1>
-              <p
-                className="text-muted mb-5 fs-5"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="900"
-              >
-                {herov3.description}
-              </p>
+              <h1 className="display-4 mb-4 text-capitalize">{herov3.title}</h1>
+              <p className="text-muted mb-5 fs-5">{herov3.description}</p>
             </div>
           </div>
-          <div
-            className="col-md-5 text-center"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="850"
-          >
+          <div className="col-md-5 text-center">
             <div className="hero__images4 text-center">
               <img
                 width="400"

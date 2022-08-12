@@ -8,8 +8,6 @@ function SubscribeForm({ status, message, onValidated }) {
   let email;
   const submit = (e) => {
     e.preventDefault();
-    email &&
-      email.value.indexOf("@") > -1 &&
       onValidated({
         EMAIL: email.value,
       });
@@ -18,10 +16,9 @@ function SubscribeForm({ status, message, onValidated }) {
 
   return (
     <form>
-      <div
-        className="input-group"
 
-      >
+      <div className="input-group">
+
         <input
           ref={(node) => (email = node)}
           type="email"
@@ -61,7 +58,9 @@ const Hero = ({ isBg }) => {
     // <!-- ========== Hero section start ========== -->
     <section
       id="hero"
-      className={`hero hero__padding overflow-hidden position-relative ${isBg === "yes" ? "bg-one": "" }`}
+      className={`hero hero__padding overflow-hidden position-relative ${
+        isBg === "yes" ? "bg-one" : ""
+      }`}
     >
       <div className="circle x1"></div>
       <div className="circle x2"></div>
@@ -72,30 +71,11 @@ const Hero = ({ isBg }) => {
         <div className="row align-items-center">
           <div className="col-lg-6 m-0px-b md-m-30px-b">
             <div className="hero__content position-relative">
-              <div
-                className="badge-text mb-2 text-uppercase"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="600"
-              >
+              <div className="badge-text mb-2 text-uppercase">
                 {herov1.subtitle}
               </div>
-              <h1
-                className="display-4 mb-4 text-capitalize"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="650"
-              >
-                {herov1.title}
-              </h1>
-              <p
-                className="text-muted mb-5 fs-5"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="700"
-              >
-                {herov1.description}
-              </p>
+              <h1 className="display-4 mb-4 text-capitalize">{herov1.title}</h1>
+              <p className="text-muted mb-5 fs-5">{herov1.description}</p>
               <MailchimpSubscribe
                 url={mailchimpLink.link}
                 render={({ subscribe, status, message }) => (
@@ -111,12 +91,7 @@ const Hero = ({ isBg }) => {
               
             </div>
           </div>
-          <div
-            className="col-lg-6"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="700"
-          >
+          <div className="col-lg-6">
             <div className="hero__images text-center">
               <img className="img-fluid" src={herov1.image} alt="" />
               <div className="hero__images--badge">

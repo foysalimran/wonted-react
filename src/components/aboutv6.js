@@ -7,7 +7,6 @@ import data from "../data/about.json";
 import GLightbox from "glightbox";
 import { socialLink } from "../global";
 
-
 const Aboutv6 = ({isBg}) => {
   const { aboutv6 } = data;
   useEffect(() => {
