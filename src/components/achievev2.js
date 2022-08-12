@@ -14,22 +14,8 @@ const Achievev2 = ({ isBg }) => {
         <div className="row">
           <div className="col-lg-4">
             <div className="section-title-left text-center text-lg-start">
-              <h2
-                className="display-6"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="150"
-              >
-                {achivev2.title}
-              </h2>
-              <p
-                className="text-muted mb-5 fs-5"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="200"
-              >
-                {achivev2.description}
-              </p>
+              <h2 className="display-6">{achivev2.title}</h2>
+              <p className="text-muted mb-5 fs-5">{achivev2.description}</p>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
-/* eslint-disable jsx-a11y/alt-text */
+
+import GLightbox from "glightbox";
 import React, { useEffect } from "react";
 import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
@@ -7,7 +7,6 @@ import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import data from "../data/chapterPreview.json";
-import GLightbox from "glightbox";
 
 const ChapterPreview = ({ isBg }) => {
   const { chapterPreview } = data;
@@ -30,27 +29,9 @@ const ChapterPreview = ({ isBg }) => {
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
             <div className="section-title-center text-center">
-              <span
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="150"
-              >
-                {chapterPreview.title}
-              </span>
-              <h2
-                className="display-6"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="200"
-              >
-                {chapterPreview.subtitle}
-              </h2>
-              <div
-                className="section-divider divider-traingle"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="250"
-              ></div>
+              <span>{chapterPreview.title}</span>
+              <h2 className="display-6">{chapterPreview.subtitle}</h2>
+              <div className="section-divider divider-traingle"></div>
             </div>
           </div>
         </div>
@@ -83,7 +64,7 @@ const ChapterPreview = ({ isBg }) => {
                       <img
                         className="chapter-img img-fluid"
                         src={data.image}
-                        alt="image"
+                        alt={data.title}
                       />
                     </a>
                     <div className={`glightbox-desc custom-desc${i}`}>

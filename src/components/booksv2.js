@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import data from "../data/books.json";
 
-const Booksv2 = ({isBg}) => {
+const Booksv2 = ({ isBg }) => {
   useEffect(() => {
     const panels = document.querySelectorAll(".panel");
     panels.forEach((panel) => {
@@ -15,35 +15,20 @@ const Booksv2 = ({isBg}) => {
         panel.classList.remove("active");
       });
     }
-  }, [])
+  }, []);
   const { booksv2 } = data;
   return (
-    <section id="books" className={`section-padding ${isBg === "yes" ? "bg-one": "" }`}>
+    <section
+      id="books"
+      className={`section-padding ${isBg === "yes" ? "bg-one" : ""}`}
+    >
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
             <div className="section-title-center text-center">
-              <span
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="150"
-              >
-                {booksv2.title}
-              </span>
-              <h2
-                className="display-6"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="200"
-              >
-                {booksv2.subtitle}
-              </h2>
-              <div
-                className="section-divider divider-traingle"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="250"
-              ></div>
+              <span>{booksv2.title}</span>
+              <h2 className="display-6">{booksv2.subtitle}</h2>
+              <div className="section-divider divider-traingle"></div>
             </div>
           </div>
         </div>
@@ -55,16 +40,17 @@ const Booksv2 = ({isBg}) => {
         >
           <div className="chapter__preview2-content">
             <div className="chapter__preview2-container">
-              {booksv2.booksItem.map((data, i) => 
-              <div key={i}
-                  className={`panel cover-panel ${i === 0 ? 'active' : ''}`}
+              {booksv2.booksItem.map((data, i) => (
+                <div
+                  key={i}
+                  className={`panel cover-panel ${i === 0 ? "active" : ""}`}
                   style={{
-                    backgroundImage: `url(${data.image})`
+                    backgroundImage: `url(${data.image})`,
                   }}
                 >
                   <h3>{data.title}</h3>
                 </div>
-              )}
+              ))}
             </div>
           </div>
         </div>

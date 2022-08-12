@@ -8,19 +8,14 @@ function SubscribeForm({ status, message, onValidated }) {
   let email;
   const submit = (e) => {
     e.preventDefault();
-      onValidated({
-        EMAIL: email.value,
-      });
+    onValidated({
+      EMAIL: email.value,
+    });
   };
 
   return (
     <form>
-      <div
-        className="input-group"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-delay="750"
-      >
+      <div className="input-group">
         <input
           ref={(node) => (email = node)}
           type="email"
@@ -51,13 +46,13 @@ function SubscribeForm({ status, message, onValidated }) {
   );
 }
 
-const Ctav2 = ({isBg}) => {
+const Ctav2 = ({ isBg }) => {
   const { ctav2 } = data;
   return (
     // <!-- ========== CTA v2 section start ========== -->
     <section
       id="cta2"
-      className={`cta2 section-padding  ${isBg === "yes" ? "bg-one": "" }`}
+      className={`cta2 section-padding  ${isBg === "yes" ? "bg-one" : ""}`}
       style={{ backgroundImage: `url(${ctav2.backgroundImage})` }}
     >
       <div className="container">
@@ -65,22 +60,8 @@ const Ctav2 = ({isBg}) => {
           <div className="col-md-8 col-lg-7 col-xl-6">
             <div className="cta2__wrapper">
               <div className="section-title text-left">
-                <span
-                  className="badge-text"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="150"
-                >
-                  {ctav2.title}
-                </span>
-                <h2
-                  className="display-6 m-20px-b"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  {ctav2.subtitle}
-                </h2>
+                <span className="badge-text">{ctav2.title}</span>
+                <h2 className="display-6 m-20px-b">{ctav2.subtitle}</h2>
               </div>
               <div className="cta2__form">
                 <MailchimpSubscribe
@@ -93,12 +74,7 @@ const Ctav2 = ({isBg}) => {
                     />
                   )}
                 />
-                <p
-                  className="m-10px-t"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="450"
-                >
+                <p className="m-10px-t">
                   <small>{ctav2.smallText}</small>
                 </p>
               </div>

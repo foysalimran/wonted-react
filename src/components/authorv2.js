@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import GLightbox from "glightbox";
 import React, { useEffect } from "react";
 import { FiPlay } from "react-icons/fi";
 import data from "../data/about.json";
-import GLightbox from "glightbox";
 import { socialLink } from "../global";
 
-const AuthorV2 = ({isBg}) => {
+const AuthorV2 = ({ isBg }) => {
   const { aboutv2 } = data;
   useEffect(() => {
     GLightbox({
@@ -15,32 +15,17 @@ const AuthorV2 = ({isBg}) => {
   }, []);
   return (
     // <!-- ========== Author section start ========== -->
-    <section id="author" className={`section-padding authorv2 ${isBg === "yes" ? "bg-one": "" }`}>
+    <section
+      id="author"
+      className={`section-padding authorv2 ${isBg === "yes" ? "bg-one" : ""}`}
+    >
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
             <div className="section-title-center text-center">
-              <span
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="150"
-              >
-                {aboutv2.subtitle}
-              </span>
-              <h2
-                className="display-6"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="200"
-              >
-                {aboutv2.title}
-              </h2>
-              <div
-                className="section-divider divider-traingle"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="250"
-              ></div>
+              <span>{aboutv2.subtitle}</span>
+              <h2 className="display-6">{aboutv2.title}</h2>
+              <div className="section-divider divider-traingle"></div>
             </div>
           </div>
         </div>
@@ -97,7 +82,7 @@ const AuthorV2 = ({isBg}) => {
                 </div>
               </div>
               <ul className="social-icon mt-3">
-              {socialLink.facebook === "" ? (
+                {socialLink.facebook === "" ? (
                   ""
                 ) : (
                   <li>

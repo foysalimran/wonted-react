@@ -1,11 +1,10 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import GLightbox from "glightbox";
 import React, { useEffect } from "react";
 import { FiPlay } from "react-icons/fi";
 import data from "../data/about.json";
-import GLightbox from "glightbox";
 import { socialLink } from "../global";
-
 const Author = ({isBg}) => {
   const { about } = data;
   useEffect(() => {
@@ -16,32 +15,17 @@ const Author = ({isBg}) => {
 
   return (
     // <!-- ========== Author section start ========== -->
-    <section id="author" className={`section-padding author ${isBg === "yes" ? "bg-one": "" }`}>
+    <section
+      id="author"
+      className={`section-padding author ${isBg === "yes" ? "bg-one" : ""}`}
+    >
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
             <div className="section-title-center text-center">
-              <span
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="150"
-              >
-                {about.title}
-              </span>
-              <h2
-                className="display-6"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="200"
-              >
-                {about.subtitle}
-              </h2>
-              <div
-                className="section-divider divider-traingle"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="250"
-              ></div>
+              <span>{about.title}</span>
+              <h2 className="display-6">{about.subtitle}</h2>
+              <div className="section-divider divider-traingle"></div>
             </div>
           </div>
         </div>
@@ -108,7 +92,7 @@ const Author = ({isBg}) => {
                 ))}
               </ul>
               <ul className="social-icon mt-3">
-              {socialLink.facebook === "" ? (
+                {socialLink.facebook === "" ? (
                   ""
                 ) : (
                   <li>
