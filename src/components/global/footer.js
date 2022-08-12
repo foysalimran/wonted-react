@@ -17,12 +17,7 @@ const Footer = ({ menu, isBg }) => {
         <div className="container">
           <div className="footer__top m-50px-t m-50px-b">
             <div className="row">
-              <div
-                className="col-lg-3 d-flex justify-content-center align-items-center mb-3 mb-lg-0 justify-content-lg-start"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="150"
-              >
+              <div className="col-lg-3 d-flex justify-content-center align-items-center mb-3 mb-lg-0 justify-content-lg-start">
                 <a href="/">
                   {/* <!-- <h1 className="m-0">WONTED</h1> --> */}
                   <img src={siteLogo.logo} alt={siteLogo.alt} />
@@ -31,12 +26,7 @@ const Footer = ({ menu, isBg }) => {
               <div className="col-lg-6 d-flex justify-content-center align-items-center mb-3 mb-lg-0">
                 <ul className="footer__menu">
                   {menu?.map((data, i) => (
-                    <li
-                      key={i}
-                      data-aos="fade-up"
-                      data-aos-duration="1000"
-                      data-aos-delay="200"
-                    >
+                    <li key={i}>
                       <Link
                         activeClass="active"
                         className="benefits"
@@ -60,11 +50,7 @@ const Footer = ({ menu, isBg }) => {
                   {socialLink.facebook === "" ? (
                     ""
                   ) : (
-                    <li
-                      data-aos="fade-up"
-                      data-aos-duration="1000"
-                      data-aos-delay="200"
-                    >
+                    <li>
                       <a href={socialLink.facebook}>
                         <img
                           className="img-fluid"
@@ -79,11 +65,7 @@ const Footer = ({ menu, isBg }) => {
                   {socialLink.twitter === "" ? (
                     ""
                   ) : (
-                    <li
-                      data-aos="fade-up"
-                      data-aos-duration="1000"
-                      data-aos-delay="250"
-                    >
+                    <li>
                       <a href={socialLink.twitter}>
                         <img
                           className="img-fluid"
@@ -98,11 +80,7 @@ const Footer = ({ menu, isBg }) => {
                   {socialLink.linkedin === "" ? (
                     ""
                   ) : (
-                    <li
-                      data-aos="fade-up"
-                      data-aos-duration="1000"
-                      data-aos-delay="300"
-                    >
+                    <li>
                       <a href={socialLink.linkedin}>
                         <img
                           className="img-fluid"
@@ -117,11 +95,7 @@ const Footer = ({ menu, isBg }) => {
                   {socialLink.youtube === "" ? (
                     ""
                   ) : (
-                    <li
-                      data-aos="fade-up"
-                      data-aos-duration="1000"
-                      data-aos-delay="300"
-                    >
+                    <li>
                       <a href={socialLink.youtube}>
                         <img
                           className="img-fluid"
@@ -136,11 +110,7 @@ const Footer = ({ menu, isBg }) => {
                   {socialLink.whatsapp === "" ? (
                     ""
                   ) : (
-                    <li
-                      data-aos="fade-up"
-                      data-aos-duration="1000"
-                      data-aos-delay="350"
-                    >
+                    <li>
                       <a href={socialLink.whatsapp}>
                         <img
                           className="img-fluid"

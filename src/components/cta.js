@@ -3,59 +3,56 @@ import MailchimpSubscribe from "react-mailchimp-subscribe";
 import data from "../data/cta.json";
 import { mailchimpLink } from "../global";
 
-  //SUBSCRIBE FORM
-  function SubscribeForm ({ status, message, onValidated }) {
-    let email;
-    const submit = () => {
-      email &&
-        email.value.indexOf("@") > -1 &&
-        onValidated({
-          EMAIL: email.value,
-        });
-    };
-  
-    return (
-      <div  data-aos="fade-up"
-      data-aos-duration="1000"
-      data-aos-delay="250">
-        <input
-          ref={(node) => (email = node)}
-          type="email"
-          placeholder="Your email"
-        />
-        <br />
-        <button
-          className="w-100 button button__primary align-items-center aos-init"
-          onClick={submit}
-        >
-          <span>Submit</span>
-        </button>
-        <div className="message col m-10px-t">
-          {status === "sending" && (
-            <div className=" alert alert-warning">sending...</div>
-          )}
-          {status === "error" && (
-            <div
-              className="alert alert-danger"
-              dangerouslySetInnerHTML={{ __html: message }}
-            />
-          )}
-        </div>
-        {status === "success" && (
+//SUBSCRIBE FORM
+function SubscribeForm({ status, message, onValidated }) {
+  let email;
+  const submit = (e) => {
+    e.preventDefault();
+    onValidated({
+      EMAIL: email.value,
+    });
+  };
+
+  return (
+    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
+      <input
+        ref={(node) => (email = node)}
+        type="email"
+        placeholder="Your email"
+      />
+      <br />
+      <button
+        className="w-100 button button__primary align-items-center aos-init"
+        onClick={submit}
+      >
+        <span>Submit</span>
+      </button>
+      <div className="message col m-10px-t">
+        {status === "sending" && (
+          <div className=" alert alert-warning">sending...</div>
+        )}
+        {status === "error" && (
           <div
-            className="alert alert-success"
+            className="alert alert-danger"
             dangerouslySetInnerHTML={{ __html: message }}
           />
         )}
       </div>
-    );
-  }
+      {status === "success" && (
+        <div
+          className="alert alert-success"
+          dangerouslySetInnerHTML={{ __html: message }}
+        />
+      )}
+    </div>
+  );
+}
 
-const Cta = ({isBg}) => {
+const Cta = ({ isBg }) => {
   const { cta } = data;
   return (
     <section
-      className={`cta section-padding ${isBg === "yes" ? "bg-one": "" }`}
+      className={`cta section-padding ${isBg === "yes" ? "bg-one" : ""}`}
       id="cta"
       style={{ backgroundImage: `url("${cta.backgroundImage}")` }}
     >

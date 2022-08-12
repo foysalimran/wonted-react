@@ -207,7 +207,7 @@
         "isDropdown": true,
         "dropdownItem": [
           {
-            "link": "/all-events",
+            "link": "/all-event",
             "title": "All Events"
           },
           {
