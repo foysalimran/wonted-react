@@ -8,8 +8,6 @@ function SubscribeForm({ status, message, onValidated }) {
   let email;
   const submit = (e) => {
     e.preventDefault();
-    email &&
-      email.value.indexOf("@") > -1 &&
       onValidated({
         EMAIL: email.value,
       });

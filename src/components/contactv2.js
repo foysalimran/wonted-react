@@ -77,7 +77,7 @@ const Contactv2 = ({isBg}) => {
                     id="contact-name"
                     type="text"
                     placeholder="Your Name"
-                    required=""
+                    required
                   />
                 </div>
                 <div className="mb13">
@@ -87,7 +87,7 @@ const Contactv2 = ({isBg}) => {
                     id="contact-email"
                     type="email"
                     placeholder="Your Email"
-                    required=""
+                    required
                   />
                 </div>
                 <div className="mb13">
@@ -97,7 +97,7 @@ const Contactv2 = ({isBg}) => {
                     id="contact-subject"
                     type="text"
                     placeholder="Subject"
-                    required=""
+                    required
                   />
                 </div>
                 <div className="mb30">
@@ -106,7 +106,7 @@ const Contactv2 = ({isBg}) => {
                     className="contact-message"
                     id="contact-message"
                     placeholder="Your Message"
-                    required=""
+                    required
                   ></textarea>
                 </div>
                 <button

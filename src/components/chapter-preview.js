@@ -6,12 +6,10 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import $ from "jquery";
 import data from "../data/chapterPreview.json";
 import GLightbox from "glightbox";
-window.jQuery = $;
 
-const ChapterPreview = ({isBg}) => {
+const ChapterPreview = ({ isBg }) => {
   const { chapterPreview } = data;
   useEffect(() => {
     GLightbox({
@@ -22,7 +20,12 @@ const ChapterPreview = ({isBg}) => {
 
   return (
     // <!-- ========== Chapter preview section start ========== -->
-    <section id="preview" className={`section-padding chapter-preview ${isBg === "yes" ? "bg-one": "" }`}>
+    <section
+      id="preview"
+      className={`section-padding chapter-preview ${
+        isBg === "yes" ? "bg-one" : ""
+      }`}
+    >
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
@@ -71,12 +74,7 @@ const ChapterPreview = ({isBg}) => {
             >
               {chapterPreview.chapters.map((data, i) => (
                 <SwiperSlide key={i}>
-                  <div
-                    className="swiper-slide p-5px-lr translateEffect2"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200"
-                  >
+                  <div className="swiper-slide p-5px-lr translateEffect2">
                     <a
                       href={data.image}
                       className="glightbox2"

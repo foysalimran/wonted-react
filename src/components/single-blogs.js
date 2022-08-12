@@ -318,7 +318,7 @@ const SingleBlogs = () => {
                             type="text"
                             name="name"
                             id="name"
-                            required=""
+                            required
                             placeholder="Name*"
                           />
                         </div>
@@ -329,7 +329,7 @@ const SingleBlogs = () => {
                             type="email"
                             name="email"
                             id="email"
-                            required=""
+                            required
                             placeholder="Email Address*"
                           />
                         </div>

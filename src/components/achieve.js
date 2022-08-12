@@ -59,7 +59,7 @@ const Achieve = ({isBg}) => {
                   className="col-sm-6 mb-4"
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  data-aos-delay="200"
+                  data-aos-delay={(i + 2) * 50}
                 >
                   <div className="achieve__content__item h-100 translateEffect2">
                     <div className="achieve__icon m-20px-b">

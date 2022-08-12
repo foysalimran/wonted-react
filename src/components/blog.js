@@ -5,12 +5,15 @@ import { RiTimeFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import data from "../data/blog.json";
 
-const Blog = ({isBg}) => {
+const Blog = ({ isBg }) => {
   const { blog } = data;
 
   return (
     // <!-- ========== Blog section start ========== -->
-    <section id="blog" className={`section-padding blog ${isBg === "yes" ? "bg-one": "" }`}>
+    <section
+      id="blog"
+      className={`section-padding blog ${isBg === "yes" ? "bg-one" : ""}`}
+    >
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
@@ -46,7 +49,7 @@ const Blog = ({isBg}) => {
               className="col-md-6 col-lg-4 mb-4 mb-lg-0"
               data-aos="fade-up"
               data-aos-duration="1000"
-              data-aos-delay="200"
+              data-aos-delay={(i + 2) * 50}
             >
               <article className="blog__single-post h-100 translateEffect1">
                 <div className="blog__single-post__image">

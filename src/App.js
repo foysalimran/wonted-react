@@ -56,7 +56,7 @@ function App() {
             path="single-event"
             element={<SingleEvent headerv3={headerv3} footer={footer} />}
           />
-          <Route path="all-events" element={<AllEvent headerv3={headerv3} footer={footer} />} />
+          <Route path="all-event" element={<AllEvent headerv3={headerv3} footer={footer} />} />
           <Route
             path="blog-right-sidebar"
             element={<BlogRightSidebar headerv3={headerv3} footer={footer} />}
