@@ -14,27 +14,9 @@ const ChapterV2 = ({ isBg }) => {
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
             <div className="section-title-center text-center">
-              <span
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="150"
-              >
-                {chapterv2.subtitle}
-              </span>
-              <h2
-                className="display-6"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="200"
-              >
-                {chapterv2.title}
-              </h2>
-              <div
-                className="section-divider divider-traingle"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="250"
-              ></div>
+              <span>{chapterv2.subtitle}</span>
+              <h2 className="display-6">{chapterv2.title}</h2>
+              <div className="section-divider divider-traingle"></div>
             </div>
           </div>
         </div>

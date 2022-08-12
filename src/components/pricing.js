@@ -2,48 +2,34 @@
 import React from "react";
 import data from "../data/pricing.json";
 
-const Pricing = ({isBg}) => {
+const Pricing = ({ isBg }) => {
   const { pricing } = data;
 
   return (
     // <!-- ========== Pricing section start ========== -->
-    <section id="pricing" className={`section-padding pricing ${isBg === "yes" ? "bg-one": "" }`}>
+    <section
+      id="pricing"
+      className={`section-padding pricing ${isBg === "yes" ? "bg-one" : ""}`}
+    >
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
             <div className="section-title-center text-center">
-              <span
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="150"
-              >
-                {pricing.subtitle}
-              </span>
-              <h2
-                className="display-6"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="200"
-              >
-                {pricing.title}
-              </h2>
-              <div
-                className="section-divider divider-traingle"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="250"
-              ></div>
+              <span>{pricing.subtitle}</span>
+              <h2 className="display-6">{pricing.title}</h2>
+              <div className="section-divider divider-traingle"></div>
             </div>
           </div>
         </div>
         <div className="row align-items-center justify-content-center">
           {/* <!-- pricing table start --> */}
           {pricing.pricingItem?.map((data, i) => (
-            <div key={i}
+            <div
+              key={i}
               className="col-md-6 col-lg-4 mb-4 mb-lg-0"
               data-aos="fade-up"
               data-aos-duration="1000"
-              data-aos-delay={(i+2) * 50}
+              data-aos-delay={(i + 2) * 50}
             >
               {data.card === "active" ? (
                 <div className="pricing__item translateEffect1 active">
@@ -55,7 +41,7 @@ const Pricing = ({isBg}) => {
                     ))}
                   </ul>
                   <a href="#" className="button button__primary">
-                  <span>{data.btnText}</span>
+                    <span>{data.btnText}</span>
                   </a>
                 </div>
               ) : (

@@ -6,7 +6,7 @@ import data from "../data/about.json";
 import GLightbox from "glightbox";
 import { socialLink } from "../global";
 
-const Aboutv6 = ({isBg}) => {
+const Aboutv6 = ({ isBg }) => {
   const { aboutv6 } = data;
   useEffect(() => {
     GLightbox({
@@ -16,32 +16,17 @@ const Aboutv6 = ({isBg}) => {
 
   return (
     // <!-- ========== Author section start ========== -->
-    <section id="author" className={`section-padding authorv2 ${isBg === "yes" ? "bg-one": "" }`}>
+    <section
+      id="author"
+      className={`section-padding authorv2 ${isBg === "yes" ? "bg-one" : ""}`}
+    >
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
             <div className="section-title-center text-center">
-              <span
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="150"
-              >
-                {aboutv6.subtitle}
-              </span>
-              <h2
-                className="display-6"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="200"
-              >
-                {aboutv6.title}
-              </h2>
-              <div
-                className="section-divider divider-traingle"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="250"
-              ></div>
+              <span>{aboutv6.subtitle}</span>
+              <h2 className="display-6">{aboutv6.title}</h2>
+              <div className="section-divider divider-traingle"></div>
             </div>
           </div>
         </div>
@@ -82,17 +67,15 @@ const Aboutv6 = ({isBg}) => {
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            <p>
-              {aboutv6.description}
-            </p>
+            <p>{aboutv6.description}</p>
             <div className="authorv2__content">
               <div className="authorv2__list">
                 <div className="row">
                   {aboutv6.userinfo.map((data, i) => (
                     <div key={i} className="col-6 mb-3">
-                    <h4>{data.title}</h4>
-                    <p className="mb-0">{data.subtitle}</p>
-                  </div>
+                      <h4>{data.title}</h4>
+                      <p className="mb-0">{data.subtitle}</p>
+                    </div>
                   ))}
                 </div>
               </div>

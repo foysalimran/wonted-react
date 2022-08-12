@@ -14,7 +14,7 @@ function SubscribeForm({ status, message, onValidated }) {
   };
 
   return (
-    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
+    <>
       <input
         ref={(node) => (email = node)}
         type="email"
@@ -44,7 +44,7 @@ function SubscribeForm({ status, message, onValidated }) {
           dangerouslySetInnerHTML={{ __html: message }}
         />
       )}
-    </div>
+    </>
   );
 }
 
@@ -61,17 +61,11 @@ const Cta = ({ isBg }) => {
           <div className="col-lg-8">
             <div className="section-title-center mb-0 text-center">
               <span
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="150"
               >
                 {cta.subtitle}
               </span>
               <h2
                 className="display-6"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="200"
               >
                 {cta.title}
               </h2>

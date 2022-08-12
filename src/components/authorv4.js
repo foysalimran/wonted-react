@@ -6,7 +6,7 @@ import data from "../data/about.json";
 import GLightbox from "glightbox";
 import { socialLink } from "../global";
 
-const Authorv4 = ({isBg}) => {
+const Authorv4 = ({ isBg }) => {
   const { aboutv4 } = data;
   useEffect(() => {
     GLightbox({
@@ -16,32 +16,17 @@ const Authorv4 = ({isBg}) => {
 
   return (
     // <!-- ========== Author section start ========== -->
-    <section id="author" className={`section-padding authorv2 ${isBg === "yes" ? "bg-one": "" }`}>
+    <section
+      id="author"
+      className={`section-padding authorv2 ${isBg === "yes" ? "bg-one" : ""}`}
+    >
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
             <div className="section-title-center text-center">
-              <span
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="150"
-              >
-                {aboutv4.subtitle}
-              </span>
-              <h2
-                className="display-6"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="200"
-              >
-                {aboutv4.title}
-              </h2>
-              <div
-                className="section-divider divider-traingle"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="250"
-              ></div>
+              <span>{aboutv4.subtitle}</span>
+              <h2 className="display-6">{aboutv4.title}</h2>
+              <div className="section-divider divider-traingle"></div>
             </div>
           </div>
         </div>
@@ -98,7 +83,7 @@ const Authorv4 = ({isBg}) => {
                 </div>
               </div>
               <ul className="social-icon mt-3">
-              {socialLink.facebook === "" ? (
+                {socialLink.facebook === "" ? (
                   ""
                 ) : (
                   <li>

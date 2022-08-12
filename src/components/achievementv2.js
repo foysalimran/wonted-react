@@ -15,27 +15,9 @@ const Achievementv2 = ({ isBg }) => {
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
             <div className="section-title-center text-center">
-              <span
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="150"
-              >
-                {achievements.title}
-              </span>
-              <h2
-                className="display-6"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="200"
-              >
-                {achievements.subtitle}
-              </h2>
-              <div
-                className="section-divider divider-traingle"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="250"
-              ></div>
+              <span>{achievements.title}</span>
+              <h2 className="display-6">{achievements.subtitle}</h2>
+              <div className="section-divider divider-traingle"></div>
             </div>
           </div>
         </div>

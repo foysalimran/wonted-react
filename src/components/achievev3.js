@@ -3,32 +3,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 import data from "../data/achieve.json";
 
-const Achievev3 = ({isBg}) => {
+const Achievev3 = ({ isBg }) => {
   const { achivev3 } = data;
   return (
-    <section id="benefits" className={`achieve3 section-padding  ${isBg === "yes" ? "bg-one": "" }`}>
+    <section
+      id="benefits"
+      className={`achieve3 section-padding  ${isBg === "yes" ? "bg-one" : ""}`}
+    >
       <div className="container">
         <div className="row">
           <div className="col-lg-6 my-auto">
             <div className="row">
               <div className="col-md-11 offset-1 ms-0">
                 <div className="section-title-left text-center text-md-start">
-                  <h2
-                    className="display-6"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="150"
-                  >
-                    {achivev3.title}
-                  </h2>
-                  <p
-                    className="text-muted mb-5 fs-5"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200"
-                  >
-                    {achivev3.description}
-                  </p>
+                  <h2 className="display-6">{achivev3.title}</h2>
+                  <p className="text-muted mb-5 fs-5">{achivev3.description}</p>
                 </div>
               </div>
             </div>
