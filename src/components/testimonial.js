@@ -62,9 +62,6 @@ const Testimonial = ({isBg}) => {
               <SwiperSlide key={data.id}>
                 <div
                     className="swiper-slide p-5px-lr"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="300"
                   >
                 <div className="testi-card card h-100 translateEffect1">
                   <div className="card-body p-4">
