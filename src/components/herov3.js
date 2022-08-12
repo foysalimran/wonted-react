@@ -1,9 +1,7 @@
 import GLightbox from "glightbox";
-import $ from "jquery";
 import React, { useEffect } from "react";
 import { FiPlay } from "react-icons/fi";
 import data from "../data/hero.json";
-window.jQuery = $;
 
 const Herov3 = ({isBg}) => {
   const { herov3 } = data;

@@ -1,15 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import { BiUser } from "react-icons/bi";
 import {
-    FaFacebookF,
-    FaLinkedinIn,
-    FaTwitter,
-    FaRegCalendarAlt,
-    FaYoutube,
-    FaRegCommentDots,
-  } from "react-icons/fa";
-  import { IoLogoWhatsapp } from "react-icons/io";
-  import { BiUser } from "react-icons/bi";
+  FaFacebookF,
+  FaLinkedinIn, FaRegCalendarAlt, FaRegCommentDots, FaTwitter, FaYoutube
+} from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
 import { Link } from 'react-router-dom';
 
 const SingleBlogs = () => {
@@ -318,7 +314,7 @@ const SingleBlogs = () => {
                             type="text"
                             name="name"
                             id="name"
-                            required=""
+                            required
                             placeholder="Name*"
                           />
                         </div>
@@ -329,7 +325,7 @@ const SingleBlogs = () => {
                             type="email"
                             name="email"
                             id="email"
-                            required=""
+                            required
                             placeholder="Email Address*"
                           />
                         </div>

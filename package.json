@@ -1,6 +1,6 @@
 {
   "name": "wonted-react",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -9,7 +9,6 @@
     "aos": "^2.3.4",
     "bootstrap": "^5.2.0",
     "glightbox": "^3.2.0",
-    "jquery": "^3.6.0",
     "node-sass": "^7.0.1",
     "npm": "^8.15.1",
     "react": "^18.2.0",
@@ -21,7 +20,6 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.7",
-    "single-page-nav": "^1.0.0",
     "swiper": "^8.3.2"
   },
   "scripts": {

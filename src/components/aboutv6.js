@@ -3,10 +3,10 @@
 import React, { useEffect } from "react";
 import { FiPlay } from "react-icons/fi";
 import data from "../data/about.json";
-import $ from "jquery";
+
 import GLightbox from "glightbox";
 import { socialLink } from "../global";
-window.jQuery = $;
+
 
 const Aboutv6 = ({isBg}) => {
   const { aboutv6 } = data;

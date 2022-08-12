@@ -1,10 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import GLightbox from "glightbox";
-import $ from "jquery";
 import React, { useEffect } from "react";
 import { BiPlayCircle } from "react-icons/bi";
 import data from "../data/hero.json";
-window.jQuery = $;
 
 const Herov4 = ({isBg}) => {
   const { herov4 } = data;

@@ -1,15 +1,12 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
-/* eslint-disable jsx-a11y/alt-text */
+
+import GLightbox from "glightbox";
 import React, { useEffect } from "react";
 import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import $ from "jquery";
 import data from "../data/chapterPreview.json";
-import GLightbox from "glightbox";
-window.jQuery = $;
 
 const ChapterPreview = ({isBg}) => {
   const { chapterPreview } = data;
@@ -85,7 +82,7 @@ const ChapterPreview = ({isBg}) => {
                       <img
                         className="chapter-img img-fluid"
                         src={data.image}
-                        alt="image"
+                        alt={data.title}
                       />
                     </a>
                     <div className={`glightbox-desc custom-desc${i}`}>

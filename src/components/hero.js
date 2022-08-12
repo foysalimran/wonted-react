@@ -13,25 +13,27 @@ function SubscribeForm({ status, message, onValidated }) {
       onValidated({
         EMAIL: email.value,
       });
+     
   };
 
   return (
     <form>
       <div
         className="input-group"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-delay="750"
+
       >
         <input
           ref={(node) => (email = node)}
           type="email"
+          required
           placeholder="Your email"
         />
-        <button className="button button__primary" onClick={submit}>
+        <button type="submit" className="button button__primary" onClick={submit}>
           <span>Subscribe</span>
         </button>
       </div>
+
+        
       <div className="message col m-10px-t hero__subscribe__form__message">
         {status === "sending" && (
           <div className=" alert alert-warning">sending...</div>
@@ -102,8 +104,11 @@ const Hero = ({ isBg }) => {
                     message={message}
                     onValidated={(formData) => subscribe(formData)}
                   />
+
                 )}
+
               />
+              
             </div>
           </div>
           <div
