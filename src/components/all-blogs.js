@@ -18,7 +18,7 @@ const AllBlogs = ({ isBg }) => {
           {blog.blogList.slice(0, 6).map((data, i) => (
             <div
               key={i}
-              className="col-md-6 col-lg-4 mb-4 mb-lg-0"
+              className="col-md-6 col-lg-4 mb-4"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay={(i + 2) * 50}
