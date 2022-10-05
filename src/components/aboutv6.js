@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useEffect } from "react";
 import { FiPlay } from "react-icons/fi";
 import data from "../data/about.json";
@@ -42,7 +40,7 @@ const Aboutv6 = ({ isBg }) => {
               <img
                 className="img-fluid"
                 src="assets/images/achive2.jpg"
-                alt="Author Image"
+                alt="Author"
               />
               {aboutv6.videoURL === "" ? (
                 ""

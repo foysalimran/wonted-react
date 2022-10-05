@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import GLightbox from "glightbox";
 import React, { useEffect } from "react";
 import { BiPlayCircle } from "react-icons/bi";

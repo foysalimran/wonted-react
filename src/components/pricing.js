@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import data from "../data/pricing.json";
 
@@ -40,7 +39,7 @@ const Pricing = ({ isBg }) => {
                       <li key={i}>{items.item}</li>
                     ))}
                   </ul>
-                  <a href="#" className="button button__primary">
+                  <a href="#contact" className="button button__primary">
                     <span>{data.btnText}</span>
                   </a>
                 </div>
@@ -53,7 +52,7 @@ const Pricing = ({ isBg }) => {
                       <li key={i}>{items.item}</li>
                     ))}
                   </ul>
-                  <a href="#" className="btn__secondary">
+                  <a href="#contact" className="btn__secondary">
                     <span>{data.btnText}</span>
                   </a>
                 </div>
