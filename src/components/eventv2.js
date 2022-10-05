@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import data from "../data/events.json";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const Eventv2 = ({ isBg }) => {
   const { events } = data;
@@ -40,7 +41,7 @@ const Eventv2 = ({ isBg }) => {
                 </div>
                 <Link to="/single-event" className="link">
                   {data.btn}
-                  <i className="icofont-rounded-right"></i>
+                  <MdKeyboardArrowRight />
                 </Link>
               </div>
             </div>

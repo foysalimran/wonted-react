@@ -49,7 +49,7 @@ const Chapter = ({ isBg }) => {
                     <span>{data.title}</span> <IoIosArrowDown />
                   </Accordion.Header>
                   <Accordion.Body>
-                    <p className="accordion-body text-secondary">
+                    <p className="accordion-body text-secondary p-0">
                       {data.description}
                     </p>
                   </Accordion.Body>

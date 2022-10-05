@@ -11,7 +11,7 @@ import Footer from "../global/footer";
 import Header from "../global/header";
 import Herov3 from "../herov3";
 import Pricing from "../pricing";
-import Testimonial from "../testimonial";
+import Testimonialv2 from "../testimonialv2";
 
 const Version03 = ({header, footer}) => {
   const {menu} = footer;
@@ -27,7 +27,7 @@ const Version03 = ({header, footer}) => {
       <Authorv3 isBg="yes"/>
       <Achievement isBg=""/>
       <Ctav5 isBg=""/>
-      <Testimonial isBg="yes"/>
+      <Testimonialv2 isBg="yes"/>
       <Contact isBg=""/>
       <Footer isBg="yes" menu={menu}/>
     </>
