@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import CtaV3 from "../ctav3";
 import data from "../../data/footer.json";
@@ -139,7 +138,7 @@ const Footer = ({ menu, isBg }) => {
                     width="20"
                     height="20"
                   />
-                  by <a href="#">{footer.name}</a>
+                  by <a href="https://themeforest.net/user/themeatelier">{footer.name}</a>
                 </p>
               </div>
             </div>

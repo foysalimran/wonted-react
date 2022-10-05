@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import data from "../data/events.json";
 import { FaRegCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";

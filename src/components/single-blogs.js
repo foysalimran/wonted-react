@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { BiUser } from "react-icons/bi";
 import {
@@ -18,7 +17,7 @@ const SingleBlogs = () => {
                 <img
                   className="img-fluid"
                   src="/assets/images/blog/single-blog.jpg"
-                  alt=""
+                  alt="single-blog"
                 />
 
                 <ul className="single-blog__metainfo">
@@ -82,7 +81,7 @@ const SingleBlogs = () => {
                         <img
                           className="img-fluid"
                           src="/assets/images/blog/blog_01.jpg"
-                          alt=""
+                          alt="blog_01"
                         />
                       </div>
                     </div>
@@ -91,7 +90,7 @@ const SingleBlogs = () => {
                         <img
                           className="img-fluid"
                           src="/assets/images/blog/blog_02.jpg"
-                          alt=""
+                          alt="blog_02"
                         />
                       </div>
                     </div>
@@ -194,7 +193,7 @@ const SingleBlogs = () => {
                       <img
                         className="img-fluid"
                         src="/assets/images/user-1.png"
-                        alt="mage"
+                        alt="user-1"
                       />
                     </div>
                     <div className="single-blog__comment__item__content">
@@ -230,7 +229,7 @@ const SingleBlogs = () => {
                       <img
                         className="img-fluid"
                         src="/assets/images/user-2.png"
-                        alt="mage"
+                        alt="user-2"
                       />
                     </div>
                     <div className="single-blog__comment__item__content">
@@ -266,7 +265,7 @@ const SingleBlogs = () => {
                       <img
                         className="img-fluid"
                         src="/assets/images/user-1.png"
-                        alt="mage"
+                        alt="user-1"
                       />
                     </div>
                     <div className="single-blog__comment__item__content">
@@ -353,9 +352,9 @@ const SingleBlogs = () => {
                       </div>
                     </div>
                     <div className="m-20px-t">
-                      <a className="button button__primary">
+                      <button className="button button__primary">
                         <span>POST A COMMENT</span>
-                      </a>
+                      </button>
                     </div>
                   </form>
                 </div>
