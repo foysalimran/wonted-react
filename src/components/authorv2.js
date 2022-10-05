@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import GLightbox from "glightbox";
 import React, { useEffect } from "react";
 import { FiPlay } from "react-icons/fi";
@@ -41,7 +39,7 @@ const AuthorV2 = ({ isBg }) => {
               <img
                 className="img-fluid"
                 src={aboutv2.image}
-                alt="Author Image"
+                alt="Author"
               />
               {aboutv2.videoURL === "" ? (
                 ""

@@ -1,11 +1,9 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import data from "../data/author.json";
 import { socialLink } from "../global";
 
 const Authorv3 = ({isBg}) => {
   const { authorv3 } = data;
-  console.log(authorv3);
   return (
     <section id="author" className={`section-padding authorv3 ${isBg === "yes" ? "bg-one": "" }`}>
       <div className="container">
@@ -17,7 +15,7 @@ const Authorv3 = ({isBg}) => {
             data-aos-delay="200"
           >
             <div className="author-image">
-              <img className="img-fluid" src={authorv3.image} alt="" />
+              <img className="img-fluid" src={authorv3.image} alt={authorv3.title} />
             </div>
           </div>
           <div

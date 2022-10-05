@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Link } from "react-router-dom";
 import data from "../data/contact.json";
@@ -38,7 +37,7 @@ const Contact = ({ isBg }) => {
               >
                 <div className="message col">
                   <p className="email-loading alert alert-warning">
-                    <img src="assets/images/loading.gif" alt="" />
+                    <img src="assets/images/loading.gif" alt="loader" />
                     &nbsp;&nbsp;&nbsp;Sending...
                   </p>
                   <p className="email-success alert alert-success">

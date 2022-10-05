@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { FiChevronRight } from "react-icons/fi";
 import { BsSearch } from "react-icons/bs";
@@ -71,7 +69,7 @@ const BlogLeftSidebars = () => {
                           height="80"
                           src="assets/images/blog/sidebar-image-1.jpg"
                           className=""
-                          alt="Sidebar Image 01"
+                          alt="Sidebar 01"
                         />
                       </Link>
                     </div>
@@ -91,7 +89,7 @@ const BlogLeftSidebars = () => {
                           width="80"
                           height="80"
                           src="assets/images/blog/sidebar-image-2.jpg"
-                          alt="Sidebar Image 02"
+                          alt="Sidebar 02"
                         />
                       </Link>
                     </div>
@@ -111,7 +109,7 @@ const BlogLeftSidebars = () => {
                           width="80"
                           height="80"
                           src="assets/images/blog/sidebar-image-3.jpg"
-                          alt="Sidebar Image 03"
+                          alt="Sidebar 03"
                         />
                       </Link>
                     </div>
@@ -132,7 +130,7 @@ const BlogLeftSidebars = () => {
                           height="80"
                           src="assets/images/blog/sidebar-image-4.jpg"
                           className=""
-                          alt="Sidebar Image 04"
+                          alt="Sidebar 04"
                         />
                       </Link>
                     </div>
@@ -235,7 +233,7 @@ const BlogLeftSidebars = () => {
                   <img
                     className="img-fluid"
                     src="assets/images/blog/blog_04.jpg"
-                    alt=""
+                    alt="blog_04"
                   />
                 </div>
                 <div className="all-blog2__area__menu">
@@ -267,7 +265,7 @@ const BlogLeftSidebars = () => {
                   <img
                     className="img-fluid"
                     src="assets/images/blog/blog_05.jpg"
-                    alt=""
+                    alt="blog_05"
                   />
                 </div>
                 <div className="all-blog2__area__menu">
@@ -299,7 +297,7 @@ const BlogLeftSidebars = () => {
                   <img
                     className="img-fluid"
                     src="assets/images/blog/blog_06.jpg"
-                    alt=""
+                    alt="blog_06"
                   />
                 </div>
                 <div className="all-blog2__area__menu">
@@ -334,7 +332,7 @@ const BlogLeftSidebars = () => {
                   <img
                     className="img-fluid"
                     src="assets/images/blog/blog_07.jpg"
-                    alt=""
+                    alt="blog_07"
                   />
                 </div>
                 <div className="all-blog2__area__menu">
@@ -369,7 +367,7 @@ const BlogLeftSidebars = () => {
                   <img
                     className="img-fluid"
                     src="assets/images/blog/blog_08.jpg"
-                    alt=""
+                    alt="blog_08"
                   />
                 </div>
                 <div className="all-blog2__area__menu">
