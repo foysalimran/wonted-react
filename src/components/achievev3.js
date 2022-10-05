@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
 import data from "../data/achieve.json";
 
@@ -43,14 +44,8 @@ const Achievev3 = ({ isBg }) => {
                   <h3 className="m-15px-b">{achivev3.achieveItem1.title}</h3>
                   <p>{achivev3.achieveItem1.description}</p>
                   <Link to="/#" className="link">
-                    {achivev3.achieveItem1.linkItem}
-                    <img
-                      className="img-fluid"
-                      src={achivev3.achieveItem1.icon}
-                      alt="icon"
-                      width="25"
-                      height="25"
-                    />
+                    {achivev3.achieveItem1.linkBtn}
+                    <MdKeyboardArrowRight />
                   </Link>
                 </div>
               </div>
@@ -75,13 +70,7 @@ const Achievev3 = ({ isBg }) => {
                   <p>{achivev3.achieveItem2.description}</p>
                   <Link to="/#" className="link">
                     {achivev3.achieveItem2.linkBtn}
-                    <img
-                      className="img-fluid"
-                      src={achivev3.achieveItem1.btnIcon}
-                      alt="icon"
-                      width="20"
-                      height="20"
-                    />
+                    <MdKeyboardArrowRight />
                   </Link>
                 </div>
               </div>
@@ -109,13 +98,7 @@ const Achievev3 = ({ isBg }) => {
               <p>{achivev3.achieveItem3.description}</p>
               <Link to="/#" className="link">
                 {achivev3.achieveItem3.linkBtn}
-                <img
-                  className="img-fluid"
-                  src={achivev3.achieveItem1.btnIcon}
-                  alt="icon"
-                  width="20"
-                  height="20"
-                />
+                <MdKeyboardArrowRight />
               </Link>
             </div>
           </div>
@@ -140,13 +123,7 @@ const Achievev3 = ({ isBg }) => {
               <p>{achivev3.achieveItem4.description}</p>
               <Link to="/#" className="link">
                 {achivev3.achieveItem4.linkBtn}
-                <img
-                  className="img-fluid"
-                  src={achivev3.achieveItem1.btnIcon}
-                  alt="icon"
-                  width="20"
-                  height="20"
-                />
+                <MdKeyboardArrowRight />
               </Link>
             </div>
           </div>
@@ -171,13 +148,7 @@ const Achievev3 = ({ isBg }) => {
               <p>{achivev3.achieveItem5.description}</p>
               <Link to="/#" className="link">
                 {achivev3.achieveItem5.linkBtn}
-                <img
-                  className="img-fluid"
-                  src={achivev3.achieveItem1.btnIcon}
-                  alt="icon"
-                  width="20"
-                  height="20"
-                />
+                <MdKeyboardArrowRight />
               </Link>
             </div>
           </div>
@@ -202,13 +173,7 @@ const Achievev3 = ({ isBg }) => {
               <p>{achivev3.achieveItem6.description}</p>
               <Link to="/#" className="link">
                 {achivev3.achieveItem6.linkBtn}
-                <img
-                  className="img-fluid"
-                  src={achivev3.achieveItem1.btnIcon}
-                  alt="icon"
-                  width="20"
-                  height="20"
-                />
+                <MdKeyboardArrowRight />
               </Link>
             </div>
           </div>

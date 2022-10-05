@@ -6,16 +6,15 @@ import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import testimonialData from "../data/testimonial.json";
-import {IoMdQuote } from "react-icons/io"
 
-const Testimonial = ({ isBg }) => {
+const Testimonialv2 = ({ isBg }) => {
   const { testimonial } = testimonialData;
 
   return (
-    // <!-- ========== Testimonial section start ========== -->
+    // <!-- ========== Testimonialv2 section start ========== -->
     <section
       id="reviews"
-      className={`section-padding testimonial ${
+      className={`section-padding testimonialv2 ${
         isBg === "yes" ? "bg-one" : ""
       }`}
     >
@@ -50,20 +49,13 @@ const Testimonial = ({ isBg }) => {
                 <SwiperSlide key={data.id}>
                   <div className="swiper-slide p-5px-lr">
                     <div className="testi-card card h-100 translateEffect1">
-                      <div className="card-body p-4">
-                        <div className="testi-card__quotation">
-                          <IoMdQuote />
-                        </div>
-                        <p className="my-4">{data.description}</p>
-                        <div className="testi-card__user-info pt-4">
-                          <div className="testimonial__user-info__image">
-                            <img src={data.image} alt={data.title} />
-                          </div>
-                          <div className="testimonial__user-info__content">
-                            <h4 className="mb-0">{data.name}</h4>
-                            <p className="mb-0">{data.title}</p>
-                          </div>
-                        </div>
+                      <div className="card-body text-center p-4">
+                        <img src={data.image} alt={data.title} />
+                        <h2 className="testimonialv2__card-title">{data.name}</h2>
+                        <h4 className="testimonialv2__card-subtitle">
+                          {data.title}
+                        </h4>
+                        <p className="pt-2 lh-base">{data.description}</p>
                       </div>
                     </div>
                   </div>
@@ -74,8 +66,8 @@ const Testimonial = ({ isBg }) => {
         </div>
       </div>
     </section>
-    // <!-- ========== Testimonial section end ========== -->
+    // <!-- ========== Testimonialv2 section end ========== -->
   );
 };
 
-export default Testimonial;
+export default Testimonialv2;
