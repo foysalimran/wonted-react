@@ -1,7 +1,6 @@
 import React from "react";
-import { FaComments } from "react-icons/fa";
-import { HiShare } from "react-icons/hi";
-import { RiTimeFill } from "react-icons/ri";
+import { FaCalendarAlt, FaCommentAlt } from "react-icons/fa";
+import { BiUser } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import data from "../data/blog.json";
 
@@ -41,24 +40,24 @@ const Blog = ({ isBg }) => {
                 </div>
                 <div className="blog__single-post__body">
                   <div className="blog__single-post__content">
+                    <ul class="blog-metainfo">
+                      <li>
+                        <FaCalendarAlt />
+                        <a href="/food-delivery2">{data.date}</a>
+                      </li>
+                      <li>
+                        <FaCommentAlt /> No Comment
+                      </li>
+                    </ul>
                     <h2 className="fs-4">
                       <Link to="/single-blog">{data.title}</Link>
                     </h2>
                     <p className="m-0">{data.description}</p>
                   </div>
                   <div className="blog__single-post__meta">
-                    <div className="d-flex gap-2 align-items-center time">
-                      <RiTimeFill />
-                      {data.date}
+                    <div class="blog__single-post__meta">
+                      <BiUser /> By, {data.author}
                     </div>
-                    <ul>
-                      <li>
-                        <FaComments />
-                      </li>
-                      <li>
-                        <HiShare />
-                      </li>
-                    </ul>
                   </div>
                 </div>
               </article>
