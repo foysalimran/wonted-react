@@ -40,7 +40,7 @@
     .navbar-nav li a:hover:after,
     .navbar-nav li a.active:after {
       opacity: 1;
-      bottom: 0px;
+      bottom: -12px;
     }
   }
   .navbar-expand-lg {
@@ -162,19 +162,21 @@
       padding-bottom: 8px;
       display: block;
       cursor: pointer;
-
+      display: flex;
+      gap: 4px;
+      align-items: center;
       &::after {
         transition: all 0.4s cubic-bezier(0.3, 0.1, 0.58, 1);
         opacity: 0;
         content: '';
         width: 100%;
-        width: 15px;
+        width: 30px;
         left: 50%;
         transform: translate(-50%, 0);
         height: 2px;
         background: $color-primary;
         position: absolute;
-        bottom: -10px;
+        bottom: -20px;
         @include respond(laptop) {
           left: 10px;
           background: inherit;
@@ -215,7 +217,6 @@
             font-weight: 500;
             color: $color-dark;
             transition: color 0.2s linear;
-
             &:after {
               display: none;
             }

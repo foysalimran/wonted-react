@@ -21,8 +21,6 @@
       background-color: $color-light;
       @include respond(laptop) {
         padding: 10px;
-      }
-      @include respond(tablet) {
         padding: 20px;
       }
     }

@@ -40,7 +40,7 @@ const Blog = ({ isBg }) => {
                 </div>
                 <div className="blog__single-post__body">
                   <div className="blog__single-post__content">
-                    <ul class="blog-metainfo">
+                    <ul className="blog-metainfo">
                       <li>
                         <FaCalendarAlt />
                         <a href="/food-delivery2">{data.date}</a>
@@ -55,10 +55,8 @@ const Blog = ({ isBg }) => {
                     <p className="m-0">{data.description}</p>
                   </div>
                   <div className="blog__single-post__meta">
-                    <div class="blog__single-post__meta">
                       <BiUser /> By, {data.author}
                     </div>
-                  </div>
                 </div>
               </article>
             </div>

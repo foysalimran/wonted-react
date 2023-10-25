@@ -27,7 +27,7 @@ const SingleBlogs = () => {
                   </li>
                   <li>
                     <FaRegCalendarAlt />
-                    <Link to="/#">12 May, 2022</Link>
+                    <Link to="/#">12 May, 2023</Link>
                   </li>
                   <li>
                     <FaRegCommentDots /> <Link to="/#">3 Comments</Link>
@@ -96,7 +96,7 @@ const SingleBlogs = () => {
                     </div>
                   </div>
                   <h2 className="display-6 single-blog__title">
-                    Best mysteries and thrillers of 2022 so far
+                    Best mysteries and thrillers of 2023 so far
                   </h2>
                   <ol>
                     <li>
@@ -202,7 +202,7 @@ const SingleBlogs = () => {
                           <div className="col-md-9 col-12 order-md-1 order-1">
                             <h5>Olivic Dsuza</h5>
                             <p className="comment-date">
-                              Feb 15, 2022 | 10:21 am
+                              Feb 15, 2023 | 10:21 am
                             </p>
                           </div>
                           <div className="col-md-3 col-sm-12 col-12 text-md-end order-md-2 order-sm-3 order-3">
@@ -238,7 +238,7 @@ const SingleBlogs = () => {
                           <div className="col-md-9 col-12 order-md-1 order-1">
                             <h5>Everly Leah</h5>
                             <p className="comment-date">
-                              Mar 30, 2022 | 12:33 am
+                              Mar 30, 2023 | 12:33 am
                             </p>
                           </div>
                           <div className="col-md-3 col-sm-12 col-12 text-md-end order-md-2 order-sm-3 order-3">
@@ -274,7 +274,7 @@ const SingleBlogs = () => {
                           <div className="col-md-9 col-12 order-md-1 order-1">
                             <h5>Michel Jackson</h5>
                             <p className="comment-date">
-                              Feb 15, 2022 | 10:21 am
+                              Feb 15, 2023 | 10:21 am
                             </p>
                           </div>
                           <div className="col-md-3 col-sm-12 col-12 text-md-end order-md-2 order-sm-3 order-3">

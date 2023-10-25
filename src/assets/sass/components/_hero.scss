@@ -10,7 +10,10 @@
     }
     form {
       @include respond(laptop) {
-        display: inline-block;
+        .input-group {
+          display: flex;
+          justify-content: center;
+        }
       }
       input {
         border: 0;
