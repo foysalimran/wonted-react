@@ -54,6 +54,7 @@
     background-position: center;
     flex: 5;
     box-shadow: none;
+    cursor: auto;
     @include respond(laptop) {
       height: 70vh;
     }
