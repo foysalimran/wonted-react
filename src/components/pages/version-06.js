@@ -13,6 +13,7 @@ import Footer from "../global/footer";
 import Header from "../global/header";
 import Herov6 from "../herov6";
 import Testimonial from "../testimonial";
+import Gallery from "../gallery";
 
 const Version06 = ({ headerv2, footer }) => {
   const { menuv2 } = footer;
@@ -25,6 +26,7 @@ const Version06 = ({ headerv2, footer }) => {
       <Booksv1 isBg="yes"/>
       <FunFacts isBg=""/>
       <Achievement isBg="yes"/>
+      <Gallery isBg="" />
       <Cta isBg=""/>
       <Event isBg="yes"/>
       <Booksv2 isBg=""/>

@@ -1,0 +1,270 @@
+{
+  "gallery": {
+    "title": "Some of latest books",
+    "subtitle": "Book Gallery",
+    "galleryMenu": [
+      {
+        "title": "All Books"
+      },
+      {
+        "title": "Fiction"
+      },
+      {
+        "title": "Fantasy"
+      },
+      {
+        "title": "Comics"
+      },
+      {
+        "title": "History"
+      }
+    ],
+    "galleryItem": [
+      {
+        "image": "assets/images/book.png",
+        "title": "Things I Never Said",
+        "subtitle": "Fiction",
+        "id": "fiction",
+        "content": "Maecenas sed tortor molestie, sagittis nibh sit amet, dapibus felis. Vivamus sed neque iaculis, ultrices nulla eu, venenatis dui. Praesent luctus urna eu dapibus pulvinar. Curabitur sed magna accumsan neque fermentum laoreet. Ut nunc.",
+        "clientMeta": [
+          {
+            "metaName": "Clients:",
+            "metaContent": "Jane Austen"
+          },
+          {
+            "metaName": "Category:",
+            "metaContent": "Fiction"
+          },
+          {
+            "metaName": "Published On:",
+            "metaContent": "August 05, 2023"
+          }
+        ],
+        "detailList": [
+          {
+            "title": "Will you provide website layout about design"
+          },
+          {
+            "title": "Branding With Business Agency"
+          },
+          {
+            "title": "Why should I work with an agency over a freelancer"
+          },
+          {
+            "title": "How much do you charge for branding"
+          }
+        ]
+      },
+      {
+        "image": "assets/images/book5.png",
+        "title": "Man Holding Book",
+        "subtitle": "Fantasy",
+        "id": "fantasy",
+        "content": "Maecenas sed tortor molestie, sagittis nibh sit amet, dapibus felis. Vivamus sed neque iaculis, ultrices nulla eu, venenatis dui. Praesent luctus urna eu dapibus pulvinar. Curabitur sed magna accumsan neque fermentum laoreet. Ut nunc.",
+        "clientMeta": [
+          {
+            "metaName": "Clients:",
+            "metaContent": "Jane Austen"
+          },
+          {
+            "metaName": "Category:",
+            "metaContent": "Fiction"
+          },
+          {
+            "metaName": "Published On:",
+            "metaContent": "August 05, 2023"
+          }
+        ],
+        "detailList": [
+          {
+            "title": "Will you provide website layout about design"
+          },
+          {
+            "title": "Branding With Business Agency"
+          },
+          {
+            "title": "Why should I work with an agency over a freelancer"
+          },
+          {
+            "title": "How much do you charge for branding"
+          }
+        ]
+      },
+      {
+        "image": "assets/images/book5.jpg",
+        "title": "Leave The World Behind",
+        "subtitle": "Comics",
+        "id": "comics",
+        "content": "Maecenas sed tortor molestie, sagittis nibh sit amet, dapibus felis. Vivamus sed neque iaculis, ultrices nulla eu, venenatis dui. Praesent luctus urna eu dapibus pulvinar. Curabitur sed magna accumsan neque fermentum laoreet. Ut nunc.",
+        "clientMeta": [
+          {
+            "metaName": "Clients:",
+            "metaContent": "Jane Austen"
+          },
+          {
+            "metaName": "Category:",
+            "metaContent": "Fiction"
+          },
+          {
+            "metaName": "Published On:",
+            "metaContent": "August 05, 2023"
+          }
+        ],
+        "detailList": [
+          {
+            "title": "Will you provide website layout about design"
+          },
+          {
+            "title": "Branding With Business Agency"
+          },
+          {
+            "title": "Why should I work with an agency over a freelancer"
+          },
+          {
+            "title": "How much do you charge for branding"
+          }
+        ]
+      },
+      {
+        "image": "assets/images/book7.png",
+        "title": "The Wild Story",
+        "subtitle": "History",
+        "id": "history",
+        "content": "Maecenas sed tortor molestie, sagittis nibh sit amet, dapibus felis. Vivamus sed neque iaculis, ultrices nulla eu, venenatis dui. Praesent luctus urna eu dapibus pulvinar. Curabitur sed magna accumsan neque fermentum laoreet. Ut nunc.",
+        "clientMeta": [
+          {
+            "metaName": "Clients:",
+            "metaContent": "Jane Austen"
+          },
+          {
+            "metaName": "Category:",
+            "metaContent": "Fiction"
+          },
+          {
+            "metaName": "Published On:",
+            "metaContent": "August 05, 2023"
+          }
+        ],
+        "detailList": [
+          {
+            "title": "Will you provide website layout about design"
+          },
+          {
+            "title": "Branding With Business Agency"
+          },
+          {
+            "title": "Why should I work with an agency over a freelancer"
+          },
+          {
+            "title": "How much do you charge for branding"
+          }
+        ]
+      },
+      {
+        "image": "assets/images/book6.png",
+        "title": "The Fantasy Book",
+        "subtitle": "Fantasy",
+        "id": "fantasy",
+        "content": "Maecenas sed tortor molestie, sagittis nibh sit amet, dapibus felis. Vivamus sed neque iaculis, ultrices nulla eu, venenatis dui. Praesent luctus urna eu dapibus pulvinar. Curabitur sed magna accumsan neque fermentum laoreet. Ut nunc.",
+        "clientMeta": [
+          {
+            "metaName": "Clients:",
+            "metaContent": "Jane Austen"
+          },
+          {
+            "metaName": "Category:",
+            "metaContent": "Fiction"
+          },
+          {
+            "metaName": "Published On:",
+            "metaContent": "August 05, 2023"
+          }
+        ],
+        "detailList": [
+          {
+            "title": "Will you provide website layout about design"
+          },
+          {
+            "title": "Branding With Business Agency"
+          },
+          {
+            "title": "Why should I work with an agency over a freelancer"
+          },
+          {
+            "title": "How much do you charge for branding"
+          }
+        ]
+      },
+      {
+        "image": "assets/images/ctav2.jpg",
+        "title": "Fictional Authority",
+        "subtitle": "Fiction",
+        "id": "fiction",
+        "content": "Maecenas sed tortor molestie, sagittis nibh sit amet, dapibus felis. Vivamus sed neque iaculis, ultrices nulla eu, venenatis dui. Praesent luctus urna eu dapibus pulvinar. Curabitur sed magna accumsan neque fermentum laoreet. Ut nunc.",
+        "clientMeta": [
+          {
+            "metaName": "Clients:",
+            "metaContent": "Jane Austen"
+          },
+          {
+            "metaName": "Category:",
+            "metaContent": "Fiction"
+          },
+          {
+            "metaName": "Published On:",
+            "metaContent": "August 05, 2023"
+          }
+        ],
+        "detailList": [
+          {
+            "title": "Will you provide website layout about design"
+          },
+          {
+            "title": "Branding With Business Agency"
+          },
+          {
+            "title": "Why should I work with an agency over a freelancer"
+          },
+          {
+            "title": "How much do you charge for branding"
+          }
+        ]
+      },
+      {
+        "image": "assets/images/book3.png",
+        "title": "Old School Comics",
+        "subtitle": "Comics",
+        "id": "comics",
+        "content": "Maecenas sed tortor molestie, sagittis nibh sit amet, dapibus felis. Vivamus sed neque iaculis, ultrices nulla eu, venenatis dui. Praesent luctus urna eu dapibus pulvinar. Curabitur sed magna accumsan neque fermentum laoreet. Ut nunc.",
+        "clientMeta": [
+          {
+            "metaName": "Clients:",
+            "metaContent": "Jane Austen"
+          },
+          {
+            "metaName": "Category:",
+            "metaContent": "Fiction"
+          },
+          {
+            "metaName": "Published On:",
+            "metaContent": "August 05, 2023"
+          }
+        ],
+        "detailList": [
+          {
+            "title": "Will you provide website layout about design"
+          },
+          {
+            "title": "Branding With Business Agency"
+          },
+          {
+            "title": "Why should I work with an agency over a freelancer"
+          },
+          {
+            "title": "How much do you charge for branding"
+          }
+        ]
+      }
+    ]
+  }
+}
