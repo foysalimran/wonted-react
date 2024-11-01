@@ -43,9 +43,6 @@
     }
   }
   form {
-    @include respond(laptop) {
-      display: inline-block;
-    }
     input {
       border: 0;
       border-radius: 5px;

@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import {
   FaMapMarkerAlt
@@ -43,7 +42,7 @@ const Contactv2 = ({ isBg }) => {
               >
                 <div className="message col">
                   <p className="email-loading alert alert-warning">
-                    <img src="assets/images/loading.gif" alt="" />
+                    <img src="assets/images/loading.gif" alt="loading" />
                     &nbsp;&nbsp;&nbsp;Sending...
                   </p>
                   <p className="email-success alert alert-success">

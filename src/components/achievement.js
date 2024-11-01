@@ -33,7 +33,7 @@ const Achievement = ({ isBg }) => {
                 <div className="row row-cols-2">
                   <div className="col mt-0">
                     <img
-                      className="img-fluid"
+                      className="img-fluid achievement__item__image"
                       src={data.image}
                       alt={data.title}
                     />

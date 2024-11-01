@@ -279,7 +279,7 @@ const BlogLeftSidebars = () => {
                     <li>DECEMBER 3, 2019</li>
                   </ul>
                   <h2 className="fs-2">
-                    <Link to="/single-blog">Best science books of 2022 so far</Link>
+                    <Link to="/single-blog">Best science books of 2023 so far</Link>
                   </h2>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -381,7 +381,7 @@ const BlogLeftSidebars = () => {
                     <li>DECEMBER 3, 2019</li>
                   </ul>
                   <h2 className="fs-2">
-                    <Link to="/single-blog">Best romance books of 2022 so far</Link>
+                    <Link to="/single-blog">Best romance books of 2023 so far</Link>
                   </h2>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and

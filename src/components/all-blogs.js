@@ -1,9 +1,9 @@
 import React from "react";
 import { RiTimeFill } from "react-icons/ri";
-import { FaComments } from "react-icons/fa";
-import { HiShare } from "react-icons/hi";
+import { FaComment } from "react-icons/fa";
 import data from "../data/blog.json";
 import { Link } from "react-router-dom";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 const AllBlogs = ({ isBg }) => {
   const { blog } = data;
@@ -40,14 +40,10 @@ const AllBlogs = ({ isBg }) => {
                       <RiTimeFill />
                       {data.date}
                     </div>
-                    <ul>
-                      <li>
-                        <FaComments />
-                      </li>
-                      <li>
-                        <HiShare />
-                      </li>
-                    </ul>
+                    <div className="d-flex align-items-center gap-2">
+                      <FaComment />
+                      <a href="#">Comment(05)</a>
+                    </div>
                   </div>
                 </div>
               </article>
@@ -58,28 +54,28 @@ const AllBlogs = ({ isBg }) => {
           <nav aria-label="Page navigation example">
             <ul className="pagination">
               <li className="page-item">
-                <Link className="page-link" to="/#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
+                <Link to="/#" aria-label="Previous">
+                <MdKeyboardArrowLeft />
                 </Link>
               </li>
               <li className="page-item">
-                <Link className="page-link" to="/#">
+                <Link to="/#">
                   1
                 </Link>
               </li>
               <li className="page-item">
-                <Link className="page-link" to="/#">
+                <Link to="/#">
                   2
                 </Link>
               </li>
               <li className="page-item">
-                <Link className="page-link" to="/#">
+                <Link to="/#">
                   3
                 </Link>
               </li>
               <li className="page-item">
-                <Link className="page-link" to="/#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
+                <Link to="/#" aria-label="Next">
+                <MdKeyboardArrowRight />
                 </Link>
               </li>
             </ul>

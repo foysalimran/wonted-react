@@ -5,7 +5,6 @@ import { Link as PageLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import { siteLogo } from "../../global";
 
-
 const Header = ({ header }) => {
   const [isActive, setActive] = useState(false);
   const [fix, setFix] = useState(false);
@@ -58,7 +57,10 @@ const Header = ({ header }) => {
                         aria-expanded="false"
                       >
                         {data.title}
-                        <span onClick={handleToggle} className="sub-menu-toggle">
+                        <span
+                          onClick={handleToggle}
+                          className="sub-menu-toggle"
+                        >
                           <GoChevronDown />
                         </span>
                       </Link>

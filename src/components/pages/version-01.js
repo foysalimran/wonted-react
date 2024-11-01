@@ -14,6 +14,8 @@ import Header from "../global/header";
 import Hero from "../hero";
 import Pricing from "../pricing";
 import Testimonial from "../testimonial";
+import Gallery from "../gallery";
+import Cta from "../cta";
 
 const Version01 = ({header, footer}) => {
   const {menu} = footer;
@@ -26,6 +28,8 @@ const Version01 = ({header, footer}) => {
       <Chapter isBg="yes" />
       <ChapterPreview isBg="" />
       <Pricing isBg="yes" />
+      <Gallery isBg="" />
+      <Cta isBg="yes" />
       <AuthorV2 isBg="" />
       <Achievement isBg="yes" />
       <FunFacts isBg=""/>

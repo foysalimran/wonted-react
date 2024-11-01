@@ -103,7 +103,7 @@ const SingleEvents = () => {
                     <i className="icofont-calendar"></i>
                     <div>
                       <p className="para-1">Date</p>
-                      <p className="para-2">November 17, 2022</p>
+                      <p className="para-2">November 17, 2023</p>
                     </div>
                   </li>
                   <li>

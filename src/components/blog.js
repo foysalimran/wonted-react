@@ -1,9 +1,9 @@
 import React from "react";
-import { FaComments } from "react-icons/fa";
-import { HiShare } from "react-icons/hi";
-import { RiTimeFill } from "react-icons/ri";
+import { FaCalendarAlt, FaComment } from "react-icons/fa";
+import { BiUser } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import data from "../data/blog.json";
+import { RiTimeFill } from "react-icons/ri";
 
 const Blog = ({ isBg }) => {
   const { blog } = data;
@@ -47,18 +47,14 @@ const Blog = ({ isBg }) => {
                     <p className="m-0">{data.description}</p>
                   </div>
                   <div className="blog__single-post__meta">
-                    <div className="d-flex gap-2 align-items-center time">
+                    <div className="d-flex gap-2 align-items-center">
                       <RiTimeFill />
                       {data.date}
                     </div>
-                    <ul>
-                      <li>
-                        <FaComments />
-                      </li>
-                      <li>
-                        <HiShare />
-                      </li>
-                    </ul>
+                    <div className="d-flex align-items-center gap-2">
+                      <FaComment />
+                      <a href="#">Comment(05)</a>
+                    </div>
                   </div>
                 </div>
               </article>

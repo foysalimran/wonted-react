@@ -14,6 +14,7 @@ import Contactv2 from "../contactv2";
 import Cta from "../cta";
 import Header from "../global/header";
 import Footer from "../global/footer";
+import Gallery from "../gallery";
 
 const Version04 = ({headerv2, footer}) => {
   const {menuv2} = footer;
@@ -25,6 +26,7 @@ const Version04 = ({headerv2, footer}) => {
       <FunFacts isBg="yes"/>
       <Booksv2 isBg=""/>
       <Achievement isBg="yes"/>
+      <Gallery isBg="" />
       <Ctav5 isBg=""/>
       <Eventv2 isBg="yes"/>
       <Booksv3 isBg=""/>

@@ -12,6 +12,7 @@ import Header from "../global/header";
 import Herov2 from "../herov2";
 import Pricing from "../pricing";
 import Testimonialv2 from "../testimonialv2";
+import Gallery from "../gallery";
 
 const Version02 = ({header, footer}) => {
   const {menu} = footer;
@@ -21,6 +22,7 @@ const Version02 = ({header, footer}) => {
       <Herov2 isBg="yes"/>
       <Achievev2 isBg=""/>
       <Chapterv2 isBg="yes" />
+      <Gallery isBg="" />
       <Ctav2 isBg=""/>
       <ChapterPreviewV2 isBg="" />
       <Pricing isBg="yes"/>
